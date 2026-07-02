@@ -2,7 +2,7 @@
 //  Bible_AdventuresApp.swift
 //  Bible Adventures
 //
-//  Created by jc on 1/7/2026.
+//  Created by jc on 2/7/2026.
 //
 
 import SwiftUI
