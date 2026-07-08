@@ -4,7 +4,7 @@ import SwiftUI
 
 struct StoryPlayerView: View {
     
-    let story = StoryEngine.noah
+    let story = StoryRepository.loadNoahStory() 
     
     @State private var currentPage: Int = 0
     
@@ -32,7 +32,6 @@ struct StoryPlayerView: View {
             Text("📖 \(story.dialoguePages[currentPage].reference)")
                 .font(.caption)
                 .foregroundStyle(.secondary)
-            Text(story.dialoguePages[currentPage].reference).font(.caption).foregroundStyle(.gray)
             
             Spacer()
             
