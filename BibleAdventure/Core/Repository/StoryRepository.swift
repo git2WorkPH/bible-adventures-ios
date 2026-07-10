@@ -1,40 +1,19 @@
 import Foundation
 
-struct StoryRepository{
-    
-    static func loadNoahStory() -> Story {
-        
-        Story(
-              id: "noah",
-              title: "Noah",
-              description: "Build the ark before the rain begins.",
+struct StoryRepository {
 
-                          dialoguePages: [
+    static func loadStory(_ storyID: StoryID) -> Story {
 
-                              DialoguePage(
-                                  speaker: "God",
-                                  text: "I have decided to put an end to all people, for the earth is filled with violence.",
-                                  reference: "Genesis 6:13"
-                              ),
+        switch storyID {
 
-                              DialoguePage(
-                                  speaker: "God",
-                                  text: "Build an ark using cypress wood and cover it inside and out with pitch.",
-                                  reference: "Based on Genesis 6:14"
-                              ),
+        case .noah:
+            return NoahStory.build()
 
-                              DialoguePage(
-                                  speaker: "God",
-                                  text: "The ark should have lower, middle, and upper decks.",
-                                  reference: "Based on Genesis 6:16"
-                              ),
+        case .moses:
+            fatalError("Moses story not implemented.")
 
-                              DialoguePage(
-                                  speaker: "Narrator",
-                                  text: "Noah obeyed and did everything just as God commanded him.",
-                                  reference: "Genesis 6:22"
-                              )
-                          ])
+        case .david:
+            fatalError("David story not implemented.")
+        }
     }
-    
 }

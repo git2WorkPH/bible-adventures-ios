@@ -1,9 +1,9 @@
 import Foundation
 
 struct Story{
-    let id: String
+    let id: StoryID
     let title: String
     let description: String
+    let steps:[StoryStep]
     
-    let dialoguePages:[DialoguePage]
 }

@@ -33,7 +33,9 @@ struct ContentView: View {
                     StorySelectionView()
                 }
                 
-                Button("Continue") {}.padding()
+                Button("Continue") {
+                    
+                }.padding()
                 
                 Button("Settings") {
                     print("Opening settings...")

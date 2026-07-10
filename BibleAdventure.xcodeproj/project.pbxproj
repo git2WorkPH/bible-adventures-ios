@@ -29,9 +29,33 @@
 		A008858A2FFB322000E29B20 /* BibleAdventureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BibleAdventureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A00885E12FFE4C9700E29B20 /* Exceptions for "BibleAdventure" folder in "BibleAdventure" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Docs/Architecture.md,
+			);
+			target = A00885702FFB321E00E29B20 /* BibleAdventure */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		A00885E22FFE4C9700E29B20 /* Exceptions for "BibleAdventure" folder in "Compile Sources" phase from "BibleAdventure" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = A008856D2FFB321E00E29B20 /* Sources */;
+			membershipExceptions = (
+				Docs/Architecture.md,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A00885732FFB321E00E29B20 /* BibleAdventure */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A00885E12FFE4C9700E29B20 /* Exceptions for "BibleAdventure" folder in "BibleAdventure" target */,
+				A00885E22FFE4C9700E29B20 /* Exceptions for "BibleAdventure" folder in "Compile Sources" phase from "BibleAdventure" target */,
+			);
 			path = BibleAdventure;
 			sourceTree = "<group>";
 		};
