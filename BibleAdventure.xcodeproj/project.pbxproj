@@ -7,87 +7,86 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
-		A008850A2FF5175B00E29B20 /* PBXContainerItemProxy */ = {
+		A00885812FFB322000E29B20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A00884F22FF5175900E29B20 /* Project object */;
+			containerPortal = A00885692FFB321E00E29B20 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A00884F92FF5175900E29B20;
-			remoteInfo = "Bible Adventures";
+			remoteGlobalIDString = A00885702FFB321E00E29B20;
+			remoteInfo = BibleAdventure;
 		};
-		A00885142FF5175B00E29B20 /* PBXContainerItemProxy */ = {
+		A008858B2FFB322000E29B20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A00884F22FF5175900E29B20 /* Project object */;
+			containerPortal = A00885692FFB321E00E29B20 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A00884F92FF5175900E29B20;
-			remoteInfo = "Bible Adventures";
+			remoteGlobalIDString = A00885702FFB321E00E29B20;
+			remoteInfo = BibleAdventure;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A00884FA2FF5175900E29B20 /* Bible Adventures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bible Adventures.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A00885092FF5175B00E29B20 /* Bible AdventuresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bible AdventuresTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A00885132FF5175B00E29B20 /* Bible AdventuresUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bible AdventuresUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00885712FFB321E00E29B20 /* BibleAdventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BibleAdventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00885802FFB322000E29B20 /* BibleAdventureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BibleAdventureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A008858A2FFB322000E29B20 /* BibleAdventureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BibleAdventureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A00885E12FFE4C9700E29B20 /* Exceptions for "BibleAdventure" folder in "BibleAdventure" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Docs/Architecture.md,
+			);
+			target = A00885702FFB321E00E29B20 /* BibleAdventure */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		A00885E22FFE4C9700E29B20 /* Exceptions for "BibleAdventure" folder in "Compile Sources" phase from "BibleAdventure" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = A008856D2FFB321E00E29B20 /* Sources */;
+			membershipExceptions = (
+				Docs/Architecture.md,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A00885262FF5181A00E29B20 /* App */ = {
+		A00885732FFB321E00E29B20 /* BibleAdventure */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = App;
+			exceptions = (
+				A00885E12FFE4C9700E29B20 /* Exceptions for "BibleAdventure" folder in "BibleAdventure" target */,
+				A00885E22FFE4C9700E29B20 /* Exceptions for "BibleAdventure" folder in "Compile Sources" phase from "BibleAdventure" target */,
+			);
+			path = BibleAdventure;
 			sourceTree = "<group>";
 		};
-		A00885292FF5188100E29B20 /* Features */ = {
+		A00885832FFB322000E29B20 /* BibleAdventureTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Features;
+			path = BibleAdventureTests;
 			sourceTree = "<group>";
 		};
-		A008852A2FF5188A00E29B20 /* Engine */ = {
+		A008858D2FFB322000E29B20 /* BibleAdventureUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Engine;
-			sourceTree = "<group>";
-		};
-		A008852B2FF5189500E29B20 /* Models */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Models;
-			sourceTree = "<group>";
-		};
-		A008852C2FF5189C00E29B20 /* Resources */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		A008852D2FF518A500E29B20 /* Shared */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		A008852E2FF518AB00E29B20 /* Tests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		A008852F2FF518BA00E29B20 /* docs */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = docs;
+			path = BibleAdventureUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A00884F72FF5175900E29B20 /* Frameworks */ = {
+		A008856E2FFB321E00E29B20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A00885062FF5175B00E29B20 /* Frameworks */ = {
+		A008857D2FFB322000E29B20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A00885102FF5175B00E29B20 /* Frameworks */ = {
+		A00885872FFB322000E29B20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -97,27 +96,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A00884F12FF5175900E29B20 = {
+		A00885682FFB321E00E29B20 = {
 			isa = PBXGroup;
 			children = (
-				A00885262FF5181A00E29B20 /* App */,
-				A008852F2FF518BA00E29B20 /* docs */,
-				A008852A2FF5188A00E29B20 /* Engine */,
-				A00885292FF5188100E29B20 /* Features */,
-				A008852B2FF5189500E29B20 /* Models */,
-				A00884FB2FF5175900E29B20 /* Products */,
-				A008852C2FF5189C00E29B20 /* Resources */,
-				A008852D2FF518A500E29B20 /* Shared */,
-				A008852E2FF518AB00E29B20 /* Tests */,
+				A00885732FFB321E00E29B20 /* BibleAdventure */,
+				A00885832FFB322000E29B20 /* BibleAdventureTests */,
+				A008858D2FFB322000E29B20 /* BibleAdventureUITests */,
+				A00885722FFB321E00E29B20 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A00884FB2FF5175900E29B20 /* Products */ = {
+		A00885722FFB321E00E29B20 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A00884FA2FF5175900E29B20 /* Bible Adventures.app */,
-				A00885092FF5175B00E29B20 /* Bible AdventuresTests.xctest */,
-				A00885132FF5175B00E29B20 /* Bible AdventuresUITests.xctest */,
+				A00885712FFB321E00E29B20 /* BibleAdventure.app */,
+				A00885802FFB322000E29B20 /* BibleAdventureTests.xctest */,
+				A008858A2FFB322000E29B20 /* BibleAdventureUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,135 +119,134 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A00884F92FF5175900E29B20 /* Bible Adventures */ = {
+		A00885702FFB321E00E29B20 /* BibleAdventure */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A008851D2FF5175B00E29B20 /* Build configuration list for PBXNativeTarget "Bible Adventures" */;
+			buildConfigurationList = A00885942FFB322000E29B20 /* Build configuration list for PBXNativeTarget "BibleAdventure" */;
 			buildPhases = (
-				A00884F62FF5175900E29B20 /* Sources */,
-				A00884F72FF5175900E29B20 /* Frameworks */,
-				A00884F82FF5175900E29B20 /* Resources */,
+				A008856D2FFB321E00E29B20 /* Sources */,
+				A008856E2FFB321E00E29B20 /* Frameworks */,
+				A008856F2FFB321E00E29B20 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				A00885262FF5181A00E29B20 /* App */,
-				A00885292FF5188100E29B20 /* Features */,
-				A008852A2FF5188A00E29B20 /* Engine */,
-				A008852B2FF5189500E29B20 /* Models */,
-				A008852C2FF5189C00E29B20 /* Resources */,
-				A008852D2FF518A500E29B20 /* Shared */,
-				A008852E2FF518AB00E29B20 /* Tests */,
-				A008852F2FF518BA00E29B20 /* docs */,
+				A00885732FFB321E00E29B20 /* BibleAdventure */,
 			);
-			name = "Bible Adventures";
+			name = BibleAdventure;
 			packageProductDependencies = (
 			);
-			productName = "Bible Adventures";
-			productReference = A00884FA2FF5175900E29B20 /* Bible Adventures.app */;
+			productName = BibleAdventure;
+			productReference = A00885712FFB321E00E29B20 /* BibleAdventure.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A00885082FF5175B00E29B20 /* Bible AdventuresTests */ = {
+		A008857F2FFB322000E29B20 /* BibleAdventureTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A00885202FF5175B00E29B20 /* Build configuration list for PBXNativeTarget "Bible AdventuresTests" */;
+			buildConfigurationList = A00885972FFB322000E29B20 /* Build configuration list for PBXNativeTarget "BibleAdventureTests" */;
 			buildPhases = (
-				A00885052FF5175B00E29B20 /* Sources */,
-				A00885062FF5175B00E29B20 /* Frameworks */,
-				A00885072FF5175B00E29B20 /* Resources */,
+				A008857C2FFB322000E29B20 /* Sources */,
+				A008857D2FFB322000E29B20 /* Frameworks */,
+				A008857E2FFB322000E29B20 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A008850B2FF5175B00E29B20 /* PBXTargetDependency */,
+				A00885822FFB322000E29B20 /* PBXTargetDependency */,
 			);
-			name = "Bible AdventuresTests";
+			fileSystemSynchronizedGroups = (
+				A00885832FFB322000E29B20 /* BibleAdventureTests */,
+			);
+			name = BibleAdventureTests;
 			packageProductDependencies = (
 			);
-			productName = "Bible AdventuresTests";
-			productReference = A00885092FF5175B00E29B20 /* Bible AdventuresTests.xctest */;
+			productName = BibleAdventureTests;
+			productReference = A00885802FFB322000E29B20 /* BibleAdventureTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A00885122FF5175B00E29B20 /* Bible AdventuresUITests */ = {
+		A00885892FFB322000E29B20 /* BibleAdventureUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A00885232FF5175B00E29B20 /* Build configuration list for PBXNativeTarget "Bible AdventuresUITests" */;
+			buildConfigurationList = A008859A2FFB322000E29B20 /* Build configuration list for PBXNativeTarget "BibleAdventureUITests" */;
 			buildPhases = (
-				A008850F2FF5175B00E29B20 /* Sources */,
-				A00885102FF5175B00E29B20 /* Frameworks */,
-				A00885112FF5175B00E29B20 /* Resources */,
+				A00885862FFB322000E29B20 /* Sources */,
+				A00885872FFB322000E29B20 /* Frameworks */,
+				A00885882FFB322000E29B20 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A00885152FF5175B00E29B20 /* PBXTargetDependency */,
+				A008858C2FFB322000E29B20 /* PBXTargetDependency */,
 			);
-			name = "Bible AdventuresUITests";
+			fileSystemSynchronizedGroups = (
+				A008858D2FFB322000E29B20 /* BibleAdventureUITests */,
+			);
+			name = BibleAdventureUITests;
 			packageProductDependencies = (
 			);
-			productName = "Bible AdventuresUITests";
-			productReference = A00885132FF5175B00E29B20 /* Bible AdventuresUITests.xctest */;
+			productName = BibleAdventureUITests;
+			productReference = A008858A2FFB322000E29B20 /* BibleAdventureUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A00884F22FF5175900E29B20 /* Project object */ = {
+		A00885692FFB321E00E29B20 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2610;
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
-					A00884F92FF5175900E29B20 = {
+					A00885702FFB321E00E29B20 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
-					A00885082FF5175B00E29B20 = {
+					A008857F2FFB322000E29B20 = {
 						CreatedOnToolsVersion = 26.1.1;
-						TestTargetID = A00884F92FF5175900E29B20;
+						TestTargetID = A00885702FFB321E00E29B20;
 					};
-					A00885122FF5175B00E29B20 = {
+					A00885892FFB322000E29B20 = {
 						CreatedOnToolsVersion = 26.1.1;
-						TestTargetID = A00884F92FF5175900E29B20;
+						TestTargetID = A00885702FFB321E00E29B20;
 					};
 				};
 			};
-			buildConfigurationList = A00884F52FF5175900E29B20 /* Build configuration list for PBXProject "Bible Adventures" */;
+			buildConfigurationList = A008856C2FFB321E00E29B20 /* Build configuration list for PBXProject "BibleAdventure" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = A00884F12FF5175900E29B20;
+			mainGroup = A00885682FFB321E00E29B20;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = A00884FB2FF5175900E29B20 /* Products */;
+			productRefGroup = A00885722FFB321E00E29B20 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A00884F92FF5175900E29B20 /* Bible Adventures */,
-				A00885082FF5175B00E29B20 /* Bible AdventuresTests */,
-				A00885122FF5175B00E29B20 /* Bible AdventuresUITests */,
+				A00885702FFB321E00E29B20 /* BibleAdventure */,
+				A008857F2FFB322000E29B20 /* BibleAdventureTests */,
+				A00885892FFB322000E29B20 /* BibleAdventureUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A00884F82FF5175900E29B20 /* Resources */ = {
+		A008856F2FFB321E00E29B20 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A00885072FF5175B00E29B20 /* Resources */ = {
+		A008857E2FFB322000E29B20 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A00885112FF5175B00E29B20 /* Resources */ = {
+		A00885882FFB322000E29B20 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -263,21 +256,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A00884F62FF5175900E29B20 /* Sources */ = {
+		A008856D2FFB321E00E29B20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A00885052FF5175B00E29B20 /* Sources */ = {
+		A008857C2FFB322000E29B20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A008850F2FF5175B00E29B20 /* Sources */ = {
+		A00885862FFB322000E29B20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -287,20 +280,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A008850B2FF5175B00E29B20 /* PBXTargetDependency */ = {
+		A00885822FFB322000E29B20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A00884F92FF5175900E29B20 /* Bible Adventures */;
-			targetProxy = A008850A2FF5175B00E29B20 /* PBXContainerItemProxy */;
+			target = A00885702FFB321E00E29B20 /* BibleAdventure */;
+			targetProxy = A00885812FFB322000E29B20 /* PBXContainerItemProxy */;
 		};
-		A00885152FF5175B00E29B20 /* PBXTargetDependency */ = {
+		A008858C2FFB322000E29B20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A00884F92FF5175900E29B20 /* Bible Adventures */;
-			targetProxy = A00885142FF5175B00E29B20 /* PBXContainerItemProxy */;
+			target = A00885702FFB321E00E29B20 /* BibleAdventure */;
+			targetProxy = A008858B2FFB322000E29B20 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		A008851B2FF5175B00E29B20 /* Debug */ = {
+		A00885922FFB322000E29B20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -335,6 +328,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Y9T6QY86J5;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -363,7 +357,7 @@
 			};
 			name = Debug;
 		};
-		A008851C2FF5175B00E29B20 /* Release */ = {
+		A00885932FFB322000E29B20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -398,6 +392,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Y9T6QY86J5;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -419,13 +414,14 @@
 			};
 			name = Release;
 		};
-		A008851E2FF5175B00E29B20 /* Debug */ = {
+		A00885952FFB322000E29B20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y9T6QY86J5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -438,7 +434,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourname.BibleAdventures.Bible-Adventures";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.BibleAdventures.BibleAdventure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -450,13 +446,14 @@
 			};
 			name = Debug;
 		};
-		A008851F2FF5175B00E29B20 /* Release */ = {
+		A00885962FFB322000E29B20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y9T6QY86J5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -469,7 +466,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourname.BibleAdventures.Bible-Adventures";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.BibleAdventures.BibleAdventure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -481,16 +478,17 @@
 			};
 			name = Release;
 		};
-		A00885212FF5175B00E29B20 /* Debug */ = {
+		A00885982FFB322000E29B20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y9T6QY86J5;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourname.BibleAdventures.Bible-AdventuresTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.BibleAdventures.BibleAdventureTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -498,20 +496,21 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bible Adventures.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bible Adventures";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BibleAdventure.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BibleAdventure";
 			};
 			name = Debug;
 		};
-		A00885222FF5175B00E29B20 /* Release */ = {
+		A00885992FFB322000E29B20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y9T6QY86J5;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourname.BibleAdventures.Bible-AdventuresTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.BibleAdventures.BibleAdventureTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -519,18 +518,19 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bible Adventures.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bible Adventures";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BibleAdventure.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BibleAdventure";
 			};
 			name = Release;
 		};
-		A00885242FF5175B00E29B20 /* Debug */ = {
+		A008859B2FFB322000E29B20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y9T6QY86J5;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourname.BibleAdventures.Bible-AdventuresUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.BibleAdventures.BibleAdventureUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -538,18 +538,19 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Bible Adventures";
+				TEST_TARGET_NAME = BibleAdventure;
 			};
 			name = Debug;
 		};
-		A00885252FF5175B00E29B20 /* Release */ = {
+		A008859C2FFB322000E29B20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y9T6QY86J5;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourname.BibleAdventures.Bible-AdventuresUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.BibleAdventures.BibleAdventureUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -557,50 +558,50 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Bible Adventures";
+				TEST_TARGET_NAME = BibleAdventure;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A00884F52FF5175900E29B20 /* Build configuration list for PBXProject "Bible Adventures" */ = {
+		A008856C2FFB321E00E29B20 /* Build configuration list for PBXProject "BibleAdventure" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A008851B2FF5175B00E29B20 /* Debug */,
-				A008851C2FF5175B00E29B20 /* Release */,
+				A00885922FFB322000E29B20 /* Debug */,
+				A00885932FFB322000E29B20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A008851D2FF5175B00E29B20 /* Build configuration list for PBXNativeTarget "Bible Adventures" */ = {
+		A00885942FFB322000E29B20 /* Build configuration list for PBXNativeTarget "BibleAdventure" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A008851E2FF5175B00E29B20 /* Debug */,
-				A008851F2FF5175B00E29B20 /* Release */,
+				A00885952FFB322000E29B20 /* Debug */,
+				A00885962FFB322000E29B20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A00885202FF5175B00E29B20 /* Build configuration list for PBXNativeTarget "Bible AdventuresTests" */ = {
+		A00885972FFB322000E29B20 /* Build configuration list for PBXNativeTarget "BibleAdventureTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A00885212FF5175B00E29B20 /* Debug */,
-				A00885222FF5175B00E29B20 /* Release */,
+				A00885982FFB322000E29B20 /* Debug */,
+				A00885992FFB322000E29B20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A00885232FF5175B00E29B20 /* Build configuration list for PBXNativeTarget "Bible AdventuresUITests" */ = {
+		A008859A2FFB322000E29B20 /* Build configuration list for PBXNativeTarget "BibleAdventureUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A00885242FF5175B00E29B20 /* Debug */,
-				A00885252FF5175B00E29B20 /* Release */,
+				A008859B2FFB322000E29B20 /* Debug */,
+				A008859C2FFB322000E29B20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A00884F22FF5175900E29B20 /* Project object */;
+	rootObject = A00885692FFB321E00E29B20 /* Project object */;
 }

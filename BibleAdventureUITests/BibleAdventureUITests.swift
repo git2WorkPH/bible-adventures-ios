@@ -1,13 +1,13 @@
 //
-//  Bible_AdventuresUITests.swift
-//  Bible AdventuresUITests
+//  BibleAdventureUITests.swift
+//  BibleAdventureUITests
 //
-//  Created by jc on 1/7/2026.
+//  Created by jc on 6/7/2026.
 //
 
 import XCTest
 
-final class Bible_AdventuresUITests: XCTestCase {
+final class BibleAdventureUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

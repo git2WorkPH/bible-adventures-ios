@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Bible Adventures
 //
-//  Created by jc on 1/7/2026.
+//  Created by jc on 2/7/2026.
 //
 
 import SwiftUI
@@ -17,7 +17,7 @@ struct ContentView: View {
             List {
                 ForEach(items) { item in
                     NavigationLink {
-                        Text("Item at \ (item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
+                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
                     } label: {
                         Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
                     }

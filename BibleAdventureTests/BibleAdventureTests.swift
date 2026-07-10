@@ -1,14 +1,14 @@
 //
-//  Bible_AdventuresTests.swift
-//  Bible AdventuresTests
+//  BibleAdventureTests.swift
+//  BibleAdventureTests
 //
-//  Created by jc on 1/7/2026.
+//  Created by jc on 6/7/2026.
 //
 
 import Testing
-@testable import Bible_Adventures
+@testable import BibleAdventure
 
-struct Bible_AdventuresTests {
+struct BibleAdventureTests {
 
     @Test func example() async throws {
         // Write your test here and use APIs like `#expect(...)` to check expected conditions.

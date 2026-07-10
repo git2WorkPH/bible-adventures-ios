@@ -1,13 +1,13 @@
 //
-//  Bible_AdventuresUITestsLaunchTests.swift
-//  Bible AdventuresUITests
+//  BibleAdventureUITestsLaunchTests.swift
+//  BibleAdventureUITests
 //
-//  Created by jc on 1/7/2026.
+//  Created by jc on 6/7/2026.
 //
 
 import XCTest
 
-final class Bible_AdventuresUITestsLaunchTests: XCTestCase {
+final class BibleAdventureUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

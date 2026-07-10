@@ -1,8 +1,8 @@
 //
 //  Item.swift
-//  Bible Adventures
+//  BibleAdventure
 //
-//  Created by jc on 1/7/2026.
+//  Created by jc on 6/7/2026.
 //
 
 import Foundation
