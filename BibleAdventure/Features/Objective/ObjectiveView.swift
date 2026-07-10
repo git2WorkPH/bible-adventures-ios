@@ -3,10 +3,21 @@ import SwiftUI
 struct ObjectiveView: View {
 
     let objective: Objective
+    let onComplete: () -> Void
+
+    @State private var completed = false
 
     var body: some View {
 
         VStack(spacing: 24) {
+            
+            if completed {
+
+                Button("Continue") {
+                    onComplete()
+                }
+
+            }
 
             Image(systemName: "target")
                 .font(.system(size: 60))
@@ -28,7 +39,7 @@ struct ObjectiveView: View {
 
             NavigationLink("Open Scripture") {
 
-                ScriptureView(objective: objective)
+                ScriptureView(objective: objective, onComplete: onComplete)
 
             }
             .buttonStyle(.borderedProminent)
@@ -59,7 +70,8 @@ struct ObjectiveView: View {
     (Paste your Bible verse here)
     """,
                 questionId: "listen_to_god", storyId: .noah
-            )
+            ),
+            onComplete: {}
         )
     }
 

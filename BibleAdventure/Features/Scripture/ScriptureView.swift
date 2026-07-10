@@ -10,6 +10,9 @@ struct ScriptureView: View {
     @State private var isCorrect = false
     @State private var showWrongAnswer = false
 
+//    let reference: BibleReference
+//    let verse: String
+    let onComplete: () -> Void
     
     private var question: QuizQuestion {
            QuestionRepository.question(
@@ -100,9 +103,9 @@ struct ScriptureView: View {
             }
 
             Button("Continue") {
-
+                
+                onComplete()
                 dismiss()
-
             }
             .buttonStyle(.borderedProminent)
             .disabled(!isCorrect)
@@ -133,6 +136,8 @@ struct ScriptureView: View {
 Paste Genesis 6:13 here.
 """,
             questionId: "listen_to_god", storyId: .noah
-        )
+        ),
+        onComplete:  {}
+
     )
 }

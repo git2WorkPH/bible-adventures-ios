@@ -44,7 +44,7 @@ struct NoahStory {
                             questionId: "listen_to_god", storyId: .noah
                         )
                 ),
-
+                
                 .dialogue(
                     DialoguePage(
                         speaker: .God,
@@ -71,28 +71,45 @@ struct NoahStory {
                     )
                 ),
 
-                .dialogue(
-                    DialoguePage(
-                        speaker: .God,
-                        text: "Make a roof for it, leaving below the roof an opening one cubit high all around. Put a door in the side of the ark and make lower, middle and upper decks.",
-                        reference: BibleReference(
-                            book: .genesis,
-                            chapter: 6,
-                            startVerse: 16,
-                            endVerse: nil
-                        )
-                    )
-                ),
+                    .miniGame(.woodSelection),
+//
+//                .dialogue(
+//                    DialoguePage(
+//                        speaker: .narrator,
+//                        text: "Noah did everything just as GOD commanded him.",
+//                        reference: BibleReference(
+//                            book: .genesis,
+//                            chapter: 6,
+//                            startVerse: 22,
+//                            endVerse: nil
+//                        )
+//                    )
+//                ),
+                
+//                .dialogue(
+//                        DialoguePage(
+//                            speaker: .God,
+//                            text: "Build an ark using cypress wood.",
+//                            reference: BibleReference(
+//                                book: .genesis,
+//                                chapter: 6,
+//                                startVerse: 14,
+//                                endVerse: nil
+//                            )
+//                        )
+//                    ),
+
+
 
                 .dialogue(
-                    DialoguePage(
-                        speaker: .narrator,
-                        text: "Noah did everything just as GOD commanded him.",
-                        reference: BibleReference(
-                            book: .genesis,
-                            chapter: 6,
-                            startVerse: 22,
-                            endVerse: nil
+                        DialoguePage(
+                            speaker: .noah,
+                            text: "I found the wood and will begin building.",
+                            reference: BibleReference(
+                                book: .genesis,
+                                chapter: 6,
+                                startVerse: 22,
+                                endVerse: nil
                         )
                     )
                 )

@@ -5,62 +5,81 @@ struct StoryPlayerView: View {
     let story = StoryRepository.loadStory(.noah)
 
     @State private var currentStep = 0
+    @State
+    private var isCompleted = false
 
     var body: some View {
 
         NavigationStack {
 
             VStack {
-
+                
                 Spacer()
 
-                Text(story.title)
-                    .font(.largeTitle)
-                    .bold()
+                if isCompleted {
 
-                Spacer()
+                       StoryCompleteView(
+                           title: story.title
+                       )
 
-                switch story.steps[currentStep] {
-
-                case .dialogue(let dialogue):
-
-                    VStack(spacing: 24) {
-
-                        Text(dialogue.speaker.displayName)
-                            .font(.headline)
-                            .foregroundStyle(.blue)
-
-                        Text(dialogue.text)
-                            .font(.title2)
-                            .multilineTextAlignment(.center)
-
-                        Text("📖 \(dialogue.reference.displayText)")
-                            .font(.caption)
-                            .foregroundStyle(.secondary)
-
-                        Button("Continue") {
-
-                            if currentStep < story.steps.count - 1 {
-                                currentStep += 1
-                            }
-
-                        }
-                        .buttonStyle(.borderedProminent)
-
+                } else {
+                    
+                    switch story.steps[currentStep] {
+                        
+                    case .dialogue(let page):
+                        
+                        DialogueView(
+                            page: page,
+                            onContinue: nextStep
+                        )
+                        
+                    case .objective(let objective):
+                        
+                        ObjectiveView(
+                            objective: objective,
+                            onComplete: nextStep
+                        )
+                        
+                    case .miniGame(let miniGame):
+                        
+                        MiniGameView(
+                            miniGame: miniGame,
+                            onComplete: nextStep
+                        )
+                        
                     }
-
-                case .objective(let objective):
-
-                    ObjectiveView(objective: objective)
-
                 }
-
                 Spacer()
 
+               
             }
             .padding()
 
         }
+    }
+    
+//    private func nextStep() {
+//
+//        guard currentStep < story.steps.count - 1 else {
+//            return
+//        }
+//
+//        currentStep += 1
+//    }
+    
+    private func nextStep() {
+
+        if currentStep < story.steps.count - 1 {
+            print("Moving from step \(currentStep)")
+
+            currentStep += 1
+
+        } else {
+
+            isCompleted = true
+
+        }
+
     }
 }
 
