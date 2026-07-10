@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A00886393000A9B300E29B20 /* ScriptureQuestion.txt in Resources */ = {isa = PBXBuildFile; fileRef = A00886383000A9B300E29B20 /* ScriptureQuestion.txt */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A00885812FFB322000E29B20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		A00885712FFB321E00E29B20 /* BibleAdventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BibleAdventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00885802FFB322000E29B20 /* BibleAdventureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BibleAdventureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A008858A2FFB322000E29B20 /* BibleAdventureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BibleAdventureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00886383000A9B300E29B20 /* ScriptureQuestion.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ScriptureQuestion.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -103,6 +108,7 @@
 				A00885832FFB322000E29B20 /* BibleAdventureTests */,
 				A008858D2FFB322000E29B20 /* BibleAdventureUITests */,
 				A00885722FFB321E00E29B20 /* Products */,
+				A00886383000A9B300E29B20 /* ScriptureQuestion.txt */,
 			);
 			sourceTree = "<group>";
 		};
@@ -236,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00886393000A9B300E29B20 /* ScriptureQuestion.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

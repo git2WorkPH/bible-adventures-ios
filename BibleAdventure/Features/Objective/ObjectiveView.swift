@@ -26,9 +26,10 @@ struct ObjectiveView: View {
                     .foregroundStyle(.secondary)
             }
 
-            Button("Open Scripture") {
+            NavigationLink("Open Scripture") {
 
-                // Next chapter
+                ScriptureView(objective: objective)
+
             }
             .buttonStyle(.borderedProminent)
 
@@ -39,20 +40,35 @@ struct ObjectiveView: View {
 
 #Preview {
 
-    ObjectiveView(
-        objective: Objective(
-            id: "listen_to_god",
-            title:"Listen to God",
-            instruction: "Read Genesis 6:13 before continuing.",
-            hint: "Open the Scripture to complete this objective.",
-            type: .readScripture,
-            reference: BibleReference(
-                book: .genesis,
-                chapter: 6,
-                startVerse: 13,
-                endVerse: nil
+    
+        ObjectiveView(
+            objective: Objective(
+                id: "listen_to_god",
+                title: "Listen to GOD",
+                instruction: "Read Genesis 6:13 before continuing.",
+                hint: "Answer the question after reading.",
+                type: .readScripture,
+                reference: BibleReference(
+                    book: .genesis,
+                    chapter: 6,
+                    startVerse: 13,
+                    endVerse: nil
+                ),
+                scripture: """
+    For GOD said to Noah...
+    (Paste your Bible verse here)
+    """,
+                question: ScriptureQuestion(
+                    question: "Who did GOD speak to?",
+                    options: [
+                        "Abraham",
+                        "Noah",
+                        "Moses"
+                    ],
+                    correctAnswerIndex: 1
+                )
             )
         )
-    )
+    }
 
-}
+

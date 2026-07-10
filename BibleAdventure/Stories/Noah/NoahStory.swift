@@ -23,20 +23,35 @@ struct NoahStory {
                     )
                 ),
 
-                .objective(
-                    Objective(
-                        id: "listen_to_god",
-                        title: "Listen to GOD",
-                        instruction: "Read Genesis 6:13 before continuing.",
-                        hint: "Tap 'Open Scripture' to read the passage.",
-                        type: .readScripture,
-                        reference: BibleReference(
-                            book: .genesis,
-                            chapter: 6,
-                            startVerse: 13,
-                            endVerse: nil
+            
+                    .objective(
+                        Objective(
+                            id: "listen_to_god",
+                            title: "Listen to GOD",
+                            instruction: "Read Genesis 6:13 before continuing.",
+                            hint: "Answer the question after reading.",
+                            type: .readScripture,
+                            reference: BibleReference(
+                                book: .genesis,
+                                chapter: 6,
+                                startVerse: 13,
+                                endVerse: nil
+                            ),
+
+                            scripture: """
+                    So God said to Noah, “I am going to put an end to all people, for the earth is filled with violence because of them. I am surely going to destroy both them and the earth.
+                    """,
+
+                            question: ScriptureQuestion(
+                                question: "Who did GOD speak to?",
+                                options: [
+                                    "Abraham",
+                                    "Noah",
+                                    "Moses"
+                                ],
+                                correctAnswerIndex: 1
+                            )
                         )
-                    )
                 ),
 
                 .dialogue(
