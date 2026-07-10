@@ -101,6 +101,7 @@ struct NoahStory {
 
 
 
+                .miniGame(.measureArk),
                 .dialogue(
                         DialoguePage(
                             speaker: .noah,
@@ -112,7 +113,9 @@ struct NoahStory {
                                 endVerse: nil
                         )
                     )
-                )
+                ),
+                
+                    
             ]
         )
     }

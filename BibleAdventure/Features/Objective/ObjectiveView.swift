@@ -56,13 +56,13 @@ struct ObjectiveView: View {
             objective: Objective(
                 id: "listen_to_god",
                 title: "Listen to GOD",
-                instruction: "Read Genesis 6:13 before continuing.",
+                instruction: "Read Genesis 6:9 - 8:22 before continuing.",
                 hint: "Answer the question after reading.",
                 type: .readScripture,
                 reference: BibleReference(
                     book: .genesis,
                     chapter: 6,
-                    startVerse: 13,
+                    startVerse: 9,
                     endVerse: nil
                 ),
                 scripture: """

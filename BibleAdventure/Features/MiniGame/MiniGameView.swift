@@ -13,7 +13,9 @@ struct MiniGameView: View {
             WoodSelectionView(onComplete: onComplete)
 
         case .measureArk:
-            PlaceholderMiniGameView(title: "Measure the Ark")
+            MeasureArkView(
+                  onComplete: onComplete
+              )
 
         case .animalCollection:
             PlaceholderMiniGameView(title: "Animal Collection")
