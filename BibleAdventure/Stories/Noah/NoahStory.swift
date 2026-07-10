@@ -22,9 +22,8 @@ struct NoahStory {
                         )
                     )
                 ),
-
-            
-                    .objective(
+                            
+                .objective(
                         Objective(
                             id: "listen_to_god",
                             title: "Listen to GOD",
@@ -42,15 +41,7 @@ struct NoahStory {
                     So God said to Noah, “I am going to put an end to all people, for the earth is filled with violence because of them. I am surely going to destroy both them and the earth.
                     """,
 
-                            question: ScriptureQuestion(
-                                question: "Who did GOD speak to?",
-                                options: [
-                                    "Abraham",
-                                    "Noah",
-                                    "Moses"
-                                ],
-                                correctAnswerIndex: 1
-                            )
+                            questionId: "listen_to_god", storyId: .noah
                         )
                 ),
 
@@ -66,7 +57,7 @@ struct NoahStory {
                         )
                     )
                 ),
-
+                
                 .dialogue(
                     DialoguePage(
                         speaker: .God,
@@ -105,7 +96,6 @@ struct NoahStory {
                         )
                     )
                 )
-
             ]
         )
     }

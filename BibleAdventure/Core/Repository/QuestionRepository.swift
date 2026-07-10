@@ -2,15 +2,31 @@ import Foundation
 
 struct QuestionRepository {
 
-    static func loadQuestions(for story: StoryID) -> [QuizQuestion]{
-        guard
-            let url = Bundle.main.url(
-                forResource: "noah_questions",
-                withExtension: "json"
-            )
-        else {
+    private static var cache: [StoryID: [QuizQuestion]] = [:]
 
-            fatalError("Unable to locate noah_questions.json")
+    static func loadQuestions(for story: StoryID) -> [QuizQuestion] {
+
+        let fileName: String
+
+        switch story {
+
+        case .noah:
+            fileName = "noah_questions"
+
+        case .moses:
+            fileName = "moses_questions"
+
+        case .david:
+            fileName = "david_questions"
+
+        }
+
+        guard let url = Bundle.main.url(
+            forResource: fileName,
+            withExtension: "json"
+        ) else {
+
+            fatalError("Unable to locate \(fileName).json")
 
         }
 
@@ -18,10 +34,14 @@ struct QuestionRepository {
 
             let data = try Data(contentsOf: url)
 
-            return try JSONDecoder().decode(
+            let questions = try JSONDecoder().decode(
                 [QuizQuestion].self,
                 from: data
             )
+            
+            cache[story]=questions
+            return questions
+            
 
         } catch {
 
@@ -30,15 +50,16 @@ struct QuestionRepository {
         }
 
     }
-    
+
     static func question(
+        story: StoryID,
         id: String
     ) -> QuizQuestion {
 
-        guard let question = loadQuestions(for: .noah)
+        guard let question = loadQuestions(for: story)
             .first(where: { $0.id == id }) else {
 
-            fatalError("Question not found")
+            fatalError("Question '\(id)' not found.")
 
         }
 

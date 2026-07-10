@@ -58,15 +58,7 @@ struct ObjectiveView: View {
     For GOD said to Noah...
     (Paste your Bible verse here)
     """,
-                question: ScriptureQuestion(
-                    question: "Who did GOD speak to?",
-                    options: [
-                        "Abraham",
-                        "Noah",
-                        "Moses"
-                    ],
-                    correctAnswerIndex: 1
-                )
+                questionId: "listen_to_god", storyId: .noah
             )
         )
     }

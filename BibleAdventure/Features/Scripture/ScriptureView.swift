@@ -10,6 +10,15 @@ struct ScriptureView: View {
     @State private var isCorrect = false
     @State private var showWrongAnswer = false
 
+    
+    private var question: QuizQuestion {
+           QuestionRepository.question(
+               story: objective.storyId,
+               id: objective.questionId
+           )
+       }
+    
+    
     var body: some View {
 
         VStack(spacing: 20) {
@@ -32,7 +41,7 @@ struct ScriptureView: View {
 
             Divider()
 
-            let question = objective.question
+            let question = question
 
             Text(question.question)
                 .font(.title3)
@@ -123,15 +132,7 @@ struct ScriptureView: View {
             scripture: """
 Paste Genesis 6:13 here.
 """,
-            question: ScriptureQuestion(
-                question: "Who did GOD speak to?",
-                options: [
-                    "Abraham",
-                    "Noah",
-                    "Moses"
-                ],
-                correctAnswerIndex: 1
-            )
+            questionId: "listen_to_god", storyId: .noah
         )
     )
 }

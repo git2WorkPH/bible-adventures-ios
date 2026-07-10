@@ -1,3 +1,5 @@
+import Foundation
+
 struct Objective {
 
     let id: String
@@ -14,5 +16,8 @@ struct Objective {
 
     let scripture: String
 
-    let question: ScriptureQuestion
+    let questionId: String
+    
+    let storyId: StoryID
+
 }
