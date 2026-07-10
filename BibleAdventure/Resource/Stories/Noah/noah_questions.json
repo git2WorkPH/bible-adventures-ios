@@ -1,0 +1,25 @@
+
+[
+    {
+        "id": "listen_to_god",
+        "question": "Who did GOD speak to?",
+        "options": [
+            "Abraham",
+            "Noah",
+            "Moses"
+        ],
+        "correctAnswerIndex": 1,
+        "hint": "Read Genesis 6:13 carefully."
+    },
+    {
+        "id": "ark_material",
+        "question": "What kind of wood did GOD command Noah to use?",
+        "options": [
+            "Oak",
+            "Cypress",
+            "Cedar"
+        ],
+        "correctAnswerIndex": 1,
+        "hint": "Genesis 6:14"
+    }
+]
