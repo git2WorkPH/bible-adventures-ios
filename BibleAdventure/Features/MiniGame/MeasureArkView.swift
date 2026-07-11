@@ -38,7 +38,8 @@ struct MeasureArkView: View {
     ]
 
     @State private var currentIndex = 0
-    @State private var selectedAnswer: String?
+    @State private var currentOptions: [String] = []
+
     @State private var feedback = ""
     @State private var showContinue = false
     @State private var completed = false
@@ -50,20 +51,18 @@ struct MeasureArkView: View {
             Spacer()
 
             if completed {
-
                 completedView
-
             } else {
-
                 questionView
-
             }
 
             Spacer()
 
         }
         .padding()
-
+        .onAppear {
+            shuffleCurrentOptions()
+        }
     }
 
     // MARK: - Question
@@ -85,7 +84,7 @@ struct MeasureArkView: View {
                 .font(.title)
                 .bold()
 
-            ForEach(measurement.options, id: \.self) { option in
+            ForEach(currentOptions, id: \.self) { option in
 
                 Button {
 
@@ -103,7 +102,9 @@ struct MeasureArkView: View {
                     .padding()
                     .frame(maxWidth: .infinity)
                     .background(Color.blue.opacity(0.1))
-                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                    .clipShape(
+                        RoundedRectangle(cornerRadius: 12)
+                    )
 
                 }
                 .buttonStyle(.plain)
@@ -120,7 +121,11 @@ struct MeasureArkView: View {
 
             if showContinue {
 
-                Button(currentIndex == measurements.count - 1 ? "Finish Blueprint" : "Next") {
+                Button(
+                    currentIndex == measurements.count - 1
+                    ? "Finish Blueprint"
+                    : "Next"
+                ) {
 
                     nextQuestion()
 
@@ -155,11 +160,20 @@ You helped Noah remember the measurements GOD gave him.
 
             VStack(alignment: .leading, spacing: 12) {
 
-                Label("Length - 300 cubits", systemImage: "checkmark.circle.fill")
+                Label(
+                    "Length - 300 cubits",
+                    systemImage: "checkmark.circle.fill"
+                )
 
-                Label("Width - 50 cubits", systemImage: "checkmark.circle.fill")
+                Label(
+                    "Width - 50 cubits",
+                    systemImage: "checkmark.circle.fill"
+                )
 
-                Label("Height - 30 cubits", systemImage: "checkmark.circle.fill")
+                Label(
+                    "Height - 30 cubits",
+                    systemImage: "checkmark.circle.fill"
+                )
 
             }
 
@@ -182,15 +196,17 @@ You helped Noah remember the measurements GOD gave him.
 
         if option == measurement.correctAnswer {
 
-            selectedAnswer = option
-
             feedback = "✅ Correct!"
 
             showContinue = true
 
         } else {
 
-            feedback = "❌ That's not correct. Think about Genesis 6:15."
+            feedback = """
+❌ That's not correct.
+
+Think about Genesis 6:15 and try again.
+"""
 
             showContinue = false
 
@@ -201,18 +217,27 @@ You helped Noah remember the measurements GOD gave him.
     private func nextQuestion() {
 
         feedback = ""
-        selectedAnswer = nil
         showContinue = false
 
         if currentIndex < measurements.count - 1 {
 
             currentIndex += 1
 
+            shuffleCurrentOptions()
+
         } else {
 
             completed = true
 
         }
+
+    }
+
+    private func shuffleCurrentOptions() {
+
+        currentOptions = measurements[currentIndex]
+            .options
+            .shuffled()
 
     }
 

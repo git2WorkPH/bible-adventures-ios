@@ -73,18 +73,6 @@ struct NoahStory {
 
                     .miniGame(.woodSelection),
 
-                .dialogue(
-                    DialoguePage(
-                        speaker: .narrator,
-                        text: "Noah did everything just as GOD commanded him.",
-                        reference: BibleReference(
-                            book: .genesis,
-                            chapter: 6,
-                            startVerse: 22,
-                            endVerse: nil
-                        )
-                    )
-                ),
                 
                 .dialogue(
                         DialoguePage(
@@ -102,6 +90,20 @@ struct NoahStory {
 
 
                 .miniGame(.measureArk),
+                
+                .dialogue(
+                    DialoguePage(
+                        speaker: .narrator,
+                        text: "Noah did everything just as GOD commanded him.",
+                        reference: BibleReference(
+                            book: .genesis,
+                            chapter: 6,
+                            startVerse: 22,
+                            endVerse: nil
+                        )
+                    )
+                ),
+                
                 .dialogue(
                         DialoguePage(
                             speaker: .noah,
