@@ -52,6 +52,18 @@ struct MiniGameView: View {
             SendDoveView(
                 onComplete: onComplete
             )
+        
+        case .buildRainbow:
+
+            BuildRainbowView(
+                onComplete: onComplete
+            )
+        
+        case .rainbowCovenant:
+
+            RainbowCovenantView(
+                onComplete: onComplete
+            )
         }
     }
 }

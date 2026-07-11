@@ -18,4 +18,7 @@ enum MiniGameType: String, Codable {
     
     case sendDove
 
+    case buildRainbow
+    
+    case rainbowCovenant
 }

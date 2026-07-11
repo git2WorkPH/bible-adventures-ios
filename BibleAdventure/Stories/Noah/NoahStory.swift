@@ -310,6 +310,62 @@ struct NoahStory {
                             )
                         )
                     ),
+                
+                    .dialogue(
+                        DialoguePage(
+                            speaker: .narrator,
+                            text: "Noah came out of the ark with his family and the animals.",
+                            reference: BibleReference(
+                                book: .genesis,
+                                chapter: 8,
+                                startVerse: 18,
+                                endVerse: 19
+                            )
+                        )
+                    ),
+
+                    .dialogue(
+                        DialoguePage(
+                            speaker: .narrator,
+                            text: "Then Noah built an altar to GOD.",
+                            reference: BibleReference(
+                                book: .genesis,
+                                chapter: 8,
+                                startVerse: 20,
+                                endVerse: nil
+                            )
+                        )
+                    ),
+
+                    .dialogue(
+                        DialoguePage(
+                            speaker: .God,
+                            text: "I have set my rainbow in the clouds as the sign of the covenant.",
+                            reference: BibleReference(
+                                book: .genesis,
+                                chapter: 9,
+                                startVerse: 13,
+                                endVerse: nil
+                            )
+                        )
+                    ),
+
+                    .miniGame(.buildRainbow),
+                
+                    .miniGame(.rainbowCovenant),
+
+                    .dialogue(
+                        DialoguePage(
+                            speaker: .narrator,
+                            text: "The rainbow was the sign of the covenant GOD established with Noah and every living creature.",
+                            reference: BibleReference(
+                                book: .genesis,
+                                chapter: 9,
+                                startVerse: 16,
+                                endVerse: 17
+                            )
+                        )
+                    )
             ]
         )
     }
