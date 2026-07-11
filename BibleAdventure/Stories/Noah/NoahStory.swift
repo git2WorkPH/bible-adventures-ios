@@ -351,8 +351,6 @@ struct NoahStory {
                     ),
 
                     .miniGame(.buildRainbow),
-                
-                    .miniGame(.rainbowCovenant),
 
                     .dialogue(
                         DialoguePage(

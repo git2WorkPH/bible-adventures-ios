@@ -11,7 +11,9 @@ struct RainbowCovenantView: View {
         RainbowStripe(id: "yellow", colorName: "Yellow"),
         RainbowStripe(id: "green", colorName: "Green"),
         RainbowStripe(id: "blue", colorName: "Blue"),
-        RainbowStripe(id: "purple", colorName: "Purple")
+        RainbowStripe(id: "purple", colorName: "Purple"),
+        RainbowStripe(id: "indigo", colorName: "Indigo")
+        
 
     ]
 
@@ -21,7 +23,7 @@ struct RainbowCovenantView: View {
 
         VStack(spacing: 24) {
 
-            Text("🌈 GOD's Covenant")
+            Text(" GOD's Covenant")
                 .font(.largeTitle)
                 .bold()
 
@@ -107,6 +109,13 @@ struct RainbowCovenantView: View {
                 addStripe()
 
             }
+            
+            Button("🔵🟣 Indigo") {
+
+                addStripe()
+
+            }
+            
 
         }
         .buttonStyle(.borderedProminent)
@@ -119,7 +128,7 @@ struct RainbowCovenantView: View {
 
         VStack(spacing: 20) {
 
-            Text("🌈")
+            Text("")
                 .font(.system(size: 80))
 
             Text("The Rainbow Appears")

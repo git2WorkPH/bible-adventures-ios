@@ -31,8 +31,17 @@ struct BuildRainbowView: View {
             colour: .blue
         ),
         RainbowColour(
-            id: "purple",
-            name: "Purple",
+            id: "indigo",
+            name: "Indigo",
+            colour: Color(
+                red: 75 / 255,
+                green: 0 / 255,
+                blue: 130 / 255
+            )
+        ),
+        RainbowColour(
+            id: "violet",
+            name: "Violet",
             colour: .purple
         )
     ]
@@ -47,7 +56,7 @@ struct BuildRainbowView: View {
 
             VStack(spacing: 24) {
 
-                Text("🌈 GOD's Covenant")
+                Text(" GOD's Covenant")
                     .font(.largeTitle)
                     .bold()
 
@@ -205,7 +214,7 @@ struct BuildRainbowView: View {
 
         VStack(spacing: 20) {
 
-            Text("🌈")
+            Text("")
                 .font(.system(size: 80))
 
             Text("GOD's Covenant")
