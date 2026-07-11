@@ -254,6 +254,34 @@ struct NoahStory {
                             )
                         )
                     ),
+            
+                    .miniGame(.floodJourney),
+
+                    .dialogue(
+                        DialoguePage(
+                            speaker: .narrator,
+                            text: "But GOD remembered Noah and all the animals that were with him in the ark.",
+                            reference: BibleReference(
+                                book: .genesis,
+                                chapter: 8,
+                                startVerse: 1,
+                                endVerse: nil
+                            )
+                        )
+                    ),
+
+                    .dialogue(
+                        DialoguePage(
+                            speaker: .narrator,
+                            text: "GOD sent a wind over the earth, and the waters began to recede.",
+                            reference: BibleReference(
+                                book: .genesis,
+                                chapter: 8,
+                                startVerse: 1,
+                                endVerse: 3
+                            )
+                        )
+                    ),
             ]
         )
     }

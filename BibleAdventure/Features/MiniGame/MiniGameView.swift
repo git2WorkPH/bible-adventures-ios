@@ -40,9 +40,13 @@ struct MiniGameView: View {
             EnterArkView(
                 onComplete: onComplete
             )
-        }
+            
+        case .floodJourney:
 
-        
+            FloodJourneyView(
+                onComplete: onComplete
+            )
+        }
     }
 }
 
