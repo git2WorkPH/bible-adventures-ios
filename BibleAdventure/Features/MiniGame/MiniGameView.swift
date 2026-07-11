@@ -46,6 +46,12 @@ struct MiniGameView: View {
             FloodJourneyView(
                 onComplete: onComplete
             )
+        
+        case .sendDove:
+
+            SendDoveView(
+                onComplete: onComplete
+            )
         }
     }
 }

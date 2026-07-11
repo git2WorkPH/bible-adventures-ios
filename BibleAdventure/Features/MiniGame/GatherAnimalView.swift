@@ -28,7 +28,14 @@ struct GatherAnimalsView: View {
             id: "zebra",
             name: "Zebra",
             emoji: "🦓"
-        )
+        ),
+    
+        AnimalPair(id:"tiger", name: "Tiger", emoji: "🐅"),
+        AnimalPair(id: "parrot", name: "Parrot", emoji: "🦜"),
+        AnimalPair(id:"redFireAnt", name:"Red Fire Ant", emoji: "🐜"),
+        AnimalPair(id:"spider", name:"Spider", emoji: "🕷️")
+        
+        
     ]
 
     @State private var animalCards: [AnimalCard] = []

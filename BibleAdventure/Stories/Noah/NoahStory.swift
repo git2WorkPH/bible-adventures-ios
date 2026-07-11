@@ -282,6 +282,34 @@ struct NoahStory {
                             )
                         )
                     ),
+                
+                    .dialogue(
+                        DialoguePage(
+                            speaker: .narrator,
+                            text: "Noah sent out a dove to see if the water had receded from the surface of the ground.",
+                            reference: BibleReference(
+                                book: .genesis,
+                                chapter: 8,
+                                startVerse: 8,
+                                endVerse: nil
+                            )
+                        )
+                    ),
+
+                    .miniGame(.sendDove),
+
+                    .dialogue(
+                        DialoguePage(
+                            speaker: .narrator,
+                            text: "Noah knew that the water had receded from the earth.",
+                            reference: BibleReference(
+                                book: .genesis,
+                                chapter: 8,
+                                startVerse: 11,
+                                endVerse: 12
+                            )
+                        )
+                    ),
             ]
         )
     }
