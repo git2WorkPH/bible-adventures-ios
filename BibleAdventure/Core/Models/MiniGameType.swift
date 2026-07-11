@@ -11,5 +11,7 @@ enum MiniGameType: String, Codable {
     case gatherFood
     
     case gatherAnimals
+    
+    case enterArk
 
 }

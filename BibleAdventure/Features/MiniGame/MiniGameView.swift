@@ -34,8 +34,15 @@ struct MiniGameView: View {
             GatherAnimalsView(
                 onComplete: onComplete
             )
+            
+        case .enterArk:
+
+            EnterArkView(
+                onComplete: onComplete
+            )
         }
 
+        
     }
 }
 

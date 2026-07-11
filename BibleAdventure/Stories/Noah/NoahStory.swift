@@ -213,6 +213,47 @@ struct NoahStory {
                             )
                         )
                     ),
+                
+                    .dialogue(
+                        DialoguePage(
+                            speaker: .God,
+                            text: "Go into the ark, you and your whole family.",
+                            reference: BibleReference(
+                                book: .genesis,
+                                chapter: 7,
+                                startVerse: 1,
+                                endVerse: nil
+                            )
+                        )
+                    ),
+
+                    .dialogue(
+                        DialoguePage(
+                            speaker: .narrator,
+                            text: "Noah and his family prepared to enter the ark.",
+                            reference: BibleReference(
+                                book: .genesis,
+                                chapter: 7,
+                                startVerse: 13,
+                                endVerse: nil
+                            )
+                        )
+                    ),
+
+                    .miniGame(.enterArk),
+
+                    .dialogue(
+                        DialoguePage(
+                            speaker: .narrator,
+                            text: "Then GOD shut Noah in. The rain began to fall upon the earth.",
+                            reference: BibleReference(
+                                book: .genesis,
+                                chapter: 7,
+                                startVerse: 16,
+                                endVerse: 17
+                            )
+                        )
+                    ),
             ]
         )
     }
