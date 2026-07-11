@@ -145,7 +145,33 @@ struct NoahStory {
                         )
                     ),
                 
-                    
+                    .dialogue(
+                        DialoguePage(
+                            speaker: .God,
+                            text: "You are to take every kind of food that is to be eaten and store it away as food for you and for them.",
+                            reference: BibleReference(
+                                book: .genesis,
+                                chapter: 6,
+                                startVerse: 21,
+                                endVerse: nil
+                            )
+                        )
+                    ),
+
+                    .miniGame(.gatherFood),
+
+                    .dialogue(
+                        DialoguePage(
+                            speaker: .narrator,
+                            text: "The food was gathered and stored. Noah continued preparing for what GOD had told him.",
+                            reference: BibleReference(
+                                book: .genesis,
+                                chapter: 6,
+                                startVerse: 21,
+                                endVerse: nil
+                            )
+                        )
+                    ),
             ]
         )
     }

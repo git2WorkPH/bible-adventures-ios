@@ -7,5 +7,6 @@ enum MiniGame {
     case measureArk
 
     case buildArk
+    
 
 }
