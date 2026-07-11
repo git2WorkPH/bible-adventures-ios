@@ -28,7 +28,12 @@ struct MiniGameView: View {
             GatherFoodView(
                 onComplete: onComplete
             )
-                
+           
+        case .gatherAnimals:
+
+            GatherAnimalsView(
+                onComplete: onComplete
+            )
         }
 
     }

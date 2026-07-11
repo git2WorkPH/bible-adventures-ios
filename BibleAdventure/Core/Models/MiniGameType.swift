@@ -9,5 +9,7 @@ enum MiniGameType: String, Codable {
     case buildArk
     
     case gatherFood
+    
+    case gatherAnimals
 
 }

@@ -172,6 +172,47 @@ struct NoahStory {
                             )
                         )
                     ),
+                
+                    .dialogue(
+                        DialoguePage(
+                            speaker: .God,
+                            text: "You are to bring into the ark the animals GOD instructed Noah to take.",
+                            reference: BibleReference(
+                                book: .genesis,
+                                chapter: 7,
+                                startVerse: 2,
+                                endVerse: 3
+                            )
+                        )
+                    ),
+
+                    .dialogue(
+                        DialoguePage(
+                            speaker: .noah,
+                            text: "The ark is ready and the food is stored. Help me gather the animals.",
+                            reference: BibleReference(
+                                book: .genesis,
+                                chapter: 7,
+                                startVerse: 7,
+                                endVerse: 9
+                            )
+                        )
+                    ),
+
+                    .miniGame(.gatherAnimals),
+
+                    .dialogue(
+                        DialoguePage(
+                            speaker: .narrator,
+                            text: "The animals came to Noah and entered the ark.",
+                            reference: BibleReference(
+                                book: .genesis,
+                                chapter: 7,
+                                startVerse: 8,
+                                endVerse: 9
+                            )
+                        )
+                    ),
             ]
         )
     }
