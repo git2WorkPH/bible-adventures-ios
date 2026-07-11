@@ -8,18 +8,23 @@ struct MiniGameView: View {
     var body: some View {
 
         switch miniGame {
-
+            
         case .woodSelection:
             WoodSelectionView(onComplete: onComplete)
-
+            
         case .measureArk:
             MeasureArkView(
-                  onComplete: onComplete
-              )
+                onComplete: onComplete
+            )
+            
+        case .buildArk:
 
-        case .animalCollection:
-            PlaceholderMiniGameView(title: "Animal Collection")
+            BuildArkView(
+                onComplete: onComplete
+            )
 
+            
+                
         }
 
     }

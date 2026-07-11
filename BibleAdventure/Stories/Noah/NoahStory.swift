@@ -117,6 +117,34 @@ struct NoahStory {
                     )
                 ),
                 
+                    .dialogue(
+                        DialoguePage(
+                            speaker: .noah,
+                            text: "We have the wood and the measurements GOD gave me. Now it is time to build the ark.",
+                            reference: BibleReference(
+                                book: .genesis,
+                                chapter: 6,
+                                startVerse: 22,
+                                endVerse: nil
+                            )
+                        )
+                    ),
+
+                    .miniGame(.buildArk),
+
+                    .dialogue(
+                        DialoguePage(
+                            speaker: .narrator,
+                            text: "Noah did everything just as GOD commanded him.",
+                            reference: BibleReference(
+                                book: .genesis,
+                                chapter: 6,
+                                startVerse: 22,
+                                endVerse: nil
+                            )
+                        )
+                    ),
+                
                     
             ]
         )

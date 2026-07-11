@@ -5,7 +5,6 @@ struct MeasureArkView: View {
     let onComplete: () -> Void
 
     private let measurements: [ArkMeasurement] = [
-
         ArkMeasurement(
             title: "Length",
             correctAnswer: "300 cubits",
@@ -44,24 +43,107 @@ struct MeasureArkView: View {
     @State private var showContinue = false
     @State private var completed = false
 
+    @State private var completedMeasurements: Set<String> = []
+
     var body: some View {
 
-        VStack(spacing: 30) {
+        ScrollView {
 
-            Spacer()
+            VStack(spacing: 24) {
 
-            if completed {
-                completedView
-            } else {
-                questionView
+                Text("📏 Measure the Ark")
+                    .font(.largeTitle)
+                    .bold()
+
+                blueprintView
+
+                if completed {
+                    completedView
+                } else {
+                    questionView
+                }
+
             }
-
-            Spacer()
+            .padding()
 
         }
-        .padding()
         .onAppear {
             shuffleCurrentOptions()
+        }
+    }
+
+    // MARK: - Blueprint
+
+    private var blueprintView: some View {
+
+        VStack(spacing: 16) {
+
+            Text("📜 Ark Blueprint")
+                .font(.title2)
+                .bold()
+
+            ZStack {
+
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(Color.blue.opacity(0.08))
+
+                VStack(spacing: 12) {
+
+                    Image(systemName: "ferry.fill")
+                        .font(.system(size: 70))
+                        .foregroundStyle(.blue)
+
+                    blueprintMeasurement(
+                        title: "Length",
+                        value: "300 cubits"
+                    )
+
+                    blueprintMeasurement(
+                        title: "Width",
+                        value: "50 cubits"
+                    )
+
+                    blueprintMeasurement(
+                        title: "Height",
+                        value: "30 cubits"
+                    )
+
+                }
+                .padding()
+
+            }
+            .frame(height: 260)
+
+        }
+
+    }
+
+    private func blueprintMeasurement(
+        title: String,
+        value: String
+    ) -> some View {
+
+        HStack {
+
+            Text(title)
+
+            Spacer()
+
+            if completedMeasurements.contains(title) {
+
+                Text(value)
+                    .bold()
+
+                Image(systemName: "checkmark.circle.fill")
+                    .foregroundStyle(.green)
+
+            } else {
+
+                Text("???")
+                    .foregroundStyle(.secondary)
+
+            }
+
         }
     }
 
@@ -71,17 +153,10 @@ struct MeasureArkView: View {
 
         let measurement = measurements[currentIndex]
 
-        return VStack(spacing: 24) {
+        return VStack(spacing: 20) {
 
-            Text("📏 Measure the Ark")
-                .font(.largeTitle)
-                .bold()
-
-            Text("Help Noah complete the ark blueprint.")
-                .multilineTextAlignment(.center)
-
-            Text(measurement.title)
-                .font(.title)
+            Text("Choose the correct \(measurement.title.lowercased()).")
+                .font(.title3)
                 .bold()
 
             ForEach(currentOptions, id: \.self) { option in
@@ -124,7 +199,7 @@ struct MeasureArkView: View {
                 Button(
                     currentIndex == measurements.count - 1
                     ? "Finish Blueprint"
-                    : "Next"
+                    : "Next Measurement"
                 ) {
 
                     nextQuestion()
@@ -142,40 +217,18 @@ struct MeasureArkView: View {
 
     private var completedView: some View {
 
-        VStack(spacing: 24) {
+        VStack(spacing: 20) {
 
-            Text("📜")
-                .font(.system(size: 70))
-
-            Text("Blueprint Complete!")
+            Text("✅ Blueprint Approved!")
                 .font(.largeTitle)
                 .bold()
 
             Text("""
 Excellent!
 
-You helped Noah remember the measurements GOD gave him.
+You completed the measurements GOD gave Noah.
 """)
             .multilineTextAlignment(.center)
-
-            VStack(alignment: .leading, spacing: 12) {
-
-                Label(
-                    "Length - 300 cubits",
-                    systemImage: "checkmark.circle.fill"
-                )
-
-                Label(
-                    "Width - 50 cubits",
-                    systemImage: "checkmark.circle.fill"
-                )
-
-                Label(
-                    "Height - 30 cubits",
-                    systemImage: "checkmark.circle.fill"
-                )
-
-            }
 
             Button("Continue Story") {
 
@@ -195,6 +248,14 @@ You helped Noah remember the measurements GOD gave him.
         let measurement = measurements[currentIndex]
 
         if option == measurement.correctAnswer {
+
+            withAnimation(.easeInOut) {
+
+                completedMeasurements.insert(
+                    measurement.title
+                )
+
+            }
 
             feedback = "✅ Correct!"
 
@@ -227,7 +288,9 @@ Think about Genesis 6:15 and try again.
 
         } else {
 
-            completed = true
+            withAnimation {
+                completed = true
+            }
 
         }
 

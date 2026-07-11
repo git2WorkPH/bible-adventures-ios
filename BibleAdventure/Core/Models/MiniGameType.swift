@@ -5,7 +5,7 @@ enum MiniGameType: String, Codable {
     case woodSelection
 
     case measureArk
-
-    case animalCollection
+    
+    case buildArk
 
 }

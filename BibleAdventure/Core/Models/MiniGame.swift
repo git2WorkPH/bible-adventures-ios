@@ -6,6 +6,6 @@ enum MiniGame {
 
     case measureArk
 
-    case animalCollection
+    case buildArk
 
 }
