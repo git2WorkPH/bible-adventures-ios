@@ -5,40 +5,46 @@ struct WoodSelectionView: View {
     let onComplete: () -> Void
 
     private let woodPieces: [WoodPiece] = [
+
         WoodPiece(
             id: "oak",
             name: "Oak Wood",
-            emoji: "🪵",
+            style: .oak,
             isCorrect: false
         ),
+
         WoodPiece(
             id: "cedar",
             name: "Cedar Wood",
-            emoji: "🪵",
+            style: .cedar,
             isCorrect: false
         ),
+
         WoodPiece(
             id: "cypress1",
             name: "Cypress Wood",
-            emoji: "🪵",
+            style: .cypress,
             isCorrect: true
         ),
+
         WoodPiece(
             id: "pine",
             name: "Pine Wood",
-            emoji: "🪵",
+            style: .pine,
             isCorrect: false
         ),
+
         WoodPiece(
             id: "cypress2",
             name: "Cypress Wood",
-            emoji: "🪵",
+            style: .cypress,
             isCorrect: true
         ),
+
         WoodPiece(
             id: "cypress3",
             name: "Cypress Wood",
-            emoji: "🪵",
+            style: .cypress,
             isCorrect: true
         )
     ]
@@ -244,13 +250,14 @@ struct WoodSelectionView: View {
                             id: \.element
                         ) { index, _ in
 
-                            Text("🪵")
-                                .font(.system(size: 42))
-                                .offset(
-                                    x: CGFloat(index * 8),
-                                    y: CGFloat(index * -8)
-                                )
-
+                            WoodBlockView(
+                                style: .cypress
+                            )
+                            .scaleEffect(0.5)
+                            .offset(
+                                x: CGFloat(index * 8),
+                                y: CGFloat(index * -8)
+                            )
                         }
 
                     }
@@ -343,8 +350,9 @@ struct WoodSelectionView: View {
 
         VStack(spacing: 8) {
 
-            Text(wood.emoji)
-                .font(.system(size: 55))
+          WoodBlockView(
+            style: wood.style
+        )
 
             Text(wood.name)
                 .font(.headline)
@@ -598,8 +606,15 @@ struct WoodPiece: Identifiable {
 
     let id: String
     let name: String
-    let emoji: String
+    let style: WoodStyle
     let isCorrect: Bool
+}
+
+enum WoodStyle {
+    case oak
+    case cedar
+    case cypress
+    case pine
 }
 
 #Preview {
