@@ -1,0 +1,80 @@
+[
+  {
+    "id": "listen_to_god",
+    "question": "Who did GOD speak to?",
+    "options": ["Abraham", "Noah", "Moses"],
+    "correctAnswerIndex": 1,
+    "hint": "Genesis 6:13"
+  },
+  {
+    "id": "ark_wood",
+    "question": "What kind of wood did GOD command Noah to use?",
+    "options": ["Oak", "Cypress", "Cedar"],
+    "correctAnswerIndex": 1,
+    "hint": "Genesis 6:14"
+  },
+  {
+    "id": "ark_pitch",
+    "question": "What should Noah use to cover the ark inside and out?",
+    "options": ["Pitch", "Mud", "Clay"],
+    "correctAnswerIndex": 0,
+    "hint": "Genesis 6:14"
+  },
+  {
+    "id": "ark_length",
+    "question": "How long should the ark be?",
+    "options": ["300 cubits", "200 cubits", "500 cubits"],
+    "correctAnswerIndex": 0,
+    "hint": "Genesis 6:15"
+  },
+  {
+    "id": "ark_width",
+    "question": "How wide should the ark be?",
+    "options": ["30 cubits", "50 cubits", "70 cubits"],
+    "correctAnswerIndex": 1,
+    "hint": "Genesis 6:15"
+  },
+  {
+    "id": "ark_height",
+    "question": "How high should the ark be?",
+    "options": ["20 cubits", "30 cubits", "40 cubits"],
+    "correctAnswerIndex": 1,
+    "hint": "Genesis 6:15"
+  },
+  {
+    "id": "ark_door",
+    "question": "On which side of the ark should the door be?",
+    "options": ["Left side", "Right side", "Front"],
+    "correctAnswerIndex": 1,
+    "hint": "Genesis 6:16"
+  },
+  {
+    "id": "ark_decks",
+    "question": "How many decks should the ark have?",
+    "options": ["Two", "Three", "Four"],
+    "correctAnswerIndex": 1,
+    "hint": "Genesis 6:16"
+  },
+  {
+    "id": "gather_food",
+    "question": "What did GOD tell Noah to gather for the ark?",
+    "options": [
+      "Gold and silver",
+      "Every kind of food",
+      "Building tools"
+    ],
+    "correctAnswerIndex": 1,
+    "hint": "Genesis 6:21"
+  },
+  {
+    "id": "noah_obeyed",
+    "question": "How did Noah respond to GOD's command?",
+    "options": [
+      "He ignored it",
+      "He obeyed everything GOD commanded",
+      "He asked someone else to build the ark"
+    ],
+    "correctAnswerIndex": 1,
+    "hint": "Genesis 6:22"
+  }
+]
