@@ -18,7 +18,11 @@ struct ContentView: View {
                 
                 Spacer()
                 
-                Text("🌈").font(.system(size: 80))
+                Image("bible")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 200, height: 200)
+                Text("").font(.system(size: 80))
                 Text("Bible Adventure").font(.largeTitle)
                     .fontWeight(.bold)
                 
