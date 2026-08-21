@@ -13,7 +13,7 @@ struct NoahStory {
                 .dialogue(
                     DialoguePage(
                         speaker: .God,
-                        text: "I have decided to put an end to all people, for the earth is filled with violence because of them. I am surely going to destroy both them and the earth.",
+                        text: "And God said to Noah, l“I have determined to make an end of all flesh,3 for the earth is filled with violence through them. Behold, I will destroy them with the earth.",
                         reference: BibleReference(
                             book: .genesis,
                             chapter: 6,
@@ -27,7 +27,7 @@ struct NoahStory {
                         Objective(
                             id: "listen_to_god",
                             title: "Listen to GOD",
-                            instruction: "Read Genesis 6:13 before continuing.",
+                            instruction: "Read Genesis 6:9 - 8:22 before continuing. (ESV)",
                             hint: "Answer the question after reading.",
                             type: .readScripture,
                             reference: BibleReference(
@@ -38,7 +38,7 @@ struct NoahStory {
                             ),
 
                             scripture: """
-                    So God said to Noah, “I am going to put an end to all people, for the earth is filled with violence because of them. I am surely going to destroy both them and the earth.
+                    And God said to Noah, l“I have determined to make an end of all flesh,3 for the earth is filled with violence through them. Behold, I will destroy them with the earth.
                     """,
 
                             questionId: "listen_to_god", storyId: .noah
@@ -48,7 +48,7 @@ struct NoahStory {
                 .dialogue(
                     DialoguePage(
                         speaker: .God,
-                        text: "So make yourself an ark of cypress wood; make rooms in it and coat it with pitch inside and out.",
+                        text: "Make yourself an ark of gopher wood.4 Make rooms in the ark, and cover it inside and out with pitch.",
                         reference: BibleReference(
                             book: .genesis,
                             chapter: 6,
@@ -61,7 +61,7 @@ struct NoahStory {
                 .dialogue(
                     DialoguePage(
                         speaker: .God,
-                        text: "This is how you are to build it: The ark is to be three hundred cubits long, fifty cubits wide and thirty cubits high.",
+                        text: "This is how you are to make it: the length of the ark 300 cubits,5 its breadth 50 cubits, and its height 30 cubits.",
                         reference: BibleReference(
                             book: .genesis,
                             chapter: 6,
@@ -77,7 +77,7 @@ struct NoahStory {
                 .dialogue(
                         DialoguePage(
                             speaker: .God,
-                            text: "Build an ark using cypress wood.",
+                            text: "Build an ark using gopher (cypress) wood.",
                             reference: BibleReference(
                                 book: .genesis,
                                 chapter: 6,
@@ -94,7 +94,7 @@ struct NoahStory {
                 .dialogue(
                     DialoguePage(
                         speaker: .narrator,
-                        text: "Noah did everything just as GOD commanded him.",
+                        text: "Noah did this; he did all that God commanded him.",
                         reference: BibleReference(
                             book: .genesis,
                             chapter: 6,
@@ -135,7 +135,7 @@ struct NoahStory {
                     .dialogue(
                         DialoguePage(
                             speaker: .narrator,
-                            text: "Noah did everything just as GOD commanded him.",
+                            text: "Noah did this; he did all that God commanded him.",
                             reference: BibleReference(
                                 book: .genesis,
                                 chapter: 6,
@@ -148,7 +148,7 @@ struct NoahStory {
                     .dialogue(
                         DialoguePage(
                             speaker: .God,
-                            text: "You are to take every kind of food that is to be eaten and store it away as food for you and for them.",
+                            text: "Also take with you every sort of food that is eaten, and store it up. It shall serve as food for you and for them.",
                             reference: BibleReference(
                                 book: .genesis,
                                 chapter: 6,
@@ -176,7 +176,7 @@ struct NoahStory {
                     .dialogue(
                         DialoguePage(
                             speaker: .God,
-                            text: "You are to bring into the ark the animals GOD instructed Noah to take.",
+                            text: "Take with you seven pairs of all rclean animals,1 the male and his mate, and a pair of the animals that are not clean, the male and his mate, 3 and seven pairs2 of the birds of the heavens also, male and female, to keep their offspring alive on the face of all the earth. ",
                             reference: BibleReference(
                                 book: .genesis,
                                 chapter: 7,
@@ -217,7 +217,7 @@ struct NoahStory {
                     .dialogue(
                         DialoguePage(
                             speaker: .God,
-                            text: "Go into the ark, you and your whole family.",
+                            text: "Then the Lord said to Noah, p“Go into the ark, you and all your household, for I have seen that qyou are righteous before me in this generation. ",
                             reference: BibleReference(
                                 book: .genesis,
                                 chapter: 7,
@@ -260,7 +260,7 @@ struct NoahStory {
                     .dialogue(
                         DialoguePage(
                             speaker: .narrator,
-                            text: "But GOD remembered Noah and all the animals that were with him in the ark.",
+                            text: "But God dremembered Noah and all the beasts and all the livestock that were with him in the ark. And eGod made a wind blow over the earth, and the waters subsided.",
                             reference: BibleReference(
                                 book: .genesis,
                                 chapter: 8,
@@ -340,7 +340,7 @@ struct NoahStory {
                     .dialogue(
                         DialoguePage(
                             speaker: .God,
-                            text: "I have set my rainbow in the clouds as the sign of the covenant.",
+                            text: " I have set cmy bow in the cloud, and it shall be a sign of the covenant between me and the earth.",
                             reference: BibleReference(
                                 book: .genesis,
                                 chapter: 9,
@@ -355,7 +355,7 @@ struct NoahStory {
                     .dialogue(
                         DialoguePage(
                             speaker: .narrator,
-                            text: "The rainbow was the sign of the covenant GOD established with Noah and every living creature.",
+                            text: "When the bow is in the clouds, I will see it and remember ethe everlasting covenant between God and every living creature of all flesh that is on the earth.” God said to Noah, “This is the sign of the covenant that I have established between me and all flesh that is on the earth.”",
                             reference: BibleReference(
                                 book: .genesis,
                                 chapter: 9,

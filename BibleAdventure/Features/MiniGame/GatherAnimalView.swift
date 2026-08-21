@@ -9,8 +9,7 @@ struct GatherAnimalsView: View {
         AnimalPair(id: "lion",name: "Lion",emoji: "🦁"),
         AnimalPair(id: "elephant",name: "Elephant",emoji:"🐘"),
         AnimalPair(id: "giraffe",name: "Giraffe",emoji: "🦒"),
-        AnimalPair(id: "zebra",name: "Zebra",emoji: "🦓"
-        ),
+        AnimalPair(id: "zebra",name: "Zebra",emoji: "🦓"),
         AnimalPair(id:"tiger", name: "Tiger", emoji: "🐅"),
         AnimalPair(id: "parrot", name: "Parrot", emoji: "🦜"),
         AnimalPair(id:"redFireAnt", name:"Red Fire Ant", emoji: "🐜"),
@@ -21,7 +20,8 @@ struct GatherAnimalsView: View {
         AnimalPair(id:"dog", name:"Dog", emoji: "🐕"),
         AnimalPair(id:"horse", name:"Horse", emoji: "🎠"),
         AnimalPair(id:"camel", name:"Camel", emoji: "🐫"),
-        AnimalPair(id:"frog", name:"Frog", emoji: "🐸")
+        AnimalPair(id:"frog", name:"Frog", emoji: "🐸"),
+        AnimalPair(id:"kangaroo", name:"Kangaroo", emoji: "🦘")
     ]
 
     @State private var animalCards: [AnimalCard] = []
