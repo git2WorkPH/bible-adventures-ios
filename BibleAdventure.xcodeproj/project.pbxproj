@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A00886393000A9B300E29B20 /* ScriptureQuestion.txt in Resources */ = {isa = PBXBuildFile; fileRef = A00886383000A9B300E29B20 /* ScriptureQuestion.txt */; };
+		A0373B85303713CE006ED2DC /* requirements.MD in Sources */ = {isa = PBXBuildFile; fileRef = A0373B84303713C9006ED2DC /* requirements.MD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		A00885802FFB322000E29B20 /* BibleAdventureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BibleAdventureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A008858A2FFB322000E29B20 /* BibleAdventureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BibleAdventureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00886383000A9B300E29B20 /* ScriptureQuestion.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ScriptureQuestion.txt; sourceTree = "<group>"; };
+		A0373B84303713C9006ED2DC /* requirements.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = requirements.MD; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -109,6 +111,7 @@
 				A008858D2FFB322000E29B20 /* BibleAdventureUITests */,
 				A00885722FFB321E00E29B20 /* Products */,
 				A00886383000A9B300E29B20 /* ScriptureQuestion.txt */,
+				A0373B84303713C9006ED2DC /* requirements.MD */,
 			);
 			sourceTree = "<group>";
 		};
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0373B85303713CE006ED2DC /* requirements.MD in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

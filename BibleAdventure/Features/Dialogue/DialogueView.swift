@@ -45,6 +45,7 @@ struct DialogueView: View {
                 chapter: 6,
                 startVerse: 14,
                 endVerse: nil
+                
             )
         ),
         onContinue: {}
