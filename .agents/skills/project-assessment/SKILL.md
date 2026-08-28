@@ -1,9 +1,11 @@
 # Project Assessment
 
 ## Purpose
+
 Perform a read-only health check of the repository against requirements, architecture, implementation, tests, documentation, and project goals.
 
 ## Required areas
+
 - repository structure
 - requirements traceability
 - architecture and coupling
@@ -16,7 +18,9 @@ Perform a read-only health check of the repository against requirements, archite
 - product/UX risks when requirements support the observation
 
 ## Finding format
+
 Each finding should contain:
+
 - ID
 - category
 - severity: CRITICAL/HIGH/MEDIUM/LOW/INFO
@@ -26,13 +30,15 @@ Each finding should contain:
 - related requirement/task
 
 ## Task rule
-Assessment may propose tasks but must not approve or implement them.
+
+Assessment may propose tasks but must not approve or implement them. Create a task only when the recommendation is clear and actionable. Use the following format for proposed tasks: use the Documentation/Tasks/README.md template. Each proposed task must reference the finding that generated it. Use the following flow for each finding:
 
 ```text
 Finding → Recommendation → Proposed Task → Human Approval → Implementation
 ```
 
 ## Rules
+
 - Read-only by default.
 - No silent scope changes.
 - No speculative criticism.
@@ -40,6 +46,7 @@ Finding → Recommendation → Proposed Task → Human Approval → Implementati
 - Distinguish facts, risks, and recommendations.
 
 ## Example
+
 ```text
-Use the project-assessment skill. Perform a read-only assessment against requirements, architecture, tests and session context. Identify gaps, risks, duplicated functionality, foundation opportunities and proposed tasks. Do not modify code.
+Use the project-assessment skill. Perform a read-only assessment against requirements, architecture, tests and session context. Identify gaps, risks, duplicated functionality, foundation opportunities and proposed tasks. Create the finding to document the findings under Documentation/Assessment/. use the following format for the finding report: use the Documentation/Assessment/README.md template. Do not modify code.
 ```
