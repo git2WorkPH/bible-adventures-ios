@@ -1,27 +1,23 @@
-# Project Development
+# Project Development Skill
 
 ## Purpose
-Implement one approved task safely and traceably.
+Implement one approved task while preserving traceability and controlling scope.
 
 ## Workflow
-1. Read the requirement.
-2. Read the task and acceptance criteria.
-3. Read relevant architecture/decisions.
-4. Load current session context.
-5. Inspect existing code before editing.
-6. Plan the smallest implementation that satisfies the task.
+1. Identify the approved task.
+2. Read its requirement.
+3. Read acceptance criteria.
+4. Read relevant architecture decisions.
+5. Inspect existing implementation.
+6. Identify minimum necessary changes.
 7. Implement only approved scope.
-8. Run relevant tests/build checks.
-9. Report files changed, tests, results, and remaining issues.
+8. Add/update required tests.
+9. Run appropriate verification.
+10. Report changed files, tests, results, and remaining issues.
+11. Update session memory.
 
-## Rules
-- Never broaden scope silently.
-- Avoid unrelated refactoring.
-- Reuse existing foundation capabilities where appropriate.
-- If the task cannot be implemented without changing requirements or architecture, stop and report a decision needed.
-- Do not claim tests passed unless they were actually run.
+## Scope control
+Do not implement unapproved tasks, redesign unrelated systems, perform opportunistic refactoring, or silently change product/content decisions. If additional work is discovered, stop before expanding scope and propose it separately for approval.
 
-## Example
-```text
-Use the project-development skill. Implement FND-006-T03 according to its requirement and acceptance criteria. Inspect existing code first, keep changes in scope, run relevant tests, and report the result.
-```
+## Completion rule
+Never claim a requirement is complete solely because code compiles, a screen exists, or a manual path appears to work. Acceptance criteria and verification evidence are required.

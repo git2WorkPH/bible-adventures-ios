@@ -1,34 +1,20 @@
-# Project Review
+# Project Review Skill
 
 ## Purpose
-Verify completed implementation against the approved requirement, task, acceptance criteria, architecture, tests, and scope.
-
-## Review
-Check:
-- requirement compliance
-- acceptance criteria
-- task scope
-- architecture consistency
-- tests and regressions
-- error/state handling
-- unnecessary changes
-- documentation/session updates where required
-
-## Result
-Return exactly one primary status:
-- APPROVED
-- APPROVED WITH NOTES
-- CHANGES REQUIRED
-- BLOCKED
-
-Include evidence and specific remediation for failures.
+Verify implementation against the approved requirement, task, acceptance criteria, architecture, and tests.
 
 ## Rules
-- Review before modifying.
-- Do not silently fix code during review unless explicitly asked.
-- Do not approve based only on code presence; verify behavior and tests.
+1. Read the requirement before reviewing.
+2. Read the approved task and acceptance criteria.
+3. Inspect actual code changes.
+4. Do not assume code presence means completion.
+5. Do not modify code during review unless explicitly asked to perform a repair task.
+6. Identify scope expansion and unrelated changes.
+7. Verify appropriate tests and record evidence.
+8. Use `IMPLEMENTED_VERIFIED` only when acceptance criteria and evidence support it.
 
-## Example
-```text
-Use the project-review skill. Review FND-006-T03 against the requirement, acceptance criteria, implementation and tests. Do not modify code. Return the review status and evidence.
-```
+## Result
+Return one primary result: `APPROVED`, `APPROVED_WITH_NOTES`, `CHANGES_REQUIRED`, or `BLOCKED`. Then report requirement, task, files reviewed, acceptance criteria, evidence, scope deviations, risks, and follow-ups.
+
+## Important distinction
+A task can be `IMPLEMENTED` while its requirement remains `IMPLEMENTED_UNVERIFIED`.
