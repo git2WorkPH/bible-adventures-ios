@@ -39,7 +39,7 @@ No requirement is recorded as formally approved or verified. The product, founda
 | FND-023 | PARTIAL | SwiftUI supplies some baseline accessibility behavior, but no explicit Dynamic Type, VoiceOver, touch-target, or reduced-motion verification exists. |
 | FND-024–025 | NOT_STARTED | Repositories use `fatalError`; logging is limited to `print`. |
 | FND-026 | PARTIAL | Two Story-model tests exist. Broader foundation tests and a passing test record are absent; environment test execution remains unverified. |
-| FND-027 | NEEDS_DECISION | Requirement remains proposed. Code calls `gopher wood` “cypress,” includes unlabelled gameplay/narrative additions, and displays quotation artifacts. |
+| FND-027 | PARTIAL | Scripture policy is approved through FND-BASE-T02; existing code still calls `gopher wood` “cypress,” includes unlabelled gameplay/narrative additions, and displays quotation artifacts. |
 | NOAH-001–011 | PARTIAL | The prototype has a mostly complete ordered Noah flow and corresponding interactions, but lacks required per-component definitions, success/failure contracts, approved Scripture policy, and reusable foundation integration. |
 | NOAH-012 | NOT_STARTED | No post-story Scripture-connected reflection exists. |
 
@@ -77,7 +77,7 @@ Recommendation: Follow the already proposed sequence for state, engine, progress
 
 ### PA-002-002 — Scripture integrity decision gate remains unresolved
 
-Status: DECISION_REQUIRED
+Status: RESOLVED
 
 Affected requirements: PRD-001, FND-004, FND-027, NOAH-002, NOAH-009.
 
@@ -86,6 +86,8 @@ Evidence: FND-027 is proposed; Noah content identifies an ESV instruction withou
 Impact: The project cannot verify Scripture accuracy or the required distinction between quotation, interpretation, and gameplay representation.
 
 Recommendation: Approve the source/translation, formatting, classification, and `gopher wood` treatment before expanding or presenting Noah as verified content.
+
+Resolution: FND-BASE-T02 recorded the project-owner policy in `Documentation/Architecture/Decisions/SCRIPTURE-INTEGRITY-POLICY.md` on 2026-09-04. Existing Noah content remains unverified until a separately approved implementation task applies the policy.
 
 ### PA-002-003 — Completion does not satisfy the reflection or spiritual-purpose outcome
 
@@ -132,7 +134,7 @@ Do not claim as verified: any requirement or acceptance criterion in this assess
 
 ## Risks and decisions required
 
-- Decision: approve a Scripture source/translation and display policy, including quotation cleanup and the `gopher wood`/`cypress wood` treatment.
+- Compliance risk: apply the approved Scripture policy, including quotation cleanup and the `gopher wood`/`cypress wood` treatment, through a separately approved implementation task.
 - Decision: reconcile the task record that calls FND-001-T01 complete with its location outside `Tasks/Approved/` and the policy that only approved tasks authorize implementation.
 - Risk: hard-coded Noah dispatch and local state will create duplicated story behavior if further stories are added before foundation work.
 - Risk: fatal content loading, absent persistence, and absent test/device/accessibility evidence can lose progress or make failures unrecoverable.

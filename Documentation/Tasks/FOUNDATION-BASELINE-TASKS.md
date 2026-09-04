@@ -18,7 +18,8 @@ These tasks are not approved by the assessment itself.
   - [ ] Session memory updated.
 
 ### FND-BASE-T02 — Approve Scripture integrity policy
-- Status: PROPOSED
+- Status: VERIFIED
+- Canonical record: `Documentation/Tasks/Completed/FND-BASE-T02-APPROVE-SCRIPTURE-INTEGRITY-POLICY.md`
 - Requirement: FND-027
 - Acceptance:
   - [ ] Scripture source/translation policy approved.

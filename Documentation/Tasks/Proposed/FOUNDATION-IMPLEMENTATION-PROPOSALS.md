@@ -25,7 +25,7 @@ Except for the completed FND-BASE-T01 entry retained for traceability, these are
 
 ## FND-BASE-T02 — Approve Scripture integrity policy
 
-- Status: PROPOSED
+- Status: VERIFIED — canonical record: `Documentation/Tasks/Completed/FND-BASE-T02-APPROVE-SCRIPTURE-INTEGRITY-POLICY.md`
 - Requirements/findings: PRD-001, FND-004, FND-027, NOAH-002, NOAH-009; PA-002-002.
 - Scope: record owner decisions for Scripture source/translation, quotation formatting, Scripture-versus-interpretation-versus-gameplay labels, and the `gopher wood`/`cypress wood` treatment.
 - Out of scope: changing Noah wording, adding passages, or implementing a Scripture repository.

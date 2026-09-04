@@ -1,7 +1,9 @@
 # Scripture Integrity Requirement
 
 ID: FND-027
-Status: Proposed
+Status: PARTIAL
+
+Policy decision: `Documentation/Architecture/Decisions/SCRIPTURE-INTEGRITY-POLICY.md`
 
 ## Purpose
 
@@ -24,6 +26,8 @@ Interpretations or explanations not explicit in the Biblical text must be presen
 Visuals, puzzles, mechanics, and connective details may support the story, but must not alter Scripture's meaning or be presented as Biblical fact.
 
 ## Acceptance criteria
+
+The policy decisions for the first six criteria and future-story applicability are recorded. Implementation evidence is still required before any criterion is treated as verified.
 
 - [ ] Scripture source/translation policy approved.
 - [ ] Scripture quotations trace to a Biblical reference.

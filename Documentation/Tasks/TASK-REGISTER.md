@@ -20,9 +20,10 @@ Authority: This register records task location and status. It is governed by `Do
 | Task | Canonical status | Canonical record | Reconciliation |
 |---|---|---|---|
 | FND-BASE-T01 — Reconcile documentation authority and task status | VERIFIED | `Documentation/Tasks/Completed/FND-BASE-T01-RECONCILE-DOCUMENTATION-AND-TASK-STATUS.md` | Explicitly approved by the project owner on 2026-09-04 and verified by documentation review. |
+| FND-BASE-T02 — Approve Scripture integrity policy | VERIFIED | `Documentation/Tasks/Completed/FND-BASE-T02-APPROVE-SCRIPTURE-INTEGRITY-POLICY.md` | Explicitly approved by the project owner on 2026-09-04; policy decisions and traceability review are recorded. |
 | FND-001-T01 — Define Reusable Story Model | IMPLEMENTED | Legacy source record: `Documentation/Tasks/FND-001-T01-DEFINE-STORY-MODEL.md` | Implemented before the current approved-task location policy was enforced. It is not retroactively classified as approved or verified. Automated verification remains unrecorded. |
 | FND-002-T01 — Define Foundation Game State | PROPOSED | `Documentation/Tasks/FND-002-T01-DEFINE-GAME-STATE.md` | Remains outside the approved-task area and cannot be implemented until explicitly approved and recorded under `Approved/`. |
-| FND-BASE-T02 through FND-BASE-T13 | PROPOSED | `Documentation/Tasks/Proposed/FOUNDATION-IMPLEMENTATION-PROPOSALS.md` | Proposed only; no implementation authority. |
+| FND-BASE-T03 through FND-BASE-T13 | PROPOSED | `Documentation/Tasks/Proposed/FOUNDATION-IMPLEMENTATION-PROPOSALS.md` | Proposed only; no implementation authority. |
 
 ## Legacy planning documents
 
