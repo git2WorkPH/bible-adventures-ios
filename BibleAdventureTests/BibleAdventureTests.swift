@@ -11,6 +11,76 @@ import Testing
 struct BibleAdventureTests {
 
     @Test
+    func gameStateRepresentsInactiveAndGenericActiveSessions() {
+        let story = StoryState(storyID: .moses)
+        let activeSession = ActiveGameState(story: story)
+
+        #expect(GameState.inactive == .inactive)
+        #expect(GameState.active(activeSession) == .active(activeSession))
+        #expect(activeSession.story.storyID == .moses)
+        #expect(activeSession.objective == nil)
+        #expect(activeSession.miniGame == nil)
+    }
+
+    @Test
+    func gameStateAllowsOnlyInactiveAndActiveTransitions() {
+        let active = GameState.active(
+            ActiveGameState(story: StoryState(storyID: .david))
+        )
+
+        #expect(GameState.inactive.transitioned(to: active) == active)
+        #expect(active.transitioned(to: .inactive) == .inactive)
+        #expect(GameState.inactive.transitioned(to: .inactive) == nil)
+        #expect(active.transitioned(to: active) == nil)
+    }
+
+    @Test
+    func storyStateAllowsOnlyCompletionFromActive() {
+        let active = StoryState(storyID: .moses)
+        let completed = StoryState(storyID: .moses, status: .completed)
+
+        #expect(active.transitioned(to: .completed) == completed)
+        #expect(active.transitioned(to: .active) == nil)
+        #expect(completed.transitioned(to: .active) == nil)
+        #expect(completed.transitioned(to: .completed) == nil)
+    }
+
+    @Test
+    func objectiveStateEnforcesItsLifecycle() {
+        let inactive = ObjectiveState(objectiveID: "generic-objective")
+        let active = ObjectiveState(objectiveID: "generic-objective", status: .active)
+        let completed = ObjectiveState(
+            objectiveID: "generic-objective",
+            status: .completed
+        )
+
+        #expect(inactive.transitioned(to: .active) == active)
+        #expect(active.transitioned(to: .completed) == completed)
+        #expect(active.transitioned(to: .failed)?.status == .failed)
+        #expect(inactive.transitioned(to: .completed) == nil)
+        #expect(completed.transitioned(to: .active) == nil)
+    }
+
+    @Test
+    func miniGameStateEnforcesItsLifecycleWithoutStorySpecificContent() {
+        let inactive = MiniGameState(miniGameID: "generic-mini-game")
+        let active = MiniGameState(
+            miniGameID: "generic-mini-game",
+            status: .active
+        )
+        let failed = MiniGameState(
+            miniGameID: "generic-mini-game",
+            status: .failed
+        )
+
+        #expect(inactive.transitioned(to: .active) == active)
+        #expect(active.transitioned(to: .failed) == failed)
+        #expect(active.transitioned(to: .completed)?.status == .completed)
+        #expect(inactive.transitioned(to: .failed) == nil)
+        #expect(failed.transitioned(to: .active) == nil)
+    }
+
+    @Test
     func storyModelPreservesIdentityMetadataAndStepOrder() {
         let story = genericStoryFixture()
 

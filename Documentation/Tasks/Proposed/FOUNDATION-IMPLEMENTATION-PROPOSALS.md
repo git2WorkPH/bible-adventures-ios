@@ -34,7 +34,7 @@ Except for the completed FND-BASE-T01 entry retained for traceability, these are
 
 ## FND-BASE-T03 — Define centralized story-state contracts
 
-- Status: PROPOSED
+- Status: IMPLEMENTED — canonical record: `Documentation/Tasks/Completed/FND-BASE-T03-DEFINE-CENTRALIZED-STORY-STATE-CONTRACTS.md`
 - Requirements/findings: FND-002; PA-002-001.
 - Dependencies: FND-BASE-T01; explicit approval of the existing FND-002-T01 proposal; FND-001-T01 status reconciliation.
 - Scope: define generic top-level game, active-story, objective, and mini-game state values outside SwiftUI; document ownership and legal state transitions; add focused unit tests.

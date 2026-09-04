@@ -30,7 +30,8 @@ These tasks are not approved by the assessment itself.
 ## Phase 1 — Story foundation
 
 ### FND-BASE-T03 — Define Story State contract
-- Status: PROPOSED
+- Status: IMPLEMENTED
+- Canonical record: `Documentation/Tasks/Completed/FND-BASE-T03-DEFINE-CENTRALIZED-STORY-STATE-CONTRACTS.md`
 - Requirement: FND-002
 - Acceptance:
   - [ ] Central story state model defined.
