@@ -1,51 +1,39 @@
-# Bible Adventure Agent Rules
+# AI Project Instructions
 
-## 1. Mission
+This repository uses a requirements-first, traceable AI-assisted development workflow.
 
-Bible Adventure is designed to encourage players to genuinely read the Bible with the intention of seeking GOD. The game should use interactive storytelling and gameplay to support engagement with Scripture.
+## Before significant work
+Read:
+1. `Documentation/Project/PROJECT.md`
+2. `Documentation/Project/VISION.md`
+3. `Documentation/Project/SCOPE.md`
+4. `Documentation/Project/GLOSSARY.md` when domain terminology matters
+5. relevant requirements
+6. relevant architecture decisions
+7. relevant tasks and session memory
 
-## 2. Requirements are authoritative
+## Mandatory workflow
+Requirements -> Assessment -> Finding -> Decision -> Proposed Task -> Approval -> Implementation -> Test -> Review -> Verified -> Session Memory.
 
-Do not infer product scope from code alone. Read the relevant approved requirement and acceptance criteria before implementation.
+## Rules
+- `Documentation/` is authoritative.
+- A finding is an observation, not permission to implement.
+- A proposed task is not an approved task.
+- Only an approved task authorizes implementation.
+- Do not silently expand scope.
+- Do not silently resolve product, security, compliance, content, or architecture decisions.
+- Preserve useful existing work unless an approved task requires changing it.
+- Record findings in `Documentation/Assessment/`.
+- Record proposed tasks in `Documentation/Tasks/Proposed/`.
+- Record approved tasks in `Documentation/Tasks/Approved/`.
+- Record completed work in `Documentation/Tasks/Completed/`.
+- Record decisions in `Documentation/Architecture/Decisions/`.
+- Record verification evidence in `Documentation/Acceptance/`.
+- Update `Documentation/SessionMemory/` after meaningful work.
 
-## 3. Foundation before story-specific code
+## Status
+Requirement: `NOT_STARTED`, `PARTIAL`, `IMPLEMENTED_UNVERIFIED`, `IMPLEMENTED_VERIFIED`, `OUT_OF_SCOPE`, `NEEDS_DECISION`.
+Task: `PROPOSED`, `APPROVED`, `IN_PROGRESS`, `BLOCKED`, `IMPLEMENTED`, `VERIFIED`, `CANCELLED`.
+Finding: `OPEN`, `DECISION_REQUIRED`, `TASK_PROPOSED`, `ACCEPTED`, `RESOLVED`, `WONT_FIX`.
 
-Before implementing a story feature:
-
-1. Search for an existing reusable capability.
-2. Check foundation requirements.
-3. If no suitable capability exists, determine whether a new foundation requirement is warranted.
-4. Do not duplicate infrastructure inside a story merely to complete the immediate feature.
-
-## 4. Scripture integrity
-
-Every Scripture-driven story requirement should identify its Biblical source/reference where appropriate.
-
-Do not invent, distort, or silently add Biblical details. If a game mechanic requires interpretation or fictionalization, flag it for product approval.
-
-## 5. Player experience
-
-Prefer mechanics that help players:
-
-- understand the story context
-- notice important Biblical details
-- engage with Scripture references
-- reflect on what the passage communicates
-
-Do not make the game dependent on theological conclusions that are not defined by the approved requirement.
-
-## 6. Implementation discipline
-
-- Implement one approved task at a time.
-- Keep changes in scope.
-- Avoid unrelated refactoring.
-- Run relevant tests.
-- Report failures honestly.
-
-## 7. Assessment discipline
-
-Assessments are read-only recommendations. They do not automatically become requirements or tasks.
-
-## 8. Review discipline
-
-A feature is not complete merely because it compiles. It must satisfy its acceptance criteria and remain consistent with the foundation architecture.
+Project-specific principles belong in `Documentation/Project/` and project requirements/architecture. Do not assume rules from another project.
