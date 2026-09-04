@@ -2,7 +2,7 @@
 
 ## Last Updated
 
-2026-08-28
+2026-09-04
 
 ## Current Objective
 
@@ -18,7 +18,7 @@ FND-001 — Story Engine
 
 ## Active Task
 
-None. FND-001-T01 is complete; no subsequent task has been approved.
+None. FND-BASE-T01 is verified; no subsequent implementation task has been approved.
 
 ## Completed Work
 
@@ -26,7 +26,10 @@ None. FND-001-T01 is complete; no subsequent task has been approved.
 - Six generic workflow skills defined.
 - Bible Adventure project-specific context added.
 - Read-only initialization and repository assessment completed.
-- FND-001-T01 — Define Reusable Story Model completed.
+- PA-002 implementation traceability assessment completed; it confirmed the existing Noah experience is prototype/reference material and no requirement is verified.
+- Proposed foundation implementation-task register created from PA-002 as `Documentation/Tasks/Proposed/FOUNDATION-IMPLEMENTATION-PROPOSALS.md`; FND-BASE-T01 subsequently became the sole approved and verified task in that sequence.
+- FND-BASE-T01 verified: `Documentation/Tasks/TASK-REGISTER.md` now defines authoritative task locations and records FND-001-T01 as a legacy `IMPLEMENTED` record, not retroactively approved or verified.
+- FND-001-T01 — Define Reusable Story Model is a legacy `IMPLEMENTED` record; it is not retroactively approved or verified.
 - `Story` is now `Identifiable`; `StoryID` has stable `String`, `Codable`, and `Hashable` identity.
 - Added Story-model unit tests for a generic fixture and Noah-model compatibility.
 
@@ -47,11 +50,13 @@ None. FND-001-T01 is complete; no subsequent task has been approved.
 - Automated test verification for FND-001-T01 is not recorded as passing: `xcodebuild test` attempts produced incomplete result bundles, and the explicitly targeted unit-test run was not authorized.
 - The Story Engine, centralized Story State, and reusable progression rules are not yet implemented (FND-001–003 remaining scope).
 - Repository error handling, reflection, progress/persistence, accessibility, and substantive foundation tests remain assessment findings.
+- Scripture source/translation, Scripture/interpretation/gameplay distinction, and `gopher wood`/`cypress wood` treatment remain decision-required findings (PA-002-002).
+- FND-002-T01 and FND-BASE-T02 through T13 remain proposed; their status is authoritative in `Documentation/Tasks/TASK-REGISTER.md`.
 - The worktree includes unrelated user/workspace changes in `.agents/skills/project-assessment/SKILL.md` and Xcode user-interface state; do not overwrite them.
 
 ## Next Recommended Step
 
-Obtain approval for FND-002-T01 — Define game/story state, then implement a single centralized, observable Story State without adding progression behavior or adapting Noah gameplay.
+Before further Noah expansion, obtain approval for and complete FND-BASE-T02 — Approve Scripture integrity policy. FND-002-T01 remains proposed and blocked from implementation until it is explicitly approved.
 
 ## Requirements Discussed
 
@@ -67,7 +72,7 @@ Obtain approval for FND-002-T01 — Define game/story state, then implement a si
 
 ## Task Record
 
-- FND-001-T01 — Define Reusable Story Model: Complete.
+- FND-001-T01 — Define Reusable Story Model: IMPLEMENTED (legacy record; automated verification remains unrecorded).
   - Task document: `Documentation/Tasks/FND-001-T01-DEFINE-STORY-MODEL.md`
   - Changed files: `BibleAdventure/Core/Models/Story.swift`, `BibleAdventure/Core/Models/StoryID.swift`, and `BibleAdventureTests/BibleAdventureTests.swift`.
   - Verification: structural diff check passed; automated XCTest pass/fail remains unverified as recorded above.

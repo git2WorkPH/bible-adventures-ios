@@ -1,5 +1,7 @@
 # FND-001-T01 — Define Reusable Story Model
 
+> Legacy implementation record. Current task disposition is `IMPLEMENTED`, as recorded in `Documentation/Tasks/TASK-REGISTER.md`. This record does not establish retrospective approval or verification under the current task-location policy.
+
 ## Requirement
 
 - FND-001 — Story Engine
@@ -57,4 +59,4 @@ Define the reusable `Story` content contract that the future Story Engine will l
 
 ## Status
 
-Complete
+IMPLEMENTED

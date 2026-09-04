@@ -1,6 +1,6 @@
 # Foundation Baseline Tasks
 
-Status: Proposed
+Status: Historical proposal index; current task status is recorded in `Documentation/Tasks/TASK-REGISTER.md`.
 Source: Baseline repository assessment dated 2026-08-29
 
 These tasks are not approved by the assessment itself.
@@ -8,7 +8,8 @@ These tasks are not approved by the assessment itself.
 ## Phase 0 — Documentation and decisions
 
 ### FND-BASE-T01 — Reconcile authoritative documentation
-- Status: PROPOSED
+- Status: VERIFIED
+- Canonical record: `Documentation/Tasks/Completed/FND-BASE-T01-RECONCILE-DOCUMENTATION-AND-TASK-STATUS.md`
 - Goal: Establish `Documentation/` as the authoritative source.
 - Acceptance:
   - [ ] Legacy duplicate sources identified.
