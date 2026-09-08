@@ -124,7 +124,7 @@ Except for the completed FND-BASE-T01 entry retained for traceability, these are
 
 ## FND-BASE-T12 — Establish responsive accessibility and reduced-motion standards
 
-- Status: PROPOSED
+- Status: VERIFIED — see `Documentation/Tasks/Completed/FND-BASE-T12-ACCESSIBILITY-STANDARDS.md`
 - Requirements/findings: PRD-005, FND-020, FND-023; PA-002-004.
 - Dependencies: FND-BASE-T03 and relevant presentation contracts.
 - Scope: define reusable requirements and test cases for Dynamic Type, VoiceOver labels/order, touch targets, iPhone/iPad layout, and reduced motion; add reusable support only where later approved.

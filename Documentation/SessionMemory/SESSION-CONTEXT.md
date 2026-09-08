@@ -41,3 +41,7 @@ Implemented versioned player/story/objective gameplay progress, completion-based
 ## FND-BASE-T11 — 2026-09-08
 
 Established the foundation test strategy, six-capability matrix, result/blocker semantics, acceptance-evidence template, and populated T11 sample record. Documentation review passed for T11's governance scope. No runtime code changed and no previously blocked iOS/prototype behavior was certified. T12 remains proposed and requires approval. Owner edits to T01/T02 status and Xcode UI state remain excluded.
+
+## FND-BASE-T12 — 2026-09-08
+
+Established measurable Dynamic Type, VoiceOver, touch-target, iPhone/iPad responsive-layout, and reduced-motion standards; reusable presentation ownership boundaries; and a future device/manual validation matrix. Documentation review passed for the standards scope. No prototype view or runtime code changed, and all device checks remain NOT RUN until approved implementation work. T13 remains proposed and requires approval. Owner edits to T01/T02 status and Xcode UI state remain excluded.

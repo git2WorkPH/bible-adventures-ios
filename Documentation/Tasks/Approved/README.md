@@ -4,12 +4,12 @@ Only explicitly approved tasks belong here.
 
 The development skill may implement tasks from this folder. Proposed tasks remain unapproved until the project owner approves them.
 
-## FND-BASE-T11 — Establish foundation test and acceptance-evidence strategy
+## FND-BASE-T12 — Establish responsive accessibility and reduced-motion standards
 
-- Status: VERIFIED — see `Documentation/Tasks/Completed/FND-BASE-T11-FOUNDATION-TEST-STRATEGY.md`
-- Requirements/findings: FND-026; PA-002-004.
-- Dependencies: FND-BASE-T04 through T10 as applicable.
-- Scope: define unit, integration, UI/device, regression, and acceptance-evidence expectations for reusable foundation capabilities; configure testable seams and records for results.
-- Out of scope: certifying currently unverified prototype behavior or broad feature implementation.
-- Acceptance: each foundation capability maps to test types and evidence location; blocked environment conditions are recorded separately from test outcomes; the strategy covers engine, repositories, questions, mini-games, reflection, and persistence.
-- Verification: reviewed test matrix and a sample evidence record produced by an approved implementation task.
+- Status: VERIFIED — see `Documentation/Tasks/Completed/FND-BASE-T12-ACCESSIBILITY-STANDARDS.md`
+- Requirements/findings: PRD-005, FND-020, FND-023; PA-002-004.
+- Dependencies: FND-BASE-T03 and relevant presentation contracts.
+- Scope: define reusable requirements and test cases for Dynamic Type, VoiceOver labels/order, touch targets, iPhone/iPad layout, and reduced motion; add reusable support only where later approved.
+- Out of scope: visual redesign of Noah scenes or unapproved device-specific content changes.
+- Acceptance: measurable standards and validation matrix exist; reduced-motion behavior is specified; each reusable presentation component has an accessibility ownership boundary.
+- Verification: documented iPhone/iPad and accessibility test plan; later implementation must record device/manual evidence.

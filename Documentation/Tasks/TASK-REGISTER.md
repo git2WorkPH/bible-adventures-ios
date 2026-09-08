@@ -32,7 +32,8 @@ Authority: This register records task location and status. It is governed by `Do
 | FND-BASE-T09 | VERIFIED | `Documentation/Tasks/Completed/FND-BASE-T09-SCRIPTURE-CONNECTED-REFLECTION.md` | Four focused reflection tests and content-policy review passed on 2026-09-08; full iOS target not run. |
 | FND-BASE-T10 | VERIFIED | `Documentation/Tasks/Completed/FND-BASE-T10-PROGRESS-PERSISTENCE.md` | Four focused persistence tests passed on 2026-09-08; full iOS target not run. |
 | FND-BASE-T11 | VERIFIED | `Documentation/Tasks/Completed/FND-BASE-T11-FOUNDATION-TEST-STRATEGY.md` | Foundation matrix and sample acceptance record reviewed on 2026-09-08; no prior blocked behavior was certified. |
-| FND-BASE-T12 through FND-BASE-T13 | PROPOSED | `Documentation/Tasks/Proposed/FOUNDATION-IMPLEMENTATION-PROPOSALS.md` | Proposed only; no implementation authority. |
+| FND-BASE-T12 | VERIFIED | `Documentation/Tasks/Completed/FND-BASE-T12-ACCESSIBILITY-STANDARDS.md` | Standards and validation matrix reviewed on 2026-09-08; prototype/device behavior was not certified. |
+| FND-BASE-T13 | PROPOSED | `Documentation/Tasks/Proposed/FOUNDATION-IMPLEMENTATION-PROPOSALS.md` | Proposed only; no implementation authority. |
 
 ## Legacy planning documents
 

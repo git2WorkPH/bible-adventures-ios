@@ -100,7 +100,7 @@ These tasks are not approved by the assessment itself.
 - Requirement: FND-026
 
 ### FND-BASE-T12 — Establish accessibility and reduced-motion standards
-- Status: PROPOSED
+- Status: VERIFIED — see `Documentation/Tasks/Completed/FND-BASE-T12-ACCESSIBILITY-STANDARDS.md`
 - Requirements: FND-020, FND-023
 
 ### FND-BASE-T13 — Establish repository error/logging strategy
