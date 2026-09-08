@@ -104,7 +104,7 @@ Except for the completed FND-BASE-T01 entry retained for traceability, these are
 
 ## FND-BASE-T10 — Implement progress and persistence boundaries
 
-- Status: PROPOSED
+- Status: VERIFIED — see `Documentation/Tasks/Completed/FND-BASE-T10-PROGRESS-PERSISTENCE.md`
 - Requirements/findings: FND-016, FND-017; PA-002-004.
 - Dependencies: FND-BASE-T03 through T05, FND-BASE-T09.
 - Scope: define saveable player/story/objective progress, restore behavior, and appropriate unlock rules without measuring spiritual status; establish a persistence service boundary and recovery behavior.

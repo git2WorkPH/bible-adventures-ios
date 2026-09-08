@@ -90,7 +90,7 @@ These tasks are not approved by the assessment itself.
   - [x] Reflection is reusable.
 
 ### FND-BASE-T10 — Establish progress and persistence
-- Status: PROPOSED
+- Status: VERIFIED — see `Documentation/Tasks/Completed/FND-BASE-T10-PROGRESS-PERSISTENCE.md`
 - Requirements: FND-016, FND-017
 
 ## Phase 4 — Quality foundations

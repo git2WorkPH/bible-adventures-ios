@@ -65,7 +65,7 @@ None. FND-BASE-T01 and FND-BASE-T02 are verified; FND-BASE-T03 through FND-BASE-
 
 ## Next Recommended Step
 
-Run FND-BASE-T03 through FND-BASE-T06 unit tests in a working iOS Simulator environment, then record verification. FND-BASE-T07 through FND-BASE-T09 are verified for their domain scopes (4 tests each). FND-BASE-T10 requires separate approval.
+Run FND-BASE-T03 through FND-BASE-T06 unit tests in a working iOS Simulator environment, then record verification. FND-BASE-T07 through FND-BASE-T10 are verified for their domain scopes (4 tests each). FND-BASE-T11 requires separate approval.
 
 ## Requirements Discussed
 

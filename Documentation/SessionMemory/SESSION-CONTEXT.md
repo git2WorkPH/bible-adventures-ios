@@ -33,3 +33,7 @@ Implemented the approved shared mini-game lifecycle and presentation adapter. Fo
 ## FND-BASE-T09 — 2026-09-08
 
 Implemented the approved reusable reflection content, completion handoff, lifecycle, Scripture-reference linkage, and GOD-centered presentation contract. Four focused Swift Testing tests and the Scripture-policy review passed. Full iOS UI and Noah reflection content/integration were not changed; NOAH-012 is not claimed as verified. T10 remains proposed and requires approval. Owner edits to T01/T02 status and Xcode UI state remain excluded.
+
+## FND-BASE-T10 — 2026-09-08
+
+Implemented versioned player/story/objective gameplay progress, completion-based unlock rules, injected raw-data storage, JSON save/restore, and typed safe-default recovery. Four focused Swift Testing tests passed. No runtime UI/storage adapter, cloud, accounts, analytics, or spiritual-status measure was added. PA-002-004 remains open for its other gaps. T11 remains proposed and requires approval. Owner edits to T01/T02 status and Xcode UI state remain excluded.

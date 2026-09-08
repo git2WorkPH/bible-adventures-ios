@@ -30,7 +30,8 @@ Authority: This register records task location and status. It is governed by `Do
 | FND-BASE-T07 | VERIFIED | `Documentation/Tasks/Completed/FND-BASE-T07-OBJECTIVE-QUESTION-LIFECYCLE.md` | Four focused domain tests passed on 2026-09-08; full iOS target not run. |
 | FND-BASE-T08 | VERIFIED | `Documentation/Tasks/Completed/FND-BASE-T08-MINI-GAME-LIFECYCLE.md` | Four focused domain tests passed on 2026-09-08; full iOS target not run. |
 | FND-BASE-T09 | VERIFIED | `Documentation/Tasks/Completed/FND-BASE-T09-SCRIPTURE-CONNECTED-REFLECTION.md` | Four focused reflection tests and content-policy review passed on 2026-09-08; full iOS target not run. |
-| FND-BASE-T10 through FND-BASE-T13 | PROPOSED | `Documentation/Tasks/Proposed/FOUNDATION-IMPLEMENTATION-PROPOSALS.md` | Proposed only; no implementation authority. |
+| FND-BASE-T10 | VERIFIED | `Documentation/Tasks/Completed/FND-BASE-T10-PROGRESS-PERSISTENCE.md` | Four focused persistence tests passed on 2026-09-08; full iOS target not run. |
+| FND-BASE-T11 through FND-BASE-T13 | PROPOSED | `Documentation/Tasks/Proposed/FOUNDATION-IMPLEMENTATION-PROPOSALS.md` | Proposed only; no implementation authority. |
 
 ## Legacy planning documents
 
