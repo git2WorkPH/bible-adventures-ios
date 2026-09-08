@@ -5,6 +5,7 @@
 //  Created by jc on 6/7/2026.
 //
 
+import Foundation
 import Testing
 @testable import BibleAdventure
 
@@ -152,6 +153,64 @@ struct BibleAdventureTests {
     }
 
     @Test
+    func storyRepositoryReturnsRecoverableMissingStoryError() {
+        let repository = StoryRepository(stories: [genericStoryFixture()])
+
+        guard case .success(let story) = repository.story(for: .moses) else {
+            Issue.record("Expected the configured story.")
+            return
+        }
+        #expect(story.id == .moses)
+
+        guard case .failure(let error) = repository.story(for: .david) else {
+            Issue.record("Expected a missing-story error.")
+            return
+        }
+        #expect(error == .itemNotFound("story:david"))
+    }
+
+    @Test
+    func questionRepositoryDecodesAndValidatesExternalQuestionContent() {
+        let repository = QuestionRepository(
+            dataSource: InMemoryContentDataSource(data: validQuestionData)
+        )
+
+        guard case .success(let question) = repository.question(for: "generic-question") else {
+            Issue.record("Expected the configured question.")
+            return
+        }
+        #expect(question.question == "Which answer is correct?")
+
+        guard case .failure(let error) = repository.question(for: "missing") else {
+            Issue.record("Expected a missing-question error.")
+            return
+        }
+        #expect(error == .itemNotFound("question:missing"))
+    }
+
+    @Test
+    func questionRepositoryReturnsRecoverableMalformedAndInvalidContentErrors() {
+        let malformedRepository = QuestionRepository(
+            dataSource: InMemoryContentDataSource(data: Data("[".utf8))
+        )
+        let invalidRepository = QuestionRepository(
+            dataSource: InMemoryContentDataSource(data: invalidQuestionData)
+        )
+
+        guard case .failure(let malformedError) = malformedRepository.questions() else {
+            Issue.record("Expected malformed content to be rejected.")
+            return
+        }
+        #expect(malformedError == .malformedContent("questions"))
+
+        guard case .failure(let invalidError) = invalidRepository.questions() else {
+            Issue.record("Expected invalid content to be rejected.")
+            return
+        }
+        #expect(invalidError == .invalidContent("questions"))
+    }
+
+    @Test
     func gameStateRepresentsInactiveAndGenericActiveSessions() {
         let story = StoryState(storyID: .moses)
         let activeSession = ActiveGameState(story: story)
@@ -290,9 +349,49 @@ struct BibleAdventureTests {
     private struct InMemoryStoryLoader: StoryLoading {
         let stories: [Story]
 
-        func story(for storyID: StoryID) -> Story? {
-            stories.first { $0.id == storyID }
+        func story(for storyID: StoryID) -> Result<Story, ContentRepositoryError> {
+            guard let story = stories.first(where: { $0.id == storyID }) else {
+                return .failure(.itemNotFound("story:\(storyID.rawValue)"))
+            }
+
+            return .success(story)
         }
+    }
+
+    private struct InMemoryContentDataSource: ContentDataLoading {
+        let data: Data
+
+        func loadData() -> Result<Data, ContentRepositoryError> {
+            .success(data)
+        }
+    }
+
+    private var validQuestionData: Data {
+        Data(
+            """
+            [{
+              "id": "generic-question",
+              "question": "Which answer is correct?",
+              "options": ["First", "Second"],
+              "correctAnswerIndex": 0,
+              "hint": "Choose the first answer."
+            }]
+            """.utf8
+        )
+    }
+
+    private var invalidQuestionData: Data {
+        Data(
+            """
+            [{
+              "id": "generic-question",
+              "question": "Which answer is correct?",
+              "options": ["Only answer"],
+              "correctAnswerIndex": 1,
+              "hint": "Choose carefully."
+            }]
+            """.utf8
+        )
     }
 
     private struct InMemoryStoryProgressionLoader: StoryProgressionLoading {

@@ -66,7 +66,8 @@ These tasks are not approved by the assessment itself.
 ## Phase 2 — Reusable content/game contracts
 
 ### FND-BASE-T06 — Separate Scripture/content repository concerns
-- Status: PROPOSED
+- Status: IMPLEMENTED
+- Canonical record: `Documentation/Tasks/Completed/FND-BASE-T06-SEPARATE-CONTENT-AND-SCRIPTURE-REPOSITORIES.md`
 - Requirements: FND-004, FND-018, FND-019
 
 ### FND-BASE-T07 — Establish objective/question lifecycle

@@ -3,7 +3,7 @@ import Foundation
 /// Provides story definitions to `StoryEngine` without coupling the engine to
 /// a story-specific repository or content implementation.
 protocol StoryLoading {
-    func story(for storyID: StoryID) -> Story?
+    func story(for storyID: StoryID) -> Result<Story, ContentRepositoryError>
 }
 
 /// A reusable boundary for loading and managing one configured story session.
@@ -52,7 +52,7 @@ struct StoryEngine {
     @discardableResult
     mutating func start(storyID: StoryID) -> Bool {
         guard gameState == .inactive,
-              let story = loader.story(for: storyID),
+              case .success(let story) = loader.story(for: storyID),
               !story.steps.isEmpty
         else {
             return false
@@ -130,7 +130,9 @@ struct StoryEngine {
     @discardableResult
     mutating func restart() -> Bool {
         guard case .active(let activeSession) = gameState,
-              let story = loader.story(for: activeSession.story.storyID),
+              case .success(let story) = loader.story(
+                for: activeSession.story.storyID
+              ),
               !story.steps.isEmpty
         else {
             return false

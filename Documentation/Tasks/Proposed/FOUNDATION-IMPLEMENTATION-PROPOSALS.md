@@ -64,7 +64,7 @@ Except for the completed FND-BASE-T01 entry retained for traceability, these are
 
 ## FND-BASE-T06 — Separate content and Scripture repositories
 
-- Status: PROPOSED
+- Status: IMPLEMENTED — canonical record: `Documentation/Tasks/Completed/FND-BASE-T06-SEPARATE-CONTENT-AND-SCRIPTURE-REPOSITORIES.md`
 - Requirements/findings: FND-004, FND-005, FND-018, FND-019, FND-024; PA-002-002, PA-002-004.
 - Dependencies: FND-BASE-T02, FND-BASE-T04.
 - Scope: define repository contracts for stories, dialogue, objectives, questions, and Scripture references/content; establish recoverable loading errors and content validation; choose the approved external-content boundary.
