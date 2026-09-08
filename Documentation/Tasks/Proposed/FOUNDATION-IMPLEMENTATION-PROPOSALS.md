@@ -84,7 +84,7 @@ Except for the completed FND-BASE-T01 entry retained for traceability, these are
 
 ## FND-BASE-T08 — Implement reusable mini-game lifecycle and adapters
 
-- Status: PROPOSED
+- Status: VERIFIED — see `Documentation/Tasks/Completed/FND-BASE-T08-MINI-GAME-LIFECYCLE.md`
 - Requirements/findings: FND-009 through FND-014; PA-002-001.
 - Dependencies: FND-BASE-T05, FND-BASE-T06.
 - Scope: define mini-game configuration, typed result, start/complete/fail/retry lifecycle, and a generic presentation adapter; identify the narrow adapter path for the existing Noah mini-game views.

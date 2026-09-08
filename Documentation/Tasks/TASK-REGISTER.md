@@ -28,7 +28,8 @@ Authority: This register records task location and status. It is governed by `Do
 | FND-001-T01 — Define Reusable Story Model | IMPLEMENTED | Legacy source record: `Documentation/Tasks/FND-001-T01-DEFINE-STORY-MODEL.md` | Implemented before the current approved-task location policy was enforced. It is not retroactively classified as approved or verified. Automated verification remains unrecorded. |
 | FND-002-T01 — Define Foundation Game State | PROPOSED | `Documentation/Tasks/FND-002-T01-DEFINE-GAME-STATE.md` | Remains outside the approved-task area and cannot be implemented until explicitly approved and recorded under `Approved/`. |
 | FND-BASE-T07 | VERIFIED | `Documentation/Tasks/Completed/FND-BASE-T07-OBJECTIVE-QUESTION-LIFECYCLE.md` | Four focused domain tests passed on 2026-09-08; full iOS target not run. |
-| FND-BASE-T08 through FND-BASE-T13 | PROPOSED | `Documentation/Tasks/Proposed/FOUNDATION-IMPLEMENTATION-PROPOSALS.md` | Proposed only; no implementation authority. |
+| FND-BASE-T08 | VERIFIED | `Documentation/Tasks/Completed/FND-BASE-T08-MINI-GAME-LIFECYCLE.md` | Four focused domain tests passed on 2026-09-08; full iOS target not run. |
+| FND-BASE-T09 through FND-BASE-T13 | PROPOSED | `Documentation/Tasks/Proposed/FOUNDATION-IMPLEMENTATION-PROPOSALS.md` | Proposed only; no implementation authority. |
 
 ## Legacy planning documents
 

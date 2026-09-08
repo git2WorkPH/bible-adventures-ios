@@ -75,7 +75,7 @@ These tasks are not approved by the assessment itself.
 - Requirements: FND-006, FND-007, FND-008
 
 ### FND-BASE-T08 — Establish mini-game lifecycle
-- Status: PROPOSED
+- Status: VERIFIED — see `Documentation/Tasks/Completed/FND-BASE-T08-MINI-GAME-LIFECYCLE.md`
 - Requirements: FND-009–014
 
 ## Phase 3 — Completion and persistence
