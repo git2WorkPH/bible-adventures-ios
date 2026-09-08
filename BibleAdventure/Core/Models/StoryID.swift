@@ -1,6 +1,6 @@
 import Foundation
 
-enum StoryID{
+enum StoryID: String, Codable, Hashable {
     case noah
     case moses
     case david

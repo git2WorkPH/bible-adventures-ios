@@ -14,12 +14,9 @@ struct ScriptureView: View {
 //    let verse: String
     let onComplete: () -> Void
     
-    private var question: QuizQuestion {
-           QuestionRepository.question(
-               story: objective.storyId,
-               id: objective.questionId
-           )
-       }
+    private var questionResult: Result<QuizQuestion, ContentRepositoryError> {
+        NoahQuestionRepository.question(for: objective.questionId)
+    }
     
     
     var body: some View {
@@ -44,13 +41,28 @@ struct ScriptureView: View {
 
             Divider()
 
-            let question = question
+            switch questionResult {
+            case .success(let question):
+                questionContent(question)
+            case .failure:
+                Text("This question is unavailable right now. Please return to the story and try again.")
+                    .multilineTextAlignment(.center)
+                    .foregroundStyle(.secondary)
+            }
 
-            Text(question.question)
-                .font(.title3)
-                .bold()
+        }
+        .padding()
+        .navigationBarBackButtonHidden(true)
 
-            ForEach(question.options.indices, id: \.self) { index in
+    }
+
+    @ViewBuilder
+    private func questionContent(_ question: QuizQuestion) -> some View {
+        Text(question.question)
+            .font(.title3)
+            .bold()
+
+        ForEach(question.options.indices, id: \.self) { index in
 
                 Button {
 
@@ -85,34 +97,31 @@ struct ScriptureView: View {
                 }
                 .buttonStyle(.bordered)
 
-            }
+        }
 
-            if showWrongAnswer {
+        if showWrongAnswer {
 
-                Text("❌ That's not quite right. Read the Scripture again and try once more.")
-                    .foregroundStyle(.red)
-                    .multilineTextAlignment(.center)
-
-            }
-
-            if isCorrect {
-
-                Text("✅ Great job! You answered correctly.")
-                    .foregroundStyle(.green)
-
-            }
-
-            Button("Continue") {
-                
-                onComplete()
-                dismiss()
-            }
-            .buttonStyle(.borderedProminent)
-            .disabled(!isCorrect)
+            Text("❌ That's not quite right. Read the Scripture again and try once more.")
+                .foregroundStyle(.red)
+                .multilineTextAlignment(.center)
 
         }
-        .padding()
-        .navigationBarBackButtonHidden(true)
+
+        if isCorrect {
+
+            Text("✅ Great job! You answered correctly.")
+                .foregroundStyle(.green)
+
+        }
+
+        Button("Continue") {
+
+            onComplete()
+            dismiss()
+
+        }
+        .buttonStyle(.borderedProminent)
+        .disabled(!isCorrect)
 
     }
 }
