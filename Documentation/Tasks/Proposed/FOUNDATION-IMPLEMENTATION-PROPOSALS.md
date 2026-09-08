@@ -44,7 +44,7 @@ Except for the completed FND-BASE-T01 entry retained for traceability, these are
 
 ## FND-BASE-T04 — Implement reusable Story Engine boundary
 
-- Status: PROPOSED
+- Status: IMPLEMENTED — canonical record: `Documentation/Tasks/Completed/FND-BASE-T04-IMPLEMENT-REUSABLE-STORY-ENGINE.md`
 - Requirements/findings: FND-001, PRD-004; PA-002-001.
 - Dependencies: FND-BASE-T03.
 - Scope: introduce a generic engine interface that loads, starts, exposes the current configured step, completes, and restarts a story through the centralized state contract; use a generic fixture and preserve Noah content.

@@ -40,7 +40,8 @@ These tasks are not approved by the assessment itself.
   - [ ] State behavior has unit tests.
 
 ### FND-BASE-T04 — Define Story Engine contract
-- Status: PROPOSED
+- Status: IMPLEMENTED
+- Canonical record: `Documentation/Tasks/Completed/FND-BASE-T04-IMPLEMENT-REUSABLE-STORY-ENGINE.md`
 - Requirement: FND-001
 - Dependencies: FND-BASE-T03
 - Acceptance:

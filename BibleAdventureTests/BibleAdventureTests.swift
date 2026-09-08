@@ -11,6 +11,59 @@ import Testing
 struct BibleAdventureTests {
 
     @Test
+    func storyEngineLoadsStartsAndExposesGenericStoryConfiguration() {
+        let story = genericStoryFixture()
+        var engine = StoryEngine(loader: InMemoryStoryLoader(stories: [story]))
+
+        #expect(engine.start(storyID: .moses))
+        #expect(engine.currentStory == story)
+        #expect(engine.gameState == .active(
+            ActiveGameState(story: StoryState(storyID: .moses))
+        ))
+
+        guard case .dialogue(let step) = engine.currentStep else {
+            Issue.record("Expected the configured first step.")
+            return
+        }
+        #expect(step.text == "First generic step.")
+    }
+
+    @Test
+    func storyEngineCompletesAndRestartsWithoutProgressionRules() {
+        let story = genericStoryFixture()
+        var engine = StoryEngine(loader: InMemoryStoryLoader(stories: [story]))
+
+        #expect(engine.start(storyID: .moses))
+        #expect(engine.complete())
+        #expect(engine.isCompleted)
+        #expect(engine.currentStep == nil)
+        #expect(!engine.complete())
+
+        #expect(engine.restart())
+        #expect(!engine.isCompleted)
+        #expect(engine.currentStory == story)
+
+        guard case .dialogue(let step) = engine.currentStep else {
+            Issue.record("Expected restart to expose the first configured step.")
+            return
+        }
+        #expect(step.text == "First generic step.")
+    }
+
+    @Test
+    func storyEngineRejectsMissingOrConcurrentStartsAndSupportsNoahContent() {
+        let genericStory = genericStoryFixture()
+        var engine = StoryEngine(
+            loader: InMemoryStoryLoader(stories: [genericStory, NoahStory.build()])
+        )
+
+        #expect(!engine.start(storyID: .david))
+        #expect(engine.start(storyID: .noah))
+        #expect(!engine.start(storyID: .moses))
+        #expect(engine.currentStory?.id == .noah)
+    }
+
+    @Test
     func gameStateRepresentsInactiveAndGenericActiveSessions() {
         let story = StoryState(storyID: .moses)
         let activeSession = ActiveGameState(story: story)
@@ -144,6 +197,14 @@ struct BibleAdventureTests {
                 )
             ]
         )
+    }
+
+    private struct InMemoryStoryLoader: StoryLoading {
+        let stories: [Story]
+
+        func story(for storyID: StoryID) -> Story? {
+            stories.first { $0.id == storyID }
+        }
     }
 
 }
