@@ -104,7 +104,7 @@ These tasks are not approved by the assessment itself.
 - Requirements: FND-020, FND-023
 
 ### FND-BASE-T13 — Establish repository error/logging strategy
-- Status: PROPOSED
+- Status: VERIFIED — see `Documentation/Tasks/Completed/FND-BASE-T13-ERROR-HANDLING-LOGGING.md`
 - Requirements: FND-024, FND-025
 
 ## Explicitly deferred

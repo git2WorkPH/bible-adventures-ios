@@ -134,7 +134,7 @@ Except for the completed FND-BASE-T01 entry retained for traceability, these are
 
 ## FND-BASE-T13 — Implement recoverable error handling and structured logging
 
-- Status: PROPOSED
+- Status: VERIFIED — see `Documentation/Tasks/Completed/FND-BASE-T13-ERROR-HANDLING-LOGGING.md`
 - Requirements/findings: FND-024, FND-025; PA-002-004.
 - Dependencies: FND-BASE-T06.
 - Scope: define application/content/gameplay error types, user-safe recovery paths, and development/production logging conventions; replace fatal handling only within approved repository/lifecycle scope.
