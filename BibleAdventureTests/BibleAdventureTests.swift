@@ -51,6 +51,94 @@ struct BibleAdventureTests {
     }
 
     @Test
+    func storyEngineAdvancesSequentiallyOnlyAfterSuccess() {
+        let story = genericStoryFixture()
+        var engine = StoryEngine(loader: InMemoryStoryLoader(stories: [story]))
+
+        #expect(engine.start(storyID: .moses))
+        #expect(engine.apply(outcome: .success) == .advanced(toStepIndex: 1))
+        #expect(engine.currentStepIndex == 1)
+        #expect(engine.apply(outcome: .success) == .completed)
+        #expect(engine.isCompleted)
+    }
+
+    @Test
+    func storyEngineRejectsUnconfiguredFailureWithoutChangingProgression() {
+        let story = genericStoryFixture()
+        var engine = StoryEngine(loader: InMemoryStoryLoader(stories: [story]))
+
+        #expect(engine.start(storyID: .moses))
+        #expect(engine.apply(outcome: .failure) == .rejected)
+        #expect(engine.currentStepIndex == 0)
+        #expect(!engine.isCompleted)
+    }
+
+    @Test
+    func storyEngineRepresentsRetryWithoutChangingProgression() {
+        let story = genericStoryFixture()
+        var engine = StoryEngine(loader: InMemoryStoryLoader(stories: [story]))
+
+        #expect(engine.start(storyID: .moses))
+        #expect(engine.apply(outcome: .retry) == .retrying)
+        #expect(engine.currentStepIndex == 0)
+        #expect(!engine.isCompleted)
+    }
+
+    @Test
+    func storyEngineUsesDataDefinedFailureAndConditionalTransitions() {
+        let story = genericStoryFixture()
+        let progression = StoryProgression(
+            transitions: [
+                StoryTransition(
+                    sourceStepIndex: 0,
+                    outcome: .failure,
+                    destination: .step(1)
+                ),
+                StoryTransition(
+                    sourceStepIndex: 1,
+                    outcome: .condition("ready-to-finish"),
+                    destination: .complete
+                )
+            ]
+        )
+        var engine = StoryEngine(
+            loader: InMemoryStoryLoader(stories: [story]),
+            progressionLoader: InMemoryStoryProgressionLoader(
+                progressions: [.moses: progression]
+            )
+        )
+
+        #expect(engine.start(storyID: .moses))
+        #expect(engine.apply(outcome: .failure) == .advanced(toStepIndex: 1))
+        #expect(engine.apply(outcome: .condition("ready-to-finish")) == .completed)
+        #expect(engine.isCompleted)
+    }
+
+    @Test
+    func storyEngineRejectsInvalidProgressionConfiguration() {
+        let story = genericStoryFixture()
+        let invalidProgression = StoryProgression(
+            transitions: [
+                StoryTransition(
+                    sourceStepIndex: 0,
+                    outcome: .success,
+                    destination: .step(99)
+                )
+            ]
+        )
+        var engine = StoryEngine(
+            loader: InMemoryStoryLoader(stories: [story]),
+            progressionLoader: InMemoryStoryProgressionLoader(
+                progressions: [.moses: invalidProgression]
+            )
+        )
+
+        #expect(!engine.start(storyID: .moses))
+        #expect(engine.gameState == .inactive)
+        #expect(engine.currentStepIndex == nil)
+    }
+
+    @Test
     func storyEngineRejectsMissingOrConcurrentStartsAndSupportsNoahContent() {
         let genericStory = genericStoryFixture()
         var engine = StoryEngine(
@@ -204,6 +292,14 @@ struct BibleAdventureTests {
 
         func story(for storyID: StoryID) -> Story? {
             stories.first { $0.id == storyID }
+        }
+    }
+
+    private struct InMemoryStoryProgressionLoader: StoryProgressionLoading {
+        let progressions: [StoryID: StoryProgression]
+
+        func progression(for story: Story) -> StoryProgression {
+            progressions[story.id] ?? .sequential(forStepCount: story.steps.count)
         }
     }
 

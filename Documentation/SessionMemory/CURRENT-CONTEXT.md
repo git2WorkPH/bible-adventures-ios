@@ -18,7 +18,7 @@ FND-001 — Story Engine
 
 ## Active Task
 
-None. FND-BASE-T01 and FND-BASE-T02 are verified; FND-BASE-T03 and FND-BASE-T04 are implemented with unit-test execution pending.
+None. FND-BASE-T01 and FND-BASE-T02 are verified; FND-BASE-T03 through FND-BASE-T05 are implemented with unit-test execution pending.
 
 ## Completed Work
 
@@ -32,6 +32,7 @@ None. FND-BASE-T01 and FND-BASE-T02 are verified; FND-BASE-T03 and FND-BASE-T04 
 - FND-BASE-T02 verified: ESV is the direct-quotation source; exact quotations require chapter-and-verse citation and `(ESV)`; `Scripture`, `Interpretation`, and `Game activity` are required labels; `gopher wood` is the Biblical wording and `cypress` is labelled interpretation only.
 - FND-BASE-T03 implemented: pure Foundation game/session/story/objective/mini-game state contracts and direct lifecycle tests were added. `StoryPlayerView` and Noah gameplay remain unchanged.
 - FND-BASE-T04 implemented: `StoryEngine` uses injected generic loading and centralized state to start, expose, complete, and restart configured stories. It intentionally exposes only the first step until progression is approved.
+- FND-BASE-T05 implemented: typed activity outcomes and injected progression configurations let `StoryEngine` advance only through configured success, failure, retry, and condition paths.
 - FND-001-T01 — Define Reusable Story Model is a legacy `IMPLEMENTED` record; it is not retroactively approved or verified.
 - `Story` is now `Identifiable`; `StoryID` has stable `String`, `Codable`, and `Hashable` identity.
 - Added Story-model unit tests for a generic fixture and Noah-model compatibility.
@@ -57,11 +58,12 @@ None. FND-BASE-T01 and FND-BASE-T02 are verified; FND-BASE-T03 and FND-BASE-T04 
 - FND-002-T01 and FND-BASE-T04 through T13 remain proposed; their status is authoritative in `Documentation/Tasks/TASK-REGISTER.md`.
 - FND-BASE-T03 unit tests could not execute because CoreSimulatorService is unavailable; direct Swift source type-check passed. The task remains `IMPLEMENTED`, not `VERIFIED`.
 - FND-BASE-T04 focused tests are present but require the same unavailable simulator service; the engine remains `IMPLEMENTED`, not `VERIFIED`.
+- FND-BASE-T05 focused progression tests are present but require the same unavailable simulator service; the task remains `IMPLEMENTED`, not `VERIFIED`.
 - The worktree includes unrelated user/workspace changes in `.agents/skills/project-assessment/SKILL.md` and Xcode user-interface state; do not overwrite them.
 
 ## Next Recommended Step
 
-Run FND-BASE-T03 and FND-BASE-T04 unit tests in a working iOS Simulator environment, then record verification. FND-BASE-T05 requires separate approval before progression work begins.
+Run FND-BASE-T03 through FND-BASE-T05 unit tests in a working iOS Simulator environment, then record verification. FND-BASE-T06 requires separate approval before content/repository work begins.
 
 ## Requirements Discussed
 

@@ -54,7 +54,7 @@ Except for the completed FND-BASE-T01 entry retained for traceability, these are
 
 ## FND-BASE-T05 — Implement progression and activity-result contracts
 
-- Status: PROPOSED
+- Status: IMPLEMENTED — canonical record: `Documentation/Tasks/Completed/FND-BASE-T05-IMPLEMENT-PROGRESSION-AND-ACTIVITY-RESULT-CONTRACTS.md`
 - Requirements/findings: FND-003, FND-009; PA-002-001.
 - Dependencies: FND-BASE-T04.
 - Scope: define typed outcomes and safe transitions for success, failure, retry, and configured conditional paths; make the Story Engine the only owner of progression decisions.

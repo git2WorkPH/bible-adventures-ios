@@ -52,7 +52,8 @@ These tasks are not approved by the assessment itself.
   - [ ] Core behavior is tested.
 
 ### FND-BASE-T05 — Define progression contract
-- Status: PROPOSED
+- Status: IMPLEMENTED
+- Canonical record: `Documentation/Tasks/Completed/FND-BASE-T05-IMPLEMENT-PROGRESSION-AND-ACTIVITY-RESULT-CONTRACTS.md`
 - Requirement: FND-003
 - Dependencies: FND-BASE-T04
 - Acceptance:

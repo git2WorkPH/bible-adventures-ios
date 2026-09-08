@@ -13,7 +13,8 @@ Task: FND-BASE-T04
 |---|---|
 | `start(storyID:)` | Loads a story from an inactive session and creates active `GameState`. |
 | `currentStory` | Exposes the loaded story configuration for the active session. |
-| `currentStep` | Exposes the first configured story step while the story is active. |
+| `currentStep` | Exposes the current configured story step while the story is active. |
+| `apply(outcome:)` | Applies an injected, data-defined progression transition for a typed activity outcome. |
 | `complete()` | Marks the active story complete through `StoryState`. |
 | `restart()` | Reloads the active story as a fresh active session. |
 
@@ -21,7 +22,7 @@ Task: FND-BASE-T04
 
 ## Deferred behavior
 
-Step advancement, conditional transitions, activity results, failure/retry handling, persistence, repository implementations, and SwiftUI integration are deliberately deferred to separately approved tasks.
+Activity execution, persistence, repository implementations, and SwiftUI integration are deliberately deferred to separately approved tasks. Progression configuration and typed outcomes are defined by FND-BASE-T05.
 
 ## Verification status
 
