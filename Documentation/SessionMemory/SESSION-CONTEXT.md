@@ -37,3 +37,7 @@ Implemented the approved reusable reflection content, completion handoff, lifecy
 ## FND-BASE-T10 — 2026-09-08
 
 Implemented versioned player/story/objective gameplay progress, completion-based unlock rules, injected raw-data storage, JSON save/restore, and typed safe-default recovery. Four focused Swift Testing tests passed. No runtime UI/storage adapter, cloud, accounts, analytics, or spiritual-status measure was added. PA-002-004 remains open for its other gaps. T11 remains proposed and requires approval. Owner edits to T01/T02 status and Xcode UI state remain excluded.
+
+## FND-BASE-T11 — 2026-09-08
+
+Established the foundation test strategy, six-capability matrix, result/blocker semantics, acceptance-evidence template, and populated T11 sample record. Documentation review passed for T11's governance scope. No runtime code changed and no previously blocked iOS/prototype behavior was certified. T12 remains proposed and requires approval. Owner edits to T01/T02 status and Xcode UI state remain excluded.

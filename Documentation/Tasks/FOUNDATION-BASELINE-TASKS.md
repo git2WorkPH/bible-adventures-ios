@@ -96,7 +96,7 @@ These tasks are not approved by the assessment itself.
 ## Phase 4 — Quality foundations
 
 ### FND-BASE-T11 — Establish foundation testing strategy
-- Status: PROPOSED
+- Status: VERIFIED — see `Documentation/Tasks/Completed/FND-BASE-T11-FOUNDATION-TEST-STRATEGY.md`
 - Requirement: FND-026
 
 ### FND-BASE-T12 — Establish accessibility and reduced-motion standards

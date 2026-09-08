@@ -114,7 +114,7 @@ Except for the completed FND-BASE-T01 entry retained for traceability, these are
 
 ## FND-BASE-T11 — Establish foundation test and acceptance-evidence strategy
 
-- Status: PROPOSED
+- Status: VERIFIED — see `Documentation/Tasks/Completed/FND-BASE-T11-FOUNDATION-TEST-STRATEGY.md`
 - Requirements/findings: FND-026; PA-002-004.
 - Dependencies: FND-BASE-T04 through T10 as applicable.
 - Scope: define unit, integration, UI/device, regression, and acceptance-evidence expectations for reusable foundation capabilities; configure testable seams and records for results.
