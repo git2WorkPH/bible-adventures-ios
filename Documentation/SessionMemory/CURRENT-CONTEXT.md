@@ -2,7 +2,7 @@
 
 ## Last Updated
 
-2026-09-04
+2026-09-08
 
 ## Current Objective
 
@@ -65,7 +65,7 @@ None. FND-BASE-T01 and FND-BASE-T02 are verified; FND-BASE-T03 through FND-BASE-
 
 ## Next Recommended Step
 
-Run FND-BASE-T03 through FND-BASE-T06 unit tests in a working iOS Simulator environment, then record verification. FND-BASE-T07 requires separate approval before objective/question lifecycle work begins.
+Run FND-BASE-T03 through FND-BASE-T06 unit tests in a working iOS Simulator environment, then record verification. FND-BASE-T07 is verified for its domain scope (4 tests passed). FND-BASE-T08 requires separate approval.
 
 ## Requirements Discussed
 
@@ -85,3 +85,7 @@ Run FND-BASE-T03 through FND-BASE-T06 unit tests in a working iOS Simulator envi
   - Task document: `Documentation/Tasks/FND-001-T01-DEFINE-STORY-MODEL.md`
   - Changed files: `BibleAdventure/Core/Models/Story.swift`, `BibleAdventure/Core/Models/StoryID.swift`, and `BibleAdventureTests/BibleAdventureTests.swift`.
   - Verification: structural diff check passed; automated XCTest pass/fail remains unverified as recorded above.
+
+## FND-BASE-T07 session — 2026-09-08
+
+Added the reusable objective/question lifecycle, referenced feedback/hints, stable shuffled answers, retry handling, and once-only completion reporting. Four focused Swift Testing tests passed in a temporary Foundation-only package. Full iOS test target was not run. Existing runtime/content is unchanged. Owner edits to T01/T02 task status and Xcode UI state were preserved and excluded from the commit.

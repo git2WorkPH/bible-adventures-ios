@@ -74,7 +74,7 @@ Except for the completed FND-BASE-T01 entry retained for traceability, these are
 
 ## FND-BASE-T07 — Implement reusable objective, question, and learning-feedback lifecycle
 
-- Status: PROPOSED
+- Status: VERIFIED — see `Documentation/Tasks/Completed/FND-BASE-T07-OBJECTIVE-QUESTION-LIFECYCLE.md`
 - Requirements/findings: FND-006, FND-007, FND-008, FND-010; PA-002-001.
 - Dependencies: FND-BASE-T03, FND-BASE-T05, FND-BASE-T06.
 - Scope: define objective/question state and completion contracts, randomized answer ordering that preserves answer correctness, reusable feedback/hints, and Scripture-reference attachment.

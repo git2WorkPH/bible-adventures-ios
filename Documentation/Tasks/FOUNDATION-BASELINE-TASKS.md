@@ -71,7 +71,7 @@ These tasks are not approved by the assessment itself.
 - Requirements: FND-004, FND-018, FND-019
 
 ### FND-BASE-T07 — Establish objective/question lifecycle
-- Status: PROPOSED
+- Status: VERIFIED — see `Documentation/Tasks/Completed/FND-BASE-T07-OBJECTIVE-QUESTION-LIFECYCLE.md`
 - Requirements: FND-006, FND-007, FND-008
 
 ### FND-BASE-T08 — Establish mini-game lifecycle
