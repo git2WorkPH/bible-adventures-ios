@@ -81,13 +81,13 @@ These tasks are not approved by the assessment itself.
 ## Phase 3 — Completion and persistence
 
 ### FND-BASE-T09 — Establish reflection contract
-- Status: PROPOSED
+- Status: VERIFIED — see `Documentation/Tasks/Completed/FND-BASE-T09-SCRIPTURE-CONNECTED-REFLECTION.md`
 - Requirements: FND-015, PRD-006
 - Acceptance:
-  - [ ] Story completion can trigger reflection.
-  - [ ] Reflection connects to Scripture.
-  - [ ] Reflection asks what the story teaches about GOD.
-  - [ ] Reflection is reusable.
+  - [x] Story completion can trigger reflection.
+  - [x] Reflection connects to Scripture.
+  - [x] Reflection asks what the story teaches about GOD.
+  - [x] Reflection is reusable.
 
 ### FND-BASE-T10 — Establish progress and persistence
 - Status: PROPOSED

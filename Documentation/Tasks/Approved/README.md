@@ -4,12 +4,12 @@ Only explicitly approved tasks belong here.
 
 The development skill may implement tasks from this folder. Proposed tasks remain unapproved until the project owner approves them.
 
-## FND-BASE-T08 — Implement reusable mini-game lifecycle and adapters
+## FND-BASE-T09 — Implement reusable Scripture-connected reflection
 
-- Status: VERIFIED — see `Documentation/Tasks/Completed/FND-BASE-T08-MINI-GAME-LIFECYCLE.md`
-- Requirements/findings: FND-009 through FND-014; PA-002-001.
-- Dependencies: FND-BASE-T05, FND-BASE-T06.
-- Scope: define mini-game configuration, typed result, start/complete/fail/retry lifecycle, and a generic presentation adapter; identify the narrow adapter path for the existing Noah mini-game views.
-- Out of scope: wholesale rewrite of Noah interactions, new mini-games, or story expansion.
-- Acceptance: mini-games return typed results to the Story Engine; failure/retry are safe; configuration contains no Noah-specific foundation rules; at least generic lifecycle tests exist.
-- Verification: lifecycle unit tests and integration test using a generic fake mini-game.
+- Status: VERIFIED — see `Documentation/Tasks/Completed/FND-BASE-T09-SCRIPTURE-CONNECTED-REFLECTION.md`
+- Requirements/findings: PRD-002, PRD-006, FND-015, NOAH-012; PA-002-003.
+- Dependencies: FND-BASE-T02, FND-BASE-T04, FND-BASE-T06.
+- Scope: define reflection content/state, Scripture reference linkage, completion handoff, and a reusable presentation contract that asks what the story teaches about GOD.
+- Out of scope: declaring game completion a spiritual achievement, writing new Noah reflection copy before content approval, or persistence.
+- Acceptance: Story Engine completion can trigger reflection; reflection is reusable and reference-linked; it distinguishes reflection from Scripture according to policy; flow has tests.
+- Verification: generic reflection-flow tests and content-policy review.
