@@ -1,6 +1,6 @@
 import Foundation
 
-struct BibleReference {
+struct BibleReference: Equatable {
 
     let book: BibleBook
     let chapter: Int

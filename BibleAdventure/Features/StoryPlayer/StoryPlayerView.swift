@@ -2,7 +2,7 @@ import SwiftUI
 
 struct StoryPlayerView: View {
 
-    let story = StoryRepository.loadStory(.noah)
+    let story = NoahStory.build()
 
     @State private var currentStep = 0
     @State
