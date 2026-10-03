@@ -1,5 +1,19 @@
 # Project Session Context
 
+## Current checkpoint — 2026-10-03 (Australia/Sydney)
+
+Implementation phase: approved PA-003 Noah work is implemented. T01–T07 are VERIFIED at their recorded scopes; T04 was closed after owner content acceptance. T08 remains IMPLEMENTED; Noah remains IMPLEMENTED_UNVERIFIED until manual test device models and OS versions are recorded. Owner said “all working as expected” and confirmed VoiceOver, compact iPad resizing and Reduce Motion checks with “yes.” Record these as owner-reported PASS; do not ask to repeat those checks. Device metadata is the remaining formal acceptance detail.
+
+Current branch develop at 699f256, tracking origin/develop. Master and origin/master at 9c75981 contain the same committed application tree. Git synchronization was completed earlier. Later acceptance/session documentation edits are uncommitted and unpushed; personal Xcode UI state and scheme preferences are also modified and must be preserved.
+
+Evidence: 46 final unit tests pass; complete portrait/default/accessibility5 and landscape flows pass on recorded iPhone/iPad Simulators; narrow iPhone SE flow passes. See Acceptance/PA-003-T08-VERIFICATION.md and PA-003-Evidence/. Live Computer Use now works. Additional iPhone 17 Pro Max/iOS 26.1 live landscape flow reached Adventure complete with actual OS Reduce Motion and increased system text size. iPad home/first question were reviewed live. Agent did not perform physical-device VoiceOver; current iOS 26.1 Simulator lacks that feature. Owner-reported manual results are distinct from agent observations.
+
+Next: collect only missing manual device/OS metadata, reconcile acceptance/task/requirement statuses, then close T08 and Noah if the required record is complete. Assess remaining project requirements before proposing the next phase; no future story, audio/assets framework, accounts/cloud/telemetry or publication task is approved by the existing Noah authorization.
+
+Read [TECHNICAL-HANDOVER.md](TECHNICAL-HANDOVER.md) for implementation, Git preservation, commands and continuation steps. Follow [HANDOVER-PROCESS.md](HANDOVER-PROCESS.md) for every future task. This checkpoint supersedes conflicting historical statements below; historical evidence remains retained.
+
+## Retained prior session records
+
 ## Current implementation — 2026-10-03
 
 The owner approved PA-003-T01–T08 and every necessary in-scope follow-up. Implementation is complete. T01–T03 and T05–T07 are VERIFIED at their bounded scopes. T04 and T08 are IMPLEMENTED pending final human content/manual acceptance. Noah overall remains IMPLEMENTED_UNVERIFIED; TASK-REGISTER.md and Completed/ records are authoritative.
@@ -91,3 +105,8 @@ At the owner's request, PA-003-FOLLOW-UP-TASKS.md was expanded to cover all five
 ## Branch synchronization — 2026-10-03
 
 Owner instruction: push to develop and then sync to master. Commit the reviewed Noah implementation, acceptance records and shared test configuration; push develop, then merge into current remote master while preserving history. Personal Xcode UI state and scheme preferences remain local. No task verification status changes are implied by branch synchronization.
+
+
+## Documentation synchronization authorization — 2026-10-03
+
+Owner instructed “push it to develop and master” after requesting a project-wide handover process. The documentation checkpoint is being committed and synchronized. Fetch confirmed develop 699f256 and master 9c75981 before this operation. Use live git log/status/upstream refs to resolve the completed operation; final commit hashes are supplied in the delivery response. Preserve the two personal Xcode files and all existing stashes.

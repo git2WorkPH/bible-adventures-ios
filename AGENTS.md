@@ -37,3 +37,7 @@ Task: `PROPOSED`, `APPROVED`, `IN_PROGRESS`, `BLOCKED`, `IMPLEMENTED`, `VERIFIED
 Finding: `OPEN`, `DECISION_REQUIRED`, `TASK_PROPOSED`, `ACCEPTED`, `RESOLVED`, `WONT_FIX`.
 
 Project-specific principles belong in `Documentation/Project/` and project requirements/architecture. Do not assume rules from another project.
+
+## Session checkpoints and technical handover
+
+For every current and future task, follow `Documentation/SessionMemory/HANDOVER-PROCESS.md`. Read `CURRENT-CONTEXT.md` and `TECHNICAL-HANDOVER.md` before resuming work. Maintain the current checkpoint and technical handover after meaningful work and before long operations or ending a session. Use `HANDOVER-TEMPLATE.md` for new task handovers. Record authorization, exact Git state, user edits, running operations, verification evidence, blockers and the first incomplete continuation step. If a credit/usage warning is visible, save the checkpoint before further work; do not depend on a warning to preserve progress. Handover notes do not grant approval or establish verification.

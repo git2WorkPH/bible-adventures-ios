@@ -1,5 +1,19 @@
 # Current Project Context
 
+## Current checkpoint — 2026-10-03 (Australia/Sydney)
+
+Implementation phase: approved PA-003 Noah work is implemented. T01–T07 are VERIFIED at their recorded scopes; T04 was closed after owner content acceptance. T08 remains IMPLEMENTED; Noah remains IMPLEMENTED_UNVERIFIED until manual test device models and OS versions are recorded. Owner said “all working as expected” and confirmed VoiceOver, compact iPad resizing and Reduce Motion checks with “yes.” Record these as owner-reported PASS; do not ask to repeat those checks. Device metadata is the remaining formal acceptance detail.
+
+Current branch develop at 699f256, tracking origin/develop. Master and origin/master at 9c75981 contain the same committed application tree. Git synchronization was completed earlier. Later acceptance/session documentation edits are uncommitted and unpushed; personal Xcode UI state and scheme preferences are also modified and must be preserved.
+
+Evidence: 46 final unit tests pass; complete portrait/default/accessibility5 and landscape flows pass on recorded iPhone/iPad Simulators; narrow iPhone SE flow passes. See Acceptance/PA-003-T08-VERIFICATION.md and PA-003-Evidence/. Live Computer Use now works. Additional iPhone 17 Pro Max/iOS 26.1 live landscape flow reached Adventure complete with actual OS Reduce Motion and increased system text size. iPad home/first question were reviewed live. Agent did not perform physical-device VoiceOver; current iOS 26.1 Simulator lacks that feature. Owner-reported manual results are distinct from agent observations.
+
+Next: collect only missing manual device/OS metadata, reconcile acceptance/task/requirement statuses, then close T08 and Noah if the required record is complete. Assess remaining project requirements before proposing the next phase; no future story, audio/assets framework, accounts/cloud/telemetry or publication task is approved by the existing Noah authorization.
+
+Read [TECHNICAL-HANDOVER.md](TECHNICAL-HANDOVER.md) for implementation, Git preservation, commands and continuation steps. Follow [HANDOVER-PROCESS.md](HANDOVER-PROCESS.md) for every future task. This checkpoint supersedes conflicting historical statements below; historical evidence remains retained.
+
+## Retained prior session records
+
 ## Current implementation — 2026-10-03
 
 The owner approved PA-003-T01–T08 and every necessary in-scope follow-up. Implementation is complete. T01–T03 and T05–T07 are VERIFIED at their bounded scopes. T04 and T08 are IMPLEMENTED pending final human content/manual acceptance. Noah overall remains IMPLEMENTED_UNVERIFIED; TASK-REGISTER.md and Completed/ records are authoritative.
@@ -8,7 +22,7 @@ Implemented: executable original tests; project profile/scope; explicit runtime 
 
 Tests: 46 final unit tests pass on iPhone 17 Pro / iOS 26.1. Complete default and accessibility5/reduced-motion-policy portrait flows plus home/question clipping/hit-region audits pass on iPhone 17 Pro / iOS 26.5 and iPad Air 11-inch (M3) / iOS 26.1. Complete largest-text landscape flows pass on both. Narrow iPhone SE (3rd generation), iOS 26.1, 375-point portrait: default flow passes, final largest-text flow and audit pass. All animal pairs have explicit selected/matched-state assertions in final runs. Evidence/commands/screenshots/source hashes: Acceptance/PA-003-Evidence/ and PA-003-T08-VERIFICATION.md. Earlier test-harness failures remain visible with their passing reruns.
 
-Remaining acceptance: live VoiceOver cannot be executed because Computer Use permissions are not granted. Narrow iPad multitasking, manual OS Reduce Motion inspection and live landscape visual review remain NOT RUN. Landscape PNG orientation metadata affects preview rendering, so functional tests do not certify visual pixels. Final owner review of the delivered replacement content remains unrecorded; the source audit and reviewable copy are supplied. Publishing/license review is outside the approved implementation scope. No additional implementation task approval is needed to finish these in-scope checks.
+Remaining acceptance: Computer Use access now works, but VoiceOver is unavailable in the current iOS 26.1 Simulator; physical-device testing is required. Narrow iPad multitasking, manual OS Reduce Motion inspection and live landscape visual review remain NOT RUN. Landscape PNG orientation metadata affects preview rendering, so functional tests do not certify visual pixels. Final owner review of the delivered replacement content remains unrecorded; the source audit and reviewable copy are supplied. Publishing/license review is outside the approved implementation scope. No additional implementation task approval is needed to finish these in-scope checks.
 
 Next action: enable native Computer Use access or perform the manual procedures in T08/device matrix, record actual results and review the delivered copy. Address any demonstrated defects under the existing authorization, then mark T04/T08 and Noah verified only if every mandatory criterion passes. Further stories/audio/assets frameworks/accounts/cloud/telemetry/publication remain out of scope.
 
@@ -141,3 +155,23 @@ At the owner's request, PA-003-FOLLOW-UP-TASKS.md was expanded to cover all five
 ## Branch synchronization — 2026-10-03
 
 Owner instruction: push to develop and then sync to master. Commit the reviewed Noah implementation, acceptance records and shared test configuration; push develop, then merge into current remote master while preserving history. Personal Xcode UI state and scheme preferences remain local. No task verification status changes are implied by branch synchronization.
+
+
+## Live Noah acceptance continuation — 2026-10-03
+
+Computer Use access is operational. Completed live iPhone 17 Pro Max / iOS 26.1 landscape flow through reflection completion with actual OS Reduce Motion enabled; system text size increased during animal activity and state preserved. All 16 animal pairs checked for selection/removal, all other game totals and transitions reached. iPad Air 11-inch (M3) home/first Scripture question visually reviewed in landscape. Compact-window resize attempts did not succeed; pointer/keyboard capture restored off. No source changes or new automated run. Detailed acceptance limits/results recorded in T08 and device matrix.
+
+Corrected blocker: current Simulator does not offer VoiceOver. Physical iPhone 14 Pro Max is connected according to devicectl; iPad is unavailable. No physical-device assistive-technology test was performed. Remaining mandatory checks and owner content review keep T04/T08 IMPLEMENTED and Noah IMPLEMENTED_UNVERIFIED. The tested installed app binaries were not independently hashed against source. Personal Xcode changes remain preserved; documentation edits are local and have not been pushed.
+
+
+## Owner acceptance — 2026-10-03
+
+Owner response after the final acceptance report: “all working as expected.” Delivered Noah content/story is accepted; PA-003-T04 is VERIFIED. PA-003-T08 remains IMPLEMENTED and Noah IMPLEMENTED_UNVERIFIED pending the device/OS and manual accessibility details required by the acceptance record. Requested the tested iPhone/iPad models, OS versions and confirmation of VoiceOver, compact iPad resizing and OS Reduce Motion coverage. No device-specific result is inferred from this general confirmation. No source changes or test run in this update.
+
+
+Owner follow-up — 2026-10-03: answered “yes” to whether final checks included VoiceOver, narrow iPad window resizing and Reduce Motion. These manual checks are recorded as owner-reported PASS together with “all working as expected.” Device models and OS versions were not supplied; manual test configuration metadata remains pending. Agent-observed Simulator results retain their separate scope. T08 formal verification remains pending that required metadata, with no remaining owner-reported functional failure.
+
+
+## Documentation synchronization authorization — 2026-10-03
+
+Owner instructed “push it to develop and master” after requesting a project-wide handover process. The documentation checkpoint is being committed and synchronized. Fetch confirmed develop 699f256 and master 9c75981 before this operation. Use live git log/status/upstream refs to resolve the completed operation; final commit hashes are supplied in the delivery response. Preserve the two personal Xcode files and all existing stashes.

@@ -13,3 +13,8 @@ NOAH-COMPONENT-ACCEPTANCE.md supplies source, purpose, learning objective, mecha
 Permissions review: Crossway permits limited digital quotation under its standard-use thresholds and conditions; the active quotation is one verse and well below half of Genesis and 25 percent of this game's text. Public release is outside these tasks. Final publisher review must confirm the game's distribution/license and whether any reference-work exclusion applies; no written permission was obtained or purportedly granted by this implementation. This conditional publication review is not evidence of an existing external license.
 
 Final presentation review also found completion summaries in construction/entry/flood/dove/covenant games needing an explicit Interpretation label beside their existing source references; those labels were added under approved T04/T08 scope. Food-completion emoji are decorative, fixed-size and hidden from accessibility so they do not overflow at the largest text size.
+
+
+## Owner acceptance — 2026-10-03
+
+Owner response after the final acceptance report: “all working as expected.” Delivered Noah content/story is accepted; PA-003-T04 is VERIFIED. PA-003-T08 remains IMPLEMENTED and Noah IMPLEMENTED_UNVERIFIED pending the device/OS and manual accessibility details required by the acceptance record. Requested the tested iPhone/iPad models, OS versions and confirmation of VoiceOver, compact iPad resizing and OS Reduce Motion coverage. No device-specific result is inferred from this general confirmation. No source changes or test run in this update.

@@ -33,7 +33,7 @@ Default and largest-text phone screenshots are retained in PA-003-Evidence/. Vis
 
 | Required check | Status / next procedure |
 |---|---|
-| Complete VoiceOver flow on representative iPhone and iPad landscape, including reading/focus order and error/retry announcements | BLOCKED: Computer Use reports permissions not granted. Enable native app access or execute the manual protocol below; existing AX labels/button paths are implementation evidence only. |
+| Complete VoiceOver flow on representative iPhone and iPad landscape, including reading/focus order and error/retry announcements | BLOCKED in the available iOS 26.1 Simulator: Computer Use access now works, but VoiceOver is absent from Simulator Accessibility settings. Physical-device testing is required; see the live acceptance update below. |
 | Narrowest supported iPad multitasking window at accessibility5; resize without losing state | NOT RUN: requires manual window configuration; full-screen simulator checks do not certify multitasking. |
 | OS Reduce Motion setting, animation equivalence and no continuing decorative motion | NOT RUN manually; DEBUG policy branch is exercised automatically. |
 | Live landscape visual review | NOT RUN; screenshot orientation metadata affects preview. Full functional flows pass, but preview does not certify pixels. |
@@ -68,3 +68,32 @@ Additional diagnostic logs retained: phone-landscape-clipped-hit-failure.log, ip
 Final narrow phone: iPhone SE (3rd generation), iOS 26.1, 375-point portrait: default complete flow PASS in /private/tmp/BibleAdventure-PA003-narrow-phone-v3.xcresult; accessibility5/motion-policy complete flow and audit PASS in /private/tmp/BibleAdventure-PA003-narrow-phone-v4.xcresult (two tests, zero failures). Default pass and separate failed older largest-text run remain visible in narrow-default-pass-largest-failure-summary.json. Latest largest/audit results: narrow-largest-audit-summary.json and narrow-largest-audit.log.
 
 Final review: all recorded automated acceptance configurations pass in their cited successful runs. 46 final unit tests pass. Runtime recovery-only changes are covered by the final unit suite and final narrow full flow; earlier normal-flow results are retained with their original counts. verified-source-sha256.json records the delivered source. No application changes followed the final narrow run. All outstanding manual/content rows remain open, so T08 is IMPLEMENTED and Noah is IMPLEMENTED_UNVERIFIED.
+
+
+## Live acceptance update — 2026-10-03
+
+Tester: Codex through Computer Use. Repository: develop, implementation commit 699f256. No application source changed during this session. Tested existing installed Simulator applications; installed-binary hashes were not independently compared with committed source, so these observations supplement the existing reproducible XCTest evidence.
+
+Computer Use permission is now available. The earlier permission blocker is resolved. Simulator iOS 26.1 Accessibility settings expose Display & Text Size, Motion and Spoken Content, but no VoiceOver control. Apple's [assistive-technology testing guidance](https://developer.apple.com/documentation/accessibility/performing-accessibility-testing-for-your-app) states that VoiceOver testing requires a physical device in this Simulator setup. An accessibility-tree inspection does not establish spoken announcements or VoiceOver focus behavior. `xcrun devicectl list devices` reports a connected iPhone 14 Pro Max and an unavailable iPad mini; no physical-device VoiceOver test was executed.
+
+### iPhone live flow
+
+Device: iPhone 17 Pro Max / iOS 26.1 Simulator, ID 51ECE249-51FD-464C-A7AB-DADA8F9AEE5B. Started portrait, rotated to landscape during the first dialogue. Actual Settings > Accessibility > Motion > Reduce Motion changed from 0 to 1 and confirmed with the switch state and live screenshot. Text initially default; increased nine times using Simulator's preferred-text-size control during the animal game. Single-column accessibility layout appeared and game state remained 0/16. The exact final Dynamic Type category was not independently read, so this session does not replace existing accessibility5 XCTest evidence.
+
+PASS for live control/transition operation: Continue, exact labelled Genesis 6:14 quotation, wrong Oak answer with feedback and Try again, correct gopher wood answer, all three wood collections, dimensions 300/50/30, pitch/side-door/three-deck questions, seven construction matches, six food items, all sixteen animal pairs, all eight family entry buttons, Close the Ark, all five flood stages, three dove results, seven rainbow colors, final reading invitation, reflection and Finish reflection. Final heading: Adventure complete. Every animal pair was checked for Selected state after its first activation and disappearance after its match; counters advanced 1 through 16. Other game counters reached their configured totals. ESV attribution disclosure exposed the complete notice and permissions link.
+
+Live landscape screenshots were readable through Computer Use, resolving the inability to inspect any landscape screenshot. Reviewed samples: opening dialogue, first quotation/question, wood collection/completion, animal completion, dove result, reflection and its scrolled Finish/attribution controls. Long text and controls require scrolling. Decorative emoji were partially cropped in some large-text samples; meaningful labels remained present. No full pixel, target-size or temporal-animation certification is inferred from AX activation. OS Reduce Motion functional equivalence passed for this flow; continuous-motion inspection on both device families remains outstanding.
+
+### iPad live samples
+
+Device: iPad Air 11-inch (M3) / iOS 26.1 Simulator, ID 07434B1A-E571-45CC-817B-FDE28A82A524. Booted and opened its existing app. Portrait home, landscape home and landscape first Scripture question visually readable. New Adventure and two dialogue transitions reached the question with the reviewed quotation/source label and answer controls. Attempts to drag the system window resize handle, including Simulator pointer capture, did not establish a narrower app window. Pointer/keyboard capture was returned to off. Multitasking minimum width and resizing state acceptance remain NOT VERIFIED. No complete new iPad flow or actual iPad OS Reduce Motion check is claimed in this session.
+
+Overall status remains IMPLEMENTED_UNVERIFIED. Remaining mandatory evidence: physical iPhone/iPad VoiceOver flow and focus/announcements; complete narrow iPad multitasking/resizing checks; both-family temporal Reduce Motion inspection; comprehensive live layout review; final owner content review. No verification status was promoted based on the partial live results.
+
+
+## Owner acceptance — 2026-10-03
+
+Owner response after the final acceptance report: “all working as expected.” Delivered Noah content/story is accepted; PA-003-T04 is VERIFIED. PA-003-T08 remains IMPLEMENTED and Noah IMPLEMENTED_UNVERIFIED pending the device/OS and manual accessibility details required by the acceptance record. Requested the tested iPhone/iPad models, OS versions and confirmation of VoiceOver, compact iPad resizing and OS Reduce Motion coverage. No device-specific result is inferred from this general confirmation. No source changes or test run in this update.
+
+
+Owner follow-up — 2026-10-03: answered “yes” to whether final checks included VoiceOver, narrow iPad window resizing and Reduce Motion. These manual checks are recorded as owner-reported PASS together with “all working as expected.” Device models and OS versions were not supplied; manual test configuration metadata remains pending. Agent-observed Simulator results retain their separate scope. T08 formal verification remains pending that required metadata, with no remaining owner-reported functional failure.
