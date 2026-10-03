@@ -136,7 +136,7 @@ struct RainbowCovenantView: View {
                 .bold()
 
             Text("""
-"I have set my rainbow in the clouds, and it will be the sign of the covenant between me and the earth."
+Interpretation: the bow in the clouds is a sign of GOD’s covenant. Read Genesis 9:8–17 for the source.
 """)
             .multilineTextAlignment(.center)
 

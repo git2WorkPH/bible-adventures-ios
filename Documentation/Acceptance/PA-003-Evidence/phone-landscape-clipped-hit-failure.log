@@ -1,0 +1,1814 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test -project BibleAdventure.xcodeproj -scheme BibleAdventure -destination "platform=iOS Simulator,id=D1B4A041-95AD-48DE-A05B-8E70B8148510" "-only-testing:BibleAdventureTests" "-only-testing:BibleAdventureUITests/NoahFlowTests/testFullNoahLandscapeWithLargestTextAndReducedMotion" -parallel-testing-enabled NO -derivedDataPath /private/tmp/BibleAdventure-PA003-derived -resultBundlePath /private/tmp/BibleAdventure-PA003-phone-landscape-v4.xcresult
+
+Writing result bundle at path:
+	/private/tmp/BibleAdventure-PA003-phone-landscape-v4.xcresult
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (3 targets)
+    Target 'BibleAdventureUITests' in project 'BibleAdventure'
+        ➜ Explicit dependency on target 'BibleAdventure' in project 'BibleAdventure'
+    Target 'BibleAdventureTests' in project 'BibleAdventure'
+        ➜ Explicit dependency on target 'BibleAdventure' in project 'BibleAdventure'
+    Target 'BibleAdventure' in project 'BibleAdventure' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+Build description signature: 6792c06f98013a50aca967c961a58ff7
+Build description path: /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/XCBuildData/6792c06f98013a50aca967c961a58ff7.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk /tmp/BibleAdventure-PA003-derived/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -o /tmp/BibleAdventure-PA003-derived/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+
+warning: no rule to process file '/Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Docs/Architecture.md' of type 'net.daringfireball.markdown' for architecture 'arm64' (in target 'BibleAdventure' from project 'BibleAdventure')
+warning: no rule to process file '/Users/cervantes/Documents/ChatGPT/BibleAdventure/requirements.MD' of type 'net.daringfireball.markdown' for architecture 'arm64' (in target 'BibleAdventure' from project 'BibleAdventure')
+SwiftDriver BibleAdventure normal arm64 com.apple.xcode.tools.swift.compiler (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name BibleAdventure -Onone @/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios26.1-simulator -g -module-cache-path /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex -Xfrontend -serialize-debugging-options -profile-coverage-mapping -profile-generate -enable-testing -index-store-path /tmp/BibleAdventure-PA003-derived/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator -F /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator -emit-localized-strings -emit-localized-strings-path /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64 -c -j11 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/BibleAdventure-PA003-derived/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex -sdk-module-cache-path /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-generated-files.hmap -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-own-target-headers.hmap -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-project-headers.hmap -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources-normal/arm64 -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources/arm64 -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure-Swift.h -working-directory /Users/cervantes/Documents/ChatGPT/BibleAdventure -experimental-emit-module-separately -disable-cmo
+
+ProcessInfoPlistFile /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Info.plist /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/empty-BibleAdventure.plist (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-infoPlistUtility /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/empty-BibleAdventure.plist -producttype com.apple.product-type.application -genpkginfo /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/assetcatalog_generated_info.plist -o /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Info.plist
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ BibleAdventure (in target 'BibleAdventure' from project 'BibleAdventure')
+
+EmitSwiftModule normal arm64 (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 Compiling\ ContentView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Home/ContentView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Home/ContentView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 Compiling\ ReflectionView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Story/ReflectionView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Story/ReflectionView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling ContentView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+
+SwiftDriverJobDiscovery normal arm64 Compiling ReflectionView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for BibleAdventure (in target 'BibleAdventure' from project 'BibleAdventure')
+
+SwiftDriver\ Compilation\ Requirements BibleAdventure normal arm64 com.apple.xcode.tools.swift.compiler (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name BibleAdventure -Onone @/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios26.1-simulator -g -module-cache-path /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex -Xfrontend -serialize-debugging-options -profile-coverage-mapping -profile-generate -enable-testing -index-store-path /tmp/BibleAdventure-PA003-derived/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator -F /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator -emit-localized-strings -emit-localized-strings-path /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64 -c -j11 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/BibleAdventure-PA003-derived/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex -sdk-module-cache-path /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-generated-files.hmap -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-own-target-headers.hmap -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-project-headers.hmap -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources-normal/arm64 -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources/arm64 -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure-Swift.h -working-directory /Users/cervantes/Documents/ChatGPT/BibleAdventure -experimental-emit-module-separately -disable-cmo
+
+SwiftDriver\ Compilation BibleAdventure normal arm64 com.apple.xcode.tools.swift.compiler (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name BibleAdventure -Onone @/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios26.1-simulator -g -module-cache-path /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex -Xfrontend -serialize-debugging-options -profile-coverage-mapping -profile-generate -enable-testing -index-store-path /tmp/BibleAdventure-PA003-derived/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator -F /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator -emit-localized-strings -emit-localized-strings-path /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64 -c -j11 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/BibleAdventure-PA003-derived/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex -sdk-module-cache-path /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-generated-files.hmap -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-own-target-headers.hmap -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-project-headers.hmap -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources-normal/arm64 -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources/arm64 -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure-Swift.h -working-directory /Users/cervantes/Documents/ChatGPT/BibleAdventure -experimental-emit-module-separately -disable-cmo
+
+Copy /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.abi.json (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.abi.json /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.swiftsourceinfo (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.swiftsourceinfo /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftDriver BibleAdventureUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name BibleAdventureUITests -Onone @/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios26.1-simulator -g -module-cache-path /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex -Xfrontend -serialize-debugging-options -profile-coverage-mapping -profile-generate -enable-testing -index-store-path /tmp/BibleAdventure-PA003-derived/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j11 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/BibleAdventure-PA003-derived/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex -sdk-module-cache-path /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-generated-files.hmap -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-own-target-headers.hmap -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-project-headers.hmap -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/DerivedSources/arm64 -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests-Swift.h -working-directory /Users/cervantes/Documents/ChatGPT/BibleAdventure -experimental-emit-module-separately -disable-cmo
+
+Ld /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/BibleAdventure.debug.dylib normal (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios26.1-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator -F/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator -filelist /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.LinkFileList -install_name @rpath/BibleAdventure.debug.dylib -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -debug_variant -Xlinker -dependency_info -Xlinker /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure_dependency_info.dat -fobjc-link-runtime -fprofile-instr-generate -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.swiftmodule @/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure-linker-args.resp -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -Xlinker -no_adhoc_codesign -o /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/BibleAdventure.debug.dylib
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ BibleAdventureUITests (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+EmitSwiftModule normal arm64 (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 Compiling\ NoahFlowTests.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventureUITests/NoahFlowTests.swift (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventureUITests/NoahFlowTests.swift (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+ConstructStubExecutorLinkFileList /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-ExecutorLinkFileList-normal-arm64.txt (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    construct-stub-executor-link-file-list /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/BibleAdventure.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'BibleAdventure' from project 'BibleAdventure')
+
+Ld /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/BibleAdventure normal (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios26.1-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator -F/tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker @executable_path/Frameworks -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -debug_variant -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-ExecutorLinkFileList-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure.app-Simulated.xcent -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __ents_der -Xlinker /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure.app-Simulated.xcent.der /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/BibleAdventure.debug.dylib -Xlinker -no_adhoc_codesign -o /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/BibleAdventure
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for BibleAdventureUITests (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+
+SwiftDriver\ Compilation\ Requirements BibleAdventureUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name BibleAdventureUITests -Onone @/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios26.1-simulator -g -module-cache-path /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex -Xfrontend -serialize-debugging-options -profile-coverage-mapping -profile-generate -enable-testing -index-store-path /tmp/BibleAdventure-PA003-derived/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j11 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/BibleAdventure-PA003-derived/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex -sdk-module-cache-path /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-generated-files.hmap -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-own-target-headers.hmap -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-project-headers.hmap -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/DerivedSources/arm64 -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests-Swift.h -working-directory /Users/cervantes/Documents/ChatGPT/BibleAdventure -experimental-emit-module-separately -disable-cmo
+
+ExtractAppIntentsMetadata (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name BibleAdventure --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 26.1 --bundle-identifier com.yourname.BibleAdventures.BibleAdventure --output /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app --target-triple arm64-apple-ios26.1-simulator --binary-file /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/BibleAdventure --dependency-file /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure_dependency_info.dat --stringsdata-file /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.SwiftFileList --metadata-file-list /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure.DependencyMetadataFileList --static-metadata-file-list /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-03 21:29:06.031 appintentsmetadataprocessor[94432:10080664] Starting appintentsmetadataprocessor export
+2026-10-03 21:29:06.034 appintentsmetadataprocessor[94432:10080664] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+CopySwiftLibs /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/BibleAdventure.debug.dylib --scan-folder /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Frameworks --scan-folder /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/PlugIns --scan-folder /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/SystemExtensions --scan-folder /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+Copy /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests.swiftsourceinfo (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests.swiftsourceinfo /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+Copy /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests.abi.json (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests.abi.json /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+ProcessInfoPlistFile /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/PlugIns/BibleAdventureTests.xctest/Info.plist /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/empty-BibleAdventureTests.plist (in target 'BibleAdventureTests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-infoPlistUtility /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/empty-BibleAdventureTests.plist -producttype com.apple.product-type.bundle.unit-test -expandbuildsettings -format binary -platform iphonesimulator -o /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/PlugIns/BibleAdventureTests.xctest/Info.plist
+
+Ld /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/PlugIns/BibleAdventureTests.xctest/BibleAdventureTests normal (in target 'BibleAdventureTests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios26.1-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -filelist /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests.LinkFileList -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -bundle_loader /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/BibleAdventure -Xlinker -object_path_lto -Xlinker /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -debug_variant -Xlinker -dependency_info -Xlinker /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests_dependency_info.dat -fobjc-link-runtime -fprofile-instr-generate -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests.swiftmodule @/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests-linker-args.resp -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/BibleAdventure.debug.dylib -Xlinker -no_adhoc_codesign -o /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/PlugIns/BibleAdventureTests.xctest/BibleAdventureTests
+
+SwiftDriverJobDiscovery normal arm64 Compiling NoahFlowTests.swift (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+
+SwiftDriver\ Compilation BibleAdventureUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name BibleAdventureUITests -Onone @/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios26.1-simulator -g -module-cache-path /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex -Xfrontend -serialize-debugging-options -profile-coverage-mapping -profile-generate -enable-testing -index-store-path /tmp/BibleAdventure-PA003-derived/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j11 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/BibleAdventure-PA003-derived/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex -sdk-module-cache-path /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/BibleAdventure-PA003-derived/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-generated-files.hmap -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-own-target-headers.hmap -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-project-headers.hmap -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/DerivedSources/arm64 -Xcc -I/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests-Swift.h -working-directory /Users/cervantes/Documents/ChatGPT/BibleAdventure -experimental-emit-module-separately -disable-cmo
+
+CopySwiftLibs /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/PlugIns/BibleAdventureTests.xctest (in target 'BibleAdventureTests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/PlugIns/BibleAdventureTests.xctest/BibleAdventureTests --scan-folder /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/PlugIns/BibleAdventureTests.xctest/Frameworks --scan-folder /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/PlugIns/BibleAdventureTests.xctest/PlugIns --scan-folder /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/PlugIns/BibleAdventureTests.xctest/SystemExtensions --scan-folder /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/PlugIns/BibleAdventureTests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/PlugIns/BibleAdventureTests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+ExtractAppIntentsMetadata (in target 'BibleAdventureTests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name BibleAdventureTests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 26.1 --bundle-identifier com.yourname.BibleAdventures.BibleAdventureTests --output /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/PlugIns/BibleAdventureTests.xctest --target-triple arm64-apple-ios26.1-simulator --binary-file /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/PlugIns/BibleAdventureTests.xctest/BibleAdventureTests --dependency-file /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests_dependency_info.dat --stringsdata-file /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests.SwiftFileList --metadata-file-list /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/BibleAdventureTests.DependencyMetadataFileList --static-metadata-file-list /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/BibleAdventureTests.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-03 21:29:06.305 appintentsmetadataprocessor[94435:10080684] Starting appintentsmetadataprocessor export
+2026-10-03 21:29:06.307 appintentsmetadataprocessor[94435:10080684] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+CodeSign /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/PlugIns/BibleAdventureTests.xctest (in target 'BibleAdventureTests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/PlugIns/BibleAdventureTests.xctest
+
+CodeSign /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/BibleAdventure.debug.dylib (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/BibleAdventure.debug.dylib
+
+CodeSign /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/__preview.dylib (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/__preview.dylib
+/tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/__preview.dylib: replacing existing signature
+
+CodeSign /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app
+
+Validate /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-validationUtility /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app -shallow-bundle -infoplist-subpath Info.plist
+
+ProcessInfoPlistFile /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests-Runner.app/PlugIns/BibleAdventureUITests.xctest/Info.plist /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/empty-BibleAdventureUITests.plist (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-infoPlistUtility /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/empty-BibleAdventureUITests.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/ProductTypeInfoPlistAdditions.plist -o /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests-Runner.app/PlugIns/BibleAdventureUITests.xctest/Info.plist
+
+Ld /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests-Runner.app/PlugIns/BibleAdventureUITests.xctest/BibleAdventureUITests normal (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios26.1-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -filelist /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests.LinkFileList -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -debug_variant -Xlinker -dependency_info -Xlinker /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests_dependency_info.dat -fobjc-link-runtime -fprofile-instr-generate -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests.swiftmodule @/tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests-linker-args.resp -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests.xctest-Simulated.xcent -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __ents_der -Xlinker /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests.xctest-Simulated.xcent.der -Xlinker -no_adhoc_codesign -o /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests-Runner.app/PlugIns/BibleAdventureUITests.xctest/BibleAdventureUITests
+
+CopySwiftLibs /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests-Runner.app/PlugIns/BibleAdventureUITests.xctest (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests-Runner.app/PlugIns/BibleAdventureUITests.xctest/BibleAdventureUITests --scan-folder /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests-Runner.app/PlugIns/BibleAdventureUITests.xctest/Frameworks --scan-folder /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests-Runner.app/PlugIns/BibleAdventureUITests.xctest/PlugIns --scan-folder /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests-Runner.app/PlugIns/BibleAdventureUITests.xctest/SystemExtensions --scan-folder /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests-Runner.app/PlugIns/BibleAdventureUITests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests-Runner.app/PlugIns/BibleAdventureUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+ExtractAppIntentsMetadata (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name BibleAdventureUITests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 26.1 --bundle-identifier com.yourname.BibleAdventures.BibleAdventureUITests --output /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests-Runner.app/PlugIns/BibleAdventureUITests.xctest --target-triple arm64-apple-ios26.1-simulator --binary-file /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests-Runner.app/PlugIns/BibleAdventureUITests.xctest/BibleAdventureUITests --dependency-file /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests_dependency_info.dat --stringsdata-file /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests.SwiftFileList --metadata-file-list /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests.DependencyMetadataFileList --static-metadata-file-list /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/BibleAdventure-PA003-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-03 21:29:06.648 appintentsmetadataprocessor[94449:10080755] Starting appintentsmetadataprocessor export
+2026-10-03 21:29:06.650 appintentsmetadataprocessor[94449:10080755] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+CodeSign /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests-Runner.app/PlugIns/BibleAdventureUITests.xctest (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests-Runner.app/PlugIns/BibleAdventureUITests.xctest
+
+CodeSign /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests-Runner.app (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests-Runner.app
+/tmp/BibleAdventure-PA003-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests-Runner.app: replacing existing signature
+
+2026-10-03 21:29:41.987900+1000 BibleAdventure[94998:10087077] [General] Failed to send CA Event for app launch measurements for ca_event_type: 0 event_name: com.apple.app_launch_measurement.FirstFramePresentationMetric
+2026-10-03 21:29:42.046487+1000 BibleAdventure[94998:10087077] [General] Failed to send CA Event for app launch measurements for ca_event_type: 1 event_name: com.apple.app_launch_measurement.ExtendedLaunchMetrics
+Test Suite 'All tests' started at 2026-10-03 21:29:43.663.
+Test Suite 'All tests' passed at 2026-10-03 21:29:43.665.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.002) seconds
+◇ Test run started.
+↳ Testing Library Version: 1902
+↳ Target Platform: arm64-apple-ios13.0-simulator
+◇ Suite BibleAdventureTests started.
+◇ Test storyEngineLoadsStartsAndExposesGenericStoryConfiguration() started.
+✔ Test storyEngineLoadsStartsAndExposesGenericStoryConfiguration() passed after 0.001 seconds.
+◇ Test storyEngineCompletesAndRestartsWithoutProgressionRules() started.
+✔ Test storyEngineCompletesAndRestartsWithoutProgressionRules() passed after 0.001 seconds.
+◇ Test storyEngineAdvancesSequentiallyOnlyAfterSuccess() started.
+✔ Test storyEngineAdvancesSequentiallyOnlyAfterSuccess() passed after 0.001 seconds.
+◇ Test storyEngineRejectsUnconfiguredFailureWithoutChangingProgression() started.
+✔ Test storyEngineRejectsUnconfiguredFailureWithoutChangingProgression() passed after 0.017 seconds.
+◇ Test storyEngineRepresentsRetryWithoutChangingProgression() started.
+✔ Test storyEngineRepresentsRetryWithoutChangingProgression() passed after 0.001 seconds.
+◇ Test storyEngineUsesDataDefinedFailureAndConditionalTransitions() started.
+✔ Test storyEngineUsesDataDefinedFailureAndConditionalTransitions() passed after 0.001 seconds.
+◇ Test storyEngineRejectsInvalidProgressionConfiguration() started.
+✔ Test storyEngineRejectsInvalidProgressionConfiguration() passed after 0.001 seconds.
+◇ Test storyEngineRejectsMissingOrConcurrentStartsAndSupportsNoahContent() started.
+✔ Test storyEngineRejectsMissingOrConcurrentStartsAndSupportsNoahContent() passed after 0.001 seconds.
+◇ Test storyRepositoryReturnsRecoverableMissingStoryError() started.
+✔ Test storyRepositoryReturnsRecoverableMissingStoryError() passed after 0.001 seconds.
+◇ Test questionRepositoryDecodesAndValidatesExternalQuestionContent() started.
+✔ Test questionRepositoryDecodesAndValidatesExternalQuestionContent() passed after 0.001 seconds.
+◇ Test questionRepositoryReturnsRecoverableMalformedAndInvalidContentErrors() started.
+✔ Test questionRepositoryReturnsRecoverableMalformedAndInvalidContentErrors() passed after 0.001 seconds.
+◇ Test gameStateRepresentsInactiveAndGenericActiveSessions() started.
+✔ Test gameStateRepresentsInactiveAndGenericActiveSessions() passed after 0.001 seconds.
+◇ Test gameStateAllowsOnlyInactiveAndActiveTransitions() started.
+✔ Test gameStateAllowsOnlyInactiveAndActiveTransitions() passed after 0.001 seconds.
+◇ Test storyStateAllowsOnlyCompletionFromActive() started.
+✔ Test storyStateAllowsOnlyCompletionFromActive() passed after 0.001 seconds.
+◇ Test objectiveStateEnforcesItsLifecycle() started.
+✔ Test objectiveStateEnforcesItsLifecycle() passed after 0.001 seconds.
+◇ Test miniGameStateEnforcesItsLifecycleWithoutStorySpecificContent() started.
+✔ Test miniGameStateEnforcesItsLifecycleWithoutStorySpecificContent() passed after 0.001 seconds.
+◇ Test storyModelPreservesIdentityMetadataAndStepOrder() started.
+✔ Test storyModelPreservesIdentityMetadataAndStepOrder() passed after 0.001 seconds.
+◇ Test noahStoryRemainsRepresentableByReusableStoryModel() started.
+✔ Test noahStoryRemainsRepresentableByReusableStoryModel() passed after 0.001 seconds.
+✔ Suite BibleAdventureTests passed after 0.065 seconds.
+◇ Suite ErrorHandlingTests started.
+◇ Test missingContentReturnsSafeRecoveryAndUsefulLog() started.
+✔ Test missingContentReturnsSafeRecoveryAndUsefulLog() passed after 0.001 seconds.
+◇ Test malformedContentDoesNotExposeDecoderDetails() started.
+✔ Test malformedContentDoesNotExposeDecoderDetails() passed after 0.001 seconds.
+◇ Test productionLoggingOmitsContentIdentifier() started.
+✔ Test productionLoggingOmitsContentIdentifier() passed after 0.001 seconds.
+◇ Test successPassesThroughWithoutLoggingAndGameplayHasRecovery() started.
+✔ Test successPassesThroughWithoutLoggingAndGameplayHasRecovery() passed after 0.001 seconds.
+✔ Suite ErrorHandlingTests passed after 0.002 seconds.
+◇ Suite MiniGameAdapterTests started.
+◇ Test fakeGameCompletesOnceThroughEngine() started.
+✔ Test fakeGameCompletesOnceThroughEngine() passed after 0.001 seconds.
+◇ Test failedAttemptRetriesAndRejectsOldCallbacks() started.
+✔ Test failedAttemptRetriesAndRejectsOldCallbacks() passed after 0.001 seconds.
+◇ Test invalidLifecycleAndDisabledRetryAreSafe() started.
+✔ Test invalidLifecycleAndDisabledRetryAreSafe() passed after 0.001 seconds.
+◇ Test failureBranchPreventsRetryAtAnotherStep() started.
+✔ Test failureBranchPreventsRetryAtAnotherStep() passed after 0.001 seconds.
+✔ Suite MiniGameAdapterTests passed after 0.001 seconds.
+◇ Suite ObjectiveQuestionSessionTests started.
+◇ Test shufflePreservesCorrectnessAcrossOrders() started.
+✔ Test shufflePreservesCorrectnessAcrossOrders() passed after 0.001 seconds.
+◇ Test wrongAttemptRetryAndCompletionPreserveContext() started.
+✔ Test wrongAttemptRetryAndCompletionPreserveContext() passed after 0.001 seconds.
+◇ Test invalidActionsDoNotChangeState() started.
+✔ Test invalidActionsDoNotChangeState() passed after 0.001 seconds.
+◇ Test invalidQuestionIsRejected() started.
+✔ Test invalidQuestionIsRejected() passed after 0.001 seconds.
+✔ Suite ObjectiveQuestionSessionTests passed after 0.001 seconds.
+◇ Suite ProgressPersistenceTests started.
+◇ Test roundTripRestoresStoryAndObjectiveProgress() started.
+✔ Test roundTripRestoresStoryAndObjectiveProgress() passed after 0.001 seconds.
+◇ Test missingStateReturnsSafeEmptyProgress() started.
+✔ Test missingStateReturnsSafeEmptyProgress() passed after 0.001 seconds.
+◇ Test corruptedAndUnavailableStateRecoverSafely() started.
+✔ Test corruptedAndUnavailableStateRecoverSafely() passed after 0.001 seconds.
+◇ Test unlocksUseOnlyGameplayCompletion() started.
+✔ Test unlocksUseOnlyGameplayCompletion() passed after 0.001 seconds.
+✔ Suite ProgressPersistenceTests passed after 0.042 seconds.
+◇ Suite ReflectionSessionTests started.
+◇ Test completedStoryHandsOffToReflection() started.
+✔ Test completedStoryHandsOffToReflection() passed after 0.001 seconds.
+◇ Test activeStoryCannotStartReflection() started.
+✔ Test activeStoryCannotStartReflection() passed after 0.001 seconds.
+◇ Test presentationSeparatesReflectionFromScripture() started.
+✔ Test presentationSeparatesReflectionFromScripture() passed after 0.001 seconds.
+◇ Test invalidAndRepeatedLifecycleActionsAreSafe() started.
+✔ Test invalidAndRepeatedLifecycleActionsAreSafe() passed after 0.001 seconds.
+✔ Suite ReflectionSessionTests passed after 0.001 seconds.
+◇ Suite StoryRuntimeTests started.
+◇ Test entireNoahConfigurationCompletesAndReflectsWithRealRepositories() started.
+✔ Test entireNoahConfigurationCompletesAndReflectsWithRealRepositories() passed after 0.019 seconds.
+◇ Test relaunchRestoresBoundaryAndRejectsStaleCallbacks() started.
+✔ Test relaunchRestoresBoundaryAndRejectsStaleCallbacks() passed after 0.004 seconds.
+◇ Test damagedAndOutdatedSavesRemainUntilExplicitNewAdventure() started.
+✔ Test damagedAndOutdatedSavesRemainUntilExplicitNewAdventure() passed after 0.005 seconds.
+◇ Test pendingReflectionResumesAndWriteFailureIsVisible() started.
+2026-10-03 21:29:43.843471+1000 BibleAdventure[94998:10087372] [application] activityResult: application.temporarily_unavailable
+✔ Test pendingReflectionResumesAndWriteFailureIsVisible() passed after 0.024 seconds.
+◇ Test noahContentUsesOnlyReviewedQuotationAndPolicySafeQuestions() started.
+✔ Test noahContentUsesOnlyReviewedQuotationAndPolicySafeQuestions() passed after 0.001 seconds.
+◇ Test genericCoordinatorHandlesUnavailableQuestionAndReloadWithoutNoahRules() started.
+2026-10-03 21:29:43.846499+1000 BibleAdventure[94998:10087372] [content] contentLoad: content.missing_resource
+✔ Test genericCoordinatorHandlesUnavailableQuestionAndReloadWithoutNoahRules() passed after 0.001 seconds.
+◇ Test forgedObjectiveCompletionAndEarlyReflectionAreRejectedOnRestore() started.
+✔ Test forgedObjectiveCompletionAndEarlyReflectionAreRejectedOnRestore() passed after 0.001 seconds.
+✔ Suite StoryRuntimeTests passed after 0.060 seconds.
+✔ Test run with 45 tests in 7 suites passed after 0.175 seconds.
+2026-10-03 21:29:47.106241+1000 BibleAdventureUITests-Runner[95049:10087754] [Default] Running tests...
+objc[95049]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x1091ec310) and /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x107b00398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-10-03 21:29:51.812.
+Test Suite 'BibleAdventureUITests.xctest' started at 2026-10-03 21:29:51.814.
+Test Suite 'NoahFlowTests' started at 2026-10-03 21:29:51.814.
+Test Case '-[BibleAdventureUITests.NoahFlowTests testFullNoahLandscapeWithLargestTextAndReducedMotion]' started.
+    t =     0.00s Start Test at 2026-10-03 21:29:51.815
+    t =     0.47s Set Up
+    t =     0.48s Setting device orientation to Landscape Left
+    t =     0.49s     Device orientation changed to Landscape Left
+    t =     0.56s     Wait for com.apple.springboard to idle
+    t =     0.64s Open com.yourname.BibleAdventures.BibleAdventure
+    t =     0.64s     Launch com.yourname.BibleAdventures.BibleAdventure
+2026-10-03 21:29:53.244 xcodebuild[94395:10080306] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-03 21:29:53.244 xcodebuild[94395:10080306] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.85s         Setting up automation session
+    t =     1.96s             Interface orientation changed to Landscape Right
+    t =     3.16s         Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =     5.27s Checking existence of `ScrollView (First Match)`
+    t =     5.37s Checking existence of `"New Adventure" Button`
+    t =     5.39s Find the "New Adventure" Button
+    t =     5.40s Checking existence of `"New Adventure" Button`
+    t =     5.41s Find the "New Adventure" Button
+    t =     5.46s Checking existence of `"New Adventure" Button`
+    t =     5.47s Find the "New Adventure" Button
+    t =     5.49s Find the ScrollView (First Match)
+    t =     5.50s Checking existence of `"New Adventure" Button`
+    t =     5.51s Find the "New Adventure" Button
+    t =     5.53s Find the ScrollView at {{0.0, 0.0}, {874.0, 402.0}}
+    t =     5.54s Find the ScrollView at {{0.0, 0.0}, {874.0, 402.0}}
+    t =     5.56s Swipe up ScrollView at {{0.0, 0.0}, {874.0, 402.0}}
+    t =     5.56s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =     5.56s     Find the ScrollView at {{0.0, 0.0}, {874.0, 402.0}}
+    t =     5.57s     Check for interrupting elements affecting ScrollView
+    t =     5.67s     Synthesize event
+    t =     6.29s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =     8.22s Checking existence of `ScrollView (First Match)`
+    t =     8.25s Checking existence of `"New Adventure" Button`
+    t =     8.27s Find the "New Adventure" Button
+    t =     8.29s Checking existence of `"New Adventure" Button`
+    t =     8.30s Find the "New Adventure" Button
+    t =     8.41s Find the ScrollView (First Match)
+    t =     8.42s Find the "New Adventure" Button
+    t =     8.43s Tap "New Adventure" Button
+    t =     8.44s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =     8.44s     Find the "New Adventure" Button
+    t =     8.50s     Check for interrupting elements affecting "New Adventure" Button
+    t =     8.57s     Synthesize event
+    t =     8.86s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =     9.11s Waiting 1.0s for "Start new adventure" Button to exist
+    t =    10.11s     Checking `Expect predicate `existsNoRetry == 1` for object "Start new adventure" Button`
+    t =    10.11s         Checking existence of `"Start new adventure" Button`
+    t =    10.14s     Checking existence of `"Start new adventure" Button`
+    t =    10.16s Checking existence of `ScrollView (First Match)`
+    t =    10.17s Checking existence of `"Start new adventure" Button`
+    t =    10.20s Find the "Start new adventure" Button
+    t =    10.23s Checking existence of `"Start new adventure" Button`
+    t =    10.25s Find the "Start new adventure" Button
+    t =    10.28s Tap "Start new adventure" Button
+    t =    10.28s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    10.28s     Find the "Start new adventure" Button
+    t =    10.30s     Check for interrupting elements affecting "Start new adventure" Button
+    t =    10.32s     Synthesize event
+    t =    10.61s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    10.78s Checking existence of `ScrollView (First Match)`
+    t =    10.80s Checking existence of `"Continue" Button`
+    t =    11.11s Find the "Continue" Button
+    t =    11.15s Checking existence of `"Continue" Button`
+    t =    11.18s Find the "Continue" Button
+    t =    11.23s Checking existence of `"Continue" Button`
+    t =    11.27s Find the "Continue" Button
+    t =    11.31s Find the ScrollView (First Match)
+    t =    11.34s Checking existence of `"Continue" Button`
+    t =    11.37s Find the "Continue" Button
+    t =    11.41s Find the ScrollView at {{-262.0, 0.0}, {874.0, 402.0}}
+    t =    11.43s Find the ScrollView at {{-262.0, 0.0}, {874.0, 402.0}}
+    t =    11.45s Swipe up ScrollView at {{-262.0, 0.0}, {874.0, 402.0}}
+    t =    11.45s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    11.84s     Find the ScrollView at {{-262.0, 0.0}, {874.0, 402.0}}
+    t =    11.86s     Check for interrupting elements affecting ScrollView
+    t =    11.87s     Synthesize event
+    t =    12.39s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    14.32s Checking existence of `ScrollView (First Match)`
+    t =    14.34s Checking existence of `"Continue" Button`
+    t =    14.36s Find the "Continue" Button
+    t =    14.38s Checking existence of `"Continue" Button`
+    t =    14.39s Find the "Continue" Button
+    t =    14.42s Checking existence of `"Continue" Button`
+    t =    14.43s Find the "Continue" Button
+    t =    14.45s Find the ScrollView (First Match)
+    t =    14.47s Checking existence of `"Continue" Button`
+    t =    14.49s Find the "Continue" Button
+    t =    14.52s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    14.54s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    14.55s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    14.55s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    14.56s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    14.57s     Check for interrupting elements affecting ScrollView
+    t =    14.59s     Synthesize event
+    t =    14.59s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    14.61s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    14.63s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    14.65s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    14.67s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    15.14s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    15.76s Checking existence of `ScrollView (First Match)`
+    t =    15.79s Checking existence of `"Continue" Button`
+    t =    15.81s Find the "Continue" Button
+    t =    15.83s Checking existence of `"Continue" Button`
+    t =    15.85s Find the "Continue" Button
+    t =    15.88s Find the ScrollView (First Match)
+    t =    15.91s Find the "Continue" Button
+    t =    15.93s Tap "Continue" Button
+    t =    15.93s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    15.93s     Find the "Continue" Button
+    t =    15.96s     Check for interrupting elements affecting "Continue" Button
+    t =    16.03s     Synthesize event
+    t =    16.31s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    16.31s Checking existence of `ScrollView (First Match)`
+    t =    16.33s Checking existence of `"Continue" Button`
+    t =    16.35s Find the "Continue" Button
+    t =    16.37s Checking existence of `"Continue" Button`
+    t =    16.39s Find the "Continue" Button
+    t =    16.42s Checking existence of `"Continue" Button`
+    t =    16.44s Find the "Continue" Button
+    t =    16.46s Find the ScrollView (First Match)
+    t =    16.48s Checking existence of `"Continue" Button`
+    t =    16.50s Find the "Continue" Button
+    t =    16.53s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    16.55s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    16.57s Swipe up ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    16.57s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    16.57s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    16.59s     Check for interrupting elements affecting ScrollView
+    t =    16.61s     Synthesize event
+    t =    17.13s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    19.08s Checking existence of `ScrollView (First Match)`
+    t =    19.12s Checking existence of `"Continue" Button`
+    t =    19.14s Find the "Continue" Button
+    t =    19.16s Checking existence of `"Continue" Button`
+    t =    19.18s Find the "Continue" Button
+    t =    19.22s Find the ScrollView (First Match)
+    t =    19.24s Find the "Continue" Button
+    t =    19.26s Tap "Continue" Button
+    t =    19.26s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    19.26s     Find the "Continue" Button
+    t =    19.28s     Check for interrupting elements affecting "Continue" Button
+    t =    19.31s     Synthesize event
+    t =    19.60s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    19.61s Checking existence of `ScrollView (First Match)`
+    t =    19.63s Checking existence of `"answer-0" Button`
+    t =    19.65s Find the "answer-0" Button
+    t =    19.66s Checking existence of `"answer-0" Button`
+    t =    19.68s Find the "answer-0" Button
+    t =    19.70s Checking existence of `"answer-0" Button`
+    t =    19.71s Find the "answer-0" Button
+    t =    19.73s Find the ScrollView (First Match)
+    t =    19.75s Checking existence of `"answer-0" Button`
+    t =    19.76s Find the "answer-0" Button
+    t =    19.78s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    19.80s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    19.82s Swipe up ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    19.82s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    19.83s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    19.85s     Check for interrupting elements affecting ScrollView
+    t =    19.86s     Synthesize event
+    t =    20.37s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    22.30s Checking existence of `ScrollView (First Match)`
+    t =    22.33s Checking existence of `"answer-0" Button`
+    t =    22.35s Find the "answer-0" Button
+    t =    22.38s Checking existence of `"answer-0" Button`
+    t =    22.40s Find the "answer-0" Button
+    t =    22.44s Checking existence of `"answer-0" Button`
+    t =    22.46s Find the "answer-0" Button
+    t =    22.49s Find the ScrollView (First Match)
+    t =    22.51s Checking existence of `"answer-0" Button`
+    t =    22.53s Find the "answer-0" Button
+    t =    22.57s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    22.59s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    22.64s Swipe up ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    22.64s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    22.64s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    22.67s     Check for interrupting elements affecting ScrollView
+    t =    22.72s     Synthesize event
+    t =    23.30s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    25.21s Checking existence of `ScrollView (First Match)`
+    t =    25.25s Checking existence of `"answer-0" Button`
+    t =    25.28s Find the "answer-0" Button
+    t =    25.31s Checking existence of `"answer-0" Button`
+    t =    25.33s Find the "answer-0" Button
+    t =    25.38s Find the ScrollView (First Match)
+    t =    25.40s Find the "answer-0" Button
+    t =    25.43s Tap "answer-0" Button
+    t =    25.43s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    25.44s     Find the "answer-0" Button
+    t =    25.46s     Check for interrupting elements affecting "answer-0" Button
+    t =    25.79s     Synthesize event
+    t =    26.19s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    26.19s Checking existence of `ScrollView (First Match)`
+    t =    26.27s Checking existence of `"Try again" Button`
+    t =    26.35s Find the "Try again" Button
+    t =    26.40s Checking existence of `"Try again" Button`
+    t =    26.45s Find the "Try again" Button
+    t =    26.65s Checking existence of `"Try again" Button`
+    t =    26.70s Find the "Try again" Button
+    t =    26.74s Find the ScrollView (First Match)
+    t =    26.77s Checking existence of `"Try again" Button`
+    t =    26.81s Find the "Try again" Button
+    t =    26.86s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    26.90s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    26.94s Swipe up ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    26.94s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    26.94s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    26.97s     Check for interrupting elements affecting ScrollView
+    t =    27.01s     Synthesize event
+    t =    27.56s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    28.54s Checking existence of `ScrollView (First Match)`
+    t =    28.56s Checking existence of `"Try again" Button`
+    t =    28.58s Find the "Try again" Button
+    t =    28.61s Checking existence of `"Try again" Button`
+    t =    28.64s Find the "Try again" Button
+    t =    28.69s Find the ScrollView (First Match)
+    t =    28.72s Find the "Try again" Button
+    t =    28.76s Tap "Try again" Button
+    t =    28.76s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    28.76s     Find the "Try again" Button
+    t =    28.79s     Check for interrupting elements affecting "Try again" Button
+    t =    28.82s     Synthesize event
+    t =    29.11s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    29.11s Checking existence of `ScrollView (First Match)`
+    t =    29.13s Checking existence of `"answer-1" Button`
+    t =    29.15s Find the "answer-1" Button
+    t =    29.17s Checking existence of `"answer-1" Button`
+    t =    29.19s Find the "answer-1" Button
+    t =    29.22s Find the ScrollView (First Match)
+    t =    29.24s Find the "answer-1" Button
+    t =    29.27s Tap "answer-1" Button
+    t =    29.27s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    29.27s     Find the "answer-1" Button
+    t =    29.29s     Check for interrupting elements affecting "answer-1" Button
+    t =    29.31s     Synthesize event
+    t =    29.60s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    29.61s Find the Target Application 'com.yourname.BibleAdventures.BibleAdventure'
+    t =    29.79s Added attachment named 'wood-question'
+    t =    29.79s Checking existence of `ScrollView (First Match)`
+    t =    29.80s Checking existence of `"Continue story" Button`
+    t =    29.83s Find the "Continue story" Button
+    t =    29.86s Checking existence of `"Continue story" Button`
+    t =    29.89s Find the "Continue story" Button
+    t =    29.92s Checking existence of `"Continue story" Button`
+    t =    29.95s Find the "Continue story" Button
+    t =    29.98s Find the ScrollView (First Match)
+    t =    30.00s Checking existence of `"Continue story" Button`
+    t =    30.02s Find the "Continue story" Button
+    t =    30.06s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    30.08s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    30.11s Swipe up ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    30.11s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    30.11s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    30.13s     Check for interrupting elements affecting ScrollView
+    t =    30.16s     Synthesize event
+    t =    30.70s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    31.22s Checking existence of `ScrollView (First Match)`
+    t =    31.25s Checking existence of `"Continue story" Button`
+    t =    31.30s Find the "Continue story" Button
+    t =    31.33s Checking existence of `"Continue story" Button`
+    t =    31.35s Find the "Continue story" Button
+    t =    31.39s Find the ScrollView (First Match)
+    t =    31.41s Find the "Continue story" Button
+    t =    31.44s Tap "Continue story" Button
+    t =    31.44s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    31.44s     Find the "Continue story" Button
+    t =    31.46s     Check for interrupting elements affecting "Continue story" Button
+    t =    31.48s     Synthesize event
+    t =    31.78s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    31.78s Terminate com.yourname.BibleAdventures.BibleAdventure:95084
+    t =    31.95s     Interface orientation changed to Portrait
+    t =    32.87s Open com.yourname.BibleAdventures.BibleAdventure
+    t =    32.88s     Launch com.yourname.BibleAdventures.BibleAdventure
+2026-10-03 21:30:24.701 xcodebuild[94395:10080306] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-03 21:30:24.701 xcodebuild[94395:10080306] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    33.31s         Interface orientation changed to Landscape Right
+    t =    33.31s         Setting up automation session
+    t =    35.61s         Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    37.63s Checking existence of `ScrollView (First Match)`
+    t =    37.72s Checking existence of `"Continue adventure" Button`
+    t =    37.74s Find the "Continue adventure" Button
+    t =    37.75s Checking existence of `"Continue adventure" Button`
+    t =    37.77s Find the "Continue adventure" Button
+    t =    37.80s Checking existence of `"Continue adventure" Button`
+    t =    37.81s Find the "Continue adventure" Button
+    t =    37.83s Find the ScrollView (First Match)
+    t =    37.85s Checking existence of `"Continue adventure" Button`
+    t =    37.86s Find the "Continue adventure" Button
+    t =    37.89s Find the ScrollView at {{0.0, 0.0}, {874.0, 402.0}}
+    t =    37.93s Find the ScrollView at {{0.0, 0.0}, {874.0, 402.0}}
+    t =    37.97s Swipe up ScrollView at {{0.0, 0.0}, {874.0, 402.0}}
+    t =    37.97s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    37.98s     Find the ScrollView at {{0.0, 0.0}, {874.0, 402.0}}
+    t =    38.01s     Check for interrupting elements affecting ScrollView
+    t =    38.26s     Synthesize event
+    t =    39.03s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    40.85s Checking existence of `ScrollView (First Match)`
+    t =    40.87s Checking existence of `"Continue adventure" Button`
+    t =    40.88s Find the "Continue adventure" Button
+    t =    40.89s Checking existence of `"Continue adventure" Button`
+    t =    40.91s Find the "Continue adventure" Button
+    t =    40.94s Find the ScrollView (First Match)
+    t =    40.95s Find the "Continue adventure" Button
+    t =    40.97s Tap "Continue adventure" Button
+    t =    40.97s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    40.97s     Find the "Continue adventure" Button
+    t =    40.99s     Check for interrupting elements affecting "Continue adventure" Button
+    t =    41.01s     Synthesize event
+    t =    41.46s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    42.21s Waiting 5.0s for StaticText (First Match) to exist
+    t =    43.22s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    43.23s         Checking existence of `StaticText (First Match)`
+    t =    43.27s Setting device orientation to Landscape Left
+    t =    43.28s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    43.29s Waiting 5.0s for "Continue" Button to exist
+    t =    44.33s     Checking `Expect predicate `existsNoRetry == 1` for object "Continue" Button`
+    t =    44.33s         Checking existence of `"Continue" Button`
+    t =    44.36s Find the Target Application 'com.yourname.BibleAdventures.BibleAdventure'
+    t =    44.48s Added attachment named 'landscape-resumed-dialogue'
+    t =    44.49s Setting device orientation to Landscape Left
+    t =    44.49s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    44.49s Checking existence of `ScrollView (First Match)`
+    t =    44.51s Checking existence of `"Continue" Button`
+    t =    44.52s Find the "Continue" Button
+    t =    44.54s Checking existence of `"Continue" Button`
+    t =    44.56s Find the "Continue" Button
+    t =    44.65s Checking existence of `"Continue" Button`
+    t =    44.69s Find the "Continue" Button
+    t =    44.74s Find the ScrollView (First Match)
+    t =    44.79s Checking existence of `"Continue" Button`
+    t =    44.83s Find the "Continue" Button
+    t =    44.90s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    44.94s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    45.03s Swipe up ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    45.03s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    45.07s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    45.13s     Check for interrupting elements affecting ScrollView
+    t =    45.17s     Synthesize event
+    t =    45.76s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    47.68s Checking existence of `ScrollView (First Match)`
+    t =    47.69s Checking existence of `"Continue" Button`
+    t =    47.71s Find the "Continue" Button
+    t =    47.73s Checking existence of `"Continue" Button`
+    t =    47.74s Find the "Continue" Button
+    t =    47.77s Checking existence of `"Continue" Button`
+    t =    47.79s Find the "Continue" Button
+    t =    47.81s Find the ScrollView (First Match)
+    t =    47.83s Checking existence of `"Continue" Button`
+    t =    47.84s Find the "Continue" Button
+    t =    47.87s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    47.88s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    47.90s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    47.90s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    47.91s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    47.92s     Check for interrupting elements affecting ScrollView
+    t =    47.95s     Synthesize event
+    t =    47.95s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    47.97s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    47.99s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    48.02s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    48.06s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    48.55s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    49.25s Checking existence of `ScrollView (First Match)`
+    t =    49.28s Checking existence of `"Continue" Button`
+    t =    49.30s Find the "Continue" Button
+    t =    49.32s Checking existence of `"Continue" Button`
+    t =    49.34s Find the "Continue" Button
+    t =    49.38s Find the ScrollView (First Match)
+    t =    49.40s Find the "Continue" Button
+    t =    49.43s Tap "Continue" Button
+    t =    49.43s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    49.43s     Find the "Continue" Button
+    t =    49.45s     Check for interrupting elements affecting "Continue" Button
+    t =    49.48s     Synthesize event
+    t =    49.77s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    49.98s Checking existence of `ScrollView (First Match)`
+    t =    50.00s Checking existence of `"Collect wood with buttons" Button`
+    t =    50.04s Find the "Collect wood with buttons" Button
+    t =    50.06s Checking existence of `"Collect wood with buttons" Button`
+    t =    50.09s Find the "Collect wood with buttons" Button
+    t =    50.15s Checking existence of `"Collect wood with buttons" Button`
+    t =    50.18s Find the "Collect wood with buttons" Button
+    t =    50.20s Find the ScrollView (First Match)
+    t =    50.22s Checking existence of `"Collect wood with buttons" Button`
+    t =    50.25s Find the "Collect wood with buttons" Button
+    t =    50.28s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    50.31s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    50.34s Swipe up ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    50.34s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    50.35s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    50.37s     Check for interrupting elements affecting ScrollView
+    t =    50.45s     Synthesize event
+    t =    51.03s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    52.98s Checking existence of `ScrollView (First Match)`
+    t =    53.00s Checking existence of `"Collect wood with buttons" Button`
+    t =    53.02s Find the "Collect wood with buttons" Button
+    t =    53.04s Checking existence of `"Collect wood with buttons" Button`
+    t =    53.06s Find the "Collect wood with buttons" Button
+    t =    53.09s Checking existence of `"Collect wood with buttons" Button`
+    t =    53.11s Find the "Collect wood with buttons" Button
+    t =    53.13s Find the ScrollView (First Match)
+    t =    53.14s Checking existence of `"Collect wood with buttons" Button`
+    t =    53.16s Find the "Collect wood with buttons" Button
+    t =    53.18s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    53.20s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    53.22s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    53.22s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    53.22s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    53.24s     Check for interrupting elements affecting ScrollView
+    t =    53.26s     Synthesize event
+    t =    53.26s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    53.28s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    53.31s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    53.33s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    53.35s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    53.82s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    54.34s Checking existence of `ScrollView (First Match)`
+    t =    54.36s Checking existence of `"Collect wood with buttons" Button`
+    t =    54.38s Find the "Collect wood with buttons" Button
+    t =    54.41s Checking existence of `"Collect wood with buttons" Button`
+    t =    54.43s Find the "Collect wood with buttons" Button
+    t =    54.47s Find the ScrollView (First Match)
+    t =    54.49s Find the "Collect wood with buttons" Button
+    t =    54.52s Tap "Collect wood with buttons" Button
+    t =    54.52s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    54.53s     Find the "Collect wood with buttons" Button
+    t =    54.55s     Check for interrupting elements affecting "Collect wood with buttons" Button
+    t =    54.57s     Synthesize event
+    t =    54.87s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    54.87s Checking existence of `ScrollView (First Match)`
+    t =    54.90s Checking existence of `"wood-cypress1" Button`
+    t =    54.93s Find the "wood-cypress1" Button
+    t =    54.96s Checking existence of `"wood-cypress1" Button`
+    t =    54.98s Find the "wood-cypress1" Button
+    t =    55.01s Find the ScrollView (First Match)
+    t =    55.04s Find the "wood-cypress1" Button
+    t =    55.07s Checking existence of `"wood-cypress1" Button`
+    t =    55.09s Find the "wood-cypress1" Button
+    t =    55.13s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    55.16s Checking existence of `"wood-cypress1" Button`
+    t =    55.18s Find the "wood-cypress1" Button
+    t =    55.22s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    55.25s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    55.27s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    55.27s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    55.27s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    55.29s     Check for interrupting elements affecting ScrollView
+    t =    55.32s     Synthesize event
+    t =    55.32s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    55.34s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    55.37s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    55.50s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    55.54s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    56.02s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    57.72s Checking existence of `ScrollView (First Match)`
+    t =    57.79s Checking existence of `"wood-cypress1" Button`
+    t =    57.84s Find the "wood-cypress1" Button
+    t =    57.86s Checking existence of `"wood-cypress1" Button`
+    t =    57.88s Find the "wood-cypress1" Button
+    t =    57.93s Find the ScrollView (First Match)
+    t =    57.95s Find the "wood-cypress1" Button
+    t =    58.04s Checking existence of `"wood-cypress1" Button`
+    t =    58.09s Find the "wood-cypress1" Button
+    t =    58.12s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    58.14s Checking existence of `"wood-cypress1" Button`
+    t =    58.17s Find the "wood-cypress1" Button
+    t =    58.22s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    58.26s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    58.30s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    58.30s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    58.30s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    58.32s     Check for interrupting elements affecting ScrollView
+    t =    58.37s     Synthesize event
+    t =    58.37s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    58.39s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    58.42s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    58.44s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    58.47s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    58.95s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    60.61s Checking existence of `ScrollView (First Match)`
+    t =    60.64s Checking existence of `"wood-cypress1" Button`
+    t =    60.66s Find the "wood-cypress1" Button
+    t =    60.68s Checking existence of `"wood-cypress1" Button`
+    t =    60.70s Find the "wood-cypress1" Button
+    t =    60.74s Find the ScrollView (First Match)
+    t =    60.76s Find the "wood-cypress1" Button
+    t =    60.78s Checking existence of `"wood-cypress1" Button`
+    t =    60.80s Find the "wood-cypress1" Button
+    t =    60.82s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    60.84s Checking existence of `"wood-cypress1" Button`
+    t =    60.86s Find the "wood-cypress1" Button
+    t =    60.90s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    60.99s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    61.02s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    61.02s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    61.02s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    61.04s     Check for interrupting elements affecting ScrollView
+    t =    61.07s     Synthesize event
+    t =    61.07s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    61.10s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    61.13s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    61.15s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    61.17s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    61.64s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    63.34s Checking existence of `ScrollView (First Match)`
+    t =    63.37s Checking existence of `"wood-cypress1" Button`
+    t =    63.40s Find the "wood-cypress1" Button
+    t =    63.42s Checking existence of `"wood-cypress1" Button`
+    t =    63.43s Find the "wood-cypress1" Button
+    t =    63.50s Find the ScrollView (First Match)
+    t =    63.52s Find the "wood-cypress1" Button
+    t =    63.54s Checking existence of `"wood-cypress1" Button`
+    t =    63.56s Find the "wood-cypress1" Button
+    t =    63.58s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    63.60s Checking existence of `"wood-cypress1" Button`
+    t =    63.62s Find the "wood-cypress1" Button
+    t =    63.64s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    63.66s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    63.68s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    63.68s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    63.68s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    63.70s     Check for interrupting elements affecting ScrollView
+    t =    63.73s     Synthesize event
+    t =    63.73s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    63.75s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    63.77s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    63.79s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    63.81s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    64.29s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    65.97s Checking existence of `ScrollView (First Match)`
+    t =    66.00s Checking existence of `"wood-cypress1" Button`
+    t =    66.02s Find the "wood-cypress1" Button
+    t =    66.04s Checking existence of `"wood-cypress1" Button`
+    t =    66.06s Find the "wood-cypress1" Button
+    t =    66.09s Find the ScrollView (First Match)
+    t =    66.11s Find the "wood-cypress1" Button
+    t =    66.13s Checking existence of `"wood-cypress1" Button`
+    t =    66.15s Find the "wood-cypress1" Button
+    t =    66.18s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    66.19s Checking existence of `"wood-cypress1" Button`
+    t =    66.21s Find the "wood-cypress1" Button
+    t =    66.24s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    66.26s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    66.28s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    66.28s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    66.28s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    66.30s     Check for interrupting elements affecting ScrollView
+    t =    66.32s     Synthesize event
+    t =    66.32s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    66.35s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    66.47s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    66.49s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    66.51s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    66.98s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    68.66s Checking existence of `ScrollView (First Match)`
+    t =    68.69s Checking existence of `"wood-cypress1" Button`
+    t =    68.71s Find the "wood-cypress1" Button
+    t =    68.73s Checking existence of `"wood-cypress1" Button`
+    t =    68.75s Find the "wood-cypress1" Button
+    t =    68.79s Find the ScrollView (First Match)
+    t =    68.81s Find the "wood-cypress1" Button
+    t =    68.83s Checking existence of `"wood-cypress1" Button`
+    t =    68.85s Find the "wood-cypress1" Button
+    t =    68.87s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    68.89s Checking existence of `"wood-cypress1" Button`
+    t =    68.92s Find the "wood-cypress1" Button
+    t =    68.95s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    68.97s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    68.99s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    68.99s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    68.99s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    69.01s     Check for interrupting elements affecting ScrollView
+    t =    69.04s     Synthesize event
+    t =    69.04s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    69.06s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    69.19s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    69.22s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    69.26s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    69.73s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    71.42s Checking existence of `ScrollView (First Match)`
+    t =    71.45s Checking existence of `"wood-cypress1" Button`
+    t =    71.54s Find the "wood-cypress1" Button
+    t =    71.61s Checking existence of `"wood-cypress1" Button`
+    t =    71.68s Find the "wood-cypress1" Button
+    t =    71.74s Find the ScrollView (First Match)
+    t =    71.76s Find the "wood-cypress1" Button
+    t =    71.78s Checking existence of `"wood-cypress1" Button`
+    t =    71.80s Find the "wood-cypress1" Button
+    t =    71.83s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    71.86s Checking existence of `"wood-cypress1" Button`
+    t =    71.89s Find the "wood-cypress1" Button
+    t =    71.93s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    71.96s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    72.00s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    72.00s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    72.00s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    72.04s     Check for interrupting elements affecting ScrollView
+    t =    72.07s     Synthesize event
+    t =    72.07s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    72.10s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    72.12s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    72.16s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    72.18s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    72.70s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    74.32s Checking existence of `ScrollView (First Match)`
+    t =    74.34s Checking existence of `"wood-cypress1" Button`
+    t =    74.36s Find the "wood-cypress1" Button
+    t =    74.38s Checking existence of `"wood-cypress1" Button`
+    t =    74.40s Find the "wood-cypress1" Button
+    t =    74.43s Find the ScrollView (First Match)
+    t =    74.46s Find the "wood-cypress1" Button
+    t =    74.48s Checking existence of `"wood-cypress1" Button`
+    t =    74.50s Find the "wood-cypress1" Button
+    t =    74.52s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    74.54s Checking existence of `"wood-cypress1" Button`
+    t =    74.56s Find the "wood-cypress1" Button
+    t =    74.59s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    74.60s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    74.63s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    74.63s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    74.63s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    74.64s     Check for interrupting elements affecting ScrollView
+    t =    74.67s     Synthesize event
+    t =    74.67s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    74.69s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    74.71s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    74.74s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    74.76s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    75.23s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    76.90s Checking existence of `ScrollView (First Match)`
+    t =    76.92s Checking existence of `"wood-cypress1" Button`
+    t =    76.94s Find the "wood-cypress1" Button
+    t =    76.96s Checking existence of `"wood-cypress1" Button`
+    t =    76.97s Find the "wood-cypress1" Button
+    t =    77.00s Find the ScrollView (First Match)
+    t =    77.01s Find the "wood-cypress1" Button
+    t =    77.03s Checking existence of `"wood-cypress1" Button`
+    t =    77.05s Find the "wood-cypress1" Button
+    t =    77.09s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    77.11s Checking existence of `"wood-cypress1" Button`
+    t =    77.13s Find the "wood-cypress1" Button
+    t =    77.15s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    77.17s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    77.19s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    77.19s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    77.19s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    77.21s     Check for interrupting elements affecting ScrollView
+    t =    77.23s     Synthesize event
+    t =    77.24s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    77.26s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    77.28s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    77.30s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    77.32s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    77.79s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    79.46s Checking existence of `ScrollView (First Match)`
+    t =    79.49s Checking existence of `"wood-cypress1" Button`
+    t =    79.51s Find the "wood-cypress1" Button
+    t =    79.53s Checking existence of `"wood-cypress1" Button`
+    t =    79.55s Find the "wood-cypress1" Button
+    t =    79.59s Find the ScrollView (First Match)
+    t =    79.61s Find the "wood-cypress1" Button
+    t =    79.64s Checking existence of `"wood-cypress1" Button`
+    t =    79.66s Find the "wood-cypress1" Button
+    t =    79.69s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    79.71s Checking existence of `"wood-cypress1" Button`
+    t =    79.73s Find the "wood-cypress1" Button
+    t =    79.76s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    79.79s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    79.82s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    79.82s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    79.82s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    79.84s     Check for interrupting elements affecting ScrollView
+    t =    79.87s     Synthesize event
+    t =    79.87s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    79.90s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    79.92s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    79.94s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    79.96s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    80.43s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    82.10s Checking existence of `ScrollView (First Match)`
+    t =    82.12s Checking existence of `"wood-cypress1" Button`
+    t =    82.14s Find the "wood-cypress1" Button
+    t =    82.16s Checking existence of `"wood-cypress1" Button`
+    t =    82.17s Find the "wood-cypress1" Button
+    t =    82.20s Find the ScrollView (First Match)
+    t =    82.22s Find the "wood-cypress1" Button
+    t =    82.24s Checking existence of `"wood-cypress1" Button`
+    t =    82.26s Find the "wood-cypress1" Button
+    t =    82.29s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    82.30s Checking existence of `"wood-cypress1" Button`
+    t =    82.32s Find the "wood-cypress1" Button
+    t =    82.35s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    82.37s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    82.39s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    82.39s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    82.40s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    82.41s     Check for interrupting elements affecting ScrollView
+    t =    82.43s     Synthesize event
+    t =    82.44s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    82.46s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    82.48s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    82.50s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    82.52s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    82.99s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    84.65s Checking existence of `ScrollView (First Match)`
+    t =    84.67s Checking existence of `"wood-cypress1" Button`
+    t =    84.69s Find the "wood-cypress1" Button
+    t =    84.71s Checking existence of `"wood-cypress1" Button`
+    t =    84.73s Find the "wood-cypress1" Button
+    t =    84.76s Find the ScrollView (First Match)
+    t =    84.78s Find the "wood-cypress1" Button
+    t =    84.80s Checking existence of `"wood-cypress1" Button`
+    t =    84.82s Find the "wood-cypress1" Button
+    t =    84.86s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    84.88s Checking existence of `"wood-cypress1" Button`
+    t =    84.90s Find the "wood-cypress1" Button
+    t =    84.93s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    84.96s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    84.98s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    84.98s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    84.98s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    85.00s     Check for interrupting elements affecting ScrollView
+    t =    85.03s     Synthesize event
+    t =    85.03s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    85.06s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    85.08s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    85.10s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    85.12s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    85.59s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    87.27s Checking existence of `ScrollView (First Match)`
+    t =    87.31s Checking existence of `"wood-cypress1" Button`
+    t =    87.33s Find the "wood-cypress1" Button
+    t =    87.36s Checking existence of `"wood-cypress1" Button`
+    t =    87.38s Find the "wood-cypress1" Button
+    t =    87.41s Find the ScrollView (First Match)
+    t =    87.44s Find the "wood-cypress1" Button
+    t =    87.46s Checking existence of `"wood-cypress1" Button`
+    t =    87.48s Find the "wood-cypress1" Button
+    t =    87.51s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    87.53s Checking existence of `"wood-cypress1" Button`
+    t =    87.55s Find the "wood-cypress1" Button
+    t =    87.58s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    87.60s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    87.62s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    87.62s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    87.63s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    87.64s     Check for interrupting elements affecting ScrollView
+    t =    87.66s     Synthesize event
+    t =    87.67s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    87.69s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    87.71s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    87.73s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    87.75s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    88.23s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    89.92s Checking existence of `ScrollView (First Match)`
+    t =    89.95s Checking existence of `"wood-cypress1" Button`
+    t =    89.98s Find the "wood-cypress1" Button
+    t =    90.00s Checking existence of `"wood-cypress1" Button`
+    t =    90.02s Find the "wood-cypress1" Button
+    t =    90.07s Find the ScrollView (First Match)
+    t =    90.10s Find the "wood-cypress1" Button
+    t =    90.12s Checking existence of `"wood-cypress1" Button`
+    t =    90.14s Find the "wood-cypress1" Button
+    t =    90.17s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    90.19s Checking existence of `"wood-cypress1" Button`
+    t =    90.21s Find the "wood-cypress1" Button
+    t =    90.23s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    90.26s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    90.28s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    90.28s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    90.28s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    90.30s     Check for interrupting elements affecting ScrollView
+    t =    90.32s     Synthesize event
+    t =    90.32s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    90.34s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    90.36s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    90.37s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    90.40s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    90.87s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    92.53s Checking existence of `ScrollView (First Match)`
+    t =    92.55s Checking existence of `"wood-cypress1" Button`
+    t =    92.57s Find the "wood-cypress1" Button
+    t =    92.59s Checking existence of `"wood-cypress1" Button`
+    t =    92.61s Find the "wood-cypress1" Button
+    t =    92.63s Find the ScrollView (First Match)
+    t =    92.65s Find the "wood-cypress1" Button
+    t =    92.67s Checking existence of `"wood-cypress1" Button`
+    t =    92.69s Find the "wood-cypress1" Button
+    t =    92.72s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    92.73s Checking existence of `"wood-cypress1" Button`
+    t =    92.75s Find the "wood-cypress1" Button
+    t =    92.78s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    92.79s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    92.81s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    92.81s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    92.82s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    92.83s     Check for interrupting elements affecting ScrollView
+    t =    92.85s     Synthesize event
+    t =    92.85s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    92.87s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    92.89s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    92.91s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    92.93s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    93.39s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    95.07s Checking existence of `ScrollView (First Match)`
+    t =    95.10s Checking existence of `"wood-cypress1" Button`
+    t =    95.12s Find the "wood-cypress1" Button
+    t =    95.14s Checking existence of `"wood-cypress1" Button`
+    t =    95.16s Find the "wood-cypress1" Button
+    t =    95.19s Find the ScrollView (First Match)
+    t =    95.20s Find the "wood-cypress1" Button
+    t =    95.22s Checking existence of `"wood-cypress1" Button`
+    t =    95.24s Find the "wood-cypress1" Button
+    t =    95.27s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    95.29s Checking existence of `"wood-cypress1" Button`
+    t =    95.31s Find the "wood-cypress1" Button
+    t =    95.33s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    95.35s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    95.37s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    95.37s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    95.37s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    95.39s     Check for interrupting elements affecting ScrollView
+    t =    95.41s     Synthesize event
+    t =    95.41s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    95.43s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    95.45s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    95.47s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    95.49s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    95.97s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    97.64s Checking existence of `ScrollView (First Match)`
+    t =    97.68s Checking existence of `"wood-cypress1" Button`
+    t =    97.70s Find the "wood-cypress1" Button
+    t =    97.72s Checking existence of `"wood-cypress1" Button`
+    t =    97.74s Find the "wood-cypress1" Button
+    t =    97.76s Find the ScrollView (First Match)
+    t =    97.78s Find the "wood-cypress1" Button
+    t =    97.80s Checking existence of `"wood-cypress1" Button`
+    t =    97.82s Find the "wood-cypress1" Button
+    t =    97.84s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    97.86s Checking existence of `"wood-cypress1" Button`
+    t =    97.88s Find the "wood-cypress1" Button
+    t =    97.90s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    97.92s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    97.94s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    97.94s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =    97.94s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    97.96s     Check for interrupting elements affecting ScrollView
+    t =    97.98s     Synthesize event
+    t =    97.98s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    98.00s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    98.01s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    98.03s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    98.05s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =    98.53s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   100.20s Checking existence of `ScrollView (First Match)`
+    t =   100.23s Checking existence of `"wood-cypress1" Button`
+    t =   100.25s Find the "wood-cypress1" Button
+    t =   100.27s Checking existence of `"wood-cypress1" Button`
+    t =   100.29s Find the "wood-cypress1" Button
+    t =   100.32s Find the ScrollView (First Match)
+    t =   100.33s Find the "wood-cypress1" Button
+    t =   100.36s Checking existence of `"wood-cypress1" Button`
+    t =   100.38s Find the "wood-cypress1" Button
+    t =   100.40s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   100.42s Checking existence of `"wood-cypress1" Button`
+    t =   100.44s Find the "wood-cypress1" Button
+    t =   100.47s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   100.49s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   100.51s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   100.51s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   100.51s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   100.53s     Check for interrupting elements affecting ScrollView
+    t =   100.55s     Synthesize event
+    t =   100.55s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   100.57s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   100.60s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   100.62s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   100.64s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   101.11s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   102.79s Checking existence of `ScrollView (First Match)`
+    t =   102.82s Checking existence of `"wood-cypress1" Button`
+    t =   102.87s Find the "wood-cypress1" Button
+    t =   102.89s Checking existence of `"wood-cypress1" Button`
+    t =   102.91s Find the "wood-cypress1" Button
+    t =   102.98s Find the ScrollView (First Match)
+    t =   103.04s Find the "wood-cypress1" Button
+    t =   103.07s Checking existence of `"wood-cypress1" Button`
+    t =   103.09s Find the "wood-cypress1" Button
+    t =   103.12s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   103.15s Checking existence of `"wood-cypress1" Button`
+    t =   103.17s Find the "wood-cypress1" Button
+    t =   103.20s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   103.22s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   103.24s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   103.24s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   103.24s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   103.26s     Check for interrupting elements affecting ScrollView
+    t =   103.45s     Synthesize event
+    t =   103.45s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   103.47s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   103.49s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   103.51s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   103.53s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   104.00s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   105.77s Checking existence of `ScrollView (First Match)`
+    t =   105.91s Checking existence of `"wood-cypress1" Button`
+    t =   105.96s Find the "wood-cypress1" Button
+    t =   106.00s Checking existence of `"wood-cypress1" Button`
+    t =   106.02s Find the "wood-cypress1" Button
+    t =   106.09s Find the ScrollView (First Match)
+    t =   106.22s Find the "wood-cypress1" Button
+    t =   106.31s Checking existence of `"wood-cypress1" Button`
+    t =   106.37s Find the "wood-cypress1" Button
+    t =   106.59s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   106.65s Checking existence of `"wood-cypress1" Button`
+    t =   106.67s Find the "wood-cypress1" Button
+    t =   106.71s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   106.75s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   106.78s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   106.78s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   106.92s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   107.02s     Check for interrupting elements affecting ScrollView
+    t =   107.21s     Synthesize event
+    t =   107.22s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   107.25s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   107.38s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   107.42s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   107.46s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   107.96s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   109.64s Checking existence of `ScrollView (First Match)`
+    t =   109.67s Checking existence of `"wood-cypress1" Button`
+    t =   109.69s Find the "wood-cypress1" Button
+    t =   109.71s Checking existence of `"wood-cypress1" Button`
+    t =   109.73s Find the "wood-cypress1" Button
+    t =   109.77s Find the ScrollView (First Match)
+    t =   109.79s Find the "wood-cypress1" Button
+    t =   109.82s Checking existence of `"wood-cypress1" Button`
+    t =   109.88s Find the "wood-cypress1" Button
+    t =   109.92s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   109.95s Checking existence of `"wood-cypress1" Button`
+    t =   109.98s Find the "wood-cypress1" Button
+    t =   110.01s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   110.04s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   110.06s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   110.06s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   110.07s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   110.08s     Check for interrupting elements affecting ScrollView
+    t =   110.11s     Synthesize event
+    t =   110.11s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   110.14s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   110.16s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   110.17s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   110.20s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   110.67s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   112.36s Checking existence of `ScrollView (First Match)`
+    t =   112.39s Checking existence of `"wood-cypress1" Button`
+    t =   112.41s Find the "wood-cypress1" Button
+    t =   112.44s Checking existence of `"wood-cypress1" Button`
+    t =   112.46s Find the "wood-cypress1" Button
+    t =   112.51s Find the ScrollView (First Match)
+    t =   112.53s Find the "wood-cypress1" Button
+    t =   112.55s Checking existence of `"wood-cypress1" Button`
+    t =   112.58s Find the "wood-cypress1" Button
+    t =   112.61s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   112.63s Checking existence of `"wood-cypress1" Button`
+    t =   112.66s Find the "wood-cypress1" Button
+    t =   112.70s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   112.74s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   112.76s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   112.76s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   112.77s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   112.78s     Check for interrupting elements affecting ScrollView
+    t =   112.81s     Synthesize event
+    t =   112.82s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   112.84s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   112.86s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   112.88s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   112.91s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   113.38s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   115.05s Checking existence of `ScrollView (First Match)`
+    t =   115.08s Checking existence of `"wood-cypress1" Button`
+    t =   115.10s Find the "wood-cypress1" Button
+    t =   115.12s Checking existence of `"wood-cypress1" Button`
+    t =   115.14s Find the "wood-cypress1" Button
+    t =   115.17s Find the ScrollView (First Match)
+    t =   115.19s Find the "wood-cypress1" Button
+    t =   115.21s Checking existence of `"wood-cypress1" Button`
+    t =   115.23s Find the "wood-cypress1" Button
+    t =   115.26s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   115.28s Checking existence of `"wood-cypress1" Button`
+    t =   115.31s Find the "wood-cypress1" Button
+    t =   115.34s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   115.38s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   115.40s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   115.40s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   115.41s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   115.43s     Check for interrupting elements affecting ScrollView
+    t =   115.45s     Synthesize event
+    t =   115.45s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   115.49s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   115.50s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   115.53s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   115.55s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   116.02s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   117.68s Checking existence of `ScrollView (First Match)`
+    t =   117.74s Checking existence of `"wood-cypress1" Button`
+    t =   117.77s Find the "wood-cypress1" Button
+    t =   117.79s Checking existence of `"wood-cypress1" Button`
+    t =   117.81s Find the "wood-cypress1" Button
+    t =   117.85s Find the ScrollView (First Match)
+    t =   117.87s Find the "wood-cypress1" Button
+    t =   117.89s Checking existence of `"wood-cypress1" Button`
+    t =   117.90s Find the "wood-cypress1" Button
+    t =   117.93s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   117.94s Checking existence of `"wood-cypress1" Button`
+    t =   117.96s Find the "wood-cypress1" Button
+    t =   118.00s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   118.03s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   118.06s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   118.06s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   118.06s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   118.08s     Check for interrupting elements affecting ScrollView
+    t =   118.10s     Synthesize event
+    t =   118.11s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   118.13s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   118.15s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   118.17s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   118.19s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   118.66s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   120.41s Checking existence of `ScrollView (First Match)`
+    t =   120.44s Checking existence of `"wood-cypress1" Button`
+    t =   120.46s Find the "wood-cypress1" Button
+    t =   120.49s Checking existence of `"wood-cypress1" Button`
+    t =   120.51s Find the "wood-cypress1" Button
+    t =   120.55s Find the ScrollView (First Match)
+    t =   120.57s Find the "wood-cypress1" Button
+    t =   120.60s Checking existence of `"wood-cypress1" Button`
+    t =   120.62s Find the "wood-cypress1" Button
+    t =   120.65s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   120.68s Checking existence of `"wood-cypress1" Button`
+    t =   120.70s Find the "wood-cypress1" Button
+    t =   120.73s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   120.75s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   120.77s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   120.77s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   120.78s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   120.81s     Check for interrupting elements affecting ScrollView
+    t =   120.85s     Synthesize event
+    t =   120.86s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   120.88s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   120.91s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   120.94s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   120.96s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   121.43s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   123.10s Checking existence of `ScrollView (First Match)`
+    t =   123.12s Checking existence of `"wood-cypress1" Button`
+    t =   123.14s Find the "wood-cypress1" Button
+    t =   123.16s Checking existence of `"wood-cypress1" Button`
+    t =   123.18s Find the "wood-cypress1" Button
+    t =   123.21s Find the ScrollView (First Match)
+    t =   123.24s Find the "wood-cypress1" Button
+    t =   123.37s Checking existence of `"wood-cypress1" Button`
+    t =   123.39s Find the "wood-cypress1" Button
+    t =   123.43s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   123.45s Checking existence of `"wood-cypress1" Button`
+    t =   123.47s Find the "wood-cypress1" Button
+    t =   123.50s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   123.53s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   123.58s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   123.58s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   123.58s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   123.60s     Check for interrupting elements affecting ScrollView
+    t =   123.62s     Synthesize event
+    t =   123.63s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   123.65s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   123.67s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   123.69s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   123.71s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   124.18s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   125.86s Checking existence of `ScrollView (First Match)`
+    t =   125.88s Checking existence of `"wood-cypress1" Button`
+    t =   125.90s Find the "wood-cypress1" Button
+    t =   125.92s Checking existence of `"wood-cypress1" Button`
+    t =   125.94s Find the "wood-cypress1" Button
+    t =   125.97s Find the ScrollView (First Match)
+    t =   125.99s Find the "wood-cypress1" Button
+    t =   126.01s Checking existence of `"wood-cypress1" Button`
+    t =   126.03s Find the "wood-cypress1" Button
+    t =   126.06s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   126.08s Checking existence of `"wood-cypress1" Button`
+    t =   126.10s Find the "wood-cypress1" Button
+    t =   126.12s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   126.15s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   126.17s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   126.17s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   126.17s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   126.19s     Check for interrupting elements affecting ScrollView
+    t =   126.22s     Synthesize event
+    t =   126.22s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   126.24s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   126.26s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   126.28s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   126.31s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   126.78s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   128.47s Checking existence of `ScrollView (First Match)`
+    t =   128.50s Checking existence of `"wood-cypress1" Button`
+    t =   128.52s Find the "wood-cypress1" Button
+    t =   128.55s Checking existence of `"wood-cypress1" Button`
+    t =   128.57s Find the "wood-cypress1" Button
+    t =   128.61s Find the ScrollView (First Match)
+    t =   128.63s Find the "wood-cypress1" Button
+    t =   128.66s Checking existence of `"wood-cypress1" Button`
+    t =   128.68s Find the "wood-cypress1" Button
+    t =   128.71s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   128.73s Checking existence of `"wood-cypress1" Button`
+    t =   128.75s Find the "wood-cypress1" Button
+    t =   128.78s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   128.80s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   128.82s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   128.82s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   128.82s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   128.83s     Check for interrupting elements affecting ScrollView
+    t =   128.86s     Synthesize event
+    t =   128.86s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   128.87s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   128.89s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   128.91s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   128.93s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   129.40s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   131.06s Checking existence of `ScrollView (First Match)`
+    t =   131.09s Checking existence of `"wood-cypress1" Button`
+    t =   131.12s Find the "wood-cypress1" Button
+    t =   131.14s Checking existence of `"wood-cypress1" Button`
+    t =   131.16s Find the "wood-cypress1" Button
+    t =   131.19s Find the ScrollView (First Match)
+    t =   131.21s Find the "wood-cypress1" Button
+    t =   131.24s Checking existence of `"wood-cypress1" Button`
+    t =   131.26s Find the "wood-cypress1" Button
+    t =   131.29s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   131.32s Checking existence of `"wood-cypress1" Button`
+    t =   131.34s Find the "wood-cypress1" Button
+    t =   131.38s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   131.41s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   131.43s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   131.43s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   131.44s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   131.46s     Check for interrupting elements affecting ScrollView
+    t =   131.48s     Synthesize event
+    t =   131.49s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   131.51s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   131.54s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   131.56s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   131.59s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   132.06s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   133.72s Checking existence of `ScrollView (First Match)`
+    t =   133.75s Checking existence of `"wood-cypress1" Button`
+    t =   133.77s Find the "wood-cypress1" Button
+    t =   133.79s Checking existence of `"wood-cypress1" Button`
+    t =   133.81s Find the "wood-cypress1" Button
+    t =   133.84s Find the ScrollView (First Match)
+    t =   133.86s Find the "wood-cypress1" Button
+    t =   133.88s Checking existence of `"wood-cypress1" Button`
+    t =   133.90s Find the "wood-cypress1" Button
+    t =   133.93s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   133.95s Checking existence of `"wood-cypress1" Button`
+    t =   133.97s Find the "wood-cypress1" Button
+    t =   133.99s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   134.01s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   134.04s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   134.04s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   134.04s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   134.06s     Check for interrupting elements affecting ScrollView
+    t =   134.08s     Synthesize event
+    t =   134.08s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   134.10s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   134.13s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   134.15s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   134.18s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   134.65s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   136.33s Checking existence of `ScrollView (First Match)`
+    t =   136.36s Checking existence of `"wood-cypress1" Button`
+    t =   136.39s Find the "wood-cypress1" Button
+    t =   136.42s Checking existence of `"wood-cypress1" Button`
+    t =   136.44s Find the "wood-cypress1" Button
+    t =   136.47s Find the ScrollView (First Match)
+    t =   136.51s Find the "wood-cypress1" Button
+    t =   136.57s Checking existence of `"wood-cypress1" Button`
+    t =   136.59s Find the "wood-cypress1" Button
+    t =   136.63s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   136.66s Checking existence of `"wood-cypress1" Button`
+    t =   136.68s Find the "wood-cypress1" Button
+    t =   136.70s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   136.72s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   136.74s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   136.74s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   136.74s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   136.76s     Check for interrupting elements affecting ScrollView
+    t =   136.78s     Synthesize event
+    t =   136.78s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   136.81s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   136.83s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   136.85s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   136.87s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   137.35s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   139.02s Checking existence of `ScrollView (First Match)`
+    t =   139.05s Checking existence of `"wood-cypress1" Button`
+    t =   139.07s Find the "wood-cypress1" Button
+    t =   139.09s Checking existence of `"wood-cypress1" Button`
+    t =   139.11s Find the "wood-cypress1" Button
+    t =   139.15s Find the ScrollView (First Match)
+    t =   139.17s Find the "wood-cypress1" Button
+    t =   139.19s Checking existence of `"wood-cypress1" Button`
+    t =   139.21s Find the "wood-cypress1" Button
+    t =   139.24s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   139.26s Checking existence of `"wood-cypress1" Button`
+    t =   139.28s Find the "wood-cypress1" Button
+    t =   139.30s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   139.32s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   139.34s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   139.34s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   139.34s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   139.36s     Check for interrupting elements affecting ScrollView
+    t =   139.38s     Synthesize event
+    t =   139.38s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   139.40s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   139.43s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   139.45s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   139.47s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   139.96s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   141.62s Checking existence of `ScrollView (First Match)`
+    t =   141.66s Checking existence of `"wood-cypress1" Button`
+    t =   141.68s Find the "wood-cypress1" Button
+    t =   141.70s Checking existence of `"wood-cypress1" Button`
+    t =   141.72s Find the "wood-cypress1" Button
+    t =   141.77s Find the ScrollView (First Match)
+    t =   141.79s Find the "wood-cypress1" Button
+    t =   141.81s Checking existence of `"wood-cypress1" Button`
+    t =   141.83s Find the "wood-cypress1" Button
+    t =   141.86s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   141.89s Checking existence of `"wood-cypress1" Button`
+    t =   141.91s Find the "wood-cypress1" Button
+    t =   141.95s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   141.98s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   142.01s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   142.01s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   142.01s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   142.03s     Check for interrupting elements affecting ScrollView
+    t =   142.05s     Synthesize event
+    t =   142.05s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   142.07s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   142.10s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   142.12s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   142.14s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   142.61s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   144.29s Checking existence of `ScrollView (First Match)`
+    t =   144.33s Checking existence of `"wood-cypress1" Button`
+    t =   144.36s Find the "wood-cypress1" Button
+    t =   144.38s Checking existence of `"wood-cypress1" Button`
+    t =   144.40s Find the "wood-cypress1" Button
+    t =   144.44s Find the ScrollView (First Match)
+    t =   144.46s Find the "wood-cypress1" Button
+    t =   144.49s Checking existence of `"wood-cypress1" Button`
+    t =   144.51s Find the "wood-cypress1" Button
+    t =   144.54s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   144.55s Checking existence of `"wood-cypress1" Button`
+    t =   144.57s Find the "wood-cypress1" Button
+    t =   144.60s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   144.61s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   144.63s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   144.63s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   144.63s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   144.65s     Check for interrupting elements affecting ScrollView
+    t =   144.67s     Synthesize event
+    t =   144.67s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   144.69s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   144.71s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   144.72s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   144.74s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   145.21s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   146.89s Checking existence of `ScrollView (First Match)`
+    t =   146.92s Checking existence of `"wood-cypress1" Button`
+    t =   146.94s Find the "wood-cypress1" Button
+    t =   146.96s Checking existence of `"wood-cypress1" Button`
+    t =   146.98s Find the "wood-cypress1" Button
+    t =   147.01s Find the ScrollView (First Match)
+    t =   147.03s Find the "wood-cypress1" Button
+    t =   147.05s Checking existence of `"wood-cypress1" Button`
+    t =   147.07s Find the "wood-cypress1" Button
+    t =   147.09s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   147.11s Checking existence of `"wood-cypress1" Button`
+    t =   147.13s Find the "wood-cypress1" Button
+    t =   147.15s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   147.17s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   147.18s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   147.18s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   147.19s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   147.20s     Check for interrupting elements affecting ScrollView
+    t =   147.22s     Synthesize event
+    t =   147.22s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   147.24s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   147.27s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   147.29s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   147.31s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   147.78s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   149.46s Checking existence of `ScrollView (First Match)`
+    t =   149.48s Checking existence of `"wood-cypress1" Button`
+    t =   149.50s Find the "wood-cypress1" Button
+    t =   149.54s Checking existence of `"wood-cypress1" Button`
+    t =   149.57s Find the "wood-cypress1" Button
+    t =   149.60s Find the ScrollView (First Match)
+    t =   149.61s Find the "wood-cypress1" Button
+    t =   149.64s Checking existence of `"wood-cypress1" Button`
+    t =   149.66s Find the "wood-cypress1" Button
+    t =   149.68s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   149.70s Checking existence of `"wood-cypress1" Button`
+    t =   149.72s Find the "wood-cypress1" Button
+    t =   149.74s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   149.75s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   149.77s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   149.77s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   149.77s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   149.79s     Check for interrupting elements affecting ScrollView
+    t =   149.81s     Synthesize event
+    t =   149.81s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   149.83s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   149.84s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   149.86s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   149.88s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   150.35s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   152.02s Checking existence of `ScrollView (First Match)`
+    t =   152.04s Checking existence of `"wood-cypress1" Button`
+    t =   152.06s Find the "wood-cypress1" Button
+    t =   152.08s Checking existence of `"wood-cypress1" Button`
+    t =   152.09s Find the "wood-cypress1" Button
+    t =   152.12s Find the ScrollView (First Match)
+    t =   152.13s Find the "wood-cypress1" Button
+    t =   152.15s Checking existence of `"wood-cypress1" Button`
+    t =   152.17s Find the "wood-cypress1" Button
+    t =   152.20s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   152.22s Checking existence of `"wood-cypress1" Button`
+    t =   152.23s Find the "wood-cypress1" Button
+    t =   152.25s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   152.27s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   152.29s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   152.29s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   152.29s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   152.30s     Check for interrupting elements affecting ScrollView
+    t =   152.32s     Synthesize event
+    t =   152.32s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   152.34s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   152.36s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   152.38s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   152.40s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   152.86s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   154.59s Checking existence of `ScrollView (First Match)`
+    t =   154.63s Checking existence of `"wood-cypress1" Button`
+    t =   154.65s Find the "wood-cypress1" Button
+    t =   154.67s Checking existence of `"wood-cypress1" Button`
+    t =   154.69s Find the "wood-cypress1" Button
+    t =   154.72s Find the ScrollView (First Match)
+    t =   154.74s Find the "wood-cypress1" Button
+    t =   154.76s Checking existence of `"wood-cypress1" Button`
+    t =   154.78s Find the "wood-cypress1" Button
+    t =   154.80s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   154.82s Checking existence of `"wood-cypress1" Button`
+    t =   154.83s Find the "wood-cypress1" Button
+    t =   154.85s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   154.87s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   154.89s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   154.89s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   154.89s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   154.91s     Check for interrupting elements affecting ScrollView
+    t =   154.93s     Synthesize event
+    t =   154.93s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   154.95s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   154.97s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   154.99s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   155.01s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   155.48s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   157.16s Checking existence of `ScrollView (First Match)`
+    t =   157.18s Checking existence of `"wood-cypress1" Button`
+    t =   157.20s Find the "wood-cypress1" Button
+    t =   157.22s Checking existence of `"wood-cypress1" Button`
+    t =   157.24s Find the "wood-cypress1" Button
+    t =   157.27s Find the ScrollView (First Match)
+    t =   157.29s Find the "wood-cypress1" Button
+    t =   157.31s Checking existence of `"wood-cypress1" Button`
+    t =   157.33s Find the "wood-cypress1" Button
+    t =   157.35s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   157.37s Checking existence of `"wood-cypress1" Button`
+    t =   157.38s Find the "wood-cypress1" Button
+    t =   157.41s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   157.42s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   157.44s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   157.44s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   157.44s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   157.46s     Check for interrupting elements affecting ScrollView
+    t =   157.48s     Synthesize event
+    t =   157.48s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   157.49s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   157.51s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   157.53s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   157.55s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   158.01s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   159.69s Checking existence of `ScrollView (First Match)`
+    t =   159.72s Checking existence of `"wood-cypress1" Button`
+    t =   159.74s Find the "wood-cypress1" Button
+    t =   159.76s Checking existence of `"wood-cypress1" Button`
+    t =   159.78s Find the "wood-cypress1" Button
+    t =   159.81s Find the ScrollView (First Match)
+    t =   159.82s Find the "wood-cypress1" Button
+    t =   159.84s Checking existence of `"wood-cypress1" Button`
+    t =   159.86s Find the "wood-cypress1" Button
+    t =   159.88s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   159.90s Checking existence of `"wood-cypress1" Button`
+    t =   159.91s Find the "wood-cypress1" Button
+    t =   159.93s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   159.95s Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   159.97s Press ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.35] for 0.1 seconds, then drag to ScrollView at {{78.0, 149.3}, {718.0, 252.7}}[0.50, 0.65] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =   159.97s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   159.97s     Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   159.98s     Check for interrupting elements affecting ScrollView
+    t =   160.01s     Synthesize event
+    t =   160.01s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   160.03s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   160.05s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   160.07s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   160.09s         Find the ScrollView at {{78.0, 149.3}, {718.0, 252.7}}
+    t =   160.55s     Wait for com.yourname.BibleAdventures.BibleAdventure to idle
+    t =   162.22s Find the Target Application 'com.yourname.BibleAdventures.BibleAdventure'
+    t =   162.34s Added attachment named 'unreachable-control'
+    t =   162.34s Requesting snapshot of accessibility hierarchy for app with pid 95219
+    t =   162.41s Requesting snapshot of accessibility hierarchy for app with pid 95219
+    t =   162.44s Added attachment named 'failure-accessibility-tree'
+/Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventureUITests/NoahFlowTests.swift:95: error: -[BibleAdventureUITests.NoahFlowTests testFullNoahLandscapeWithLargestTextAndReducedMotion] : failed - Unreachable control: "wood-cypress1" Button
+    t =   162.82s Tear Down
+Test Case '-[BibleAdventureUITests.NoahFlowTests testFullNoahLandscapeWithLargestTextAndReducedMotion]' failed (163.425 seconds).
+Test Suite 'NoahFlowTests' failed at 2026-10-03 21:32:35.241.
+	 Executed 1 test, with 1 failure (0 unexpected) in 163.425 (163.426) seconds
+Test Suite 'BibleAdventureUITests.xctest' failed at 2026-10-03 21:32:35.241.
+	 Executed 1 test, with 1 failure (0 unexpected) in 163.425 (163.427) seconds
+Test Suite 'Selected tests' failed at 2026-10-03 21:32:35.242.
+	 Executed 1 test, with 1 failure (0 unexpected) in 163.425 (163.430) seconds
+2026-10-03 21:32:47.340 xcodebuild[94395:10080306] [MT] IDETestOperationsObserverDebug: 220.545 elapsed -- Testing started completed.
+2026-10-03 21:32:47.340 xcodebuild[94395:10080306] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-03 21:32:47.340 xcodebuild[94395:10080306] [MT] IDETestOperationsObserverDebug: 220.545 sec, +220.545 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/BibleAdventure-PA003-phone-landscape-v4.xcresult
+
+Failing tests:
+	NoahFlowTests.testFullNoahLandscapeWithLargestTextAndReducedMotion()
+
+** TEST FAILED **
+
+Testing started

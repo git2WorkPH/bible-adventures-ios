@@ -48,6 +48,12 @@ struct StoryEngine {
         return activeSession.story.status == .completed
     }
 
+    /// The coordinator mirrors validated session states into the game hierarchy.
+    mutating func setActivityStates(objective: ObjectiveState? = nil, miniGame: MiniGameState? = nil) {
+        guard case .active(let session) = gameState else { return }
+        gameState = .active(ActiveGameState(story: session.story, objective: objective, miniGame: miniGame))
+    }
+
     /// Loads and starts a story from an inactive game session.
     @discardableResult
     mutating func start(storyID: StoryID) -> Bool {
@@ -123,6 +129,30 @@ struct StoryEngine {
         case .complete:
             return complete() ? .completed : .rejected
         }
+    }
+
+    /// Restores a validated step boundary without replaying outcomes.
+    @discardableResult
+    mutating func restore(_ progress: StoryProgress) -> Bool {
+        guard gameState == .inactive,
+              case .success(let story) = loader.story(for: progress.storyID),
+              !story.steps.isEmpty else { return false }
+        let map = progressionLoader.progression(for: story)
+        guard map.isValid(forStepCount: story.steps.count) else { return false }
+        switch progress.status {
+        case .active:
+            guard let index = progress.currentStepIndex, story.steps.indices.contains(index) else { return false }
+            currentStepIndex = index
+        case .completed:
+            guard progress.currentStepIndex == nil else { return false }
+            currentStepIndex = nil
+        }
+        currentStory = story
+        progression = map
+        gameState = .active(ActiveGameState(story: StoryState(
+            storyID: story.id, status: progress.status == .completed ? .completed : .active
+        )))
+        return true
     }
 
     /// Reloads the current story as a new active session without adding retry

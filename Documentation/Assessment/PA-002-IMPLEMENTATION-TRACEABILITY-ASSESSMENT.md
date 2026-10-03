@@ -1,6 +1,6 @@
 # PA-002 — Implementation Traceability Assessment
 
-Status: OPEN
+Status: Historical assessment; current reassessment is PA-003
 Date: 2026-09-04
 Assessment type: Read-only implementation assessment
 

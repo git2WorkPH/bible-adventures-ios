@@ -3,6 +3,9 @@ import SwiftUI
 struct GatherFoodView: View {
 
     let onComplete: () -> Void
+    @Environment(\.storyReduceMotion) private var reduceMotion
+    @Environment(\.dynamicTypeSize) private var typeSize
+    @Environment(\.accessibilityVoiceOverEnabled) private var voiceOver
 
     private let foodSupplies: [FoodSupply] = [
         FoodSupply(
@@ -43,7 +46,10 @@ struct GatherFoodView: View {
 
     var body: some View {
 
+        ScrollView {
         VStack(spacing: 24) {
+                GameActivityContext()
+
 
             Text("🍎 Gather Food")
                 .font(.largeTitle)
@@ -72,6 +78,7 @@ struct GatherFoodView: View {
 
         }
         .padding()
+        }
         .onAppear {
 
             prepareFood()
@@ -124,13 +131,7 @@ struct GatherFoodView: View {
                 .font(.title2)
                 .bold()
 
-            LazyVGrid(
-                columns: [
-                    GridItem(.flexible()),
-                    GridItem(.flexible())
-                ],
-                spacing: 16
-            ) {
+            AdaptiveActivityGrid(singleColumn: typeSize.isAccessibilitySize || voiceOver) {
 
                 ForEach(availableFood) { food in
 
@@ -150,7 +151,7 @@ struct GatherFoodView: View {
 
                         }
                         .frame(maxWidth: .infinity)
-                        .frame(height: 120)
+                        .frame(minHeight: 120)
                         .background(
                             Color.orange.opacity(0.1)
                         )
@@ -162,6 +163,7 @@ struct GatherFoodView: View {
 
                     }
                     .buttonStyle(.plain)
+                    .accessibilityLabel(food.name)
 
                 }
 
@@ -194,7 +196,7 @@ struct GatherFoodView: View {
                 ForEach(collectedFood) { food in
 
                     Text(food.emoji)
-                        .font(.largeTitle)
+                        .font(.system(size: 32)).accessibilityHidden(true)
 
                 }
 

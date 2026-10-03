@@ -3,6 +3,9 @@ import SwiftUI
 struct EnterArkView: View {
 
     let onComplete: () -> Void
+    @Environment(\.storyReduceMotion) private var reduceMotion
+    @Environment(\.dynamicTypeSize) private var typeSize
+    @Environment(\.accessibilityVoiceOverEnabled) private var voiceOver
 
     private let familyMembers: [ArkFamilyMember] = [
         ArkFamilyMember(id: "noah", name: "Noah", emoji: "👨🏻"),
@@ -32,12 +35,14 @@ struct EnterArkView: View {
         ScrollView {
 
             VStack(spacing: 24) {
+                GameActivityContext()
+
 
                 headerView
 
                 progressView
 
-                arkScene
+                if !typeSize.isAccessibilitySize && !voiceOver { arkScene.accessibilityHidden(true) }
 
                 if completed {
 
@@ -53,7 +58,13 @@ struct EnterArkView: View {
 
                 } else {
 
-                    familyTray
+                    DisclosureGroup("Enter the ark with buttons") {
+                        ForEach(familyMembers.filter { !enteredMemberIDs.contains($0.id) }) { member in
+                            Button("Bring \(member.name) into the ark") { enterArk(member) }
+                                .frame(minHeight: 44).buttonStyle(.bordered)
+                        }
+                    }
+                    if !typeSize.isAccessibilitySize && !voiceOver { familyTray.accessibilityHidden(true) }
 
                 }
 
@@ -603,6 +614,8 @@ struct EnterArkView: View {
                 .font(.largeTitle)
                 .bold()
                 .multilineTextAlignment(.center)
+
+            Text("Interpretation").font(.headline).accessibilityAddTraits(.isHeader)
 
             Text(
                 "Noah and his family were safely inside the ark."

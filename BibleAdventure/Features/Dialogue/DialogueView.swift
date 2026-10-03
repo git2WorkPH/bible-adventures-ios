@@ -7,9 +7,14 @@ struct DialogueView: View {
 
     var body: some View {
 
+        ScrollView {
         VStack(spacing: 24) {
 
             Spacer()
+
+            Text(page.kind == .scripture ? "Scripture — \(page.reference.displayText) (ESV)" : page.kind.rawValue)
+                .font(.headline)
+                .accessibilityAddTraits(.isHeader)
 
             Text(page.speaker.displayName)
                 .font(.headline)
@@ -27,10 +32,11 @@ struct DialogueView: View {
             
             Button("Continue"){
                 onContinue()
-            }.buttonStyle(.borderedProminent)
+            }.buttonStyle(.borderedProminent).frame(minHeight: 44)
 
         }
         .padding()
+        }
     }
 }
 
@@ -39,7 +45,7 @@ struct DialogueView: View {
     DialogueView(
         page: DialoguePage(
             speaker: .God,
-            text: "Build an ark using cypress wood.",
+            text: "Help prepare the ark in this game activity.",
             reference: BibleReference(
                 book: .genesis,
                 chapter: 6,

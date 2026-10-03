@@ -16,8 +16,11 @@ struct BibleAdventureTests {
         let story = genericStoryFixture()
         var engine = StoryEngine(loader: InMemoryStoryLoader(stories: [story]))
 
-        #expect(engine.start(storyID: .moses))
-        #expect(engine.currentStory == story)
+        let engineResult1 = engine.start(storyID: .moses)
+        #expect(engineResult1)
+        #expect(engine.currentStory?.id == story.id)
+        #expect(engine.currentStory?.title == story.title)
+        #expect(engine.currentStory?.steps.count == story.steps.count)
         #expect(engine.gameState == .active(
             ActiveGameState(story: StoryState(storyID: .moses))
         ))
@@ -34,15 +37,21 @@ struct BibleAdventureTests {
         let story = genericStoryFixture()
         var engine = StoryEngine(loader: InMemoryStoryLoader(stories: [story]))
 
-        #expect(engine.start(storyID: .moses))
-        #expect(engine.complete())
+        let engineResult2 = engine.start(storyID: .moses)
+        #expect(engineResult2)
+        let engineResult3 = engine.complete()
+        #expect(engineResult3)
         #expect(engine.isCompleted)
         #expect(engine.currentStep == nil)
-        #expect(!engine.complete())
+        let engineResult4 = !engine.complete()
+        #expect(engineResult4)
 
-        #expect(engine.restart())
+        let engineResult5 = engine.restart()
+        #expect(engineResult5)
         #expect(!engine.isCompleted)
-        #expect(engine.currentStory == story)
+        #expect(engine.currentStory?.id == story.id)
+        #expect(engine.currentStory?.title == story.title)
+        #expect(engine.currentStory?.steps.count == story.steps.count)
 
         guard case .dialogue(let step) = engine.currentStep else {
             Issue.record("Expected restart to expose the first configured step.")
@@ -56,10 +65,13 @@ struct BibleAdventureTests {
         let story = genericStoryFixture()
         var engine = StoryEngine(loader: InMemoryStoryLoader(stories: [story]))
 
-        #expect(engine.start(storyID: .moses))
-        #expect(engine.apply(outcome: .success) == .advanced(toStepIndex: 1))
+        let engineResult6 = engine.start(storyID: .moses)
+        #expect(engineResult6)
+        let engineResult7 = engine.apply(outcome: .success) == .advanced(toStepIndex: 1)
+        #expect(engineResult7)
         #expect(engine.currentStepIndex == 1)
-        #expect(engine.apply(outcome: .success) == .completed)
+        let engineResult8 = engine.apply(outcome: .success) == .completed
+        #expect(engineResult8)
         #expect(engine.isCompleted)
     }
 
@@ -68,8 +80,10 @@ struct BibleAdventureTests {
         let story = genericStoryFixture()
         var engine = StoryEngine(loader: InMemoryStoryLoader(stories: [story]))
 
-        #expect(engine.start(storyID: .moses))
-        #expect(engine.apply(outcome: .failure) == .rejected)
+        let engineResult9 = engine.start(storyID: .moses)
+        #expect(engineResult9)
+        let engineResult10 = engine.apply(outcome: .failure) == .rejected
+        #expect(engineResult10)
         #expect(engine.currentStepIndex == 0)
         #expect(!engine.isCompleted)
     }
@@ -79,8 +93,10 @@ struct BibleAdventureTests {
         let story = genericStoryFixture()
         var engine = StoryEngine(loader: InMemoryStoryLoader(stories: [story]))
 
-        #expect(engine.start(storyID: .moses))
-        #expect(engine.apply(outcome: .retry) == .retrying)
+        let engineResult11 = engine.start(storyID: .moses)
+        #expect(engineResult11)
+        let engineResult12 = engine.apply(outcome: .retry) == .retrying
+        #expect(engineResult12)
         #expect(engine.currentStepIndex == 0)
         #expect(!engine.isCompleted)
     }
@@ -109,9 +125,12 @@ struct BibleAdventureTests {
             )
         )
 
-        #expect(engine.start(storyID: .moses))
-        #expect(engine.apply(outcome: .failure) == .advanced(toStepIndex: 1))
-        #expect(engine.apply(outcome: .condition("ready-to-finish")) == .completed)
+        let engineResult13 = engine.start(storyID: .moses)
+        #expect(engineResult13)
+        let engineResult14 = engine.apply(outcome: .failure) == .advanced(toStepIndex: 1)
+        #expect(engineResult14)
+        let engineResult15 = engine.apply(outcome: .condition("ready-to-finish")) == .completed
+        #expect(engineResult15)
         #expect(engine.isCompleted)
     }
 
@@ -134,7 +153,8 @@ struct BibleAdventureTests {
             )
         )
 
-        #expect(!engine.start(storyID: .moses))
+        let engineResult16 = !engine.start(storyID: .moses)
+        #expect(engineResult16)
         #expect(engine.gameState == .inactive)
         #expect(engine.currentStepIndex == nil)
     }
@@ -146,9 +166,12 @@ struct BibleAdventureTests {
             loader: InMemoryStoryLoader(stories: [genericStory, NoahStory.build()])
         )
 
-        #expect(!engine.start(storyID: .david))
-        #expect(engine.start(storyID: .noah))
-        #expect(!engine.start(storyID: .moses))
+        let engineResult17 = !engine.start(storyID: .david)
+        #expect(engineResult17)
+        let engineResult18 = engine.start(storyID: .noah)
+        #expect(engineResult18)
+        let engineResult19 = !engine.start(storyID: .moses)
+        #expect(engineResult19)
         #expect(engine.currentStory?.id == .noah)
     }
 

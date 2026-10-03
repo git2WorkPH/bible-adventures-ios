@@ -1,15 +1,5 @@
 # Project Vision
 
-## Why this project exists
-[Problem and intended value]
+Bible Adventure encourages children and other players to read Scripture, seek GOD and reflect on the Biblical source beyond gameplay. The Bible is the destination; gameplay supports curiosity, understanding and continued reading.
 
-## Who it serves
-[Primary users]
-
-## Desired outcome
-[What success looks like]
-
-## Product principles
-- [ ]
-- [ ]
-- [ ]
+The authoritative mission and principles are in Documentation/Requirements/Product/PRODUCT-REQUIREMENTS.md: Scripture first, GOD-centered, Biblically responsible, age appropriate, and fun without compromising the message. Successful gameplay completion does not establish spiritual growth or understanding.

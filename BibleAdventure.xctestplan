@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "867416B9-5095-4BE7-864A-434FA849A899",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:BibleAdventure.xcodeproj",
+      "identifier" : "A00885702FFB321E00E29B20",
+      "name" : "BibleAdventure"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:BibleAdventure.xcodeproj",
+        "identifier" : "A008857F2FFB322000E29B20",
+        "name" : "BibleAdventureTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:BibleAdventure.xcodeproj",
+        "identifier" : "A00885892FFB322000E29B20",
+        "name" : "BibleAdventureUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -3,6 +3,9 @@ import SwiftUI
 struct BuildRainbowView: View {
 
     let onComplete: () -> Void
+    @Environment(\.storyReduceMotion) private var reduceMotion
+    @Environment(\.dynamicTypeSize) private var typeSize
+    @Environment(\.accessibilityVoiceOverEnabled) private var voiceOver
 
     private let rainbowColours: [RainbowColour] = [
         RainbowColour(
@@ -55,6 +58,8 @@ struct BuildRainbowView: View {
         ScrollView {
 
             VStack(spacing: 24) {
+                GameActivityContext()
+
 
                 Text(" GOD's Covenant")
                     .font(.largeTitle)
@@ -65,7 +70,7 @@ struct BuildRainbowView: View {
                 )
                 .multilineTextAlignment(.center)
 
-                rainbowView
+                if !typeSize.isAccessibilitySize && !voiceOver { rainbowView.accessibilityHidden(true) }
 
                 if completed {
 
@@ -157,13 +162,7 @@ struct BuildRainbowView: View {
                 total: Double(rainbowColours.count)
             )
 
-            LazyVGrid(
-                columns: [
-                    GridItem(.flexible()),
-                    GridItem(.flexible())
-                ],
-                spacing: 16
-            ) {
+            AdaptiveActivityGrid(singleColumn: typeSize.isAccessibilitySize || voiceOver) {
 
                 ForEach(availableColours) { rainbowColour in
 
@@ -199,6 +198,7 @@ struct BuildRainbowView: View {
 
                     }
                     .buttonStyle(.plain)
+                    .accessibilityLabel(rainbowColour.name)
 
                 }
 
@@ -220,6 +220,8 @@ struct BuildRainbowView: View {
             Text("GOD's Covenant")
                 .font(.largeTitle)
                 .bold()
+
+            Text("Interpretation").font(.headline).accessibilityAddTraits(.isHeader)
 
             Text(
                 "GOD set the rainbow in the clouds as the sign of His covenant."
