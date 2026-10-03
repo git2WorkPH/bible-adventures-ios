@@ -1,0 +1,42 @@
+{
+  "devicesAndConfigurations" : [
+    {
+      "device" : {
+        "architecture" : "arm64",
+        "deviceId" : "07434B1A-E571-45CC-817B-FDE28A82A524",
+        "deviceName" : "iPad Air 11-inch (M3)",
+        "modelName" : "iPad Air 11-inch (M3)",
+        "osBuildNumber" : "23B86",
+        "osVersion" : "26.1",
+        "platform" : "iOS Simulator"
+      },
+      "expectedFailures" : 0,
+      "failedTests" : 0,
+      "passedTests" : 3,
+      "skippedTests" : 0,
+      "testPlanConfiguration" : {
+        "configurationId" : "1",
+        "configurationName" : "Test Scheme Action"
+      }
+    }
+  ],
+  "environmentDescription" : "BibleAdventure · Built with macOS 26.6.2",
+  "expectedFailures" : 0,
+  "failedTests" : 0,
+  "finishTime" : 1791026098.734,
+  "passedTests" : 3,
+  "result" : "Passed",
+  "skippedTests" : 0,
+  "startTime" : 1791025472.173,
+  "statistics" : [
+
+  ],
+  "testFailures" : [
+
+  ],
+  "title" : "Test - BibleAdventure",
+  "topInsights" : [
+
+  ],
+  "totalTestCount" : 3
+}

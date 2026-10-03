@@ -3,6 +3,9 @@ import SwiftUI
 struct BuildArkView: View {
 
     let onComplete: () -> Void
+    @Environment(\.storyReduceMotion) private var reduceMotion
+    @Environment(\.dynamicTypeSize) private var typeSize
+    @Environment(\.accessibilityVoiceOverEnabled) private var voiceOver
 
     private let snapDistance: CGFloat = 90
 
@@ -43,6 +46,11 @@ struct BuildArkView: View {
             size: CGSize(width: 145, height: 35)
         ),
         ArkPiece(
+            id: "sideDoor", name: "Side Door", emoji: "🚪",
+            targetPosition: CGPoint(x: 0.73, y: 0.67),
+            size: CGSize(width: 30, height: 50)
+        ),
+        ArkPiece(
             id: "roof",
             name: "Ark Roof",
             emoji: "🏠",
@@ -54,6 +62,7 @@ struct BuildArkView: View {
     @State private var placedPieceIDs: Set<String> = []
     @State private var dragOffsets: [String: CGSize] = [:]
     @State private var completed = false
+    @State private var selectedPieceID: String?
     @State private var feedback = "Drag a piece onto the blueprint."
     @State private var activePieceID: String?
 
@@ -62,6 +71,8 @@ struct BuildArkView: View {
         ScrollView {
 
             VStack(spacing: 24) {
+                GameActivityContext()
+
 
                 Text("🧱 Build the Ark")
                     .font(.largeTitle)
@@ -74,7 +85,7 @@ struct BuildArkView: View {
 
                 progressView
 
-                arkBlueprint
+                if !typeSize.isAccessibilitySize && !voiceOver { arkBlueprint.accessibilityHidden(true) }
 
                 if completed {
 
@@ -82,7 +93,25 @@ struct BuildArkView: View {
 
                 } else {
 
-                    constructionTray
+                    DisclosureGroup("Assemble with buttons") {
+                        ForEach(arkPieces.filter { !placedPieceIDs.contains($0.id) }) { piece in
+                            Button("Select \(piece.name)") { selectedPieceID = piece.id }
+                                .frame(minHeight: 44).buttonStyle(.bordered)
+                                .accessibilityValue(selectedPieceID == piece.id ? "Selected" : "")
+                        }
+                        if let selectedPieceID, let piece = arkPieces.first(where: { $0.id == selectedPieceID }) {
+                            Text("Choose the matching outline for \(piece.name).")
+                            ForEach(arkPieces.filter { !placedPieceIDs.contains($0.id) }) { target in
+                                Button("Place selected piece in \(target.name) outline") {
+                                    if piece.id == target.id {
+                                        placePiece(piece)
+                                        self.selectedPieceID = nil
+                                    } else { feedback = "That outline does not match. Choose another outline." }
+                                }.frame(minHeight: 44).buttonStyle(.bordered)
+                            }
+                        }
+                    }
+                    if !typeSize.isAccessibilitySize && !voiceOver { constructionTray.accessibilityHidden(true) }
 
                 }
 
@@ -665,6 +694,8 @@ struct BuildArkView: View {
             Text("The Ark Is Built!")
                 .font(.largeTitle)
                 .bold()
+
+            Text("Interpretation").font(.headline).accessibilityAddTraits(.isHeader)
 
             Text(
                 "Noah did everything just as GOD commanded him."

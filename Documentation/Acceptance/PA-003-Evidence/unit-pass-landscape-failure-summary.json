@@ -1,0 +1,49 @@
+{
+  "devicesAndConfigurations" : [
+    {
+      "device" : {
+        "architecture" : "arm64",
+        "deviceId" : "D1B4A041-95AD-48DE-A05B-8E70B8148510",
+        "deviceName" : "iPhone 17 Pro",
+        "modelName" : "iPhone 17 Pro",
+        "osBuildNumber" : "23F77",
+        "osVersion" : "26.5",
+        "platform" : "iOS Simulator"
+      },
+      "expectedFailures" : 0,
+      "failedTests" : 1,
+      "passedTests" : 45,
+      "skippedTests" : 0,
+      "testPlanConfiguration" : {
+        "configurationId" : "1",
+        "configurationName" : "Test Scheme Action"
+      }
+    }
+  ],
+  "environmentDescription" : "BibleAdventure · Built with macOS 26.6.2",
+  "expectedFailures" : 0,
+  "failedTests" : 1,
+  "finishTime" : 1791027167.459,
+  "passedTests" : 45,
+  "result" : "Failed",
+  "skippedTests" : 0,
+  "startTime" : 1791026941.042,
+  "statistics" : [
+
+  ],
+  "testFailures" : [
+    {
+      "failureText" : "failed - Unreachable control: \"wood-cypress1\" Button",
+      "targetName" : "BibleAdventureUITests",
+      "testIdentifier" : 46,
+      "testIdentifierString" : "NoahFlowTests/testFullNoahLandscapeWithLargestTextAndReducedMotion()",
+      "testIdentifierURL" : "test://com.apple.xcode/BibleAdventure/BibleAdventureUITests/NoahFlowTests/testFullNoahLandscapeWithLargestTextAndReducedMotion",
+      "testName" : "testFullNoahLandscapeWithLargestTextAndReducedMotion()"
+    }
+  ],
+  "title" : "Test - BibleAdventure",
+  "topInsights" : [
+
+  ],
+  "totalTestCount" : 46
+}

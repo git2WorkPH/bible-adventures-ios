@@ -1,370 +1,72 @@
 import Foundation
 
 struct NoahStory {
+    static let contentVersion = "noah-2"
+    // One complete verse. Checked against esv.org/Genesis+6/ on 2026-10-03.
+    static let woodScripture = "Make yourself an ark of gopher wood. Make rooms in the ark, and cover it inside and out with pitch."
+
+    static func reference(_ chapter: Int, _ verse: Int, _ end: Int? = nil) -> BibleReference {
+        BibleReference(book: .genesis, chapter: chapter, startVerse: verse, endVerse: end)
+    }
+
+    static let reflection = ReflectionContent(
+        id: "noah-reflection",
+        prompt: "Read Genesis 6–9 in your Bible. Think about the violence described before the flood, Noah's response to GOD, and GOD's covenant with living creatures. What questions would you like to explore with a trusted adult?",
+        scriptureReference: reference(9, 8, 17)
+    )
+
+    static func makeRuntime(storage: any ProgressDataStoring = LocalProgressStorage.application) -> StoryRuntimeCoordinator {
+        var selectedStorage = storage
+        #if DEBUG
+        if ProcessInfo.processInfo.environment["BIBLE_ADVENTURE_UI_TEST"] == "1" {
+            selectedStorage = LocalProgressStorage(url: FileManager.default.temporaryDirectory.appendingPathComponent("noah-ui-progress.json"))
+        }
+        #endif
+        return StoryRuntimeCoordinator(storyID: .noah, loader: StoryRepository(stories: [build()]),
+                                questionLookup: NoahQuestionRepository.question(for:),
+                                scriptureLookup: NoahScriptureRepository().scripture(for:),
+                                reflectionContent: reflection, contentVersion: contentVersion, storage: selectedStorage)
+    }
+
+    private static func explanation(_ text: String, _ chapter: Int, _ verse: Int, _ end: Int? = nil) -> StoryStep {
+        .dialogue(DialoguePage(speaker: .narrator, text: text, reference: reference(chapter, verse, end), kind: .interpretation))
+    }
+
+    private static func blueprintObjective(_ id: String, title: String, instruction: String) -> StoryStep {
+        .objective(Objective(id: id, title: title, instruction: instruction,
+                            hint: "Read Genesis 6:14–16 in your Bible, then answer the question.",
+                            type: .readScripture, reference: reference(6, id == "ark_pitch" ? 14 : 16),
+                            scripture: id == "ark_pitch" ? woodScripture : "", questionId: id, storyId: .noah))
+    }
 
     static func build() -> Story {
-
-        Story(
-            id: .noah,
-            title: "Noah's Ark",
-            description: "Build the ark before the rain begins.",
-            steps: [
-
-                .dialogue(
-                    DialoguePage(
-                        speaker: .God,
-                        text: "And God said to Noah, l“I have determined to make an end of all flesh,3 for the earth is filled with violence through them. Behold, I will destroy them with the earth.",
-                        reference: BibleReference(
-                            book: .genesis,
-                            chapter: 6,
-                            startVerse: 13,
-                            endVerse: nil
-                        )
-                    )
-                ),
-                            
-                .objective(
-                        Objective(
-                            id: "listen_to_god",
-                            title: "Listen to GOD",
-                            instruction: "Read Genesis 6:9 - 8:22 before continuing. (ESV)",
-                            hint: "Answer the question after reading.",
-                            type: .readScripture,
-                            reference: BibleReference(
-                                book: .genesis,
-                                chapter: 6,
-                                startVerse: 13,
-                                endVerse: nil
-                            ),
-
-                            scripture: """
-                    And God said to Noah, l“I have determined to make an end of all flesh,3 for the earth is filled with violence through them. Behold, I will destroy them with the earth.
-                    """,
-
-                            questionId: "listen_to_god", storyId: .noah
-                        )
-                ),
-                
-                .dialogue(
-                    DialoguePage(
-                        speaker: .God,
-                        text: "Make yourself an ark of gopher wood.4 Make rooms in the ark, and cover it inside and out with pitch.",
-                        reference: BibleReference(
-                            book: .genesis,
-                            chapter: 6,
-                            startVerse: 14,
-                            endVerse: nil
-                        )
-                    )
-                ),
-                
-                .dialogue(
-                    DialoguePage(
-                        speaker: .God,
-                        text: "This is how you are to make it: the length of the ark 300 cubits,5 its breadth 50 cubits, and its height 30 cubits.",
-                        reference: BibleReference(
-                            book: .genesis,
-                            chapter: 6,
-                            startVerse: 15,
-                            endVerse: nil
-                        )
-                    )
-                ),
-
-                    .miniGame(.woodSelection),
-
-                
-                .dialogue(
-                        DialoguePage(
-                            speaker: .God,
-                            text: "Build an ark using gopher (cypress) wood.",
-                            reference: BibleReference(
-                                book: .genesis,
-                                chapter: 6,
-                                startVerse: 14,
-                                endVerse: nil
-                            )
-                        )
-                    ),
-
-
-
-                .miniGame(.measureArk),
-                
-                .dialogue(
-                    DialoguePage(
-                        speaker: .narrator,
-                        text: "Noah did this; he did all that God commanded him.",
-                        reference: BibleReference(
-                            book: .genesis,
-                            chapter: 6,
-                            startVerse: 22,
-                            endVerse: nil
-                        )
-                    )
-                ),
-                
-                .dialogue(
-                        DialoguePage(
-                            speaker: .noah,
-                            text: "I found the wood and will begin building.",
-                            reference: BibleReference(
-                                book: .genesis,
-                                chapter: 6,
-                                startVerse: 22,
-                                endVerse: nil
-                        )
-                    )
-                ),
-                
-                    .dialogue(
-                        DialoguePage(
-                            speaker: .noah,
-                            text: "We have the wood and the measurements GOD gave me. Now it is time to build the ark.",
-                            reference: BibleReference(
-                                book: .genesis,
-                                chapter: 6,
-                                startVerse: 22,
-                                endVerse: nil
-                            )
-                        )
-                    ),
-
-                    .miniGame(.buildArk),
-
-                    .dialogue(
-                        DialoguePage(
-                            speaker: .narrator,
-                            text: "Noah did this; he did all that God commanded him.",
-                            reference: BibleReference(
-                                book: .genesis,
-                                chapter: 6,
-                                startVerse: 22,
-                                endVerse: nil
-                            )
-                        )
-                    ),
-                
-                    .dialogue(
-                        DialoguePage(
-                            speaker: .God,
-                            text: "Also take with you every sort of food that is eaten, and store it up. It shall serve as food for you and for them.",
-                            reference: BibleReference(
-                                book: .genesis,
-                                chapter: 6,
-                                startVerse: 21,
-                                endVerse: nil
-                            )
-                        )
-                    ),
-
-                    .miniGame(.gatherFood),
-
-                    .dialogue(
-                        DialoguePage(
-                            speaker: .narrator,
-                            text: "The food was gathered and stored. Noah continued preparing for what GOD had told him.",
-                            reference: BibleReference(
-                                book: .genesis,
-                                chapter: 6,
-                                startVerse: 21,
-                                endVerse: nil
-                            )
-                        )
-                    ),
-                
-                    .dialogue(
-                        DialoguePage(
-                            speaker: .God,
-                            text: "Take with you seven pairs of all rclean animals,1 the male and his mate, and a pair of the animals that are not clean, the male and his mate, 3 and seven pairs2 of the birds of the heavens also, male and female, to keep their offspring alive on the face of all the earth. ",
-                            reference: BibleReference(
-                                book: .genesis,
-                                chapter: 7,
-                                startVerse: 2,
-                                endVerse: 3
-                            )
-                        )
-                    ),
-
-                    .dialogue(
-                        DialoguePage(
-                            speaker: .noah,
-                            text: "The ark is ready and the food is stored. Help me gather the animals.",
-                            reference: BibleReference(
-                                book: .genesis,
-                                chapter: 7,
-                                startVerse: 7,
-                                endVerse: 9
-                            )
-                        )
-                    ),
-
-                    .miniGame(.gatherAnimals),
-
-                    .dialogue(
-                        DialoguePage(
-                            speaker: .narrator,
-                            text: "The animals came to Noah and entered the ark.",
-                            reference: BibleReference(
-                                book: .genesis,
-                                chapter: 7,
-                                startVerse: 8,
-                                endVerse: 9
-                            )
-                        )
-                    ),
-                
-                    .dialogue(
-                        DialoguePage(
-                            speaker: .God,
-                            text: "Then the Lord said to Noah, p“Go into the ark, you and all your household, for I have seen that qyou are righteous before me in this generation. ",
-                            reference: BibleReference(
-                                book: .genesis,
-                                chapter: 7,
-                                startVerse: 1,
-                                endVerse: nil
-                            )
-                        )
-                    ),
-
-                    .dialogue(
-                        DialoguePage(
-                            speaker: .narrator,
-                            text: "Noah and his family prepared to enter the ark.",
-                            reference: BibleReference(
-                                book: .genesis,
-                                chapter: 7,
-                                startVerse: 13,
-                                endVerse: nil
-                            )
-                        )
-                    ),
-
-                    .miniGame(.enterArk),
-
-                    .dialogue(
-                        DialoguePage(
-                            speaker: .narrator,
-                            text: "Then GOD shut Noah in. The rain began to fall upon the earth.",
-                            reference: BibleReference(
-                                book: .genesis,
-                                chapter: 7,
-                                startVerse: 16,
-                                endVerse: 17
-                            )
-                        )
-                    ),
-            
-                    .miniGame(.floodJourney),
-
-                    .dialogue(
-                        DialoguePage(
-                            speaker: .narrator,
-                            text: "But God dremembered Noah and all the beasts and all the livestock that were with him in the ark. And eGod made a wind blow over the earth, and the waters subsided.",
-                            reference: BibleReference(
-                                book: .genesis,
-                                chapter: 8,
-                                startVerse: 1,
-                                endVerse: nil
-                            )
-                        )
-                    ),
-
-                    .dialogue(
-                        DialoguePage(
-                            speaker: .narrator,
-                            text: "GOD sent a wind over the earth, and the waters began to recede.",
-                            reference: BibleReference(
-                                book: .genesis,
-                                chapter: 8,
-                                startVerse: 1,
-                                endVerse: 3
-                            )
-                        )
-                    ),
-                
-                    .dialogue(
-                        DialoguePage(
-                            speaker: .narrator,
-                            text: "Noah sent out a dove to see if the water had receded from the surface of the ground.",
-                            reference: BibleReference(
-                                book: .genesis,
-                                chapter: 8,
-                                startVerse: 8,
-                                endVerse: nil
-                            )
-                        )
-                    ),
-
-                    .miniGame(.sendDove),
-
-                    .dialogue(
-                        DialoguePage(
-                            speaker: .narrator,
-                            text: "Noah knew that the water had receded from the earth.",
-                            reference: BibleReference(
-                                book: .genesis,
-                                chapter: 8,
-                                startVerse: 11,
-                                endVerse: 12
-                            )
-                        )
-                    ),
-                
-                    .dialogue(
-                        DialoguePage(
-                            speaker: .narrator,
-                            text: "Noah came out of the ark with his family and the animals.",
-                            reference: BibleReference(
-                                book: .genesis,
-                                chapter: 8,
-                                startVerse: 18,
-                                endVerse: 19
-                            )
-                        )
-                    ),
-
-                    .dialogue(
-                        DialoguePage(
-                            speaker: .narrator,
-                            text: "Then Noah built an altar to GOD.",
-                            reference: BibleReference(
-                                book: .genesis,
-                                chapter: 8,
-                                startVerse: 20,
-                                endVerse: nil
-                            )
-                        )
-                    ),
-
-                    .dialogue(
-                        DialoguePage(
-                            speaker: .God,
-                            text: " I have set cmy bow in the cloud, and it shall be a sign of the covenant between me and the earth.",
-                            reference: BibleReference(
-                                book: .genesis,
-                                chapter: 9,
-                                startVerse: 13,
-                                endVerse: nil
-                            )
-                        )
-                    ),
-
-                    .miniGame(.buildRainbow),
-
-                    .dialogue(
-                        DialoguePage(
-                            speaker: .narrator,
-                            text: "When the bow is in the clouds, I will see it and remember ethe everlasting covenant between God and every living creature of all flesh that is on the earth.” God said to Noah, “This is the sign of the covenant that I have established between me and all flesh that is on the earth.”",
-                            reference: BibleReference(
-                                book: .genesis,
-                                chapter: 9,
-                                startVerse: 16,
-                                endVerse: 17
-                            )
-                        )
-                    )
-            ]
-        )
+        Story(id: .noah, title: "Noah's Ark", description: "Explore Genesis 6–9, prepare the ark, and reflect on GOD's covenant.", steps: [
+            explanation("Genesis describes a world filled with violence. GOD told Noah about the coming flood and instructed him to prepare an ark. Read the account in your Bible as you explore this adventure.", 6, 9, 22),
+            .dialogue(DialoguePage(speaker: .God, text: woodScripture, reference: reference(6, 14), kind: .scripture)),
+            .objective(Objective(id: "ark_wood", title: "Read the ark instructions", instruction: "Read Genesis 6:14. What wood does the quoted verse name?", hint: "Use the word in the passage.", type: .readScripture, reference: reference(6, 14), scripture: woodScripture, questionId: "ark_wood", storyId: .noah)),
+            explanation("The quoted text says gopher wood. Its precise identity is uncertain. The wood pictures in this activity are imagined illustrations, not an identification of the Biblical tree.", 6, 14),
+            .miniGame(.woodSelection),
+            explanation("The ark instructions give a length of 300 cubits, a breadth of 50 cubits and a height of 30 cubits. A cubit is a historical unit of length; this activity compares the stated dimensions.", 6, 15),
+            .miniGame(.measureArk),
+            blueprintObjective("ark_pitch", title: "Ark blueprint: covering", instruction: "Choose the covering specified for the ark."),
+            blueprintObjective("ark_door", title: "Ark blueprint: door", instruction: "Choose the door location stated in the passage. The text does not specify left or right."),
+            blueprintObjective("ark_decks", title: "Ark blueprint: decks", instruction: "Choose the number of decks described in Genesis 6:16."),
+            explanation("The passage describes rooms, a roof, a side door and three decks. Assemble the illustrated pieces in the construction puzzle. These shapes are a game representation, not a historical blueprint.", 6, 14, 16),
+            .miniGame(.buildArk),
+            explanation("Genesis records Noah carrying out GOD's instructions. It also describes gathering food for the people and animals. The pictured foods are game examples, not a Biblical food list.", 6, 21, 22),
+            .miniGame(.gatherFood),
+            explanation("Genesis 7 distinguishes seven pairs of clean animals and birds from a pair of animals that are not clean. The matching game shows example pairs and does not represent the complete animal count or identify every Biblical kind.", 7, 2, 3),
+            .miniGame(.gatherAnimals),
+            explanation("Noah entered with his wife, his three sons and their wives. The clothing and faces in this game are imagined. Read Genesis 7 to see who entered and what happened next.", 7, 7, 16),
+            .miniGame(.enterArk),
+            explanation("The account describes the LORD shutting Noah in, forty days and nights of rain, and waters prevailing for 150 days. Game stages condense the account; they are not a day-by-day timeline.", 7, 16, 24),
+            .miniGame(.floodJourney),
+            explanation("Genesis says GOD remembered Noah and the animals. A wind blew and the waters subsided. Noah sent a raven before the dove; the next activity focuses on the dove's three journeys.", 8, 1, 12),
+            .miniGame(.sendDove),
+            explanation("After leaving the ark, Noah built an altar. Read Genesis 8:18–22 and consider how Noah responded. The story continues with GOD's covenant.", 8, 18, 22),
+            explanation("GOD's covenant concerns living creatures and the promise about a flood destroying all flesh. The bow in the clouds is its sign. This color-building activity illustrates a rainbow; Scripture does not give a required color order.", 9, 8, 17),
+            .miniGame(.buildRainbow),
+            explanation("Return to Genesis 6–9 in your Bible. Consider GOD's judgment, Noah's response, and the covenant. Completing activities is an opportunity to reflect and keep reading.", 9, 8, 17)
+        ])
     }
 }

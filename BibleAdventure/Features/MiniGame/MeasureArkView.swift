@@ -3,6 +3,9 @@ import SwiftUI
 struct MeasureArkView: View {
 
     let onComplete: () -> Void
+    @Environment(\.storyReduceMotion) private var reduceMotion
+    @Environment(\.dynamicTypeSize) private var typeSize
+    @Environment(\.accessibilityVoiceOverEnabled) private var voiceOver
 
     private let measurements: [ArkMeasurement] = [
         ArkMeasurement(
@@ -50,12 +53,14 @@ struct MeasureArkView: View {
         ScrollView {
 
             VStack(spacing: 24) {
+                GameActivityContext()
+
 
                 Text("📏 Measure the Ark")
                     .font(.largeTitle)
                     .bold()
 
-                blueprintView
+                if !typeSize.isAccessibilitySize && !voiceOver { blueprintView.accessibilityHidden(true) }
 
                 if completed {
                     completedView

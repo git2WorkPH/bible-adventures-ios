@@ -3,6 +3,9 @@ import SwiftUI
 struct FloodJourneyView: View {
 
     let onComplete: () -> Void
+    @Environment(\.storyReduceMotion) private var reduceMotion
+    @Environment(\.dynamicTypeSize) private var typeSize
+    @Environment(\.accessibilityVoiceOverEnabled) private var voiceOver
 
     private let stages: [FloodJourneyStage] = [
 
@@ -56,7 +59,10 @@ struct FloodJourneyView: View {
 
     var body: some View {
 
+        ScrollView {
         VStack(spacing: 24) {
+                GameActivityContext()
+
 
             Text("🌊 The Flood Journey")
                 .font(.largeTitle)
@@ -66,7 +72,7 @@ struct FloodJourneyView: View {
                 .font(.title2)
                 .bold()
 
-            journeyView
+            if !typeSize.isAccessibilitySize && !voiceOver { journeyView.accessibilityHidden(true) }
 
             if completed {
 
@@ -80,6 +86,7 @@ struct FloodJourneyView: View {
 
         }
         .padding()
+        }
     }
 
     // MARK: - Journey
@@ -190,7 +197,7 @@ struct FloodJourneyView: View {
         let movement =
             height * currentStage.waterLevel
 
-        return -(movement / 2)
+        return reduceMotion ? 0 : -(movement / 2)
     }
 
     // MARK: - Rain
@@ -284,6 +291,8 @@ struct FloodJourneyView: View {
             Text("Safe in the Ark")
                 .font(.largeTitle)
                 .bold()
+
+            Text("Interpretation").font(.headline).accessibilityAddTraits(.isHeader)
 
             Text(
                 "Through the flood, Noah and his family remained inside the ark."

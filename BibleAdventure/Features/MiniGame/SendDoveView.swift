@@ -3,6 +3,9 @@ import SwiftUI
 struct SendDoveView: View {
 
     let onComplete: () -> Void
+    @Environment(\.storyReduceMotion) private var reduceMotion
+    @Environment(\.dynamicTypeSize) private var typeSize
+    @Environment(\.accessibilityVoiceOverEnabled) private var voiceOver
 
     private let stages: [DoveJourneyStage] = [
 
@@ -45,7 +48,10 @@ struct SendDoveView: View {
 
     var body: some View {
 
+        ScrollView {
         VStack(spacing: 24) {
+                GameActivityContext()
+
 
             Text("🕊️ Send the Dove")
                 .font(.largeTitle)
@@ -57,7 +63,7 @@ struct SendDoveView: View {
 
             Spacer()
 
-            journeyView
+            if !typeSize.isAccessibilitySize && !voiceOver { journeyView.accessibilityHidden(true) }
 
             Spacer()
 
@@ -77,6 +83,7 @@ struct SendDoveView: View {
 
         }
         .padding()
+        }
     }
 
     // MARK: - Journey
@@ -182,6 +189,8 @@ struct SendDoveView: View {
                 .font(.largeTitle)
                 .bold()
                 .multilineTextAlignment(.center)
+
+            Text("Interpretation").font(.headline).accessibilityAddTraits(.isHeader)
 
             Text(
                 "Noah knew the waters were disappearing from the earth."

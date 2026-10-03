@@ -3,6 +3,9 @@ import SwiftUI
 struct WoodSelectionView: View {
 
     let onComplete: () -> Void
+    @Environment(\.storyReduceMotion) private var reduceMotion
+    @Environment(\.dynamicTypeSize) private var typeSize
+    @Environment(\.accessibilityVoiceOverEnabled) private var voiceOver
 
     private let woodPieces: [WoodPiece] = [
 
@@ -22,7 +25,7 @@ struct WoodSelectionView: View {
 
         WoodPiece(
             id: "cypress1",
-            name: "Cypress Wood",
+            name: "Gopher wood",
             style: .cypress,
             isCorrect: true
         ),
@@ -36,14 +39,14 @@ struct WoodSelectionView: View {
 
         WoodPiece(
             id: "cypress2",
-            name: "Cypress Wood",
+            name: "Gopher wood",
             style: .cypress,
             isCorrect: true
         ),
 
         WoodPiece(
             id: "cypress3",
-            name: "Cypress Wood",
+            name: "Gopher wood",
             style: .cypress,
             isCorrect: true
         )
@@ -58,7 +61,7 @@ struct WoodSelectionView: View {
     @State private var activeWoodID: String?
 
     @State private var feedback =
-        "Find the cypress wood and drag it to Noah."
+        "Find the gopher wood and drag it to Noah."
 
     @State private var completed = false
 
@@ -71,12 +74,14 @@ struct WoodSelectionView: View {
         ScrollView {
 
             VStack(spacing: 24) {
+                GameActivityContext()
+
 
                 headerView
 
                 progressView
 
-                forestScene
+                if !typeSize.isAccessibilitySize && !voiceOver { forestScene.accessibilityHidden(true) }
 
                 if completed {
 
@@ -84,7 +89,15 @@ struct WoodSelectionView: View {
 
                 } else {
 
-                    woodTray
+                    DisclosureGroup("Collect wood with buttons") {
+                        ForEach(availableWood.filter { !collectedWoodIDs.contains($0.id) }) { wood in
+                            Button("Collect \(wood.name)") {
+                                if wood.isCorrect { collectWood(wood) } else { rejectWood(wood) }
+                            }.frame(minHeight: 44).buttonStyle(.bordered)
+                            .accessibilityIdentifier("wood-\(wood.id)")
+                        }
+                    }
+                    if !typeSize.isAccessibilitySize && !voiceOver { woodTray.accessibilityHidden(true) }
 
                 }
 
@@ -104,13 +117,13 @@ struct WoodSelectionView: View {
 
         VStack(spacing: 8) {
 
-            Text("🌲 Find Cypress Wood")
+            Text("🌲 Find Gopher wood")
                 .font(.largeTitle)
                 .bold()
                 .multilineTextAlignment(.center)
 
             Text(
-                "GOD told Noah to make the ark from cypress wood."
+                "Genesis 6:14 names gopher wood. These pictures are game illustrations."
             )
             .multilineTextAlignment(.center)
 
@@ -134,7 +147,7 @@ struct WoodSelectionView: View {
             )
 
             Text(
-                "\(collectedWoodIDs.count) of \(requiredWoodCount) cypress wood collected"
+                "\(collectedWoodIDs.count) of \(requiredWoodCount) gopher wood collected"
             )
             .font(.caption)
             .foregroundStyle(.secondary)
@@ -473,7 +486,7 @@ struct WoodSelectionView: View {
         }
 
         feedback =
-            "✨ Correct! Noah needs cypress wood."
+            "✨ Correct! Noah needs gopher wood."
 
         checkCompletion()
 
@@ -486,7 +499,7 @@ struct WoodSelectionView: View {
     ) {
 
         feedback =
-            "\(wood.name) is not the wood GOD told Noah to use."
+            "Choose a piece labelled gopher wood. The drawings do not identify the Biblical tree."
 
         withAnimation(
             .spring(
@@ -545,7 +558,7 @@ struct WoodSelectionView: View {
                 completed = true
 
                 feedback =
-                    "🎉 Noah collected the cypress wood!"
+                    "🎉 Noah collected the gopher wood!"
 
             }
 
@@ -560,7 +573,7 @@ struct WoodSelectionView: View {
             Text("🪵🪵🪵")
                 .font(.system(size: 55))
 
-            Text("Cypress Wood Collected!")
+            Text("Gopher wood Collected!")
                 .font(.largeTitle)
                 .bold()
                 .multilineTextAlignment(.center)

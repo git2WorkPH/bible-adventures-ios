@@ -3,6 +3,9 @@ import SwiftUI
 struct GatherAnimalsView: View {
 
     let onComplete: () -> Void
+    @Environment(\.storyReduceMotion) private var reduceMotion
+    @Environment(\.dynamicTypeSize) private var typeSize
+    @Environment(\.accessibilityVoiceOverEnabled) private var voiceOver
 
     private let animals: [AnimalPair] = [
 
@@ -41,6 +44,8 @@ struct GatherAnimalsView: View {
         ScrollView {
 
             VStack(spacing: 24) {
+                GameActivityContext()
+
 
                 Text("🦒 Gather the Animals")
                     .font(.largeTitle)
@@ -123,13 +128,7 @@ struct GatherAnimalsView: View {
                 .font(.title2)
                 .bold()
 
-            LazyVGrid(
-                columns: [
-                    GridItem(.flexible()),
-                    GridItem(.flexible())
-                ],
-                spacing: 16
-            ) {
+            AdaptiveActivityGrid(singleColumn: typeSize.isAccessibilitySize || voiceOver) {
 
                 ForEach(animalCards) { card in
 
@@ -175,7 +174,7 @@ struct GatherAnimalsView: View {
 
             }
             .frame(maxWidth: .infinity)
-            .frame(height: 130)
+            .frame(minHeight: 130)
             .background {
 
                 RoundedRectangle(cornerRadius: 16)
@@ -201,6 +200,8 @@ struct GatherAnimalsView: View {
         }
         .buttonStyle(.plain)
         .disabled(isCheckingPair)
+        .accessibilityLabel(card.name)
+        .accessibilityValue(isSelected ? "Selected" : "Not selected")
     }
 
     // MARK: - Completed

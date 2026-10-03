@@ -34,6 +34,7 @@
 		A008858A2FFB322000E29B20 /* BibleAdventureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BibleAdventureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00886383000A9B300E29B20 /* ScriptureQuestion.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ScriptureQuestion.txt; sourceTree = "<group>"; };
 		A0373B84303713C9006ED2DC /* requirements.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = requirements.MD; sourceTree = "<group>"; };
+		A05C99733052C64300C6D3C4 /* BibleAdventure.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = BibleAdventure.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -106,6 +107,7 @@
 		A00885682FFB321E00E29B20 = {
 			isa = PBXGroup;
 			children = (
+				A05C99733052C64300C6D3C4 /* BibleAdventure.xctestplan */,
 				A00885732FFB321E00E29B20 /* BibleAdventure */,
 				A00885832FFB322000E29B20 /* BibleAdventureTests */,
 				A008858D2FFB322000E29B20 /* BibleAdventureUITests */,

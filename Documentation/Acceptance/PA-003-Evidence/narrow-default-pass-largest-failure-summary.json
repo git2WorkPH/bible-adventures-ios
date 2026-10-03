@@ -1,0 +1,49 @@
+{
+  "devicesAndConfigurations" : [
+    {
+      "device" : {
+        "architecture" : "arm64",
+        "deviceId" : "7E49F393-F818-4CA8-8F5D-42335A8FB99B",
+        "deviceName" : "BibleAdventure acceptance iPhone SE",
+        "modelName" : "iPhone SE (3rd generation)",
+        "osBuildNumber" : "23B86",
+        "osVersion" : "26.1",
+        "platform" : "iOS Simulator"
+      },
+      "expectedFailures" : 0,
+      "failedTests" : 1,
+      "passedTests" : 2,
+      "skippedTests" : 0,
+      "testPlanConfiguration" : {
+        "configurationId" : "1",
+        "configurationName" : "Test Scheme Action"
+      }
+    }
+  ],
+  "environmentDescription" : "BibleAdventure · Built with macOS 26.6.2",
+  "expectedFailures" : 0,
+  "failedTests" : 1,
+  "finishTime" : 1791027631.903,
+  "passedTests" : 2,
+  "result" : "Failed",
+  "skippedTests" : 0,
+  "startTime" : 1791026950.543,
+  "statistics" : [
+
+  ],
+  "testFailures" : [
+    {
+      "failureText" : "failed - Unreachable control: \"Place selected piece in Left Wall outline\" Button",
+      "targetName" : "BibleAdventureUITests",
+      "testIdentifier" : 2,
+      "testIdentifierString" : "NoahFlowTests/testFullNoahWithLargestTextAndReducedMotion()",
+      "testIdentifierURL" : "test://com.apple.xcode/BibleAdventure/BibleAdventureUITests/NoahFlowTests/testFullNoahWithLargestTextAndReducedMotion",
+      "testName" : "testFullNoahWithLargestTextAndReducedMotion()"
+    }
+  ],
+  "title" : "Test - BibleAdventure",
+  "topInsights" : [
+
+  ],
+  "totalTestCount" : 3
+}

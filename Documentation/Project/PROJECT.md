@@ -1,39 +1,13 @@
 # Project Profile
 
-Status: TEMPLATE
+Status: Active
+Updated: 2026-10-03
 
-## Project name
-[PROJECT_NAME]
+Project: Bible Adventure: Journey to Understanding Who GOD Is.
+Type: interactive Bible story game. Stage: development; Noah is the initial playable story and remains unverified until complete acceptance evidence exists.
+Stack: Swift, SwiftUI, Foundation and Xcode; native iPhone and iPad. Local JSON content and local gameplay progress; no backend, accounts or cloud service in the approved scope.
+Current phase: PA-003 approved Noah integration and acceptance. Current tasks: PA-003-T01–T08, authorized by the owner on 2026-10-03.
 
-## Project type
-[APP / GAME / API / SAAS / LIBRARY / OTHER]
+BibleAdventure/Core contains reusable models, engines, repositories and services. Features contains SwiftUI presentation. Stories/Noah and Resource/Stories/Noah contain Noah configuration/content. BibleAdventureTests and BibleAdventureUITests contain verification. Documentation is authoritative.
 
-## Product stage
-[IDEA / REQUIREMENTS / PROTOTYPE / DEVELOPMENT / BETA / PRODUCTION]
-
-## Technology stack
-- Language:
-- Framework:
-- Platform:
-- Backend:
-- Database:
-- Infrastructure:
-- Third-party services:
-
-## Target platforms
-- [ ]
-
-## Current phase
-[CURRENT_PHASE]
-
-## Current active task
-[NONE]
-
-## High-level repository structure
-Describe major directories and their purpose.
-
-## Project constraints
-- [ ]
-
-## Owner decisions
-Record decisions that materially affect implementation.
+Mission, constraints and product principles are defined in PRODUCT-REQUIREMENTS.md and the Scripture Integrity Policy. Future stories, audio/asset foundations, cloud/accounts and release publication are outside this sequence. Existing prototype visuals are preserved where compatible with approved behavior and accessibility.

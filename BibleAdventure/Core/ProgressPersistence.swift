@@ -14,6 +14,19 @@ struct StoryProgress: Codable, Equatable {
     let currentStepIndex: Int?
     let status: Status
     let objectives: [ObjectiveProgress]
+    let contentVersion: String?
+    let reflectionCompleted: Bool?
+
+    init(storyID: StoryID, currentStepIndex: Int?, status: Status,
+         objectives: [ObjectiveProgress], contentVersion: String? = nil,
+         reflectionCompleted: Bool? = nil) {
+        self.storyID = storyID
+        self.currentStepIndex = currentStepIndex
+        self.status = status
+        self.objectives = objectives
+        self.contentVersion = contentVersion
+        self.reflectionCompleted = reflectionCompleted
+    }
 }
 
 /// Saveable gameplay progress. It records visited/completed activities only;
@@ -39,6 +52,8 @@ struct PlayerProgress: Codable, Equatable {
             let hasValidStep = story.currentStepIndex.map { $0 >= 0 } ?? true
             let completionHasNoCurrentStep = story.status != .completed || story.currentStepIndex == nil
             return hasValidStep && completionHasNoCurrentStep &&
+                (story.status != .active || story.currentStepIndex != nil) &&
+                (story.reflectionCompleted != true || story.status == .completed) &&
                 objectiveIDs.allSatisfy { !$0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty } &&
                 Set(objectiveIDs).count == objectiveIDs.count
         }

@@ -1,6 +1,6 @@
 # FND-BASE-T03 — Define Centralized Story-State Contracts
 
-Status: IMPLEMENTED
+Status: VERIFIED
 Approved by: Project owner, 2026-09-04
 Implemented: 2026-09-04
 
@@ -35,3 +35,8 @@ Implemented: 2026-09-04
 ## Verification
 
 See `Documentation/Acceptance/FND-BASE-T03-VERIFICATION.md`. The task remains `IMPLEMENTED` rather than `VERIFIED` until the unit tests run successfully in an available iOS Simulator environment.
+
+
+## Simulator verification update — 2026-10-03
+
+The previously blocked focused tests executed as part of the 38-test passing iOS Simulator unit suite. See Documentation/Acceptance/PA-003-T01-VERIFICATION.md and its retained log. This verifies the approved foundation task scope; it does not certify Noah runtime/device behavior. Earlier environment limitations remain historical evidence.

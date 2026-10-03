@@ -1,6 +1,6 @@
 # Foundation Baseline Decisions
 
-Status: Proposed for project adoption
+Status: Adopted through FND-BASE-T01; historical baseline dated below
 Date: 2026-08-29
 
 ## 1. Authoritative documentation

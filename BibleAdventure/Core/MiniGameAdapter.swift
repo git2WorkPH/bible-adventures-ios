@@ -39,6 +39,7 @@ struct MiniGameAdapter {
               engine.currentStep != nil else { return nil }
         sourceStepIndex = engine.currentStepIndex
         state = MiniGameState(miniGameID: configuration.id, status: .active)
+        engine.setActivityStates(miniGame: state)
         let token = UUID()
         attemptID = token
         return token
@@ -52,6 +53,7 @@ struct MiniGameAdapter {
               engine.currentStep != nil else { return .rejected }
         state = MiniGameState(miniGameID: configuration.id,
                              status: result == .completed ? .completed : .failed)
+        engine.setActivityStates(miniGame: state)
         attemptID = nil
         return engine.apply(outcome: result.outcome)
     }
@@ -64,6 +66,7 @@ struct MiniGameAdapter {
               engine.currentStepIndex == sourceStepIndex else { return nil }
         guard engine.apply(outcome: .retry) == .retrying else { return nil }
         state = MiniGameState(miniGameID: configuration.id, status: .active)
+        engine.setActivityStates(miniGame: state)
         let token = UUID()
         attemptID = token
         return token
