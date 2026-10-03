@@ -1,31 +1,17 @@
 # Tasks
 
-Tasks are implementation units derived from approved requirements.
+## Lifecycle
+`PROPOSED -> APPROVED -> IN_PROGRESS -> IMPLEMENTED -> VERIFIED`
 
-## Task template
+Alternative: `BLOCKED`, `CANCELLED`.
 
-```markdown
-# <TASK-ID> — <Title>
+Only tasks under `Approved/` may be implemented.
 
-## Requirement
-
-## Objective
-
-## Scope
-
-## Dependencies
-
-## Expected Changes
-
-## Acceptance Criteria
-
-## Tests / Verification
-
-## Out of Scope
-
-## Status
-
-Proposed | Approved | In Progress | Blocked | Complete
-```
-
-A task must not silently expand its parent requirement.
+Every task should reference:
+- requirement(s);
+- related finding(s);
+- architecture decision(s), when applicable;
+- scope;
+- out-of-scope items;
+- acceptance criteria;
+- verification expectations.

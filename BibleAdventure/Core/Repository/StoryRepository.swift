@@ -1,19 +1,20 @@
 import Foundation
 
-struct StoryRepository {
+/// An in-memory story repository with no story-specific selection rules.
+struct StoryRepository: StoryLoading {
+    private let stories: [StoryID: Story]
 
-    static func loadStory(_ storyID: StoryID) -> Story {
+    init(stories: [Story]) {
+        self.stories = Dictionary(
+            uniqueKeysWithValues: stories.map { ($0.id, $0) }
+        )
+    }
 
-        switch storyID {
-
-        case .noah:
-            return NoahStory.build()
-
-        case .moses:
-            fatalError("Moses story not implemented.")
-
-        case .david:
-            fatalError("David story not implemented.")
+    func story(for storyID: StoryID) -> Result<Story, ContentRepositoryError> {
+        guard let story = stories[storyID] else {
+            return .failure(.itemNotFound("story:\(storyID.rawValue)"))
         }
+
+        return .success(story)
     }
 }

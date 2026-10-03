@@ -1,70 +1,68 @@
 import Foundation
 
-struct QuestionRepository {
+protocol QuestionContentLoading {
+    func questions() -> Result<[QuizQuestion], ContentRepositoryError>
+    func question(for identifier: String) -> Result<QuizQuestion, ContentRepositoryError>
+}
 
-    private static var cache: [StoryID: [QuizQuestion]] = [:]
+/// Decodes and validates an externalized question collection from an injected
+/// data source. It has no story-specific resource-selection behavior.
+struct QuestionRepository: QuestionContentLoading {
+    private let dataSource: any ContentDataLoading
 
-    static func loadQuestions(for story: StoryID) -> [QuizQuestion] {
+    init(dataSource: any ContentDataLoading) {
+        self.dataSource = dataSource
+    }
 
-        let fileName: String
+    func questions() -> Result<[QuizQuestion], ContentRepositoryError> {
+        let data: Data
 
-        switch story {
-
-        case .noah:
-            fileName = "noah_questions"
-
-        case .moses:
-            fileName = "moses_questions"
-
-        case .david:
-            fileName = "david_questions"
-
-        }
-
-        guard let url = Bundle.main.url(
-            forResource: fileName,
-            withExtension: "json"
-        ) else {
-
-            fatalError("Unable to locate \(fileName).json")
-
+        switch dataSource.loadData() {
+        case .success(let loadedData):
+            data = loadedData
+        case .failure(let error):
+            return .failure(error)
         }
 
         do {
-
-            let data = try Data(contentsOf: url)
-
-            let questions = try JSONDecoder().decode(
-                [QuizQuestion].self,
-                from: data
-            )
-            
-            cache[story]=questions
-            return questions
-            
-
+            let questions = try JSONDecoder().decode([QuizQuestion].self, from: data)
+            return validate(questions)
         } catch {
-
-            fatalError(error.localizedDescription)
-
+            return .failure(.malformedContent("questions"))
         }
-
     }
 
-    static func question(
-        story: StoryID,
-        id: String
-    ) -> QuizQuestion {
+    func question(
+        for identifier: String
+    ) -> Result<QuizQuestion, ContentRepositoryError> {
+        switch questions() {
+        case .success(let questions):
+            guard let question = questions.first(where: { $0.id == identifier }) else {
+                return .failure(.itemNotFound("question:\(identifier)"))
+            }
 
-        guard let question = loadQuestions(for: story)
-            .first(where: { $0.id == id }) else {
-
-            fatalError("Question '\(id)' not found.")
-
+            return .success(question)
+        case .failure(let error):
+            return .failure(error)
         }
-
-        return question
-
     }
 
+    private func validate(
+        _ questions: [QuizQuestion]
+    ) -> Result<[QuizQuestion], ContentRepositoryError> {
+        var identifiers = Set<String>()
+
+        for question in questions {
+            guard !question.id.isEmpty,
+                  !question.question.isEmpty,
+                  question.options.count >= 2,
+                  question.options.indices.contains(question.correctAnswerIndex),
+                  identifiers.insert(question.id).inserted
+            else {
+                return .failure(.invalidContent("questions"))
+            }
+        }
+
+        return .success(questions)
+    }
 }

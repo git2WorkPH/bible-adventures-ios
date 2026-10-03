@@ -1,28 +1,13 @@
-# Project Initialization
+# Project Initialization Skill
 
-## Purpose
-Understand a repository before implementation.
+Prepare a repository to use the generic Continuity Kit.
 
-## Rules
-- Read repository structure, source, tests, documentation, configuration, and existing architecture.
-- Read current requirements and session memory when present.
-- Do not modify application code, requirements, or architecture during initialization.
-- Report facts separately from assumptions.
-
-## Output
-Provide:
-- project summary
-- technology and build system
-- repository structure
-- architecture observed
-- implemented features
-- requirements/documentation discovered
-- tests and current test state
-- likely active work
-- risks or unknowns
-- recommended next step
-
-## Example
-```text
-Use the project-initialization skill. Inspect this repository and understand its current state. Do not modify code.
-```
+1. Inspect the repository.
+2. Read existing documentation.
+3. Identify language, framework, platform, build system, and major components.
+4. Populate or propose `Documentation/Project/PROJECT.md`.
+5. Establish VISION, SCOPE, and GLOSSARY.
+6. Establish the standard Documentation structure if missing.
+7. Never invent requirements.
+8. Do not overwrite existing authoritative decisions without approval.
+9. Report missing information as placeholders or findings.
