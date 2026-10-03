@@ -42,14 +42,14 @@ Authority: This register records task location and status. It is governed by `Do
 
 ## PA-003 owner-approved sequence — 2026-10-03
 
-Approval: Approved/PA-003-APPROVED-TASKS.md. T01–T03 and T05–T07: VERIFIED. T04: IMPLEMENTED, final owner content review pending. T08: IMPLEMENTED; final acceptance checks remain open. Current evidence supersedes the historical Simulator blocker for foundation T03–T06; see PA-003-T01-VERIFICATION.md. All in-scope follow-up work is authorized by the owner.
+Approval: Approved/PA-003-APPROVED-TASKS.md. T01–T03 and T05–T07: VERIFIED. T04: VERIFIED following owner acceptance on 2026-10-03. T08: IMPLEMENTED; final acceptance checks remain open. Current evidence supersedes the historical Simulator blocker for foundation T03–T06; see PA-003-T01-VERIFICATION.md. All in-scope follow-up work is authorized by the owner.
 
 | Task | Canonical status | Record / evidence |
 |---|---|---|
 | PA-003-T01 | VERIFIED | Completed/PA-003-T01-REPAIR-UNIT-TESTS.md |
 | PA-003-T02 | VERIFIED | Completed/PA-003-T02-PROJECT-SCOPE.md |
 | PA-003-T03 | VERIFIED | Completed/PA-003-T03-RUNTIME-DESIGN.md |
-| PA-003-T04 | IMPLEMENTED | Completed/PA-003-T04-NOAH-CONTENT.md; final owner content review pending |
+| PA-003-T04 | VERIFIED | Completed/PA-003-T04-NOAH-CONTENT.md; owner acceptance recorded 2026-10-03 |
 | PA-003-T05 | VERIFIED | Completed/PA-003-T05-NOAH-RUNTIME.md |
 | PA-003-T06 | VERIFIED | Completed/PA-003-T06-NOAH-REFLECTION.md |
 | PA-003-T07 | VERIFIED | Completed/PA-003-T07-NOAH-PERSISTENCE.md |
