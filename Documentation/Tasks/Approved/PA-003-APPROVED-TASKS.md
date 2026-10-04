@@ -113,3 +113,6 @@ Acceptance:
 ## Approval evidence
 
 Owner instruction: “all proposed tasks are approved, kindly implement them and also, all future tasks that needs approval within this tasks are approved.” Current execution: T01–T03 and T05–T07 VERIFIED; T04 IMPLEMENTED pending final owner content review; T08 IMPLEMENTED pending full manual acceptance. Canonical results are in Completed/ and TASK-REGISTER.md.
+
+
+Final status reconciliation — 2026-10-04: all PA-003-T01–T08 VERIFIED at their approved scopes. Owner manual device metadata completes T08; Noah IMPLEMENTED_VERIFIED. Earlier execution summaries are historical. PA-004 remains PROPOSED.

@@ -1,5 +1,27 @@
 # Project Session Context
 
+Synchronization checkpoint — 2026-10-04: owner requested “push it to develop and master.” Preparing the final Noah acceptance and approved PA-004 handover documentation commit. Fetch confirmed develop/origin ef6ad72 and master/origin 2d6e237 before synchronization. After interruption, inspect live Git status/log/upstream refs to determine which steps completed before repeating a push or merge. Final hashes are reported in the delivery response; preparation-state local/uncommitted descriptions below are historical after this commit. No application source changes; personal Xcode settings remain excluded. PA-004 implementation still starts at T01 design.
+
+## Current checkpoint — 2026-10-04: PA-004 approved
+
+Owner approved all four next-phase tasks. Authoritative approval/scope: Tasks/Approved/PA-004-APPROVED-TASKS.md. Task-by-task work, dependencies, acceptance checklists and resume prompt: [PA-004-TECHNICAL-HANDOVER.md](PA-004-TECHNICAL-HANDOVER.md). T01–T04 APPROVED; no implementation or new tests started. Resume with T01 design. T03 mechanic choice and T04 owner story choice remain explicit dependencies; no additional task approval is needed for approved scope.
+
+PA-003 complete, Noah IMPLEMENTED_VERIFIED. Local documentation updates remain uncommitted/unpushed; develop last observed ef6ad72 and master 2d6e237. Preserve personal Xcode files/stash. No running operation. This checkpoint supersedes earlier PROPOSED/pending-approval instructions.
+
+## Current checkpoint — 2026-10-04: Noah acceptance closed
+
+All PA-003-T01–T08 are VERIFIED at their approved scopes; Noah is IMPLEMENTED_VERIFIED. Owner confirmed manual PASS and supplied iPhone 14 Pro Max/iOS 26 and iPad mini/iPadOS 26. Generation/point releases unspecified; do not invent them. Automated and agent-observed evidence remains separately recorded in T08. No application code or new tests in this closure.
+
+Next work: review Proposed/PA-004-NEXT-PHASE-TASKS.md and obtain implementation approval; PA-004 is not covered by Noah's prior approval. Assessment/proposal, final acceptance and session updates are currently local/uncommitted/unpushed. develop last observed ef6ad72; master 2d6e237. Preserve personal Xcode edits and stashes. No operation running. This checkpoint supersedes older pending T08/device statements below.
+
+## Checkpoint — 2026-10-04 (Australia/Sydney)
+
+Owner asked to continue. Recorded manual phone metadata: iPhone 14 Pro Max/iOS 26; iPad mini reported (generation unspecified); iPadOS version still requested. T08 remains IMPLEMENTED, Noah IMPLEMENTED_UNVERIFIED; other PA-003 tasks are VERIFIED. No retest of owner-confirmed checks is requested.
+
+Prepared PA-004-NEXT-PHASE-ASSESSMENT.md and Proposed/PA-004-NEXT-PHASE-TASKS.md: recommend configured shared player/content boundaries and proving one reusable mechanic, followed by explicit next-story selection. All PA-004 tasks PROPOSED; no architecture choice or implementation approval inferred. Application source untouched; no tests run.
+
+Git observed develop ef6ad72/origin develop; master 2d6e237 contains the previously pushed handover documentation. New assessment/proposal/metadata/session edits are local, uncommitted and unpushed. Personal Xcode UI/scheme changes remain preserved. No command running. Next: record remaining iPadOS metadata if supplied and close T08 records; obtain approval for concrete PA-004 proposal before implementation.
+
 ## Current checkpoint — 2026-10-03 (Australia/Sydney)
 
 Implementation phase: approved PA-003 Noah work is implemented. T01–T07 are VERIFIED at their recorded scopes; T04 was closed after owner content acceptance. T08 remains IMPLEMENTED; Noah remains IMPLEMENTED_UNVERIFIED until manual test device models and OS versions are recorded. Owner said “all working as expected” and confirmed VoiceOver, compact iPad resizing and Reduce Motion checks with “yes.” Record these as owner-reported PASS; do not ask to repeat those checks. Device metadata is the remaining formal acceptance detail.
