@@ -1,5 +1,15 @@
 # Noah component definition and acceptance matrix
 
+## Final acceptance — 2026-10-04
+
+Status: VERIFIED for PA-003-T08; Noah: IMPLEMENTED_VERIFIED at the approved PA-003 scope.
+
+Tester: project owner. Manual configurations reported: iPhone 14 Pro Max / iOS 26; iPad mini / iPadOS 26. Tablet generation and OS point releases were not supplied and are not inferred. Owner stated “all working as expected” and answered “yes” when asked whether testing included VoiceOver, narrow iPad window resizing and Reduce Motion. Owner accepted the delivered story/content. These owner-reported PASS results close the manual criteria together with the recorded automated and agent-observed evidence. They are not additional agent-executed tests.
+
+Earlier pending/blocked rows below are historical and superseded by this acceptance record. No code changes or new test execution were needed for this metadata closure. Future frameworks and public release remain outside this verification.
+
+## Retained evidence and prior checkpoints
+
 Date: 2026-10-03. Scope: PA-003-T04/T05/T06/T08. Status: IMPLEMENTED_UNVERIFIED for complete device acceptance.
 
 Story source: Genesis 6–9. All narration is labelled Interpretation, all invented activity details are Game activity, and direct quotation is exact Genesis 6:14 with ESV/reference label. The wood drawing does not identify the uncertain Biblical tree.

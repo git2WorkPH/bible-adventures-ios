@@ -1,7 +1,7 @@
 # Task Register
 
 Status: Active
-Last reconciled: 2026-10-03
+Last reconciled: 2026-10-04
 Authority: This register records task location and status. It is governed by `Documentation/Tasks/TASK-STATUS-POLICY.md`.
 
 ## Authoritative locations
@@ -42,7 +42,7 @@ Authority: This register records task location and status. It is governed by `Do
 
 ## PA-003 owner-approved sequence — 2026-10-03
 
-Approval: Approved/PA-003-APPROVED-TASKS.md. T01–T03 and T05–T07: VERIFIED. T04: VERIFIED following owner acceptance on 2026-10-03. T08: IMPLEMENTED; final acceptance checks remain open. Current evidence supersedes the historical Simulator blocker for foundation T03–T06; see PA-003-T01-VERIFICATION.md. All in-scope follow-up work is authorized by the owner.
+Approval: Approved/PA-003-APPROVED-TASKS.md. T01–T03 and T05–T07: VERIFIED. T04: VERIFIED following owner acceptance on 2026-10-03. T08: VERIFIED following owner device metadata and manual PASS confirmation; see T08 final acceptance. Current evidence supersedes the historical Simulator blocker for foundation T03–T06; see PA-003-T01-VERIFICATION.md. All in-scope follow-up work is authorized by the owner.
 
 | Task | Canonical status | Record / evidence |
 |---|---|---|
@@ -53,4 +53,16 @@ Approval: Approved/PA-003-APPROVED-TASKS.md. T01–T03 and T05–T07: VERIFIED. 
 | PA-003-T05 | VERIFIED | Completed/PA-003-T05-NOAH-RUNTIME.md |
 | PA-003-T06 | VERIFIED | Completed/PA-003-T06-NOAH-REFLECTION.md |
 | PA-003-T07 | VERIFIED | Completed/PA-003-T07-NOAH-PERSISTENCE.md |
-| PA-003-T08 | IMPLEMENTED | Completed/PA-003-T08-NOAH-DEVICE-ACCEPTANCE.md; full manual acceptance remains outstanding |
+| PA-003-T08 | VERIFIED | Completed/PA-003-T08-NOAH-DEVICE-ACCEPTANCE.md; owner manual PASS on iPhone 14 Pro Max/iOS 26 and iPad mini/iPadOS 26 |
+
+
+## PA-004 next phase — 2026-10-04
+
+All APPROVED by owner on 2026-10-04. Canonical scope: Approved/PA-004-APPROVED-TASKS.md. Implementation has not started; T03 mechanic and T04 story choices remain dependencies.
+
+| Task | Status | Scope |
+|---|---|---|
+| PA-004-T01 | APPROVED | Reusable story composition/content design |
+| PA-004-T02 | APPROVED | Configured player/content implementation and regression |
+| PA-004-T03 | APPROVED | One reusable game mechanic, choice pending |
+| PA-004-T04 | APPROVED | Next-story selection and requirements, story choice pending |
