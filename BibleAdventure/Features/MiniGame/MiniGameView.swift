@@ -3,6 +3,7 @@ import SwiftUI
 struct MiniGameView: View {
 
     let miniGame: MiniGameType
+    let matchingPresentation: PairMatchingPresentation?
     let onComplete: () -> Void
 
     var body: some View {
@@ -29,11 +30,12 @@ struct MiniGameView: View {
                 onComplete: onComplete
             )
            
-        case .gatherAnimals:
-
-            GatherAnimalsView(
-                onComplete: onComplete
-            )
+        case .gatherAnimals, .gatherProvisions:
+            if let matchingPresentation {
+                PairMatchingView(configuration: matchingPresentation, onComplete: onComplete)
+            } else {
+                Text("This matching activity is unavailable.")
+            }
             
         case .enterArk:
 
@@ -72,6 +74,7 @@ struct MiniGameView: View {
 
     MiniGameView(
         miniGame: .woodSelection,
+        matchingPresentation: nil,
         onComplete: {}
     )
 

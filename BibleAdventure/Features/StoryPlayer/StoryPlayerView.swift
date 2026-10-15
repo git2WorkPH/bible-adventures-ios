@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct StoryPlayerView: View {
-    @State var runtime: StoryRuntimeCoordinator = NoahStory.makeRuntime()
+    @State var runtime: StoryRuntimeCoordinator
     @Environment(\.scenePhase) private var scenePhase
     @Environment(\.storyReduceMotion) private var reduceMotion
     @AccessibilityFocusState private var titleFocused: Bool
@@ -36,16 +36,16 @@ struct StoryPlayerView: View {
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 Menu {
-                    Button("Restart Noah", role: .destructive) { restartConfirmation = true }
-                    Link("Read Genesis 6–9", destination: URL(string: "https://www.esv.org/Genesis+6/")!)
+                    Button("Restart \(runtime.presentation.restartName)", role: .destructive) { restartConfirmation = true }
+                    Link(runtime.presentation.readingLabel, destination: runtime.presentation.readingURL)
                 } label: {
                     Label("Adventure options", systemImage: "ellipsis.circle")
                         .labelStyle(.iconOnly).frame(width: 44, height: 44)
                 }
             }
         }
-        .confirmationDialog("Restart Noah from the beginning?", isPresented: $restartConfirmation, titleVisibility: .visible) {
-            Button("Restart Noah", role: .destructive) { _ = runtime.startNew() }
+        .confirmationDialog("Restart \(runtime.presentation.restartName) from the beginning?", isPresented: $restartConfirmation, titleVisibility: .visible) {
+            Button("Restart \(runtime.presentation.restartName)", role: .destructive) { _ = runtime.startNew() }
         }
         .onChange(of: scenePhase) { _, phase in if phase != .active { runtime.save() } }
         .onChange(of: runtime.stepToken) { _, _ in titleFocused = true }
@@ -62,7 +62,9 @@ struct StoryPlayerView: View {
             RuntimeQuestionView(objective: objective, runtime: runtime, token: token)
         case .miniGame(let type):
             if let attempt = runtime.miniGame?.attemptID {
-                MiniGameView(miniGame: type) { runtime.receiveGame(.completed, attempt: attempt) }
+                MiniGameView(miniGame: type, matchingPresentation: runtime.matchingPresentation(for: type)) {
+                    runtime.receiveGame(.completed, attempt: attempt)
+                }
             } else if runtime.miniGame?.state.status == .failed {
                 Text("Try this activity again.")
                 Button("Retry activity") { runtime.retryGame() }

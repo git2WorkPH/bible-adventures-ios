@@ -16,16 +16,7 @@ struct NoahStory {
     )
 
     static func makeRuntime(storage: any ProgressDataStoring = LocalProgressStorage.application) -> StoryRuntimeCoordinator {
-        var selectedStorage = storage
-        #if DEBUG
-        if ProcessInfo.processInfo.environment["BIBLE_ADVENTURE_UI_TEST"] == "1" {
-            selectedStorage = LocalProgressStorage(url: FileManager.default.temporaryDirectory.appendingPathComponent("noah-ui-progress.json"))
-        }
-        #endif
-        return StoryRuntimeCoordinator(storyID: .noah, loader: StoryRepository(stories: [build()]),
-                                questionLookup: NoahQuestionRepository.question(for:),
-                                scriptureLookup: NoahScriptureRepository().scripture(for:),
-                                reflectionContent: reflection, contentVersion: contentVersion, storage: selectedStorage)
+        StoryCatalogue.entries[0].makeRuntime(storage: storage)
     }
 
     private static func explanation(_ text: String, _ chapter: Int, _ verse: Int, _ end: Int? = nil) -> StoryStep {

@@ -58,11 +58,13 @@ struct EnterArkView: View {
 
                 } else {
 
-                    DisclosureGroup("Enter the ark with buttons") {
+                    DisclosureGroup {
                         ForEach(familyMembers.filter { !enteredMemberIDs.contains($0.id) }) { member in
                             Button("Bring \(member.name) into the ark") { enterArk(member) }
                                 .frame(minHeight: 44).buttonStyle(.bordered)
                         }
+                    } label: {
+                        Text("Enter the ark with buttons").frame(minHeight: 44)
                     }
                     if !typeSize.isAccessibilitySize && !voiceOver { familyTray.accessibilityHidden(true) }
 

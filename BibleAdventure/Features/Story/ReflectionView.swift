@@ -6,9 +6,9 @@ struct ReflectionView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 24) {
-                Text(runtime.reflectionCompleted ? "Adventure complete" : "Reflect on Noah")
+                Text(runtime.reflectionCompleted ? "Adventure complete" : runtime.presentation.reflectionTitle)
                     .font(.largeTitle).accessibilityAddTraits(.isHeader)
-                Text("You explored Noah's story. Keep reading Genesis 6–9 in your Bible.")
+                Text(runtime.presentation.completionInvitation)
                 if let presentation = runtime.reflectionPresentation {
                     Text(presentation.reflectionLabel).font(.headline)
                     Text(presentation.prompt)
@@ -16,7 +16,7 @@ struct ReflectionView: View {
                     Text("Bible reading: \(presentation.scriptureReference.displayText)").font(.headline)
                     Text("The reflection prompts are interpretation. Read the passage for the Biblical source.")
                 }
-                Link("Read Genesis 6–9 (ESV)", destination: URL(string: "https://www.esv.org/Genesis+6/")!).frame(minHeight: 44)
+                Link("\(runtime.presentation.readingLabel) (ESV)", destination: runtime.presentation.readingURL).frame(minHeight: 44)
                 if !runtime.reflectionCompleted {
                     Button("Finish reflection") { runtime.finishReflection() }.buttonStyle(.borderedProminent).frame(minHeight: 44)
                 }

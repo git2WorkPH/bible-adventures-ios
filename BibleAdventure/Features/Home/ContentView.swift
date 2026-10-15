@@ -1,7 +1,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var runtime = NoahStory.makeRuntime()
+    @State private var runtime = StoryCatalogue.entries[0].makeRuntime()
+    @State private var selectedStoryID: StoryID = StoryCatalogue.entries[0].id
     @State private var showPlayer = false
     @State private var confirmNew = false
 
@@ -12,14 +13,19 @@ struct ContentView: View {
                     Image(systemName: "book.closed.fill").font(.system(size: 70)).accessibilityHidden(true)
                     Text("Bible Adventure").font(.largeTitle).bold()
                     Text("Journey to Understanding Who GOD Is").font(.title2)
-                    Text("Explore Noah's story, then return to Genesis 6–9 in your Bible.")
+                    Picker("Adventure", selection: $selectedStoryID) {
+                        ForEach(StoryCatalogue.entries) { entry in
+                            Text(entry.title).tag(entry.id)
+                        }
+                    }.pickerStyle(.segmented).accessibilityHint("Choose a reviewed Bible story.")
+                    Text(runtime.presentation.homeIntroduction)
                     Button("New Adventure") {
                         if runtime.canResume || runtime.recoveryRequired { confirmNew = true }
                         else { beginNew() }
                     }.buttonStyle(.borderedProminent).frame(minHeight: 44)
                     Button("Continue adventure") { showPlayer = runtime.resume() }
                         .buttonStyle(.bordered).frame(minHeight: 44).disabled(!runtime.canResume)
-                    if runtime.recoveryRequired {
+                    if runtime.error != nil {
                         Text(runtime.error?.message ?? "Your saved adventure is unavailable. Start a new adventure.")
                     }
                     DisclosureGroup("Scripture attribution") {
@@ -31,7 +37,12 @@ struct ContentView: View {
             }
             .controlSize(.large)
             .navigationDestination(isPresented: $showPlayer) { StoryPlayerView(runtime: runtime) }
-            .confirmationDialog("Start Noah again? This replaces the saved adventure.", isPresented: $confirmNew, titleVisibility: .visible) {
+            .onChange(of: selectedStoryID) { _, storyID in
+                guard let entry = StoryCatalogue.entry(for: storyID) else { return }
+                runtime = entry.makeRuntime()
+                showPlayer = false
+            }
+            .confirmationDialog("Start \(runtime.presentation.restartName) again? This replaces the saved adventure.", isPresented: $confirmNew, titleVisibility: .visible) {
                 Button("Start new adventure", role: .destructive) { beginNew() }
             }
         }

@@ -1,0 +1,43 @@
+Attributes: Application, 0x10a44e1c0, pid: 24493, label: 'BibleAdventure'
+Element subtree:
+ →Application, 0x10a44e1c0, pid: 24493, label: 'BibleAdventure'
+    Window (Main), 0x10a44d040, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x10a44de00, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x10a44c500, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x10a44c000, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x10a44c280, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x10a44fe80, {{0.0, 0.0}, {402.0, 874.0}}
+                NavigationBar, 0x10a44f980, {{0.0, 62.0}, {402.0, 54.0}}, identifier: '_TtGC7SwiftUI32NavigationStackHosting'
+                  Button, 0x10a44c140, {{16.0, 62.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'Back'
+                  Button, 0x10a44ea80, {{346.0, 66.0}, {36.0, 36.0}}, label: 'Adventure options'
+                Other, 0x10a44e940, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x10a44f200, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x10a44e080, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x10a44ebc0, {{0.0, 0.0}, {402.0, 874.0}}
+                        StaticText, 0x10a44c3c0, {{157.0, 116.0}, {88.0, 20.3}}, label: 'Noah's Ark'
+                        ScrollView, 0x10a44d400, {{16.0, 144.3}, {370.0, 729.7}}
+                          Other, 0x10a44e6c0, {{16.0, -534.0}, {370.0, 1487.3}}
+                            StaticText, 0x10a44d2c0, {{146.5, -518.0}, {109.0, 20.3}}, label: 'Game activity'
+                            StaticText, 0x10a44e300, {{63.3, -489.7}, {275.3, 30.3}}, label: 'Illustrations and interactions represent the story for learning.'
+                            StaticText, 0x10a44ca00, {{77.7, -435.3}, {246.7, 40.7}}, label: '🧱 Build the Ark'
+                            StaticText, 0x10a44cdc0, {{36.5, -370.7}, {329.0, 42.3}}, label: 'Drag the wooden pieces onto the blueprint and build Noah's ark.'
+                            ProgressIndicator, 0x10a44fac0, {{32.0, -304.3}, {338.0, 4.0}}, value: 0%
+                              ProgressIndicator, 0x10a44ed00, {{32.0, -314.3}, {338.0, 24.0}}, value: 0%
+                            StaticText, 0x10a44d7c0, {{143.8, -290.3}, {114.3, 14.3}}, label: '0 of 7 pieces placed'
+                            StaticText, 0x10a44d680, {{86.3, -266.0}, {229.3, 42.3}}, label: 'Try again. Find the matching blueprint shape.'
+                            Button, 0x10a44cf00, {{32.0, 244.3}, {338.0, 28.3}}, label: 'Assemble with buttons'
+                              StaticText, 0x10a44c640, {{32.0, 244.3}, {338.0, 28.3}}, label: 'Assemble with buttons'
+                              Image, 0x10a44da40, {{362.3, 252.3}, {7.0, 12.0}}, identifier: 'collapsed'
+                          Other, 0x10a44f480, {{353.0, 144.3}, {30.0, 683.7}}, label: 'Vertical scroll bar, 3 pages', value: 86%
+                            Other, 0x10a44f340, {{380.0, 454.0}, {3.0, 329.7}}
+                          Other, 0x10a44db80, {{353.0, 144.3}, {30.0, 683.7}}, label: 'Vertical scroll bar, 3 pages', value: 86%
+                            Other, 0x106e37480, {{380.0, 454.0}, {3.0, 329.7}}
+                Other, 0x106e375c0, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x106e37700, {{0.0, 0.0}, {402.0, 874.0}}
+Path to element:
+ →Application, 0x10a44e1c0, pid: 24493, label: 'BibleAdventure'
+Query chain:
+ →Find: Target Application 'com.yourname.BibleAdventures.BibleAdventure'
+  Output: {
+    Application, 0x106e37840, pid: 24493, label: 'BibleAdventure'
+  }

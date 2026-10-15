@@ -1,6 +1,6 @@
 # PA-004 — Approved next phase
 
-Date: 2026-10-04. All tasks APPROVED by the owner. Assessment: ../../Assessment/PA-004-NEXT-PHASE-ASSESSMENT.md. Approval evidence: “i have approved the proposed next phase.” Authorization covers the four task scopes and acceptance criteria below. Noah closure is complete. Pending story/mechanic choices remain explicit dependencies; approval does not select them.
+Date: 2026-10-04. All tasks approved by the owner; current execution status is recorded below. Assessment: ../../Assessment/PA-004-NEXT-PHASE-ASSESSMENT.md. Approval evidence: “i have approved the proposed next phase.” Authorization covers the four task scopes and acceptance criteria below. Noah closure is complete. Pending story/mechanic choices remain explicit dependencies; approval does not select them.
 
 ## PA-004-T01 — Design reusable story composition and content contracts
 
@@ -36,3 +36,16 @@ Recommended order: T01 -> T02, then T03 when a mechanic is selected; T04 require
 ## Execution checkpoint
 
 T01–T04: APPROVED; implementation not started. T01 is the first executable task. T02 depends on T01's recorded design decision. T03 depends on an explicitly selected mechanic/contract. T04 depends on the owner's story choice and authorizes definition/proposal, not shipment of a new story. Required task handover: ../../SessionMemory/PA-004-TECHNICAL-HANDOVER.md.
+
+
+## Execution checkpoint — 2026-10-04
+
+Owner authorized PA-004 and all necessary approvals within its task scopes; selected David and Goliath. T01 design recorded in Architecture/Decisions/PA-004-STORY-COMPOSITION.md. T02 IN_PROGRESS: version-1 JSON definition/validation, injected presentation metadata and unchanged noah-2 export implemented; first unit run RUNNING (exec session 49088), log /private/tmp/BibleAdventure-PA004-units-v1.log, result /private/tmp/BibleAdventure-PA004-units-v1.xcresult, derived /private/tmp/BibleAdventure-PA004-derived. Inspect result before rerun. Source/document changes local; no push. T03 mechanic selected: pair matching. T04 definition: David and Goliath/1 Samuel 17; story shipment remains a future implementation proposal. Next: inspect unit output, fix genuine failures, extract matching state and complete T04 reviewed requirements. Preserve personal Xcode edits.
+
+## Current status — 2026-10-04
+
+T01 VERIFIED (design/contract); T02 IMPLEMENTED (regression in progress); T03 IMPLEMENTED (regression in progress); T04 VERIFIED (David/Goliath requirements/proposal). See individual Acceptance/PA-004-T0x-VERIFICATION.md and Completed records for exact scope. T02/T03 cannot become VERIFIED until actual passing phone/tablet evidence and final units are recorded. This supersedes historical checkpoints above.
+
+## Final execution status — 2026-10-04
+
+T01 VERIFIED (composition design/contract), T02 VERIFIED (configured player/content with recorded regression), T03 VERIFIED (one reusable pair-matching mechanic with recorded regression), T04 VERIFIED (David/Goliath requirements/proposal). Completed and Acceptance records trace each result and limitations. Owner chose David/Goliath; pair matching was selected under authorized necessary in-scope decisions. No PA-004 work remains. PA-005 is the next story implementation proposal, outside this phase's shipment scope.

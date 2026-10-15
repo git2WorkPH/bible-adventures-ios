@@ -1,118 +1,48 @@
 # PA-004 technical handover
 
-Synchronization checkpoint — 2026-10-04: owner requested “push it to develop and master.” Preparing the final Noah acceptance and approved PA-004 handover documentation commit. Fetch confirmed develop/origin ef6ad72 and master/origin 2d6e237 before synchronization. After interruption, inspect live Git status/log/upstream refs to determine which steps completed before repeating a push or merge. Final hashes are reported in the delivery response; preparation-state local/uncommitted descriptions below are historical after this commit. No application source changes; personal Xcode settings remain excluded. PA-004 implementation still starts at T01 design.
+Updated: 2026-10-04, Australia/Sydney. Phase complete: T01–T04 VERIFIED at approved scopes. Approval: ../Tasks/Approved/PA-004-APPROVED-TASKS.md. Decisions: ../Architecture/Decisions/PA-004-STORY-COMPOSITION.md. No task or test remains running.
 
-Updated: 2026-10-04, Australia/Sydney. Read this file to resume PA-004 after interruption or credit exhaustion. Approval and acceptance source: [PA-004-APPROVED-TASKS.md](../Tasks/Approved/PA-004-APPROVED-TASKS.md). General process: [HANDOVER-PROCESS.md](HANDOVER-PROCESS.md).
+## Outcomes and acceptance
 
-## Current work and authorization
+| Task | Outcome | Evidence |
+|---|---|---|
+| T01 | Version1 content/composition contract, two validated synthetic examples, catalogue/presentation/progress compatibility decisions | Acceptance/PA-004-T01-VERIFICATION.md; Architecture/StoryDefinition-v1/ |
+| T02 | JSON Noah content/injected player boundary; unchanged26-step/noah-2/10questions/reflection; invalid-content recovery and independent saved-story behavior | Acceptance/PA-004-T02-VERIFICATION.md |
+| T03 | One reusable pair-matching session/view/configuration;16 Noah pairs and two synthetic rule configurations; stale/duplicate safety and accessible controls | Acceptance/PA-004-T03-VERIFICATION.md |
+| T04 | Owner-selected David/Goliath requirements/content design and four-task implementation proposal | Acceptance/PA-004-T04-VERIFICATION.md |
 
-Owner approved all four proposed next-phase tasks on 2026-10-04: “i have approved the proposed next phase.” T01–T04 are APPROVED, not started. No PA-004 application changes or tests have executed. First action is T01 design. No running operations remain known.
+All task acceptance checklists completed at these scopes. Final evidence/review and Completed/PA-004-T01–T04.md records exist. Other games remain unchanged; all FND mechanics are not claimed as independently reusable frameworks. Audio/assets finding remains outside this phase.
 
-PA-003-T01–T08 are VERIFIED; Noah IMPLEMENTED_VERIFIED. Preserve the reviewed Noah content, Scripture policy, atomic local progress, retry/recovery and accessibility behavior. Owner manual acceptance devices: iPhone 14 Pro Max/iOS26 and iPad mini/iPadOS26. Do not infer point releases/tablet generation.
+## Interfaces and data versions
 
-T04 authorizes selecting/defining a story and proposing its implementation. The owner has not named the next story. T03's mechanic/contract must be selected explicitly. Do not infer Moses or David from enum cases. Audio/assets framework, accounts/cloud/telemetry and publication remain outside PA-004. No renewed approval is needed for work already covered by these tasks.
+- Core/Models/StoryDefinition.swift: schemaVersion 1, contentVersion, Story/StoryStep, StoryPresentation, ReflectionContent, reviewed Scripture/questions. Validates structure/identity/questions/quote consistency before playable steps. Canonical Scripture correctness remains editorial review.
+- Core/Repository/StoryDefinitionRepository.swift: validated Result loader and catalogue runtime factory. Only Noah in production catalogue. Missing/malformed/unknown/schema errors fail safely; no executable fallback. Debug UI tests retain noah-ui-progress.json isolation path.
+- StoryStep Codable uses kind dialogue/objective/miniGame and exactly its payload; compiled enums reject unknown IDs. Optional unknown JSON metadata keys ignored; unsupported schema versions rejected. Contract/examples in Architecture/StoryDefinition-v1/.
+- StoryRuntimeCoordinator.presentation is injected; StoryPlayerView requires runtime. Shared Home/Player/Reflection copy/reading/restart metadata comes from StoryPresentation. Legacy selection view uses reviewed catalogue; future Home multi-story selection remains a PA-005 dependency.
+- Resource/Stories/Noah/noah_story.json is production content. NoahStory.build/old repositories retained as reviewed equivalence oracles. No save migration: PlayerProgress schema unchanged, per-story entries retained, one selected runtime, Noah version noah-2 and indices/objective IDs unchanged. Incompatible saves retained until explicit New Adventure.
+- PairMatchingSession UUID attempt controls selection/deselection/match/mismatch lock/retry and once-only completion. PairMatchingPresentation injects items/symbols/prompts/feedback/completion/reference. PairMatchingView guards delayed callbacks; existing MiniGameAdapter guards runtime handoff. NoahMatchingGame supplies the 16 reviewed examples; GatherAnimalsView wraps it. Matching configuration remains Swift; per-story dispatch for David is PA-005 work.
+- Wood/build/enter DisclosureGroup labels now minimum 44-point height. Original AX trees showed 28.3 points. Test touch-target condition and all gameplay assertions preserved. No new game rules/content.
 
-## Task sequence and acceptance
+## Verification and limitations
 
-### T01 — Reusable story composition and content design
+Final iPad Air 11-inch (M3)/iPadOS 26.1 Simulator:52 unit tests/9 suites plus 4 UI checks pass (56,0 failures): full default, full accessibility5 portrait, full accessibility5 landscape, home/question hit-region/text-clipping audit. Final iPhone 17 Pro/iOS 26.1 and26.5 default flows each1 PASS. Phone26.5 largest portrait/landscape plus audit3 PASS; its earlier default assembly failure resolved by exact final v4 rerun. Phone large-text build predates only final build/enter minimum-height labels; final iPad tests cover all configurations with final source.
 
-Status: APPROVED. Dependencies: none outstanding for starting design.
+Each full-flow test completes all games and16 named pairs with selected-value/removal assertions, question retry, reflection, restore and completed-state relaunch. Two synthetic stories use the same runtime; switching/restarting retains other saved entries. Two item configurations independently test mismatch/retry/stale/duplicate actions. Noah export equals reviewed story/reflection/quotations and all 10 original question records.
 
-Work:
-1. Read product/foundation requirements, Scripture Integrity Policy and existing Noah runtime decision.
-2. Inspect Home/ContentView.swift, StoryPlayer/StoryPlayerView.swift, NoahStory.swift, core Story/StoryStep/StoryID/MiniGameType, repository protocols and ProgressPersistence.swift.
-3. Define catalogue/selection and injected title, restart/read labels and Bible destinations. Define a versioned content schema and validation boundaries, identifying content externalized to JSON and mechanics retained in Swift.
-4. Record the single-active-save versus multiple-story-progress decision explicitly and define compatibility with current noah-2 saves. Do not change the save format silently.
-5. Add two synthetic fixture examples and an architecture decision under Documentation/Architecture/Decisions/. Reconcile T02's exact scope with that decision before implementation.
+Retained summaries/logs/AX trees/screenshots/source and built-binary hashes: Acceptance/PA-004-Evidence/. Unit v1/v2 failed compilation with 0 tests; repaired. Initial phone/ipad-v1 cancelled after default failure (exit 73); interrupted next tests appear as failures, not another diagnosed defect. Phone26-v2 exit 65 retains its one pre-final default failure and3 passes. Final iPad-v2/phone-v3/phone26-v4 exit 0. Read actual summaries; do not claim all historical runs passed.
 
-Acceptance checklist:
-- [ ] Two synthetic stories can be represented without invented Biblical claims.
-- [ ] Catalogue, shared-player metadata and repository contracts are specified.
-- [ ] Schema/version and unknown activity/invalid Bible reference recovery are defined.
-- [ ] Existing noah-2 saves have explicit restore/migration/rejection rules.
-- [ ] Decision for active-save behavior is recorded; any unresolved product choice remains visible.
-- [ ] T02 implementation/test criteria trace to the decision.
-- [ ] Design review/evidence and Completed/T01 record exist before VERIFIED.
+Largest text and Reduce Motion use injected test policies. No new physical VoiceOver or actual OS setting checks performed. Prior owner manual device acceptance remains separately scoped in PA-003. T02/T03 verified at the recorded automated accessible-control/motion-policy/regression scope; no general release/accessibility certification inferred.
 
-Evidence: create Acceptance/PA-004-T01-VERIFICATION.md with contract/examples review. Design alone does not certify runtime behavior.
+## Reproducing checks
 
-### T02 — Configured player and content implementation
+Shared project/scheme BibleAdventure; targets BibleAdventureTests and BibleAdventureUITests/NoahFlowTests. Use xcodebuild test with -project BibleAdventure.xcodeproj -scheme BibleAdventure, a named destination, -parallel-testing-enabled NO and fresh -derivedDataPath/-resultBundlePath; capture log. Final iPad used both -only-testing:BibleAdventureTests and -only-testing:BibleAdventureUITests/NoahFlowTests. Exact final phone retry selector: BibleAdventureUITests/NoahFlowTests/testFullNoahFlowAndRelaunch. Do not weaken touch-target or activity assertions.
 
-Status: APPROVED. Dependency: T01 decision/review; Noah acceptance prerequisite already met.
+Destinations: iPad 26.1 07434B1A-E571-45CC-817B-FDE28A82A524; phone 26.1 3F0029BB-6C6E-46A0-A143-3503D038B9A0; phone 26.5 D1B4A041-95AD-48DE-A05B-8E70B8148510. Verify availability before future runs. Completed result paths: /private/tmp/BibleAdventure-PA004-ipad-v2.xcresult (final units/all iPad UI), phone-v3.xcresult (phone 26.1), phone26-v4.xcresult (phone 26.5 exact retry), phone26-v2.xcresult (large-text passes plus initial failure). Prefix each phone filename with /private/tmp/BibleAdventure-PA004-. Persisted evidence survives temporary result removal.
 
-Work:
-1. Implement T01's catalogue/composition and validated loader using injected core boundaries.
-2. Replace shared-player Noah defaults/restart/read copy with configuration. Keep Noah's public experience, reviewed text and rules intact.
-3. Keep the alternate fixture test-only; implement invalid-schema/content recovery and the chosen progress compatibility behavior.
-4. Add independent loader/runtime tests, then run full Noah regression and affected iPhone/iPad presentation/accessibility checks.
+## Next phase and exact resume
 
-Acceptance checklist:
-- [ ] Two fixture stories use the same player/runtime without Noah-specific copy.
-- [ ] Deterministic content loading and malformed/unknown/versioned content recovery pass.
-- [ ] Existing saves behave exactly as T01 specifies; no silent data overwrite.
-- [ ] Noah quotation, sequence, questions, games, reflection and save behavior remain correct.
-- [ ] Relevant unit/repository/integration tests and complete Noah regression pass with actual counts.
-- [ ] Affected phone/tablet layout/accessibility checks have named configuration/results.
-- [ ] Interface/schema changes and source/evidence locations are in this handover.
+David gameplay NOT_STARTED. Read PA-005-TECHNICAL-HANDOVER.md, Tasks/Proposed/PA-005-DAVID-IMPLEMENTATION.md, Requirements/Stories/David/DAVID-REQUIREMENTS.md and Architecture/Decisions/DAVID-CONTENT-DESIGN.md. T04 authorized definition/proposal, not shipment. PA-005 defines First Samuel support, configured matching dispatch/catalogue selection, reviewed content, lifecycle/progress integration and full device/content acceptance. Existing PA-004 approvals require no repetition.
 
-Evidence: Acceptance/PA-004-T02-VERIFICATION.md; Completed/PA-004-T02 record. Preserve failed results and passing reruns.
+Workspace /Users/cervantes/Documents/ChatGPT/BibleAdventure; develop 4e2e74d, master 561b1cf at last cached refs. PA-004 local uncommitted/unpushed. Preserve personal Xcode UI/scheme files and retained stash 5f939ff0c7e58344dfc94e51bdc49eb97bfbf354. Inspect live Git before committing/synchronizing; no push implied by verification.
 
-### T03 — One reusable game mechanic
-
-Status: APPROVED. Dependency: explicit mechanic choice and contract. Matching/selection is a suggested candidate, not a recorded selection.
-
-Work:
-1. Evaluate future-story needs and current Noah matching/selection behavior; record the bounded mechanic choice and its configuration/result contract.
-2. Extract one story-neutral state/rules component with injected items, prompts, feedback and typed activity result.
-3. Integrate Noah through that component while preserving its existing game rules and accessible controls.
-4. Test two distinct non-Biblical configurations independently; run affected game and full Noah regression.
-
-Acceptance checklist:
-- [ ] Mechanic/contract decision and extraction boundary recorded.
-- [ ] Both fixture configurations pass selection, mismatch/retry and completion tests.
-- [ ] Stale/duplicate outcomes cannot advance progression twice.
-- [ ] Noah rules and accepted integration/full flow pass.
-- [ ] Accessible labels/controls, non-color state and reduced motion pass on named phone/tablet configurations.
-- [ ] Extraction does not claim all game frameworks or a new ruler interaction are complete.
-
-Evidence: Acceptance/PA-004-T03-VERIFICATION.md and Completed/T03 record.
-
-### T04 — Next-story selection and requirements
-
-Status: APPROVED. Dependency: owner story choice; do not mark the task BLOCKED merely because T01 can progress independently.
-
-Work:
-1. Ask for the next story choice when beginning this task; present candidate/source/reuse considerations if useful.
-2. Define purpose, audience, Biblical source, learning objectives and each proposed component.
-3. Review exact quotations against the approved source/policy; separately label interpretation/game content, questions/feedback and reflection.
-4. Identify foundation dependencies and create traceable implementation proposals with scope, tests and device acceptance.
-
-Acceptance checklist:
-- [ ] Owner story choice is recorded.
-- [ ] Story/component requirements, source references and content decisions reviewed.
-- [ ] Scripture/interpretation/game labels and reflection requirements specified.
-- [ ] Required foundation gaps and implementation dependencies identified.
-- [ ] Reviewable implementation proposal includes domain/UI/content/device criteria.
-- [ ] No new story is shipped under this requirements task; its implementation approval is separate.
-
-Evidence: new story requirements, content decision/audit, proposed implementation tasks and Acceptance/PA-004-T04-VERIFICATION.md.
-
-## Workspace, preservation and evidence
-
-Repository: /Users/cervantes/Documents/ChatGPT/BibleAdventure. Branch develop, last observed HEAD ef6ad72 (origin/develop); master 2d6e237. Previous implementation commit 699f256. New final Noah closure, PA-004 assessment/proposal/approval and handover edits are local/uncommitted/unpushed. Inspect live Git state on resume; remote state can change.
-
-Preserve personal Xcode UI state and scheme preference modifications. Shared scheme/test plan are committed. Retained stash 5f939ff0c7e58344dfc94e51bdc49eb97bfbf354 holds original personal settings; do not blindly apply/drop it. Do not stage personal files with documentation.
-
-Noah regression baseline: 46 final unit tests plus the recorded complete phone/iPad/default/accessibility5/landscape/narrow-phone UI flows. Commands, counts, failed/rerun evidence and limitations are in Acceptance/PA-003-T08-VERIFICATION.md and PA-003-Evidence/. Full technical implementation and destination IDs are in TECHNICAL-HANDOVER.md. Use new result paths when rerunning changed code; verify tool/runtime availability. No new tests needed for this documentation-only checkpoint.
-
-## Exact resume instruction
-
-Read AGENTS.md, project documents, CURRENT-CONTEXT.md, this handover and the approved PA-004 task record. Inspect git status/log and preserve local changes. Begin PA-004-T01 at work item 1; no implementation has started. Do not restart Noah acceptance or ask again to approve PA-004. Record explicit design decisions, review T01 acceptance, then implement T02. T03/T04 can proceed when their recorded choices exist. Keep the unchecked acceptance lists honest and attach actual evidence before marking tasks VERIFIED.
-
-## Checkpoints for credit exhaustion
-
-After each meaningful change and before a long command, update: active task/status; completed work; next exact action; changed interfaces/files/schema; tests and results; unresolved choices; Git state; running operation ID/log/result paths. Write these to this file and CURRENT-CONTEXT.md. Preserve previous evidence in SESSION-CONTEXT.md. If credits end unexpectedly, inspect existing logs/processes before repeating operations. Never assume a launched test or push completed.
-
-Suggested prompt for a new session:
-
-> Continue PA-004 from Documentation/SessionMemory/PA-004-TECHNICAL-HANDOVER.md and CURRENT-CONTEXT.md. Follow the approved task scopes and acceptance criteria, preserve local user changes, and resume the first incomplete step. Update the handover as work progresses.
+> Continue from CURRENT-CONTEXT and PA-005 technical handover. PA-004 is complete; confirm the next approved task, preserve local source/evidence/personal changes, and begin the first incomplete David task. Keep acceptance and credit-limit checkpoints current using HANDOVER-PROCESS.md and HANDOVER-TEMPLATE.md.

@@ -17,7 +17,7 @@ protocol ObjectiveContentLoading {
 }
 
 /// A direct quotation returned by a Scripture repository.
-struct ScriptureContent: Equatable {
+struct ScriptureContent: Equatable, Codable {
     let reference: BibleReference
     let text: String
     let translation: ScriptureTranslation
@@ -33,7 +33,7 @@ struct ScriptureContent: Equatable {
     }
 }
 
-enum ScriptureTranslation: String, Equatable {
+enum ScriptureTranslation: String, Equatable, Codable {
     case esv = "ESV"
 }
 
