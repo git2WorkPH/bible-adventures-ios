@@ -8,7 +8,7 @@ Owner explicitly authorized implementation on 2026-10-16: “implement david gam
 
 Implemented locally: First Samuel structural references; `david-1` JSON in `Resource/Stories/David`; compiled David provisions matching configuration; safe matching dispatch; reviewed catalogue entry and Home story picker; David runtime and UI tests. No ESV quotation was added. Existing Noah identities, activities, JSON and save format remain. Rationale: `Documentation/Changes/Justification/PA-005-DAVID-GAMEPLAY.md`.
 
-Automated evidence passes: 55 unit tests/10 suites; David full UI flow on iPhone 17 Pro/iOS 26.1 and iPad Air 11-inch (M3)/iPadOS 26.1; Noah full UI regression on iPhone 17 Pro/iOS 26.1. Evidence: `Acceptance/PA-005-T01-T03-TEST-EVIDENCE.md`. Content audit: `Acceptance/PA-005-T02-CONTENT-AUDIT.md`. T04 remains IN_PROGRESS because manual VoiceOver, actual OS Reduce Motion and compact iPad window checks have not been recorded for David. No operation is running. Branch observed: `develop`, HEAD `4e2e74ddd1af4c1aa95e3c3365e4b3948586a77e`; PA-004 and PA-005 work are uncommitted and unpushed.
+Automated evidence passes: 55 unit tests/10 suites; David full UI flow on iPhone 17 Pro/iOS 26.1 and iPad Air 11-inch (M3)/iPadOS 26.1; Noah full UI regression on iPhone 17 Pro/iOS 26.1. Evidence: `Acceptance/PA-005-T01-T03-TEST-EVIDENCE.md`. Content audit: `Acceptance/PA-005-T02-CONTENT-AUDIT.md`. T04 remains IN_PROGRESS because manual VoiceOver, actual OS Reduce Motion and compact iPad window checks have not been recorded for David. No operation is running. PA-004/PA-005 implementation was committed and synchronized: `develop`, `master`, `origin/develop`, and `origin/master` all point to `d7920a6` at this checkpoint. Only the two preserved personal Xcode state files remain modified.
 
 ## Completed phase
 
@@ -30,7 +30,7 @@ Persistent evidence: Acceptance/PA-004-Evidence/. Original results/logs remain /
 
 ## Git and preservation
 
-Workspace /Users/cervantes/Documents/ChatGPT/BibleAdventure; branch develop HEAD/origin-develop 4e2e74ddd1af4c1aa95e3c3365e4b3948586a77e. Master/origin-master 561b1cfc57502369a36d3b99484f4d20c11a8347 (cached refs observed at closeout). PA-004 code/tests/evidence/docs are local uncommitted/unpushed. No Git writes performed in this implementation turn. Inspect live state before synchronization.
+Workspace /Users/cervantes/Documents/ChatGPT/BibleAdventure; branch develop HEAD/origin-develop and master/origin-master were synchronized at `d7920a6` after the approved PA-004/PA-005 commit `79c7676`. Inspect live state before further synchronization.
 
 Preserve personal Xcode UserInterfaceState.xcuserstate and xcschememanagement.plist modifications. Retained stash 5f939ff0c7e58344dfc94e51bdc49eb97bfbf354 holds original personal settings; do not blindly apply/drop it or alter other stashes. Stage only task files when committing.
 
