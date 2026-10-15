@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "david-1",
+  "presentation": {
+    "homeIntroduction": "Explore David and Goliath, then return to 1 Samuel 17 in your Bible.",
+    "restartName": "David and Goliath",
+    "reflectionTitle": "Reflect on David and Goliath",
+    "completionInvitation": "Keep reading 1 Samuel 17 in your Bible.",
+    "readingLabel": "Read 1 Samuel 17",
+    "readingURL": "https://www.esv.org/1%2BSamuel%2B17/"
+  },
+  "reflection": {
+    "id": "david-reflection",
+    "prompt": "Read 1 Samuel 17:45–47 in your Bible. What does David's trust teach you about GOD? What would you like to ask or explore as you read the chapter?",
+    "scriptureReference": {
+      "book": "1 Samuel",
+      "chapter": 17,
+      "startVerse": 45,
+      "endVerse": 47
+    }
+  },
+  "scripture": [],
+  "questions": [
+    {
+      "id": "david_delivered",
+      "question": "Who did David say had delivered him before?",
+      "options": ["The LORD", "Saul", "Goliath"],
+      "correctAnswerIndex": 0,
+      "hint": "Read 1 Samuel 17:37."
+    },
+    {
+      "id": "armor_untested",
+      "question": "Why did David put off Saul's armor?",
+      "options": ["He had not tested it", "It was missing", "It belonged to Goliath"],
+      "correctAnswerIndex": 0,
+      "hint": "Read 1 Samuel 17:39."
+    },
+    {
+      "id": "smooth_stones",
+      "question": "How many smooth stones did David choose?",
+      "options": ["One", "Five", "Ten"],
+      "correctAnswerIndex": 1,
+      "hint": "Read 1 Samuel 17:40."
+    },
+    {
+      "id": "the_lord_saves",
+      "question": "What does David say about how the LORD saves?",
+      "options": ["Not with sword and spear", "With the strongest armor", "With the biggest army"],
+      "correctAnswerIndex": 0,
+      "hint": "Read 1 Samuel 17:47."
+    }
+  ],
+  "story": {
+    "id": "david",
+    "title": "David and Goliath",
+    "description": "Explore 1 Samuel 17, remember the source, and reflect on GOD.",
+    "steps": [
+      {
+        "kind": "dialogue",
+        "dialogue": {
+          "speaker": "narrator",
+          "kind": "Interpretation",
+          "text": "1 Samuel 17 describes a battle setting. Jesse sent David from Bethlehem with provisions for his brothers. Read the chapter in your Bible as you explore this adventure.",
+          "reference": { "book": "1 Samuel", "chapter": 17, "startVerse": 1, "endVerse": 23 }
+        }
+      },
+      {
+        "kind": "miniGame",
+        "activity": "gatherProvisions"
+      },
+      {
+        "kind": "dialogue",
+        "dialogue": {
+          "speaker": "narrator",
+          "kind": "Interpretation",
+          "text": "David heard Goliath's challenge and spoke about the living GOD. The people around him were afraid. Read 1 Samuel 17:23–37 for the full account.",
+          "reference": { "book": "1 Samuel", "chapter": 17, "startVerse": 23, "endVerse": 37 }
+        }
+      },
+      {
+        "kind": "objective",
+        "objective": {
+          "id": "david_delivered",
+          "title": "Remember David's words",
+          "instruction": "Read 1 Samuel 17:37, then choose the answer supported by the passage.",
+          "type": "readScripture",
+          "reference": { "book": "1 Samuel", "chapter": 17, "startVerse": 37 },
+          "scripture": "",
+          "questionId": "david_delivered",
+          "storyId": "david",
+          "hint": "Read the source before answering."
+        }
+      },
+      {
+        "kind": "dialogue",
+        "dialogue": {
+          "speaker": "narrator",
+          "kind": "Interpretation",
+          "text": "Saul offered David armor. David tried it, said he had not tested it, and put it off. Then he took his staff, chose five smooth stones from the brook, and carried his sling.",
+          "reference": { "book": "1 Samuel", "chapter": 17, "startVerse": 38, "endVerse": 40 }
+        }
+      },
+      {
+        "kind": "objective",
+        "objective": {
+          "id": "armor_untested",
+          "title": "Read about the armor",
+          "instruction": "Why did David put off the armor?",
+          "type": "quiz",
+          "reference": { "book": "1 Samuel", "chapter": 17, "startVerse": 39 },
+          "scripture": "",
+          "questionId": "armor_untested",
+          "storyId": "david",
+          "hint": "Read 1 Samuel 17:39."
+        }
+      },
+      {
+        "kind": "objective",
+        "objective": {
+          "id": "smooth_stones",
+          "title": "Read about the stones",
+          "instruction": "How many smooth stones does the passage say David chose?",
+          "type": "quiz",
+          "reference": { "book": "1 Samuel", "chapter": 17, "startVerse": 40 },
+          "scripture": "",
+          "questionId": "smooth_stones",
+          "storyId": "david",
+          "hint": "Read 1 Samuel 17:40."
+        }
+      },
+      {
+        "kind": "dialogue",
+        "dialogue": {
+          "speaker": "narrator",
+          "kind": "Interpretation",
+          "text": "David spoke about the name of the LORD and said the battle belongs to the LORD. The chapter says David prevailed with a sling and a stone, and Goliath died. This adventure does not recreate the violence.",
+          "reference": { "book": "1 Samuel", "chapter": 17, "startVerse": 45, "endVerse": 51 }
+        }
+      },
+      {
+        "kind": "objective",
+        "objective": {
+          "id": "the_lord_saves",
+          "title": "Read David's message",
+          "instruction": "Choose the explanation supported by 1 Samuel 17:47.",
+          "type": "readScripture",
+          "reference": { "book": "1 Samuel", "chapter": 17, "startVerse": 47 },
+          "scripture": "",
+          "questionId": "the_lord_saves",
+          "storyId": "david",
+          "hint": "Read the verse in your Bible."
+        }
+      },
+      {
+        "kind": "dialogue",
+        "dialogue": {
+          "speaker": "narrator",
+          "kind": "Interpretation",
+          "text": "David's words point beyond his own strength to GOD. Continue reading 1 Samuel 17 and consider what the chapter teaches about GOD.",
+          "reference": { "book": "1 Samuel", "chapter": 17, "startVerse": 45, "endVerse": 47 }
+        }
+      }
+    ]
+  }
+}

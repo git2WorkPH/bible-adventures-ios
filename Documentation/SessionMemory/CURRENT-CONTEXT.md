@@ -1,199 +1,39 @@
-# Current Project Context
+# Current project context
 
-Synchronization checkpoint — 2026-10-04: owner requested “push it to develop and master.” Preparing the final Noah acceptance and approved PA-004 handover documentation commit. Fetch confirmed develop/origin ef6ad72 and master/origin 2d6e237 before synchronization. After interruption, inspect live Git status/log/upstream refs to determine which steps completed before repeating a push or merge. Final hashes are reported in the delivery response; preparation-state local/uncommitted descriptions below are historical after this commit. No application source changes; personal Xcode settings remain excluded. PA-004 implementation still starts at T01 design.
+Updated: 2026-10-16, Australia/Sydney. This is the latest authoritative execution checkpoint; historical turns are in SESSION-CONTEXT.md.
 
-## Current checkpoint — 2026-10-04: PA-004 approved
+## Active work — PA-005 David gameplay
 
-Owner approved all four next-phase tasks. Authoritative approval/scope: Tasks/Approved/PA-004-APPROVED-TASKS.md. Task-by-task work, dependencies, acceptance checklists and resume prompt: [PA-004-TECHNICAL-HANDOVER.md](PA-004-TECHNICAL-HANDOVER.md). T01–T04 APPROVED; no implementation or new tests started. Resume with T01 design. T03 mechanic choice and T04 owner story choice remain explicit dependencies; no additional task approval is needed for approved scope.
+Owner explicitly authorized implementation on 2026-10-16: “implement david gameplay.” `Tasks/Approved/PA-005-APPROVED-TASKS.md` records PA-005-T01–T04 as APPROVED and IN_PROGRESS. Existing PA-004 source/evidence is local and uncommitted; preserve it with the two personal Xcode user files and retained stash `5f939ff0c7e58344dfc94e51bdc49eb97bfbf354`.
 
-PA-003 complete, Noah IMPLEMENTED_VERIFIED. Local documentation updates remain uncommitted/unpushed; develop last observed ef6ad72 and master 2d6e237. Preserve personal Xcode files/stash. No running operation. This checkpoint supersedes earlier PROPOSED/pending-approval instructions.
+Implemented locally: First Samuel structural references; `david-1` JSON in `Resource/Stories/David`; compiled David provisions matching configuration; safe matching dispatch; reviewed catalogue entry and Home story picker; David runtime and UI tests. No ESV quotation was added. Existing Noah identities, activities, JSON and save format remain. Rationale: `Documentation/Changes/Justification/PA-005-DAVID-GAMEPLAY.md`.
 
-## Current checkpoint — 2026-10-04: Noah acceptance closed
+Automated evidence passes: 55 unit tests/10 suites; David full UI flow on iPhone 17 Pro/iOS 26.1 and iPad Air 11-inch (M3)/iPadOS 26.1; Noah full UI regression on iPhone 17 Pro/iOS 26.1. Evidence: `Acceptance/PA-005-T01-T03-TEST-EVIDENCE.md`. Content audit: `Acceptance/PA-005-T02-CONTENT-AUDIT.md`. T04 remains IN_PROGRESS because manual VoiceOver, actual OS Reduce Motion and compact iPad window checks have not been recorded for David. No operation is running. Branch observed: `develop`, HEAD `4e2e74ddd1af4c1aa95e3c3365e4b3948586a77e`; PA-004 and PA-005 work are uncommitted and unpushed.
 
-All PA-003-T01–T08 are VERIFIED at their approved scopes; Noah is IMPLEMENTED_VERIFIED. Owner confirmed manual PASS and supplied iPhone 14 Pro Max/iOS 26 and iPad mini/iPadOS 26. Generation/point releases unspecified; do not invent them. Automated and agent-observed evidence remains separately recorded in T08. No application code or new tests in this closure.
+## Completed phase
 
-Next work: review Proposed/PA-004-NEXT-PHASE-TASKS.md and obtain implementation approval; PA-004 is not covered by Noah's prior approval. Assessment/proposal, final acceptance and session updates are currently local/uncommitted/unpushed. develop last observed ef6ad72; master 2d6e237. Preserve personal Xcode edits and stashes. No operation running. This checkpoint supersedes older pending T08/device statements below.
+PA-003 T01–T08 and PA-004 T01–T04 VERIFIED at their approved scopes. Noah IMPLEMENTED_VERIFIED; its reviewed 26-step sequence,10 question records, reflection and noah-2 progress identity preserved. PA-004 implemented validated version 1 story JSON/injected player metadata and one reusable pair-matching mechanic. Two synthetic stories and two independent matching item sets tested; only Noah remains in the production catalogue. Activity disclosure labels corrected to minimum 44-point targets after retained regression failures.
 
-## Checkpoint — 2026-10-04 (Australia/Sydney)
+Final verification:52 unit tests/9 suites plus 4 iPad UI checks pass (56 total,0 failures); complete final-source default phone flows pass on iOS 26.1 and26.5; phone largest-text portrait/landscape and accessibility audit pass. Exact counts, initial failures/cancellations, reruns, source/build fingerprints and assistive-technology limits: Acceptance/PA-004-T02-VERIFICATION.md and T03. No new physical VoiceOver or actual OS motion-setting check is inferred from automated policies. Prior owner manual acceptance (iPhone 14 Pro Max/iOS 26; iPad mini/iPadOS 26) remains separately recorded in PA-003.
 
-Owner asked to continue. Recorded manual phone metadata: iPhone 14 Pro Max/iOS 26; iPad mini reported (generation unspecified); iPadOS version still requested. T08 remains IMPLEMENTED, Noah IMPLEMENTED_UNVERIFIED; other PA-003 tasks are VERIFIED. No retest of owner-confirmed checks is requested.
+## Next phase and approval boundary
 
-Prepared PA-004-NEXT-PHASE-ASSESSMENT.md and Proposed/PA-004-NEXT-PHASE-TASKS.md: recommend configured shared player/content boundaries and proving one reusable mechanic, followed by explicit next-story selection. All PA-004 tasks PROPOSED; no architecture choice or implementation approval inferred. Application source untouched; no tests run.
+Owner chose David and Goliath and authorized implementation. Tasks/Proposed/PA-005-DAVID-IMPLEMENTATION.md remains proposal history; Tasks/Approved/PA-005-APPROVED-TASKS.md is the active authorization. T01–T03 are IMPLEMENTED and T04 is IN_PROGRESS for the remaining manual device acceptance. No cloud/accounts/telemetry, audio framework or publication is included.
 
-Git observed develop ef6ad72/origin develop; master 2d6e237 contains the previously pushed handover documentation. New assessment/proposal/metadata/session edits are local, uncommitted and unpushed. Personal Xcode UI/scheme changes remain preserved. No command running. Next: record remaining iPadOS metadata if supplied and close T08 records; obtain approval for concrete PA-004 proposal before implementation.
+Next work: record manual David device results if supplied, complete T04 only with that attributable evidence, then stage/review the retained PA-004/PA-005 changes if the owner asks to synchronize branches.
 
-## Current checkpoint — 2026-10-03 (Australia/Sydney)
+## Running operations and evidence
 
-Implementation phase: approved PA-003 Noah work is implemented. T01–T07 are VERIFIED at their recorded scopes; T04 was closed after owner content acceptance. T08 remains IMPLEMENTED; Noah remains IMPLEMENTED_UNVERIFIED until manual test device models and OS versions are recorded. Owner said “all working as expected” and confirmed VoiceOver, compact iPad resizing and Reduce Motion checks with “yes.” Record these as owner-reported PASS; do not ask to repeat those checks. Device metadata is the remaining formal acceptance detail.
+None. Sessions14519/45476 cancelled initial runs, exit 73;53388 ended 65 due retained pre-final default assembly failure but passed3 remaining checks;80271 final iPad ended 0;67635 phone 26.1 final default ended 0;35722 phone 26.5 exact final default ended 0. Unit v1/v2 compilation failures and v3 passing run retained. Inspect evidence rather than repeating completed checks.
 
-Current branch develop at 699f256, tracking origin/develop. Master and origin/master at 9c75981 contain the same committed application tree. Git synchronization was completed earlier. Later acceptance/session documentation edits are uncommitted and unpushed; personal Xcode UI state and scheme preferences are also modified and must be preserved.
+Persistent evidence: Acceptance/PA-004-Evidence/. Original results/logs remain /private/tmp/BibleAdventure-PA004-{units-v1,units-v2,units-v3,phone-v1,ipad-v1,phone-v3,phone26-v2,ipad-v2,phone26-v4}.xcresult/.log; temporary files may expire. Full interface/version/reproduction details: PA-004-TECHNICAL-HANDOVER.md. Future process/template: HANDOVER-PROCESS.md and HANDOVER-TEMPLATE.md.
 
-Evidence: 46 final unit tests pass; complete portrait/default/accessibility5 and landscape flows pass on recorded iPhone/iPad Simulators; narrow iPhone SE flow passes. See Acceptance/PA-003-T08-VERIFICATION.md and PA-003-Evidence/. Live Computer Use now works. Additional iPhone 17 Pro Max/iOS 26.1 live landscape flow reached Adventure complete with actual OS Reduce Motion and increased system text size. iPad home/first question were reviewed live. Agent did not perform physical-device VoiceOver; current iOS 26.1 Simulator lacks that feature. Owner-reported manual results are distinct from agent observations.
+## Git and preservation
 
-Next: collect only missing manual device/OS metadata, reconcile acceptance/task/requirement statuses, then close T08 and Noah if the required record is complete. Assess remaining project requirements before proposing the next phase; no future story, audio/assets framework, accounts/cloud/telemetry or publication task is approved by the existing Noah authorization.
+Workspace /Users/cervantes/Documents/ChatGPT/BibleAdventure; branch develop HEAD/origin-develop 4e2e74ddd1af4c1aa95e3c3365e4b3948586a77e. Master/origin-master 561b1cfc57502369a36d3b99484f4d20c11a8347 (cached refs observed at closeout). PA-004 code/tests/evidence/docs are local uncommitted/unpushed. No Git writes performed in this implementation turn. Inspect live state before synchronization.
 
-Read [TECHNICAL-HANDOVER.md](TECHNICAL-HANDOVER.md) for implementation, Git preservation, commands and continuation steps. Follow [HANDOVER-PROCESS.md](HANDOVER-PROCESS.md) for every future task. This checkpoint supersedes conflicting historical statements below; historical evidence remains retained.
+Preserve personal Xcode UserInterfaceState.xcuserstate and xcschememanagement.plist modifications. Retained stash 5f939ff0c7e58344dfc94e51bdc49eb97bfbf354 holds original personal settings; do not blindly apply/drop it or alter other stashes. Stage only task files when committing.
 
-## Retained prior session records
+## Resume instruction
 
-## Current implementation — 2026-10-03
-
-The owner approved PA-003-T01–T08 and every necessary in-scope follow-up. Implementation is complete. T01–T03 and T05–T07 are VERIFIED at their bounded scopes. T04 and T08 are IMPLEMENTED pending final human content/manual acceptance. Noah overall remains IMPLEMENTED_UNVERIFIED; TASK-REGISTER.md and Completed/ records are authoritative.
-
-Implemented: executable original tests; project profile/scope; explicit runtime decisions; corrected/reviewed Noah source content, questions, labels and attribution; coordinator/engine/objective/game lifecycle integration; completion-gated Scripture reflection; atomic local save/restore, Continue/restart and recovery; adaptive scrolling, accessible gesture equivalents and reduced-motion policy. Final recovery fix separates save errors from content errors so both retry paths stay usable. No spiritual score/answer data is persisted.
-
-Tests: 46 final unit tests pass on iPhone 17 Pro / iOS 26.1. Complete default and accessibility5/reduced-motion-policy portrait flows plus home/question clipping/hit-region audits pass on iPhone 17 Pro / iOS 26.5 and iPad Air 11-inch (M3) / iOS 26.1. Complete largest-text landscape flows pass on both. Narrow iPhone SE (3rd generation), iOS 26.1, 375-point portrait: default flow passes, final largest-text flow and audit pass. All animal pairs have explicit selected/matched-state assertions in final runs. Evidence/commands/screenshots/source hashes: Acceptance/PA-003-Evidence/ and PA-003-T08-VERIFICATION.md. Earlier test-harness failures remain visible with their passing reruns.
-
-Remaining acceptance: Computer Use access now works, but VoiceOver is unavailable in the current iOS 26.1 Simulator; physical-device testing is required. Narrow iPad multitasking, manual OS Reduce Motion inspection and live landscape visual review remain NOT RUN. Landscape PNG orientation metadata affects preview rendering, so functional tests do not certify visual pixels. Final owner review of the delivered replacement content remains unrecorded; the source audit and reviewable copy are supplied. Publishing/license review is outside the approved implementation scope. No additional implementation task approval is needed to finish these in-scope checks.
-
-Next action: enable native Computer Use access or perform the manual procedures in T08/device matrix, record actual results and review the delivered copy. Address any demonstrated defects under the existing authorization, then mark T04/T08 and Noah verified only if every mandatory criterion passes. Further stories/audio/assets frameworks/accounts/cloud/telemetry/publication remain out of scope.
-
-Preserve existing user Xcode project, test-plan, shared scheme and UI-state changes. The owner subsequently requested committing/pushing develop and synchronizing master on 2026-10-03. Repository synchronization is authorized; application publication remains outside scope. Earlier memory below is historical; its unapproved/absent-runtime statements are superseded by this section.
-
-## Historical session memory
-
-## Last Updated
-
-2026-09-10
-
-## Current Phase
-
-Foundation implementation is complete at the approved T01–T13 scopes. Verification cleanup and post-foundation reassessment are next; Noah runtime integration and story expansion remain unapproved.
-
-## Active Requirement / Task
-
-- Active requirement: none.
-- Active approved task: none.
-- Branch at this update: `develop`.
-
-Session memory summarizes the authoritative requirement, architecture, task, assessment, and acceptance records; it does not replace them.
-
-## Today's Decisions
-
-- No new product, Scripture-content, security, compliance, or architecture decision was recorded on 2026-09-10.
-- Existing approved decisions remain in force: `Documentation/` is authoritative; only approved tasks authorize implementation; Noah remains prototype/reference material; foundation behavior stays story-neutral; gameplay progress is not spiritual achievement; and Scripture/Interpretation/Game activity remain distinct under the approved ESV policy.
-- No implementation was authorized by this session-memory update.
-
-## Requirements Discussed
-
-- Product: PRD-001, PRD-002, PRD-004, PRD-005, PRD-006.
-- Foundation engine/state/content: FND-001 through FND-009, FND-018, FND-019.
-- Reusable activities: FND-010 through FND-015.
-- Progress and quality: FND-016, FND-017, FND-020, FND-023 through FND-027.
-- Story: NOAH-002, NOAH-009, NOAH-012.
-
-## Tasks Completed
-
-- FND-BASE-T01 and T02: `VERIFIED` documentation authority reconciliation and Scripture Integrity Policy.
-- FND-BASE-T03 through T06: `IMPLEMENTED`; state, Story Engine, progression, and repositories exist, but required iOS Simulator unit-test execution is still unverified.
-- FND-BASE-T07 through T10: `VERIFIED` for their focused Foundation scopes—objective/question lifecycle, mini-game lifecycle, Scripture-connected reflection, and progress/persistence.
-- FND-BASE-T11 and T12: `VERIFIED` for governance scope—test/evidence strategy and accessibility/responsive/reduced-motion standards. T12 device/manual checks remain `NOT RUN`.
-- FND-BASE-T13: `VERIFIED` for the recoverable-error and privacy-safe structured-logging Foundation scope.
-- FND-001-T01 remains a legacy `IMPLEMENTED` record and is not retroactively approved or verified. FND-002-T01 remains `PROPOSED` in its legacy location.
-
-Canonical status: `Documentation/Tasks/TASK-REGISTER.md`. Detailed scope and exclusions: `Documentation/Tasks/Completed/`. Evidence: `Documentation/Acceptance/`.
-
-## Files Changed by the Completed Foundation Sequence
-
-Application/Foundation:
-
-- `BibleAdventure/Core/Models/GameState.swift`
-- `BibleAdventure/Core/Models/StoryProgression.swift`
-- `BibleAdventure/Core/Models/ObjectiveQuestionSession.swift`
-- `BibleAdventure/Core/Models/ReflectionSession.swift`
-- `BibleAdventure/Core/StoryEngine.swift`
-- `BibleAdventure/Core/MiniGameAdapter.swift`
-- `BibleAdventure/Core/ProgressPersistence.swift`
-- `BibleAdventure/Core/ErrorHandling.swift`
-- `BibleAdventure/Core/Repository/ContentRepository.swift`
-- `BibleAdventure/Core/Repository/QuestionRepository.swift`
-- `BibleAdventure/Core/Repository/StoryRepository.swift`
-- `BibleAdventure/Stories/Noah/NoahQuestionRepository.swift`
-- `BibleAdventure/Features/Scripture/ScriptureView.swift`
-
-Tests:
-
-- `BibleAdventureTests/BibleAdventureTests.swift`
-- `BibleAdventureTests/ObjectiveQuestionSessionTests.swift`
-- `BibleAdventureTests/MiniGameAdapterTests.swift`
-- `BibleAdventureTests/ReflectionSessionTests.swift`
-- `BibleAdventureTests/ProgressPersistenceTests.swift`
-- `BibleAdventureTests/ErrorHandlingTests.swift`
-
-Documentation:
-
-- Architecture contracts/decisions under `Documentation/Architecture/`, including Scripture integrity, state, engine, progression, repositories, activity lifecycles, persistence, testing, accessibility, and error/logging.
-- Task status/evidence under `Documentation/Tasks/` and `Documentation/Acceptance/`, including the reusable acceptance and accessibility validation templates.
-
-This 2026-09-10 memory update changes only `Documentation/SessionMemory/`.
-
-## Tests Run and Evidence
-
-- T03: direct Foundation type-check passed; focused unit tests were not executed because CoreSimulatorService/simulator runtimes were unavailable.
-- T04–T06: direct Foundation compile/type-check checks passed; focused unit tests remain unverified because the iOS Simulator was unavailable. T06's SwiftUI preview-macro environment was also unavailable.
-- T07: 4 Swift Testing tests passed in a temporary Foundation-only package.
-- T08: 4 Swift Testing tests passed, including generic fake mini-game integration.
-- T09: 4 Swift Testing reflection-flow tests passed; content-policy review passed.
-- T10: 4 Swift Testing persistence tests passed for round trip, missing/corrupt recovery, and unlock rules.
-- T11: test/evidence matrix and sample record review passed; no runtime test was applicable.
-- T12: standards and validation-matrix review passed; all device/manual checks remain `NOT RUN`.
-- T13: 4 Swift Testing error/recovery/logging tests passed; fatal-path and privacy review passed.
-- No application or automated tests were run on 2026-09-10 for this documentation-only memory update.
-
-Exact commands, environments, results, and limitations are recorded in `Documentation/Acceptance/FND-BASE-T03-VERIFICATION.md` through `FND-BASE-T13-VERIFICATION.md`.
-
-## Known Issues / Open Findings
-
-- PA-002 is an older open assessment whose observations predate much of T03–T13; PA-002-001, PA-002-003, and PA-002-004 require reassessment rather than silent status changes. PA-002-002 is resolved by the approved Scripture policy.
-- T03–T06 cannot be marked `VERIFIED` until their required focused tests pass in a working iOS Simulator environment and evidence is updated.
-- The full iOS target and end-to-end StoryPlayer integration have not been verified. The prototype still owns local progression and has not been wired to the new engine, lifecycle, reflection, persistence, or error-presentation boundaries.
-- Existing Noah content is not verified against the Scripture Integrity Policy. Quotation cleanup, required labels, ESV attribution/permissions, and the `gopher wood`/labelled-`cypress` rule need separately approved content work.
-- NOAH-012 remains unverified because no approved Noah reflection copy or runtime reflection presentation was added.
-- Accessibility/responsive/reduced-motion device evidence is `NOT RUN`; the prototype is not certified for iPhone/iPad accessibility compliance.
-- Production storage, OS logging, recoverable-error UI, cloud sync, telemetry, accounts, and story expansion were deliberately not implemented.
-- FND-021/FND-022 audio and asset foundations remain outside the completed baseline sequence.
-- The worktree contains unrelated user changes to T01/T02 completed-task statuses and Xcode user-interface state; preserve them.
-
-## Next Recommended Task
-
-First, run the focused FND-BASE-T03 through T06 tests in a working iOS Simulator and update their acceptance/task records from the actual results. After that verification pass, run a new read-only implementation traceability assessment against the completed T01–T13 foundation before proposing any Noah integration or expansion task.
-
-
-## Assessment update — 2026-10-03
-
-User requested a project-state assessment. PA-003 now records current source/document coverage, findings and proposed follow-ups. No application or test source was changed; existing Xcode and session-memory edits were preserved.
-
-Available Simulators were confirmed outside the sandbox. The existing iOS unit-test attempt failed with exit 65 during compilation of BibleAdventureTests.swift: mutating calls inside #expect macros and Story equality assertions. Zero tests executed. The current blocker is test compilation; the historical Simulator-access blocker does not describe the authorized environment today. T03–T06 remain IMPLEMENTED. Prior focused task verification is retained without claiming a current suite pass.
-
-Foundation domain capabilities exist, but Noah player integration, policy-compliant content, durable runtime persistence, reflection presentation and device/accessibility acceptance remain incomplete. Project profile/vision/scope/glossary still contain templates. No new product or architecture decision was made and no implementation task was approved.
-
-Records: Documentation/Assessment/PA-003-PROJECT-STATE-ASSESSMENT.md; Documentation/Acceptance/PA-003-VERIFICATION.md; Documentation/Tasks/Proposed/PA-003-FOLLOW-UP-TASKS.md. Next recommendation: approve PA-003-T01 to repair existing test compilation and establish current suite evidence before runtime integration.
-
-
-## Noah proposal coverage update — 2026-10-03
-
-At the owner's request, PA-003-FOLLOW-UP-TASKS.md was expanded to cover all five outstanding Noah areas. T03 defines composition/storage/resume decisions; T04 includes complete component/content criteria and reflection copy; new T05 implements engine/activity integration, T06 reflection presentation, T07 durable save/restore, and T08 full iPhone/iPad/accessibility acceptance with bounded fixes. Dependencies and evidence criteria are explicit. All tasks remain PROPOSED; this request authorized proposal editing only. No application changes or new decisions were made.
-
-## Branch synchronization — 2026-10-03
-
-Owner instruction: push to develop and then sync to master. Commit the reviewed Noah implementation, acceptance records and shared test configuration; push develop, then merge into current remote master while preserving history. Personal Xcode UI state and scheme preferences remain local. No task verification status changes are implied by branch synchronization.
-
-
-## Live Noah acceptance continuation — 2026-10-03
-
-Computer Use access is operational. Completed live iPhone 17 Pro Max / iOS 26.1 landscape flow through reflection completion with actual OS Reduce Motion enabled; system text size increased during animal activity and state preserved. All 16 animal pairs checked for selection/removal, all other game totals and transitions reached. iPad Air 11-inch (M3) home/first Scripture question visually reviewed in landscape. Compact-window resize attempts did not succeed; pointer/keyboard capture restored off. No source changes or new automated run. Detailed acceptance limits/results recorded in T08 and device matrix.
-
-Corrected blocker: current Simulator does not offer VoiceOver. Physical iPhone 14 Pro Max is connected according to devicectl; iPad is unavailable. No physical-device assistive-technology test was performed. Remaining mandatory checks and owner content review keep T04/T08 IMPLEMENTED and Noah IMPLEMENTED_UNVERIFIED. The tested installed app binaries were not independently hashed against source. Personal Xcode changes remain preserved; documentation edits are local and have not been pushed.
-
-
-## Owner acceptance — 2026-10-03
-
-Owner response after the final acceptance report: “all working as expected.” Delivered Noah content/story is accepted; PA-003-T04 is VERIFIED. PA-003-T08 remains IMPLEMENTED and Noah IMPLEMENTED_UNVERIFIED pending the device/OS and manual accessibility details required by the acceptance record. Requested the tested iPhone/iPad models, OS versions and confirmation of VoiceOver, compact iPad resizing and OS Reduce Motion coverage. No device-specific result is inferred from this general confirmation. No source changes or test run in this update.
-
-
-Owner follow-up — 2026-10-03: answered “yes” to whether final checks included VoiceOver, narrow iPad window resizing and Reduce Motion. These manual checks are recorded as owner-reported PASS together with “all working as expected.” Device models and OS versions were not supplied; manual test configuration metadata remains pending. Agent-observed Simulator results retain their separate scope. T08 formal verification remains pending that required metadata, with no remaining owner-reported functional failure.
-
-
-## Documentation synchronization authorization — 2026-10-03
-
-Owner instructed “push it to develop and master” after requesting a project-wide handover process. The documentation checkpoint is being committed and synchronized. Fetch confirmed develop 699f256 and master 9c75981 before this operation. Use live git log/status/upstream refs to resolve the completed operation; final commit hashes are supplied in the delivery response. Preserve the two personal Xcode files and all existing stashes.
+Read AGENTS/project/requirements/decisions, this checkpoint and PA-005 handover. Preserve local changes, confirm approval/status for the next phase, and execute its first incomplete task with acceptance evidence and checkpoints. Do not restart Noah or PA-004 acceptance without a new change/failure. Record new interfaces/content/save versions, tests, pending work and running operations before long commands or credit exhaustion.

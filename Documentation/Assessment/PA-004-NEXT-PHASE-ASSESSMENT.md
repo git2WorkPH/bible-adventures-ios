@@ -21,3 +21,7 @@ This recommendation is not an architecture decision or authorization. Reviewable
 
 
 Closure update — 2026-10-04: owner supplied iPad mini/iPadOS 26, completing manual metadata alongside iPhone 14 Pro Max/iOS 26. PA-003-T08 now VERIFIED and Noah IMPLEMENTED_VERIFIED. PA-004 findings/tasks remain proposals; no new implementation approval inferred.
+
+## Implementation reassessment — 2026-10-04
+
+Owner approved PA-004; all four tasks now VERIFIED at their scopes. PA-004-001/002 RESOLVED by injected presentation/catalogue and validated version 1 JSON with unchanged noah-2 progress. PA-004-003 ACCEPTED at bounded scope: pair matching independently configured/tested and Noah integrated; other mechanics are deliberately retained, and all FND game categories are not claimed as reusable frameworks. PA-004-004 remains OPEN/outside this phase (audio/assets). David and Goliath selected; requirements/content design/PA-005 implementation proposal and handover complete, gameplay NOT_STARTED. Evidence in Acceptance/PA-004-T01–T04-VERIFICATION.md. This supersedes earlier pending approval/T08 metadata observations.

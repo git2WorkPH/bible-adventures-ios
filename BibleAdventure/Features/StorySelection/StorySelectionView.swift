@@ -2,27 +2,15 @@ import SwiftUI
 
 struct StorySelectionView: View {
     var body: some View {
-        VStack(spacing:20){
-            
-            Spacer()
-            
+        VStack(spacing: 20) {
             Text("Choose Adventure").font(.largeTitle).bold()
-            
-            NavigationLink("🚢 Noah's Ark"){
-             StoryPlayerView()
+            ForEach(StoryCatalogue.entries) { entry in
+                NavigationLink(entry.title) {
+                    StoryPlayerView(runtime: entry.makeRuntime())
+                }.frame(minHeight: 44)
             }
-            
-            Button("🔒 Moses"){}.padding()
-            
-            Button("🔒 David"){}.padding()
-            
-            Button("🔒 Daniel"){}.padding()
-            
-            Spacer()
-        }
+        }.padding()
     }
 }
 
-#Preview {
-    StorySelectionView()
-}
+#Preview { NavigationStack { StorySelectionView() } }

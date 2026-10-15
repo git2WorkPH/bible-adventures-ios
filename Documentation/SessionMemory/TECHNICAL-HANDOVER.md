@@ -1,5 +1,10 @@
 # Technical handover — BibleAdventure
 
+## PA-004 closeout — 2026-10-04
+
+PA-004 T01–T04 VERIFIED at recorded scopes.52 final unit tests and phone/iPad full-flow/default/largest/landscape/AX regression checks pass; initial28.3pt disclosure failures and corrected44pt reruns retained. Source/content/noah-2 identities preserved; source/build hashes recorded. No operations running. develop4e2e74d/master561b1cf cached refs; all PA-004 code/tests/evidence/docs local uncommitted/unpushed, personal Xcode files/stash preserved. Detailed completed interfaces/evidence: PA-004-TECHNICAL-HANDOVER.md. Owner chose David/Goliath; PA-005 requirements/proposal and PA-005-TECHNICAL-HANDOVER.md define all future tasks/dependencies/acceptance; David gameplay NOT_STARTED and implementation remains proposed under T04's definition scope. CURRENT-CONTEXT.md is the latest concise resume state.
+
+
 Synchronization checkpoint — 2026-10-04: owner requested “push it to develop and master.” Preparing the final Noah acceptance and approved PA-004 handover documentation commit. Fetch confirmed develop/origin ef6ad72 and master/origin 2d6e237 before synchronization. After interruption, inspect live Git status/log/upstream refs to determine which steps completed before repeating a push or merge. Final hashes are reported in the delivery response; preparation-state local/uncommitted descriptions below are historical after this commit. No application source changes; personal Xcode settings remain excluded. PA-004 implementation still starts at T01 design.
 
 ## Current checkpoint — 2026-10-04: PA-004 approved

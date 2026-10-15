@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "fixture-1",
+  "story": {
+    "id": "david",
+    "title": "Fixture david",
+    "description": "Synthetic test only",
+    "steps": [
+      {
+        "kind": "dialogue",
+        "dialogue": {
+          "speaker": "narrator",
+          "text": "Synthetic test content",
+          "kind": "Interpretation",
+          "reference": {
+            "book": "Genesis",
+            "chapter": 1,
+            "startVerse": 1
+          }
+        }
+      },
+      {
+        "kind": "objective",
+        "objective": {
+          "id": "choose",
+          "title": "Choose an item",
+          "instruction": "Synthetic test activity",
+          "type": "quiz",
+          "reference": {
+            "book": "Genesis",
+            "chapter": 1,
+            "startVerse": 1
+          },
+          "scripture": "",
+          "questionId": "q",
+          "storyId": "david"
+        }
+      }
+    ]
+  },
+  "presentation": {
+    "homeIntroduction": "Synthetic test adventure",
+    "restartName": "fixture",
+    "reflectionTitle": "Synthetic reflection",
+    "completionInvitation": "Read the Biblical source",
+    "readingLabel": "Read the Bible (ESV)",
+    "readingURL": "https://www.esv.org/"
+  },
+  "reflection": {
+    "id": "reflect",
+    "prompt": "Synthetic reflection fixture",
+    "scriptureReference": {
+      "book": "Genesis",
+      "chapter": 1,
+      "startVerse": 1
+    }
+  },
+  "scripture": [],
+  "questions": [
+    {
+      "id": "q",
+      "question": "Select one",
+      "options": [
+        "One",
+        "Two"
+      ],
+      "correctAnswerIndex": 0,
+      "hint": "One"
+    }
+  ]
+}

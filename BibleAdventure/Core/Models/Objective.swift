@@ -1,6 +1,6 @@
 import Foundation
 
-struct Objective {
+struct Objective: Codable {
 
     let id: String
 

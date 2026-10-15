@@ -93,7 +93,7 @@ struct BuildArkView: View {
 
                 } else {
 
-                    DisclosureGroup("Assemble with buttons") {
+                    DisclosureGroup {
                         ForEach(arkPieces.filter { !placedPieceIDs.contains($0.id) }) { piece in
                             Button("Select \(piece.name)") { selectedPieceID = piece.id }
                                 .frame(minHeight: 44).buttonStyle(.bordered)
@@ -110,6 +110,8 @@ struct BuildArkView: View {
                                 }.frame(minHeight: 44).buttonStyle(.bordered)
                             }
                         }
+                    } label: {
+                        Text("Assemble with buttons").frame(minHeight: 44)
                     }
                     if !typeSize.isAccessibilitySize && !voiceOver { constructionTray.accessibilityHidden(true) }
 

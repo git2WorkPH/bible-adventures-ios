@@ -1,0 +1,439 @@
+{
+  "contentVersion" : "noah-2",
+  "presentation" : {
+    "completionInvitation" : "You explored Noah's story. Keep reading Genesis 6–9 in your Bible.",
+    "homeIntroduction" : "Explore Noah's story, then return to Genesis 6–9 in your Bible.",
+    "readingLabel" : "Read Genesis 6–9",
+    "readingURL" : "https://www.esv.org/Genesis+6/",
+    "reflectionTitle" : "Reflect on Noah",
+    "restartName" : "Noah"
+  },
+  "questions" : [
+    {
+      "correctAnswerIndex" : 1,
+      "hint" : "Genesis 6:13",
+      "id" : "listen_to_god",
+      "options" : [
+        "Abraham",
+        "Noah",
+        "Moses"
+      ],
+      "question" : "Who did GOD speak to?"
+    },
+    {
+      "correctAnswerIndex" : 1,
+      "hint" : "Genesis 6:14",
+      "id" : "ark_wood",
+      "options" : [
+        "Oak",
+        "Gopher wood",
+        "Cedar"
+      ],
+      "question" : "What kind of wood did GOD command Noah to use?"
+    },
+    {
+      "correctAnswerIndex" : 0,
+      "hint" : "Genesis 6:14",
+      "id" : "ark_pitch",
+      "options" : [
+        "Pitch",
+        "Mud",
+        "Clay"
+      ],
+      "question" : "What should Noah use to cover the ark inside and out?"
+    },
+    {
+      "correctAnswerIndex" : 0,
+      "hint" : "Genesis 6:15",
+      "id" : "ark_length",
+      "options" : [
+        "300 cubits",
+        "200 cubits",
+        "500 cubits"
+      ],
+      "question" : "How long should the ark be?"
+    },
+    {
+      "correctAnswerIndex" : 1,
+      "hint" : "Genesis 6:15",
+      "id" : "ark_width",
+      "options" : [
+        "30 cubits",
+        "50 cubits",
+        "70 cubits"
+      ],
+      "question" : "How wide should the ark be?"
+    },
+    {
+      "correctAnswerIndex" : 1,
+      "hint" : "Genesis 6:15",
+      "id" : "ark_height",
+      "options" : [
+        "20 cubits",
+        "30 cubits",
+        "40 cubits"
+      ],
+      "question" : "How high should the ark be?"
+    },
+    {
+      "correctAnswerIndex" : 1,
+      "hint" : "Genesis 6:16",
+      "id" : "ark_door",
+      "options" : [
+        "In its roof",
+        "In its side",
+        "Under its floor"
+      ],
+      "question" : "Where does Genesis 6:16 say to set the ark door?"
+    },
+    {
+      "correctAnswerIndex" : 1,
+      "hint" : "Genesis 6:16",
+      "id" : "ark_decks",
+      "options" : [
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "question" : "How many decks should the ark have?"
+    },
+    {
+      "correctAnswerIndex" : 1,
+      "hint" : "Genesis 6:21",
+      "id" : "gather_food",
+      "options" : [
+        "Gold and silver",
+        "Every kind of food",
+        "Building tools"
+      ],
+      "question" : "What did GOD tell Noah to gather for the ark?"
+    },
+    {
+      "correctAnswerIndex" : 1,
+      "hint" : "Genesis 6:22",
+      "id" : "noah_obeyed",
+      "options" : [
+        "He ignored it",
+        "He obeyed everything GOD commanded",
+        "He asked someone else to build the ark"
+      ],
+      "question" : "How did Noah respond to GOD's command?"
+    }
+  ],
+  "reflection" : {
+    "id" : "noah-reflection",
+    "prompt" : "Read Genesis 6–9 in your Bible. Think about the violence described before the flood, Noah's response to GOD, and GOD's covenant with living creatures. What questions would you like to explore with a trusted adult?",
+    "scriptureReference" : {
+      "book" : "Genesis",
+      "chapter" : 9,
+      "endVerse" : 17,
+      "startVerse" : 8
+    }
+  },
+  "schemaVersion" : 1,
+  "scripture" : [
+    {
+      "reference" : {
+        "book" : "Genesis",
+        "chapter" : 6,
+        "startVerse" : 14
+      },
+      "text" : "Make yourself an ark of gopher wood. Make rooms in the ark, and cover it inside and out with pitch.",
+      "translation" : "ESV"
+    }
+  ],
+  "story" : {
+    "description" : "Explore Genesis 6–9, prepare the ark, and reflect on GOD's covenant.",
+    "id" : "noah",
+    "steps" : [
+      {
+        "dialogue" : {
+          "kind" : "Interpretation",
+          "reference" : {
+            "book" : "Genesis",
+            "chapter" : 6,
+            "endVerse" : 22,
+            "startVerse" : 9
+          },
+          "speaker" : "narrator",
+          "text" : "Genesis describes a world filled with violence. GOD told Noah about the coming flood and instructed him to prepare an ark. Read the account in your Bible as you explore this adventure."
+        },
+        "kind" : "dialogue"
+      },
+      {
+        "dialogue" : {
+          "kind" : "Scripture",
+          "reference" : {
+            "book" : "Genesis",
+            "chapter" : 6,
+            "startVerse" : 14
+          },
+          "speaker" : "God",
+          "text" : "Make yourself an ark of gopher wood. Make rooms in the ark, and cover it inside and out with pitch."
+        },
+        "kind" : "dialogue"
+      },
+      {
+        "kind" : "objective",
+        "objective" : {
+          "hint" : "Use the word in the passage.",
+          "id" : "ark_wood",
+          "instruction" : "Read Genesis 6:14. What wood does the quoted verse name?",
+          "questionId" : "ark_wood",
+          "reference" : {
+            "book" : "Genesis",
+            "chapter" : 6,
+            "startVerse" : 14
+          },
+          "scripture" : "Make yourself an ark of gopher wood. Make rooms in the ark, and cover it inside and out with pitch.",
+          "storyId" : "noah",
+          "title" : "Read the ark instructions",
+          "type" : "readScripture"
+        }
+      },
+      {
+        "dialogue" : {
+          "kind" : "Interpretation",
+          "reference" : {
+            "book" : "Genesis",
+            "chapter" : 6,
+            "startVerse" : 14
+          },
+          "speaker" : "narrator",
+          "text" : "The quoted text says gopher wood. Its precise identity is uncertain. The wood pictures in this activity are imagined illustrations, not an identification of the Biblical tree."
+        },
+        "kind" : "dialogue"
+      },
+      {
+        "activity" : "woodSelection",
+        "kind" : "miniGame"
+      },
+      {
+        "dialogue" : {
+          "kind" : "Interpretation",
+          "reference" : {
+            "book" : "Genesis",
+            "chapter" : 6,
+            "startVerse" : 15
+          },
+          "speaker" : "narrator",
+          "text" : "The ark instructions give a length of 300 cubits, a breadth of 50 cubits and a height of 30 cubits. A cubit is a historical unit of length; this activity compares the stated dimensions."
+        },
+        "kind" : "dialogue"
+      },
+      {
+        "activity" : "measureArk",
+        "kind" : "miniGame"
+      },
+      {
+        "kind" : "objective",
+        "objective" : {
+          "hint" : "Read Genesis 6:14–16 in your Bible, then answer the question.",
+          "id" : "ark_pitch",
+          "instruction" : "Choose the covering specified for the ark.",
+          "questionId" : "ark_pitch",
+          "reference" : {
+            "book" : "Genesis",
+            "chapter" : 6,
+            "startVerse" : 14
+          },
+          "scripture" : "Make yourself an ark of gopher wood. Make rooms in the ark, and cover it inside and out with pitch.",
+          "storyId" : "noah",
+          "title" : "Ark blueprint: covering",
+          "type" : "readScripture"
+        }
+      },
+      {
+        "kind" : "objective",
+        "objective" : {
+          "hint" : "Read Genesis 6:14–16 in your Bible, then answer the question.",
+          "id" : "ark_door",
+          "instruction" : "Choose the door location stated in the passage. The text does not specify left or right.",
+          "questionId" : "ark_door",
+          "reference" : {
+            "book" : "Genesis",
+            "chapter" : 6,
+            "startVerse" : 16
+          },
+          "scripture" : "",
+          "storyId" : "noah",
+          "title" : "Ark blueprint: door",
+          "type" : "readScripture"
+        }
+      },
+      {
+        "kind" : "objective",
+        "objective" : {
+          "hint" : "Read Genesis 6:14–16 in your Bible, then answer the question.",
+          "id" : "ark_decks",
+          "instruction" : "Choose the number of decks described in Genesis 6:16.",
+          "questionId" : "ark_decks",
+          "reference" : {
+            "book" : "Genesis",
+            "chapter" : 6,
+            "startVerse" : 16
+          },
+          "scripture" : "",
+          "storyId" : "noah",
+          "title" : "Ark blueprint: decks",
+          "type" : "readScripture"
+        }
+      },
+      {
+        "dialogue" : {
+          "kind" : "Interpretation",
+          "reference" : {
+            "book" : "Genesis",
+            "chapter" : 6,
+            "endVerse" : 16,
+            "startVerse" : 14
+          },
+          "speaker" : "narrator",
+          "text" : "The passage describes rooms, a roof, a side door and three decks. Assemble the illustrated pieces in the construction puzzle. These shapes are a game representation, not a historical blueprint."
+        },
+        "kind" : "dialogue"
+      },
+      {
+        "activity" : "buildArk",
+        "kind" : "miniGame"
+      },
+      {
+        "dialogue" : {
+          "kind" : "Interpretation",
+          "reference" : {
+            "book" : "Genesis",
+            "chapter" : 6,
+            "endVerse" : 22,
+            "startVerse" : 21
+          },
+          "speaker" : "narrator",
+          "text" : "Genesis records Noah carrying out GOD's instructions. It also describes gathering food for the people and animals. The pictured foods are game examples, not a Biblical food list."
+        },
+        "kind" : "dialogue"
+      },
+      {
+        "activity" : "gatherFood",
+        "kind" : "miniGame"
+      },
+      {
+        "dialogue" : {
+          "kind" : "Interpretation",
+          "reference" : {
+            "book" : "Genesis",
+            "chapter" : 7,
+            "endVerse" : 3,
+            "startVerse" : 2
+          },
+          "speaker" : "narrator",
+          "text" : "Genesis 7 distinguishes seven pairs of clean animals and birds from a pair of animals that are not clean. The matching game shows example pairs and does not represent the complete animal count or identify every Biblical kind."
+        },
+        "kind" : "dialogue"
+      },
+      {
+        "activity" : "gatherAnimals",
+        "kind" : "miniGame"
+      },
+      {
+        "dialogue" : {
+          "kind" : "Interpretation",
+          "reference" : {
+            "book" : "Genesis",
+            "chapter" : 7,
+            "endVerse" : 16,
+            "startVerse" : 7
+          },
+          "speaker" : "narrator",
+          "text" : "Noah entered with his wife, his three sons and their wives. The clothing and faces in this game are imagined. Read Genesis 7 to see who entered and what happened next."
+        },
+        "kind" : "dialogue"
+      },
+      {
+        "activity" : "enterArk",
+        "kind" : "miniGame"
+      },
+      {
+        "dialogue" : {
+          "kind" : "Interpretation",
+          "reference" : {
+            "book" : "Genesis",
+            "chapter" : 7,
+            "endVerse" : 24,
+            "startVerse" : 16
+          },
+          "speaker" : "narrator",
+          "text" : "The account describes the LORD shutting Noah in, forty days and nights of rain, and waters prevailing for 150 days. Game stages condense the account; they are not a day-by-day timeline."
+        },
+        "kind" : "dialogue"
+      },
+      {
+        "activity" : "floodJourney",
+        "kind" : "miniGame"
+      },
+      {
+        "dialogue" : {
+          "kind" : "Interpretation",
+          "reference" : {
+            "book" : "Genesis",
+            "chapter" : 8,
+            "endVerse" : 12,
+            "startVerse" : 1
+          },
+          "speaker" : "narrator",
+          "text" : "Genesis says GOD remembered Noah and the animals. A wind blew and the waters subsided. Noah sent a raven before the dove; the next activity focuses on the dove's three journeys."
+        },
+        "kind" : "dialogue"
+      },
+      {
+        "activity" : "sendDove",
+        "kind" : "miniGame"
+      },
+      {
+        "dialogue" : {
+          "kind" : "Interpretation",
+          "reference" : {
+            "book" : "Genesis",
+            "chapter" : 8,
+            "endVerse" : 22,
+            "startVerse" : 18
+          },
+          "speaker" : "narrator",
+          "text" : "After leaving the ark, Noah built an altar. Read Genesis 8:18–22 and consider how Noah responded. The story continues with GOD's covenant."
+        },
+        "kind" : "dialogue"
+      },
+      {
+        "dialogue" : {
+          "kind" : "Interpretation",
+          "reference" : {
+            "book" : "Genesis",
+            "chapter" : 9,
+            "endVerse" : 17,
+            "startVerse" : 8
+          },
+          "speaker" : "narrator",
+          "text" : "GOD's covenant concerns living creatures and the promise about a flood destroying all flesh. The bow in the clouds is its sign. This color-building activity illustrates a rainbow; Scripture does not give a required color order."
+        },
+        "kind" : "dialogue"
+      },
+      {
+        "activity" : "buildRainbow",
+        "kind" : "miniGame"
+      },
+      {
+        "dialogue" : {
+          "kind" : "Interpretation",
+          "reference" : {
+            "book" : "Genesis",
+            "chapter" : 9,
+            "endVerse" : 17,
+            "startVerse" : 8
+          },
+          "speaker" : "narrator",
+          "text" : "Return to Genesis 6–9 in your Bible. Consider GOD's judgment, Noah's response, and the covenant. Completing activities is an opportunity to reflect and keep reading."
+        },
+        "kind" : "dialogue"
+      }
+    ],
+    "title" : "Noah's Ark"
+  }
+}

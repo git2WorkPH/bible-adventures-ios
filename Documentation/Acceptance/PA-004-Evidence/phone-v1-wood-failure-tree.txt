@@ -1,0 +1,44 @@
+Attributes: Application, 0x116fa0e30, pid: 21331, label: 'BibleAdventure'
+Element subtree:
+ →Application, 0x116fa0e30, pid: 21331, label: 'BibleAdventure'
+    Window (Main), 0x116fa13f0, {{0.0, 0.0}, {402.0, 874.0}}
+      Other, 0x116fa3060, {{0.0, 0.0}, {402.0, 874.0}}
+        Other, 0x116fa3180, {{0.0, 0.0}, {402.0, 874.0}}
+          Other, 0x116fa2f10, {{0.0, 0.0}, {402.0, 874.0}}
+            Other, 0x116f9e360, {{0.0, 0.0}, {402.0, 874.0}}
+              Other, 0x116fa32a0, {{0.0, 0.0}, {402.0, 874.0}}
+                NavigationBar, 0x116fa33c0, {{0.0, 62.0}, {402.0, 54.0}}, identifier: '_TtGC7SwiftUI32NavigationStackHosting'
+                  Button, 0x116fa34e0, {{16.0, 62.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'Back'
+                  Button, 0x116fa3600, {{346.0, 66.0}, {36.0, 36.0}}, label: 'Adventure options'
+                Other, 0x116fa3720, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x116fa3840, {{0.0, 0.0}, {402.0, 874.0}}
+                    Other, 0x116fa3960, {{0.0, 0.0}, {402.0, 874.0}}
+                      Other, 0x116fa3a80, {{0.0, 0.0}, {402.0, 874.0}}
+                        StaticText, 0x116fa3ba0, {{157.0, 116.0}, {88.0, 20.3}}, label: 'Noah's Ark'
+                        ScrollView, 0x116fa3cc0, {{16.0, 144.3}, {370.0, 729.7}}
+                          Other, 0x116fa3de0, {{16.0, 36.7}, {370.0, 1175.7}}
+                            StaticText, 0x116fa3f00, {{146.5, 52.7}, {109.0, 20.3}}, label: 'Game activity'
+                            StaticText, 0x116fa4020, {{63.3, 81.0}, {275.3, 30.3}}, label: 'Illustrations and interactions represent the story for learning.'
+                            StaticText, 0x116fa4140, {{34.7, 135.3}, {332.7, 40.7}}, label: '🌲 Find Gopher wood'
+                            StaticText, 0x116fa4260, {{41.8, 184.0}, {318.3, 42.3}}, label: 'Genesis 6:14 names gopher wood. These pictures are game illustrations.'
+                            StaticText, 0x116fa4380, {{154.2, 234.3}, {93.7, 14.3}}, label: '📖 Genesis 6:14'
+                            ProgressIndicator, 0x116fa44a0, {{32.0, 272.7}, {338.0, 4.0}}, value: 0%
+                              ProgressIndicator, 0x116fa45c0, {{32.0, 262.7}, {338.0, 24.0}}, value: 0%
+                            StaticText, 0x116fa46e0, {{117.8, 286.7}, {166.3, 14.3}}, label: '0 of 3 gopher wood collected'
+                            StaticText, 0x116fa4800, {{34.5, 311.0}, {333.0, 20.3}}, label: 'Find the gopher wood and drag it to Noah.'
+                            Button, 0x116fa4920, {{32.0, 679.3}, {338.0, 28.3}}, label: 'Collect wood with buttons'
+                              StaticText, 0x116fa4a40, {{32.0, 679.3}, {338.0, 28.3}}, label: 'Collect wood with buttons'
+                              Image, 0x116fa4b60, {{362.3, 687.3}, {7.0, 12.0}}, identifier: 'collapsed'
+                          Other, 0x116fa4c80, {{353.0, 144.3}, {30.0, 683.7}}, label: 'Vertical scroll bar, 2 pages', value: 22%
+                            Other, 0x116fa4da0, {{380.0, 207.7}, {3.0, 408.7}}
+                          Other, 0x116fa4ec0, {{353.0, 144.3}, {30.0, 683.7}}, label: 'Vertical scroll bar, 2 pages', value: 22%
+                            Other, 0x116fa4fe0, {{380.0, 207.7}, {3.0, 408.7}}
+                Other, 0x116fa5100, {{0.0, 0.0}, {402.0, 874.0}}
+                  Other, 0x116fa5220, {{0.0, 0.0}, {402.0, 874.0}}
+Path to element:
+ →Application, 0x116fa0e30, pid: 21331, label: 'BibleAdventure'
+Query chain:
+ →Find: Target Application 'com.yourname.BibleAdventures.BibleAdventure'
+  Output: {
+    Application, 0x1097e68c0, pid: 21331, label: 'BibleAdventure'
+  }

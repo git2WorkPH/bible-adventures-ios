@@ -1,6 +1,6 @@
 import Foundation
 
-enum Speaker {
+enum Speaker: String, Codable {
     case God
     case noah
     case narrator

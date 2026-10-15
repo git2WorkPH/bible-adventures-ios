@@ -89,13 +89,15 @@ struct WoodSelectionView: View {
 
                 } else {
 
-                    DisclosureGroup("Collect wood with buttons") {
+                    DisclosureGroup {
                         ForEach(availableWood.filter { !collectedWoodIDs.contains($0.id) }) { wood in
                             Button("Collect \(wood.name)") {
                                 if wood.isCorrect { collectWood(wood) } else { rejectWood(wood) }
                             }.frame(minHeight: 44).buttonStyle(.bordered)
                             .accessibilityIdentifier("wood-\(wood.id)")
                         }
+                    } label: {
+                        Text("Collect wood with buttons").frame(minHeight: 44)
                     }
                     if !typeSize.isAccessibilitySize && !voiceOver { woodTray.accessibilityHidden(true) }
 

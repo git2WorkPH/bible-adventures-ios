@@ -1,0 +1,930 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test -project BibleAdventure.xcodeproj -scheme BibleAdventure -destination "platform=iOS Simulator,id=3F0029BB-6C6E-46A0-A143-3503D038B9A0" "-only-testing:BibleAdventureTests" -parallel-testing-enabled NO -derivedDataPath /private/tmp/BibleAdventure-PA004-derived -resultBundlePath /private/tmp/BibleAdventure-PA004-units-v1.xcresult
+
+Writing result bundle at path:
+	/private/tmp/BibleAdventure-PA004-units-v1.xcresult
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (3 targets)
+    Target 'BibleAdventureUITests' in project 'BibleAdventure'
+        ➜ Explicit dependency on target 'BibleAdventure' in project 'BibleAdventure'
+    Target 'BibleAdventureTests' in project 'BibleAdventure'
+        ➜ Explicit dependency on target 'BibleAdventure' in project 'BibleAdventure'
+    Target 'BibleAdventure' in project 'BibleAdventure' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 53933c155aa4fa9b7c81d7e976c73214
+Build description path: /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/XCBuildData/53933c155aa4fa9b7c81d7e976c73214.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk /tmp/BibleAdventure-PA004-derived/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -o /tmp/BibleAdventure-PA004-derived/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+
+CreateBuildDirectory /tmp/BibleAdventure-PA004-derived/Build/Products
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure.xcodeproj
+    builtin-create-build-directory /tmp/BibleAdventure-PA004-derived/Build/Products
+
+CreateBuildDirectory /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure.xcodeproj
+    builtin-create-build-directory /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex
+
+CreateBuildDirectory /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure.xcodeproj
+    builtin-create-build-directory /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+CreateBuildDirectory /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure.xcodeproj
+    builtin-create-build-directory /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator
+
+CreateBuildDirectory /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure.xcodeproj
+    builtin-create-build-directory /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure.xcodeproj
+    builtin-create-build-directory /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure-d16ffa54ef43ad1173c9226bb5254efa-VFS-iphonesimulator/all-product-headers.yaml
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure.xcodeproj
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure-d16ffa54ef43ad1173c9226bb5254efa-VFS-iphonesimulator/all-product-headers.yaml
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/empty-BibleAdventureTests.plist (in target 'BibleAdventureTests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/empty-BibleAdventureTests.plist
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/BibleAdventureTests-project-headers.hmap (in target 'BibleAdventureTests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/BibleAdventureTests-project-headers.hmap
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/BibleAdventureTests.hmap (in target 'BibleAdventureTests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/BibleAdventureTests.hmap
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/BibleAdventureTests-generated-files.hmap (in target 'BibleAdventureTests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/BibleAdventureTests-generated-files.hmap
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/BibleAdventureTests-own-target-headers.hmap (in target 'BibleAdventureTests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/BibleAdventureTests-own-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests_const_extract_protocols.json (in target 'BibleAdventureTests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests_const_extract_protocols.json
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests.SwiftConstValuesFileList (in target 'BibleAdventureTests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests.SwiftFileList (in target 'BibleAdventureTests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests.SwiftFileList
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests.LinkFileList (in target 'BibleAdventureTests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests.LinkFileList
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests-OutputFileMap.json (in target 'BibleAdventureTests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests-OutputFileMap.json
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/ProductTypeInfoPlistAdditions.plist (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/ProductTypeInfoPlistAdditions.plist
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/empty-BibleAdventureUITests.plist (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/empty-BibleAdventureUITests.plist
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests_const_extract_protocols.json (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests_const_extract_protocols.json
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests.SwiftFileList (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests.SwiftFileList
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests.SwiftConstValuesFileList (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests.LinkFileList (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests.LinkFileList
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests-OutputFileMap.json (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests-OutputFileMap.json
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests.hmap (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests.hmap
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests.DependencyStaticMetadataFileList (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/DerivedSources/Entitlements-Simulated.plist (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/DerivedSources/Entitlements-Simulated.plist
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-project-headers.hmap (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-project-headers.hmap
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-own-target-headers.hmap (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-own-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests.DependencyMetadataFileList (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests.DependencyMetadataFileList
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-generated-files.hmap (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-generated-files.hmap
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-all-target-headers.hmap (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-all-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-all-non-framework-target-headers.hmap (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/BibleAdventureTests.DependencyStaticMetadataFileList (in target 'BibleAdventureTests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/BibleAdventureTests.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/BibleAdventureTests.DependencyMetadataFileList (in target 'BibleAdventureTests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/BibleAdventureTests.DependencyMetadataFileList
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/BibleAdventureTests-all-target-headers.hmap (in target 'BibleAdventureTests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/BibleAdventureTests-all-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/BibleAdventureTests-all-non-framework-target-headers.hmap (in target 'BibleAdventureTests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/BibleAdventureTests-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/empty-BibleAdventure.plist (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/empty-BibleAdventure.plist
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure_const_extract_protocols.json (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure_const_extract_protocols.json
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.SwiftFileList (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.SwiftFileList
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.SwiftConstValuesFileList (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.LinkFileList (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.LinkFileList
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure-OutputFileMap.json (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure-OutputFileMap.json
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources/Entitlements-Simulated.plist (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources/Entitlements-Simulated.plist
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure.hmap (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure.hmap
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure.DependencyStaticMetadataFileList (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure.DependencyMetadataFileList (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure.DependencyMetadataFileList
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-project-headers.hmap (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-project-headers.hmap
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-own-target-headers.hmap (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-own-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-generated-files.hmap (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-generated-files.hmap
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-all-target-headers.hmap (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-all-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-all-non-framework-target-headers.hmap (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-DebugDylibPath-normal-arm64.txt (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-DebugDylibPath-normal-arm64.txt
+
+WriteAuxiliaryFile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-DebugDylibInstallName-normal-arm64.txt (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    write-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-DebugDylibInstallName-normal-arm64.txt
+
+MkDir /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests-Runner.app/PlugIns/BibleAdventureUITests.xctest (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    /bin/mkdir -p /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventureUITests-Runner.app/PlugIns/BibleAdventureUITests.xctest
+
+MkDir /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Frameworks (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    /bin/mkdir -p /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Frameworks
+
+MkDir /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/PlugIns (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    /bin/mkdir -p /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/PlugIns
+
+MkDir /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/PlugIns/BibleAdventureTests.xctest (in target 'BibleAdventureTests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    /bin/mkdir -p /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/PlugIns/BibleAdventureTests.xctest
+
+MkDir /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    /bin/mkdir -p /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app
+
+ProcessProductPackaging "" /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure.app-Simulated.xcent (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+    Entitlements:
+    
+    {
+    "application-identifier" = "Y9T6QY86J5.com.yourname.BibleAdventures.BibleAdventure";
+}
+    
+    builtin-productPackagingUtility -entitlements -format xml -o /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure.app-Simulated.xcent
+
+ProcessProductPackagingDER /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure.app-Simulated.xcent /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure.app-Simulated.xcent.der (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    /usr/bin/derq query -f xml -i /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure.app-Simulated.xcent -o /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure.app-Simulated.xcent.der --raw
+
+Ld /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/__preview.dylib normal (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios26.1-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator -F/tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator -install_name @rpath/BibleAdventure.debug.dylib -Xlinker -dead_strip -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -debug_variant -Xlinker -dependency_info -Xlinker /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure_dependency_info.dat -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure.app-Simulated.xcent -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __ents_der -Xlinker /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure.app-Simulated.xcent.der -Xlinker -no_adhoc_codesign -o /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/__preview.dylib
+
+CpResource /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/noah_story.json /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Resource/Stories/Noah/noah_story.json (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Resource/Stories/Noah/noah_story.json /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app
+
+CpResource /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/noah_questions.json /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Resource/Stories/Noah/noah_questions.json (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Resource/Stories/Noah/noah_questions.json /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app
+
+MkDir /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/assetcatalog_output/thinned (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    /bin/mkdir -p /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/assetcatalog_output/thinned
+
+GenerateAssetSymbols /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Assets.xcassets (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Assets.xcassets --compile /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app --output-format human-readable-text --notices --warnings --export-dependency-info /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/assetcatalog_dependencies --output-partial-info-plist /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/assetcatalog_generated_info.plist --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --development-region en --target-device iphone --target-device ipad --minimum-deployment-target 26.1 --platform iphonesimulator --bundle-identifier com.yourname.BibleAdventures.BibleAdventure --generate-swift-asset-symbols /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources/GeneratedAssetSymbols.swift --generate-objc-asset-symbols /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources/GeneratedAssetSymbols.h --generate-asset-symbol-index /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/* com.apple.actool.document.warnings */
+/Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Assets.xcassets:./AppIcon.appiconset/[ios][universal][1024x1024][][][][][dark][][]: warning: AppIcon.appiconset/icon.png is 1254x1254 but should be 1024x1024.
+/Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Assets.xcassets:./AppIcon.appiconset/[ios][universal][1024x1024][][][][][tinted][][]: warning: AppIcon.appiconset/icon2.jpg is 100x100 but should be 1024x1024.
+/Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Assets.xcassets:./AppIcon.appiconset/[ios][universal][1024x1024][][][][][dark][][]: warning: AppIcon.appiconset/icon.png is 1254x1254 but should be 1024x1024.
+/Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Assets.xcassets:./AppIcon.appiconset/[ios][universal][1024x1024][][][][][tinted][][]: warning: AppIcon.appiconset/icon2.jpg is 100x100 but should be 1024x1024.
+/* com.apple.actool.compilation-results */
+/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources/GeneratedAssetSymbols.h
+/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources/GeneratedAssetSymbols.swift
+
+
+MkDir /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/assetcatalog_output/unthinned (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    /bin/mkdir -p /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/assetcatalog_output/unthinned
+
+CpResource /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/ScriptureQuestion.txt /Users/cervantes/Documents/ChatGPT/BibleAdventure/ScriptureQuestion.txt (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/cervantes/Documents/ChatGPT/BibleAdventure/ScriptureQuestion.txt /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app
+
+CpResource /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Roadmap.md /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Docs/Roadmap.md (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Docs/Roadmap.md /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app
+
+CpResource /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/GameDesign.md /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Docs/GameDesign.md (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Docs/GameDesign.md /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app
+
+Copy /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Frameworks/libXCTestSwiftSupport.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Frameworks
+
+Copy /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Frameworks/libXCTestBundleInject.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestBundleInject.dylib (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestBundleInject.dylib /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Frameworks
+
+Copy /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Frameworks/XCUnit.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCUnit.framework (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCUnit.framework /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Frameworks
+
+Copy /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Frameworks/XCUIAutomation.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCUIAutomation.framework (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCUIAutomation.framework /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Frameworks
+
+Copy /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Frameworks/XCTestSupport.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestSupport.framework (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestSupport.framework /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Frameworks
+
+Copy /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Frameworks/XCTestCore.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestCore.framework (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestCore.framework /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Frameworks
+
+Copy /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Frameworks/XCTest.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Frameworks
+
+Copy /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Frameworks/XCTAutomationSupport.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTAutomationSupport.framework (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTAutomationSupport.framework /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Frameworks
+
+Copy /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Frameworks/Testing.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/Testing.framework (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/Testing.framework /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app/Frameworks
+
+CompileAssetCatalogVariant thinned /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.app /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Assets.xcassets (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Assets.xcassets --compile /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/assetcatalog_dependencies_thinned --output-partial-info-plist /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/assetcatalog_generated_info.plist_thinned --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --filter-for-thinning-device-configuration iPhone18,1 --filter-for-device-os-version 26.1 --development-region en --target-device iphone --target-device ipad --minimum-deployment-target 26.1 --platform iphonesimulator
+
+SwiftDriver BibleAdventure normal arm64 com.apple.xcode.tools.swift.compiler (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name BibleAdventure -Onone @/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios26.1-simulator -g -module-cache-path /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex -Xfrontend -serialize-debugging-options -profile-coverage-mapping -profile-generate -enable-testing -index-store-path /tmp/BibleAdventure-PA004-derived/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator -F /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator -emit-localized-strings -emit-localized-strings-path /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64 -c -j11 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/BibleAdventure-PA004-derived/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex -sdk-module-cache-path /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-generated-files.hmap -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-own-target-headers.hmap -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-project-headers.hmap -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources-normal/arm64 -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources/arm64 -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure-Swift.h -working-directory /Users/cervantes/Documents/ChatGPT/BibleAdventure -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/SwiftShims-VFZY5VN6B1P7YDBUC6O9SZDC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/ptrcheck-BODGZXCX97I08JOX5OCX3IO7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/_SwiftConcurrencyShims-8QE3D84GVMMTD7LOQ1PG2IAJ2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/_AvailabilityInternal-EVBE58EEJO26QE47FMSB9LBG7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/_Builtin_stdbool-6NZ5BO8D0GVGWU0FIWAQWYMOW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/DeveloperToolsSupport-CKJXN5KDK4VSFXSCLHJSDX0IV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/ptrauth-59VD3NQNXEO3LAYVRJNSSWOB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/_Builtin_float-784IAYUPTFKK824BQLX7GKBC1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/_Builtin_stddef-6XMLRK6D2RJ9NUNNZRDQ82SWO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/_Builtin_stdarg-8V7082E9NUTFAOGJUMVBENFS3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/_DarwinFoundation1-WCPY2LBHEKZ10175T4JIE75A.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/_Builtin_limits-6DF0AYNFBWQ08152JVJWYG0IP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/_DarwinFoundation2-773UD7YZOJDWI1O8JKC3TG9U7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/sys_types-R90AEYIGJZ21A4IM8KM3XJS2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/_Builtin_stdint-D4PB98J4H16HSIHFSPKL22VO2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/_Builtin_tgmath-66QJRH48X24ZQQC16PT6TY1PZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/_Builtin_intrinsics-2HQEELYXVBL35K8DCIXZIH62V.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/_DarwinFoundation3-AIPXKYDORGOBJQGWG62EYDR7Z.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/_Builtin_stdatomic-5162Y1213ZSDFC70TIZ5U7HGJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/_Builtin_inttypes-9K9DHP5P78O7PVQ9FCE4WE2RZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/Darwin-7AQC6AJJ67QOQBNE26H4W380G.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/simd-VNOZUCKDSU4TQOC5IDAALFXO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/ObjectiveC-C0BW6J5X1C6QG9VUYJZTZ1ZCN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/MachO-4VMJTWKCWQQPQFRX2O46XKYYE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/os_object-60YT9NBMMFBI90COC6GWLNJ9X.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/os_workgroup-P4CSEGWIH5BXG73MM385SIKX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/Spatial-DONUBQJ7OOGKQCU5AQIRUN2J0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/Dispatch-7UW3SHSJREERKYG1FKVHIYUUS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/CoreFoundation-DIRBIQWU6OG7SF24XDINATLGI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/XPC-6BBY39DNOKM2GKK5WBPP4UNV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/os-CLUTEVS56EUMXMIU9L5OG8OLE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/CFNetwork-2T3O6G95RY8SGLWPE37EJ9JEE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/Security-15VH6LES4NQ2UDV4LFZDBEEJ5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/CoreGraphics-3BM2OF3X7PAU47AO940QSBB9A.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/Foundation-7Q6HLOBIBIM44DAPALEF9V779.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/ImageIO-67XLSTSNBF9URRRK1MEIK6ZTU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/CoreText-9D1BBW85ROQUKQAW2GHW9Z187.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/IOSurface-3UKX9A9L2E6MXG1IG9AZ7TTUQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/OpenGLES-1X7H2LL5KQPK1SK1YKTH5O5ZC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/Accessibility-C8SYE67UWVNGF9HO8MR7K4B0Z.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/OSLog-6K4BKEODRRJTXU9FBEEFBEWCH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/CoreData-E8YXPH60PL9X0RM6CZSS7RXI8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/UserNotifications-5PU1COKFOXQ3V4KI81PBJP7TE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/FileProvider-9IFD91DAXH75M7VYD0OZD4I50.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/Symbols-1IX15PLIYW2ZD2ONQLLWZFWMA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/UIUtilities-E1XJNF0FHA421ENZ9O6XFOTEE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/DataDetection-5BASKEDRWO3D0OCGCZKFFSX56.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/UniformTypeIdentifiers-1KVJLUWDJEC3UQO8L7KPBS9AP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/CoreTransferable-9FTV4LDEII6EVQTW1LID5QV0C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/Metal-C14E35U8DXPQUDFZEEEUFSAG3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/CoreVideo-4VJWTR7ZL6Q9GDR87Q5J1MX5C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/QuartzCore-A0MFRSFOQ3PPQ3DUFQM2HK3V7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/CoreImage-98A5Z5G6T7QLHPN0DIXBXVD7R.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/SwiftUICore-4MJB3PCODJ7KKOG68HF7DXN0Q.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/UIKit-85U3XNWNHC4QUWX6VXJC6XKR2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/SwiftUI-391H2WG6TML6E7K67FT7W0E1M.pcm
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ BibleAdventure (in target 'BibleAdventure' from project 'BibleAdventure')
+
+EmitSwiftModule normal arm64 (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 Compiling\ RainbowCovenantView.swift,\ SendDoveView.swift,\ TreeCardView.swift,\ WoodBlockView.swift,\ WoodSelectionView.swift,\ ObjectiveView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/RainbowCovenantView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/SendDoveView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/TreeCardView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/WoodBlockView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/WoodSelectionView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Objective/ObjectiveView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/RainbowCovenantView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/SendDoveView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/TreeCardView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/WoodBlockView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/WoodSelectionView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Objective/ObjectiveView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 Compiling\ Tree.swift,\ ContentRepository.swift,\ QuestionRepository.swift,\ StoryDefinitionRepository.swift,\ StoryRepository.swift,\ ErrorHandling.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/Tree.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Repository/ContentRepository.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Repository/QuestionRepository.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Repository/StoryDefinitionRepository.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Repository/StoryRepository.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/ErrorHandling.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/Tree.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+<unknown>:0: warning: main actor-isolated conformance of 'RecoveryAction' to 'Equatable' cannot be used in nonisolated context; this is an error in the Swift 6 language mode
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Repository/ContentRepository.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+<unknown>:0: warning: main actor-isolated conformance of 'RecoveryAction' to 'Equatable' cannot be used in nonisolated context; this is an error in the Swift 6 language mode
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Repository/QuestionRepository.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+<unknown>:0: warning: main actor-isolated conformance of 'RecoveryAction' to 'Equatable' cannot be used in nonisolated context; this is an error in the Swift 6 language mode
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Repository/StoryDefinitionRepository.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+<unknown>:0: warning: main actor-isolated conformance of 'RecoveryAction' to 'Equatable' cannot be used in nonisolated context; this is an error in the Swift 6 language mode
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Repository/StoryRepository.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+<unknown>:0: warning: main actor-isolated conformance of 'RecoveryAction' to 'Equatable' cannot be used in nonisolated context; this is an error in the Swift 6 language mode
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/ErrorHandling.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+<unknown>:0: warning: main actor-isolated conformance of 'RecoveryAction' to 'Equatable' cannot be used in nonisolated context; this is an error in the Swift 6 language mode
+
+SwiftCompile normal arm64 Compiling\ FloodJourneyView.swift,\ GatherAnimalView.swift,\ GatherFoodView.swift,\ MeasureArkView.swift,\ MiniGameView.swift,\ PlaceholderMiniGameView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/FloodJourneyView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/GatherAnimalView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/GatherFoodView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/MeasureArkView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/MiniGameView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/PlaceholderMiniGameView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/FloodJourneyView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/GatherAnimalView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/GatherFoodView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/MeasureArkView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+/Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/MeasureArkView.swift:257:13: warning: result of call to 'withAnimation' is unused
+            withAnimation(.easeInOut) {
+            ^            ~~~~~~~~~~~~~~
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/MiniGameView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/PlaceholderMiniGameView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 Compiling\ StorySelectionView.swift,\ NoahQuestionRepository.swift,\ NoahScriptureRepository.swift,\ NoahStory.swift,\ Item.swift,\ GeneratedAssetSymbols.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/StorySelection/StorySelectionView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Stories/Noah/NoahQuestionRepository.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Stories/Noah/NoahScriptureRepository.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Stories/Noah/NoahStory.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Item.swift /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+Failed frontend command:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -c /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/App/BibleAdventureApp.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/AnimalPair.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/ArkBuildStage.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/ArkMeasurement.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/BibleBook.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/BibleReference.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/DialoguePage.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/DoveJourneyStage.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/FloodJourneyStage.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/FoodSupply.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/GameState.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/MiniGame.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/MiniGameType.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/Objective.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/ObjectiveQuestionSession.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/ObjectiveType.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/QuizQuestion.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/RainbowColor.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/RainbowStripe.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/ReflectionSession.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/ScriptureQuestion.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/Speaker.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/Story.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/StoryDefinition.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/StoryID.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/StoryProgression.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/StoryStep.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/Tree.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Repository/ContentRepository.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Repository/QuestionRepository.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Repository/StoryDefinitionRepository.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Repository/StoryRepository.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/ErrorHandling.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/LocalProgressStorage.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/MiniGameAdapter.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/ProgressPersistence.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/StoryEngine.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/StoryRuntimeCoordinator.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Dialogue/DialogueView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Home/ContentView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Home/SplashView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/AdaptiveActivityGrid.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/BuildArkView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/BuildRainbowView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/EnterArkView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/FloodJourneyView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/GatherAnimalView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/GatherFoodView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/MeasureArkView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/MiniGameView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/PlaceholderMiniGameView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/RainbowCovenantView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/SendDoveView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/TreeCardView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/WoodBlockView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/WoodSelectionView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Objective/ObjectiveView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Objective/RuntimeQuestionView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Scripture/ScriptureView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Story/ReflectionView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Story/StoryCompleteView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/StoryPlayer/StoryMotionPolicy.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/StoryPlayer/StoryPlayerView.swift -primary-file /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/StorySelection/StorySelectionView.swift -primary-file /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Stories/Noah/NoahQuestionRepository.swift -primary-file /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Stories/Noah/NoahScriptureRepository.swift -primary-file /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Stories/Noah/NoahStory.swift -primary-file /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Item.swift -primary-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources/GeneratedAssetSymbols.swift -supplementary-output-file-map /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/supplementaryOutputs-11 -emit-localized-strings -emit-localized-strings-path /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64 -target arm64-apple-ios26.1-simulator -module-can-import-version DeveloperToolsSupport 23.40.26 23.40.26 -module-can-import-version SwiftUI 7.5.3 7.5.3 -module-can-import-version UIKit 9126.5.5.2 9126.5.5 -disable-cross-import-overlay-search -swift-module-cross-import SwiftData /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/System/Library/Frameworks/SwiftData.framework/Modules/SwiftData.swiftcrossimport/CoreData.swiftoverlay -swift-module-cross-import SwiftData /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/System/Library/Frameworks/SwiftData.framework/Modules/SwiftData.swiftcrossimport/SwiftUI.swiftoverlay -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libFoundationMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#FoundationMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libObservationMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#ObservationMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libPreviewsMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#PreviewsMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libSwiftDataMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#SwiftDataMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libSwiftMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#SwiftMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libSwiftUIMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#SwiftUIMacros -disable-implicit-swift-modules -Xcc -fno-implicit-modules -Xcc -fno-implicit-module-maps -explicit-swift-module-map-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure-dependencies-1.json -debug-module-path /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.swiftmodule -Xllvm -aarch64-use-tbi -enable-objc-interop -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -I /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator -F /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator -no-color-diagnostics -Xcc -fno-color-diagnostics -enable-testing -g -debug-info-format\=dwarf -dwarf-version\=5 -module-cache-path /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -profile-generate -profile-coverage-mapping -swift-version 5 -Onone -D DEBUG -serialize-debugging-options -const-gather-protocols-file /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure_const_extract_protocols.json -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -default-isolation\=MainActor -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/cervantes/Documents/ChatGPT/BibleAdventure -enable-anonymous-context-mangled-names -file-compilation-dir /Users/cervantes/Documents/ChatGPT/BibleAdventure -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -Xcc -ivfsstatcache -Xcc /tmp/BibleAdventure-PA004-derived/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/swift-overrides.hmap -Xcc -iquote -Xcc /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-generated-files.hmap -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-own-target-headers.hmap -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-project-headers.hmap -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources-normal/arm64 -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources/arm64 -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources -Xcc -DDEBUG\=1 -no-auto-bridging-header-chaining -module-name BibleAdventure -frontend-parseable-output -disable-clang-spi -clang-target arm64-apple-ios26.5-simulator -target-sdk-version 26.5 -target-sdk-name iphonesimulator26.5 -in-process-plugin-server-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -o /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/StorySelectionView.o -o /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/NoahQuestionRepository.o -o /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/NoahScriptureRepository.o -o /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/NoahStory.o -o /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/Item.o -o /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/GeneratedAssetSymbols.o -index-unit-output-path /BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/StorySelectionView.o -index-unit-output-path /BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/NoahQuestionRepository.o -index-unit-output-path /BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/NoahScriptureRepository.o -index-unit-output-path /BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/NoahStory.o -index-unit-output-path /BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/Item.o -index-unit-output-path /BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/GeneratedAssetSymbols.o -index-store-path /tmp/BibleAdventure-PA004-derived/Index.noindex/DataStore -index-system-modules
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/StorySelection/StorySelectionView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+/Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/StorySelection/StorySelectionView.swift:12:30: error: missing argument for parameter 'runtime' in call
+             StoryPlayerView()
+                             ^
+                             runtime: <#StoryRuntimeCoordinator#>
+/Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/StoryPlayer/StoryPlayerView.swift:3:8: note: 'init(runtime:)' declared here
+struct StoryPlayerView: View {
+       ^
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Stories/Noah/NoahQuestionRepository.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Stories/Noah/NoahScriptureRepository.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Stories/Noah/NoahStory.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Item.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 Compiling\ ContentView.swift,\ SplashView.swift,\ AdaptiveActivityGrid.swift,\ BuildArkView.swift,\ BuildRainbowView.swift,\ EnterArkView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Home/ContentView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Home/SplashView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/AdaptiveActivityGrid.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/BuildArkView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/BuildRainbowView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/EnterArkView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Home/ContentView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Home/SplashView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/AdaptiveActivityGrid.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/BuildArkView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/BuildRainbowView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/MiniGame/EnterArkView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 Compiling\ Speaker.swift,\ Story.swift,\ StoryDefinition.swift,\ StoryID.swift,\ StoryProgression.swift,\ StoryStep.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/Speaker.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/Story.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/StoryDefinition.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/StoryID.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/StoryProgression.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/StoryStep.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/Speaker.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/Story.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/StoryDefinition.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/StoryID.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/StoryProgression.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/StoryStep.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 Compiling\ DoveJourneyStage.swift,\ FloodJourneyStage.swift,\ FoodSupply.swift,\ GameState.swift,\ MiniGame.swift,\ MiniGameType.swift,\ Objective.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/DoveJourneyStage.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/FloodJourneyStage.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/FoodSupply.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/GameState.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/MiniGame.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/MiniGameType.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/Objective.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/DoveJourneyStage.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/FloodJourneyStage.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/FoodSupply.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/GameState.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/MiniGame.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/MiniGameType.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/Objective.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 Compiling\ ObjectiveQuestionSession.swift,\ ObjectiveType.swift,\ QuizQuestion.swift,\ RainbowColor.swift,\ RainbowStripe.swift,\ ReflectionSession.swift,\ ScriptureQuestion.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/ObjectiveQuestionSession.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/ObjectiveType.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/QuizQuestion.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/RainbowColor.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/RainbowStripe.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/ReflectionSession.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/ScriptureQuestion.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/ObjectiveQuestionSession.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/ObjectiveType.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/QuizQuestion.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/RainbowColor.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/RainbowStripe.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/ReflectionSession.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/ScriptureQuestion.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 Compiling\ LocalProgressStorage.swift,\ MiniGameAdapter.swift,\ ProgressPersistence.swift,\ StoryEngine.swift,\ StoryRuntimeCoordinator.swift,\ DialogueView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/LocalProgressStorage.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/MiniGameAdapter.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/ProgressPersistence.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/StoryEngine.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/StoryRuntimeCoordinator.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Dialogue/DialogueView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/LocalProgressStorage.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/MiniGameAdapter.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/ProgressPersistence.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/StoryEngine.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/StoryRuntimeCoordinator.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Dialogue/DialogueView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 Compiling\ BibleAdventureApp.swift,\ AnimalPair.swift,\ ArkBuildStage.swift,\ ArkMeasurement.swift,\ BibleBook.swift,\ BibleReference.swift,\ DialoguePage.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/App/BibleAdventureApp.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/AnimalPair.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/ArkBuildStage.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/ArkMeasurement.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/BibleBook.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/BibleReference.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/DialoguePage.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/App/BibleAdventureApp.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/AnimalPair.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/ArkBuildStage.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/ArkMeasurement.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/BibleBook.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/BibleReference.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Core/Models/DialoguePage.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for BibleAdventure (in target 'BibleAdventure' from project 'BibleAdventure')
+
+SwiftDriver\ Compilation\ Requirements BibleAdventure normal arm64 com.apple.xcode.tools.swift.compiler (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name BibleAdventure -Onone @/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios26.1-simulator -g -module-cache-path /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex -Xfrontend -serialize-debugging-options -profile-coverage-mapping -profile-generate -enable-testing -index-store-path /tmp/BibleAdventure-PA004-derived/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator -F /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator -emit-localized-strings -emit-localized-strings-path /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64 -c -j11 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/BibleAdventure-PA004-derived/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex -sdk-module-cache-path /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-generated-files.hmap -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-own-target-headers.hmap -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/BibleAdventure-project-headers.hmap -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources-normal/arm64 -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources/arm64 -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure-Swift.h -working-directory /Users/cervantes/Documents/ChatGPT/BibleAdventure -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling DoveJourneyStage.swift, FloodJourneyStage.swift, FoodSupply.swift, GameState.swift, MiniGame.swift, MiniGameType.swift, Objective.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+
+SwiftCompile normal arm64 Compiling\ RuntimeQuestionView.swift,\ ScriptureView.swift,\ ReflectionView.swift,\ StoryCompleteView.swift,\ StoryMotionPolicy.swift,\ StoryPlayerView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Objective/RuntimeQuestionView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Scripture/ScriptureView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Story/ReflectionView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Story/StoryCompleteView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/StoryPlayer/StoryMotionPolicy.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/StoryPlayer/StoryPlayerView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Objective/RuntimeQuestionView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Scripture/ScriptureView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Story/ReflectionView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/Story/StoryCompleteView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/StoryPlayer/StoryMotionPolicy.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/StoryPlayer/StoryPlayerView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftMergeGeneratedHeaders /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources/BibleAdventure-Swift.h /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure-Swift.h (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-swiftHeaderTool -arch arm64 /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure-Swift.h -o /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources/BibleAdventure-Swift.h
+
+SwiftDriverJobDiscovery normal arm64 Compiling Speaker.swift, Story.swift, StoryDefinition.swift, StoryID.swift, StoryProgression.swift, StoryStep.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+
+Copy /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.swiftmodule/arm64-apple-ios-simulator.swiftmodule /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.swiftmodule (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.swiftmodule /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.swiftmodule/arm64-apple-ios-simulator.swiftdoc /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.swiftdoc (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.swiftdoc /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.abi.json (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.abi.json /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.swiftsourceinfo (in target 'BibleAdventure' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/Objects-normal/arm64/BibleAdventure.swiftsourceinfo /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/BibleAdventure.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftDriverJobDiscovery normal arm64 Compiling Tree.swift, ContentRepository.swift, QuestionRepository.swift, StoryDefinitionRepository.swift, StoryRepository.swift, ErrorHandling.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+
+ProcessProductPackaging "" /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests.xctest-Simulated.xcent (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+    Entitlements:
+    
+    {
+    "application-identifier" = "Y9T6QY86J5.com.yourname.BibleAdventures.BibleAdventureUITests.xctrunner";
+    "keychain-access-groups" =     (
+        "Y9T6QY86J5.com.yourname.BibleAdventures.BibleAdventureUITests.xctrunner"
+    );
+}
+    
+    builtin-productPackagingUtility -entitlements -format xml -o /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests.xctest-Simulated.xcent
+
+SwiftDriver BibleAdventureTests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'BibleAdventureTests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name BibleAdventureTests -Onone @/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests.SwiftFileList -DDEBUG -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios26.1-simulator -g -module-cache-path /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex -Xfrontend -serialize-debugging-options -profile-coverage-mapping -profile-generate -enable-testing -index-store-path /tmp/BibleAdventure-PA004-derived/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j11 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/BibleAdventure-PA004-derived/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex -sdk-module-cache-path /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/BibleAdventureTests-generated-files.hmap -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/BibleAdventureTests-own-target-headers.hmap -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/BibleAdventureTests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/BibleAdventureTests-project-headers.hmap -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/DerivedSources/arm64 -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureTests.build/Objects-normal/arm64/BibleAdventureTests-Swift.h -working-directory /Users/cervantes/Documents/ChatGPT/BibleAdventure -experimental-emit-module-separately -disable-cmo
+
+ProcessProductPackagingDER /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests.xctest-Simulated.xcent /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests.xctest-Simulated.xcent.der (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    /usr/bin/derq query -f xml -i /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests.xctest-Simulated.xcent -o /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests.xctest-Simulated.xcent.der --raw
+
+SwiftDriver BibleAdventureUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name BibleAdventureUITests -Onone @/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios26.1-simulator -g -module-cache-path /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex -Xfrontend -serialize-debugging-options -profile-coverage-mapping -profile-generate -enable-testing -index-store-path /tmp/BibleAdventure-PA004-derived/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j11 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/BibleAdventure-PA004-derived/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex -sdk-module-cache-path /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/BibleAdventure-PA004-derived/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-generated-files.hmap -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-own-target-headers.hmap -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/BibleAdventureUITests-project-headers.hmap -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/DerivedSources/arm64 -Xcc -I/tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventureUITests.build/Objects-normal/arm64/BibleAdventureUITests-Swift.h -working-directory /Users/cervantes/Documents/ChatGPT/BibleAdventure -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/Testing-1DBA2M84U872H.swiftmodule
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCUIAutomation-1D5OXGAWMAOC0UFEJA3QYXV1Y.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCTest-BV67HCEZQJIQPB9D4C2U1682B.pcm
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCUIAutomation-AUMJ3MKZRFK5.swiftmodule
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/_Testing_Foundation-2AQE4IRXJCWYS.swiftmodule
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCTest-GIB40NARZ87H.swiftmodule
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ BibleAdventureTests (in target 'BibleAdventureTests' from project 'BibleAdventure')
+
+EmitSwiftModule normal arm64 (in target 'BibleAdventureTests' from project 'BibleAdventure')
+    cd /Users/cervantes/Documents/ChatGPT/BibleAdventure
+    
+
+SwiftCompile normal arm64 Compiling\ ReflectionSessionTests.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventureTests/ReflectionSessionTests.swift (in target 'BibleAdventureTests' from project 'BibleAdventure')
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ BibleAdventureUITests (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+
+SwiftDriverJobDiscovery normal arm64 Compiling LocalProgressStorage.swift, MiniGameAdapter.swift, ProgressPersistence.swift, StoryEngine.swift, StoryRuntimeCoordinator.swift, DialogueView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+
+SwiftCompile normal arm64 Compiling\ BibleAdventureUITestsLaunchTests.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventureUITests/BibleAdventureUITestsLaunchTests.swift (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+
+SwiftDriverJobDiscovery normal arm64 Compiling BibleAdventureApp.swift, AnimalPair.swift, ArkBuildStage.swift, ArkMeasurement.swift, BibleBook.swift, BibleReference.swift, DialoguePage.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+
+SwiftCompile normal arm64 Compiling\ NoahFlowTests.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventureUITests/NoahFlowTests.swift (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+
+SwiftDriverJobDiscovery normal arm64 Compiling ObjectiveQuestionSession.swift, ObjectiveType.swift, QuizQuestion.swift, RainbowColor.swift, RainbowStripe.swift, ReflectionSession.swift, ScriptureQuestion.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+
+SwiftCompile normal arm64 Compiling\ BibleAdventureUITests.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventureUITests/BibleAdventureUITests.swift (in target 'BibleAdventureUITests' from project 'BibleAdventure')
+
+SwiftDriverJobDiscovery normal arm64 Compiling FloodJourneyView.swift, GatherAnimalView.swift, GatherFoodView.swift, MeasureArkView.swift, MiniGameView.swift, PlaceholderMiniGameView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+
+warning: no rule to process file '/Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Docs/Architecture.md' of type 'net.daringfireball.markdown' for architecture 'arm64' (in target 'BibleAdventure' from project 'BibleAdventure')
+warning: no rule to process file '/Users/cervantes/Documents/ChatGPT/BibleAdventure/requirements.MD' of type 'net.daringfireball.markdown' for architecture 'arm64' (in target 'BibleAdventure' from project 'BibleAdventure')
+
+Test session results, code coverage, and logs:
+	/tmp/BibleAdventure-PA004-units-v1.xcresult
+
+Testing failed:
+	Missing argument for parameter 'runtime' in call
+	Testing cancelled because the build failed.
+
+** TEST FAILED **
+
+
+The following build commands failed:
+	SwiftCompile normal arm64 Compiling\ StorySelectionView.swift,\ NoahQuestionRepository.swift,\ NoahScriptureRepository.swift,\ NoahStory.swift,\ Item.swift,\ GeneratedAssetSymbols.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/StorySelection/StorySelectionView.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Stories/Noah/NoahQuestionRepository.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Stories/Noah/NoahScriptureRepository.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Stories/Noah/NoahStory.swift /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Item.swift /tmp/BibleAdventure-PA004-derived/Build/Intermediates.noindex/BibleAdventure.build/Debug-iphonesimulator/BibleAdventure.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+	SwiftCompile normal arm64 /Users/cervantes/Documents/ChatGPT/BibleAdventure/BibleAdventure/Features/StorySelection/StorySelectionView.swift (in target 'BibleAdventure' from project 'BibleAdventure')
+	Testing project BibleAdventure with scheme BibleAdventure
+(3 failures)

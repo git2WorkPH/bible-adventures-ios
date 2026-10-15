@@ -4,6 +4,7 @@ import Observation
 /// One presentation-neutral owner of the engine and current activity lifecycle.
 @Observable
 final class StoryRuntimeCoordinator {
+    let presentation: StoryPresentation
     private(set) var engine: StoryEngine
     private(set) var questionSession: ObjectiveQuestionSession?
     private(set) var scripture: ScriptureContent?
@@ -32,7 +33,9 @@ final class StoryRuntimeCoordinator {
          scriptureLookup: @escaping (BibleReference) -> Result<ScriptureContent, ContentRepositoryError> = { _ in .failure(.itemNotFound("scripture")) },
          reflectionContent: ReflectionContent, contentVersion: String,
          storage: any ProgressDataStoring,
+         presentation: StoryPresentation = .generic,
          logger: FoundationLogger = FoundationLogger(mode: .production, writer: SystemLogWriter())) {
+        self.presentation = presentation
         self.storyID = storyID
         self.loader = loader
         self.questionLookup = questionLookup
@@ -51,6 +54,10 @@ final class StoryRuntimeCoordinator {
     }
 
     var canResume: Bool { !recoveryRequired && progress.story(storyID) != nil }
+
+    func matchingPresentation(for activity: MiniGameType) -> PairMatchingPresentation? {
+        StoryActivityConfiguration.matchingPresentation(for: storyID, activity: activity)
+    }
 
     @discardableResult
     func startNew() -> Bool {

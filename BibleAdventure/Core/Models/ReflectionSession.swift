@@ -3,7 +3,7 @@ import Foundation
 /// Story-neutral content for a post-story reflection. Reflection copy is
 /// interpretation, while `scriptureReference` points back to the Biblical
 /// source without embedding or paraphrasing a quotation.
-struct ReflectionContent: Equatable {
+struct ReflectionContent: Equatable, Codable {
     let id: String
     let prompt: String
     let scriptureReference: BibleReference

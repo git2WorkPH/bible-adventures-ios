@@ -1,6 +1,6 @@
 import Foundation
 
-enum ObjectiveType {
+enum ObjectiveType: String, Codable {
     case readScripture
     case talkToCharacter
     case collectItem

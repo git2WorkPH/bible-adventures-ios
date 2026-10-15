@@ -1,5 +1,34 @@
 # Project Session Context
 
+## PA-004 closeout — 2026-10-04
+
+PA-004 T01–T04 VERIFIED at recorded scopes.52 final unit tests and phone/iPad full-flow/default/largest/landscape/AX regression checks pass; initial28.3pt disclosure failures and corrected44pt reruns retained. Source/content/noah-2 identities preserved; source/build hashes recorded. No operations running. develop4e2e74d/master561b1cf cached refs; all PA-004 code/tests/evidence/docs local uncommitted/unpushed, personal Xcode files/stash preserved. Detailed completed interfaces/evidence: PA-004-TECHNICAL-HANDOVER.md. Owner chose David/Goliath; PA-005 requirements/proposal and PA-005-TECHNICAL-HANDOVER.md define all future tasks/dependencies/acceptance; David gameplay NOT_STARTED and implementation remains proposed under T04's definition scope. CURRENT-CONTEXT.md is the latest concise resume state.
+
+
+## Final verification checkpoint — 2026-10-04
+
+All final iPad-v2 checks PASS:52 unit tests plus4 UI tests (56 total, zero failures). Phone26-v2:3 PASS (largest portrait/landscape and audit),1 pre-final default assembly failure confirmed AX28.3pt; retained log/summary/AXtree. Final phone26-v4 exact default rerun RUNNING session35722, /private/tmp/BibleAdventure-PA004-phone26-v4.log/.xcresult; derived /private/tmp/BibleAdventure-PA004-phone26-derived. Phone26.1-v3 final default already PASS. No other operations running. Next: inspect v4, export summaries/screenshots, record source/build hashes and final review; only then mark T02/T03 VERIFIED. All52 source tests passed in final iPad build; only activity disclosure min-height changed after earlier phone large-text build, matching/core otherwise identical. Files/code remain local uncommitted/unpushed. Preserve personal Xcode edits/stash. T01/T04 VERIFIED; PA-005 David remains proposed/NOT_STARTED with full handover.
+
+
+## Verification checkpoint — 2026-10-04
+
+Final phone26.1 default flow PASS (phone-v3, one test/zero failures); final iPad-v2 units PASS52 and default flow PASS. Phone26.5 largest-text/motion-policy landscape PASS in v2; portrait-largest/audit running session53388. iPad-v2 landscape/portrait-largest/audit running session80271. Logs/results use /private/tmp/BibleAdventure-PA004-{phone-v3,phone26-v2,ipad-v2}.log/.xcresult. v2 phone default was built before final build/enter label fix and failed Assemble control; after v2 finishes rerun that exact test on26.5 final source to resolve same configuration. Initial phone/ipad-v1 cancelled, preserved failure log/summaries and wood28.3pt AX evidence. No source changes after final iPad-v2/phone-v3 build. Next: inspect remaining results, final26.5 default rerun, export evidence/review, complete T02/T03 and reconcile memory. T01/T04 VERIFIED. PA-005 David requirements/proposal/handover complete, implementation NOT_STARTED.
+
+
+## Active regression checkpoint — 2026-10-04
+
+Final units passed52 tests on iPad v1 (full UI suite still running session45476). Phone26.1 v1 session14519: default failed wood-disclosure reachability; largest landscape advanced into matching. Bounded label44-point fix applied locally. Phone26.5 v2 full UI suite running session53388, /private/tmp/BibleAdventure-PA004-phone26-v2.log/.xcresult, derived /private/tmp/BibleAdventure-PA004-phone26-derived. Existing v1 binaries predate wood fix. Inspect all results before rerun; retain failures. Finding PA-004-R01 OPEN pending geometry inspection/passing reruns. T01/T04 VERIFIED; T02/T03 IMPLEMENTED with acceptance in progress.
+
+
+## Execution checkpoint — 2026-10-04, PA-004 ongoing
+
+Owner chose David and Goliath and approved all necessary follow-ups within PA-004. T01 design/contract recorded; T02/T03 implemented locally, verification IN_PROGRESS. Unit v1/v2 failed compilation before running tests (legacy missing injected runtime, mutating assertion); fixed. v3 PASSED 51 tests/9 suites, result /private/tmp/BibleAdventure-PA004-units-v3.xcresult. Subsequent minor matching-copy injection/reference validation changes compile in phone UI run; final unit rerun still needed. Phone full Noah UI suite RUNNING exec session 14519, log /private/tmp/BibleAdventure-PA004-phone-v1.log, result same prefix .xcresult, derived /private/tmp/BibleAdventure-PA004-derived. Next: inspect phone results, run iPad full suite and final units, review/record evidence. T04 David requirements/decision/PA-005 proposal complete; story remains NOT_STARTED. Preserve personal Xcode edits and retained stash. develop HEAD 4e2e74d, master561b1cf; PA-004 changes uncommitted/unpushed.
+
+
+## Execution checkpoint — 2026-10-04
+
+Owner authorized PA-004 and all necessary approvals within its task scopes; selected David and Goliath. T01 design recorded in Architecture/Decisions/PA-004-STORY-COMPOSITION.md. T02 IN_PROGRESS: version-1 JSON definition/validation, injected presentation metadata and unchanged noah-2 export implemented; first unit run RUNNING (exec session 49088), log /private/tmp/BibleAdventure-PA004-units-v1.log, result /private/tmp/BibleAdventure-PA004-units-v1.xcresult, derived /private/tmp/BibleAdventure-PA004-derived. Inspect result before rerun. Source/document changes local; no push. T03 mechanic selected: pair matching. T04 definition: David and Goliath/1 Samuel 17; story shipment remains a future implementation proposal. Next: inspect unit output, fix genuine failures, extract matching state and complete T04 reviewed requirements. Preserve personal Xcode edits.
+
 Synchronization checkpoint — 2026-10-04: owner requested “push it to develop and master.” Preparing the final Noah acceptance and approved PA-004 handover documentation commit. Fetch confirmed develop/origin ef6ad72 and master/origin 2d6e237 before synchronization. After interruption, inspect live Git status/log/upstream refs to determine which steps completed before repeating a push or merge. Final hashes are reported in the delivery response; preparation-state local/uncommitted descriptions below are historical after this commit. No application source changes; personal Xcode settings remain excluded. PA-004 implementation still starts at T01 design.
 
 ## Current checkpoint — 2026-10-04: PA-004 approved
